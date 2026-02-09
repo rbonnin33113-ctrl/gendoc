@@ -27,9 +27,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU12G.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU12G.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -72,9 +72,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\2CU12PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2CU12PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\2CU12PPH.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -117,9 +117,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU9G.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU9G.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -162,9 +162,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\2CU9PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2CU9PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\2CU9PPH.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -207,9 +207,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\5625.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/5625.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\5625.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -252,9 +252,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\76037.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/76037.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\76037.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -297,9 +297,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\76085.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/76085.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\76085.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -342,9 +342,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RCA.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RCA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RCA.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -387,9 +387,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\VGA.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/VGA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\VGA.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -432,9 +432,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\USB.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/USB.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\USB.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -477,9 +477,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\HDMI.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/HDMI.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\HDMI.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -522,9 +522,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\VGA+J.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/VGA+J.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\VGA+J.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -567,9 +567,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9102.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9102.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9102.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -612,9 +612,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9140C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9140C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9140C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -657,9 +657,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9141.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9141.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9141.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -702,9 +702,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9203.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -747,9 +747,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9203-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -792,9 +792,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203-3.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9203-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203-3.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -837,9 +837,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\accessoires labo\BECELEC2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/BECELEC2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\accessoires labo\BECELEC2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -882,9 +882,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\BONDE513.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/BONDE513.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\BONDE513.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -927,9 +927,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\abaques.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/abaques.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\abaques.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -972,9 +972,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_nyolac.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_nyolac.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_nyolac.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1017,9 +1017,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_poly.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_poly.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_poly.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1062,9 +1062,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_poly-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_poly-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_poly-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1107,9 +1107,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\couleurs.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/couleurs.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\couleurs.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1152,9 +1152,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CHARN RESS.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CHARN RESS.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CHARN RESS.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1197,9 +1197,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\supventil.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/supventil.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\supventil.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1242,9 +1242,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CONS320CRE.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CONS320CRE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CONS320CRE.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1287,9 +1287,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CREMAILLERE950.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CREMAILLERE950.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CREMAILLERE950.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1332,9 +1332,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU12G.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU12G.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1377,9 +1377,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU12PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU12PPH.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1422,9 +1422,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU2G.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU2G.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1467,9 +1467,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU2SORBHD.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2SORBHD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU2SORBHD.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1512,9 +1512,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU2PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU2PPH.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1557,9 +1557,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU30X30ENGR.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU30X30ENGR.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU30X30ENGR.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1602,9 +1602,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU4G.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU4G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU4G.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1647,9 +1647,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU4PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU4PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU4PPH.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1692,9 +1692,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU9G.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU9G.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1737,9 +1737,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU9PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU9PPH.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1782,9 +1782,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CUGR50X60X38.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUGR50X60X38.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CUGR50X60X38.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1827,9 +1827,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CUVGR92X56X20.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVGR92X56X20.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CUVGR92X56X20.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1872,9 +1872,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\inox\CUVIN40.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVIN40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\inox\CUVIN40.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1917,9 +1917,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\inox\CUVIN40.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVIN40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\inox\CUVIN40.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1962,9 +1962,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\CUVRS40.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVRS40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\CUVRS40.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2007,9 +2007,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\CUVRS55.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVRS55.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\CUVRS55.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2052,9 +2052,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\DLP100.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/DLP100.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\DLP100.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2097,9 +2097,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\DPA6.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/DPA6.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\DPA6.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2142,9 +2142,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\DPA9.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/DPA9.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\DPA9.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2187,9 +2187,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFDE.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EFDE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFDE.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2232,9 +2232,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFDP.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EFDP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFDP.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2277,9 +2277,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFSE.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EFSE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFSE.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2322,9 +2322,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\prises_2cbe.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/prises_2cbe.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\prises_2cbe.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2367,9 +2367,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\prises_Legrand.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/prises_Legrand.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\prises_Legrand.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2412,9 +2412,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\EVGR100X60.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EVGR100X60.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\EVGR100X60.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2457,9 +2457,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\FLEXEVAC40.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/FLEXEVAC40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\FLEXEVAC40.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2502,9 +2502,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\G6632.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/G6632.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\G6632.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2547,9 +2547,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\GOULBL80X50.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/GOULBL80X50.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\GOULBL80X50.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2592,9 +2592,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2637,9 +2637,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2682,9 +2682,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-3.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-3.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2727,9 +2727,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-4.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-4.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-4.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2772,9 +2772,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-5.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-5.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-5.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2817,9 +2817,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\chauffe-eau\KITBAL15LD.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/KITBAL15LD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\chauffe-eau\KITBAL15LD.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2862,9 +2862,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\chauffe-eau\KITBAL15LD.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/KITBAL15LD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\chauffe-eau\KITBAL15LD.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2907,9 +2907,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\MMN.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/MMN.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\MMN.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2952,9 +2952,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\PASCAB60.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/PASCAB60.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\PASCAB60.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -2997,9 +2997,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\poteau support écran.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/poteau support écran.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\poteau support écran.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3042,9 +3042,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3087,9 +3087,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3132,9 +3132,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3177,9 +3177,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3222,9 +3222,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3267,9 +3267,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3312,9 +3312,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3357,9 +3357,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3402,9 +3402,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3447,9 +3447,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3492,9 +3492,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1D.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1D.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3537,9 +3537,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1D.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1D.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3582,9 +3582,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3627,9 +3627,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3672,9 +3672,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3717,9 +3717,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3762,9 +3762,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3807,9 +3807,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3852,9 +3852,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3897,9 +3897,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3942,9 +3942,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -3987,9 +3987,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4032,9 +4032,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4077,9 +4077,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1D.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1D.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4122,9 +4122,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1D.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1D.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4167,9 +4167,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCG.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCG.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCG.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4212,9 +4212,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCG-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCG-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCG-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4257,9 +4257,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCP.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCP.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4302,9 +4302,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCP-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCP-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4347,9 +4347,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFT.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EFT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFT.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4392,9 +4392,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFT1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFT1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4437,9 +4437,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFT1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4482,9 +4482,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFTCP.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFTCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFTCP.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4527,9 +4527,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFTCP-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFTCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFTCP-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4572,9 +4572,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4617,9 +4617,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4662,9 +4662,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4707,9 +4707,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4752,9 +4752,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4797,9 +4797,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4842,9 +4842,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4887,9 +4887,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4932,9 +4932,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RJ45CAT6.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RJ45CAT6.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RJ45CAT6.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -4977,9 +4977,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RJ45MOSA.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RJ45MOSA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RJ45MOSA.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5022,9 +5022,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMED2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMED2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMED2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5067,9 +5067,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCE.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCE.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5112,9 +5112,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCE-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCE-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCE-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5157,9 +5157,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCP.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCP.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5202,9 +5202,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCP-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCP-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5247,9 +5247,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMET2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMET2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMET2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5292,9 +5292,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMET2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMET2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMET2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5337,9 +5337,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCE.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCE.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5382,9 +5382,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCE-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCE-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCE-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5427,9 +5427,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCP.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCP.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5472,9 +5472,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCP-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCP-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5517,9 +5517,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMIT.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMIT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMIT.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5562,9 +5562,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITC.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITC.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITC.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5607,9 +5607,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITCIRT.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITCIRT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITCIRT.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5652,9 +5652,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITCIRT-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITCIRT-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITCIRT-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5697,9 +5697,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITDE.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITDE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITDE.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5742,9 +5742,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMITG.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITG.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMITG.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5787,9 +5787,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMITG-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITG-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMITG-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5832,9 +5832,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2D1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2D1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2D1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5877,9 +5877,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5922,9 +5922,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -5967,9 +5967,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6012,9 +6012,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\ROULD50+F.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/ROULD50+F.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\ROULD50+F.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6057,9 +6057,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6102,9 +6102,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6147,9 +6147,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6192,9 +6192,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6237,9 +6237,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6282,9 +6282,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1C.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1C.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6327,9 +6327,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1C-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6372,9 +6372,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6417,9 +6417,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\blocage 4 tiroirs\SERV.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SERV.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\blocage 4 tiroirs\SERV.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6462,9 +6462,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\silico.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/silico.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\silico.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6507,9 +6507,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\SIPHEN.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SIPHEN.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\SIPHEN.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6552,9 +6552,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\SIPHPRIL40.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SIPHPRIL40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\SIPHPRIL40.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6597,9 +6597,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\SP2F.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SP2F.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\SP2F.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6642,9 +6642,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\SUPCLAV.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SUPCLAV.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\SUPCLAV.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6687,9 +6687,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\SUPUCNO.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SUPUCNO.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\SUPUCNO.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6732,9 +6732,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\tableau_triptyque.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/tableau_triptyque.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\tableau_triptyque.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6777,9 +6777,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\table-antivib.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/table-antivib.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\table-antivib.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6822,9 +6822,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\VAE.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/VAE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\VAE.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6867,9 +6867,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.R.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/WAGO.R.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.R.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -6912,9 +6912,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.S.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/WAGO.S.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.S.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 

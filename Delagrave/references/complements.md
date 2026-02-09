@@ -27,9 +27,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/complements/compact.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -72,9 +72,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/complements/compact-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -117,9 +117,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact-3.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/complements/compact-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact-3.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 

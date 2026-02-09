@@ -35,10 +35,10 @@ Coloris : blanc
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe DA.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo DA.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe DA.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe DA.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo DA.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo DA.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -89,10 +89,10 @@ Autres coloris sur demande
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe GE.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo GE.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe GE.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe GE.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo GE.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo GE.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -143,10 +143,10 @@ Autres coloris sur demande
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe GED.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo GED.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe GED.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe GED.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo GED.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo GED.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -196,10 +196,10 @@ Coloris : blanc
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe GR.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo GR.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe GR.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe GR.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo GR.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo GR.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -252,10 +252,10 @@ Finition: inox brossé polygrain 220
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe IN.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo IN.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe IN.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe IN.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo IN.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo IN.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -308,10 +308,10 @@ Coloris : blanc
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe PP.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo PP.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe PP.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe PP.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo PP.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo PP.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -363,10 +363,10 @@ Autres coloris sur demande
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe RP.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo RP.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe RP.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe RP.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo RP.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo RP.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -418,10 +418,10 @@ Autres coloris sur demande
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe GE.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo GR.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe GE.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe GE.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo GR.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo GR.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -475,10 +475,10 @@ Autres coloris sur demande
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe RPR.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo RPR.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe RPR.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe RPR.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo RPR.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo RPR.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -532,10 +532,10 @@ Autres coloris sur demande
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe RS.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo RS.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe RS.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe RS.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo RS.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo RS.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -587,10 +587,10 @@ Autres coloris sur demande
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe SP.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo SP.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe SP.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe SP.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo SP.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo SP.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 
@@ -642,10 +642,10 @@ Autres coloris sur demande
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement Coupe1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe ST.png | 50 | 610 | 198 | 160 |  |
-| Emplacement Photo | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo ST.jpg | 290 | 610 | 256 | 160 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement Coupe1 | Delagrave/images/revetement/Coupe ST.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Coupe ST.png | 610 | 198 | 160 |  |  |
+| Emplacement Photo | Delagrave/images/revetement/Photo ST.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\rev\Photo ST.jpg | 610 | 256 | 160 |  |  |
 
 ### Metadata PowerPoint
 

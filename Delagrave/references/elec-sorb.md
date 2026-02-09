@@ -27,9 +27,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BARRIEREIMMAT.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/BARRIEREIMMAT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BARRIEREIMMAT.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -72,9 +72,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BARRIEREIMMAT-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/BARRIEREIMMAT-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BARRIEREIMMAT-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -117,9 +117,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/BC1V.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -162,9 +162,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/BC1V-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -207,9 +207,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V-3.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/BC1V-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V-3.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -252,9 +252,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V-4.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/BC1V-4.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V-4.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -297,9 +297,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V-5.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/BC1V-5.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\BC1V-5.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -342,9 +342,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\DEMMO.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/DEMMO.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\DEMMO.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -387,9 +387,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\DEMMO-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/DEMMO-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\DEMMO-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -432,9 +432,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\DEMMO-3.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/DEMMO-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\DEMMO-3.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -477,9 +477,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\specif\E36A.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/E36A.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\specif\E36A.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -522,9 +522,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\specif\E36A-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/E36A-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\specif\E36A-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -567,9 +567,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\specif\HDBO.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/HDBO.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\specif\HDBO.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -612,9 +612,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\specif\HDBO-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/HDBO-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\specif\HDBO-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -657,9 +657,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECLRGSORB.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECLRGSORB.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECLRGSORB.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -702,9 +702,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECLRGSORBL.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECLRGSORBL.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECLRGSORBL.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -747,9 +747,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECLRGSORBL-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECLRGSORBL-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECLRGSORBL-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -792,9 +792,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORD.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORD.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -837,9 +837,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORD-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORD-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORD-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -882,9 +882,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORD-3.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORD-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORD-3.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -927,9 +927,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORD-4.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORD-4.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORD-4.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -972,9 +972,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORS.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORS.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORS.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1017,9 +1017,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORS-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORS-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORS-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1062,9 +1062,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORV.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORV.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORV.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1107,9 +1107,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORV-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORV-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORV-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1152,9 +1152,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORV-3.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/ECRORV-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\ECRORV-3.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1197,9 +1197,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\VAR.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/VAR.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\VAR.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1242,9 +1242,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\P252.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/P252.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\P252.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1287,9 +1287,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\P252-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/P252-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\P252-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1332,9 +1332,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\TCV250.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/TCV250.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\TCV250.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1377,9 +1377,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\TCV250-2.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/TCV250-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\TCV250-2.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
@@ -1422,9 +1422,9 @@ Aucune
 
 ### Images
 
-| Position | Chemin | Left | Top | Width | Height | Shape Index |
-|----------|--------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\volmotor.PNG | 17 | 100 | 560 | 658 |  |
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/elec-sorb/volmotor.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec de sorbonne\volmotor.PNG | 100 | 560 | 658 |  |  |
 
 ### Metadata PowerPoint
 
