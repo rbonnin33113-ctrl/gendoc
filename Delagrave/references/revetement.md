@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Revètement
-> Date: 2026-02-09 19:11:34
+> Date: 2026-02-09 19:13:53
 > Total references: 12
 
 ## DA
@@ -44,7 +44,7 @@ Coloris : blanc
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -98,7 +98,7 @@ Autres coloris sur demande
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -152,7 +152,7 @@ Autres coloris sur demande
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -205,7 +205,7 @@ Coloris : blanc
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -261,7 +261,7 @@ Finition: inox brossé polygrain 220
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -317,7 +317,7 @@ Coloris : blanc
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -372,7 +372,7 @@ Autres coloris sur demande
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -427,7 +427,7 @@ Autres coloris sur demande
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -484,7 +484,7 @@ Autres coloris sur demande
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -541,7 +541,7 @@ Autres coloris sur demande
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -596,7 +596,7 @@ Autres coloris sur demande
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
@@ -651,7 +651,7 @@ Autres coloris sur demande
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |

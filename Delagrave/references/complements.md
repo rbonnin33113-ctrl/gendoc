@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Compléments
-> Date: 2026-02-09 19:11:34
+> Date: 2026-02-09 19:13:53
 > Total references: 3
 
 ## x
@@ -35,18 +35,18 @@ Aucune
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | Référence | TEXTE |  | 2 |
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
 |  |  |  |  |
-|  |  |  | N°Page |
-|  |  |  | Nombre Page |
-|  |  |  | NomFichier |
-|  |  |  | Extension |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 |  |  |  | 19 |
-|  |  |  | Désignation |
+|  |  |  |  |
 
 ---
 
@@ -80,18 +80,18 @@ Aucune
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | Référence | TEXTE |  | 2 |
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
 |  |  |  |  |
-|  |  |  | N°Page |
-|  |  |  | Nombre Page |
-|  |  |  | NomFichier |
-|  |  |  | Extension |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 |  |  |  | 19 |
-|  |  |  | Désignation |
+|  |  |  |  |
 
 ---
 
@@ -125,18 +125,18 @@ Aucune
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | Référence | TEXTE |  | 2 |
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
 |  |  |  |  |
-|  |  |  | N°Page |
-|  |  |  | Nombre Page |
-|  |  |  | NomFichier |
-|  |  |  | Extension |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 |  |  |  | 19 |
-|  |  |  | Désignation |
+|  |  |  |  |
 
 ---
 

@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Meubles
-> Date: 2026-02-09 19:11:34
+> Date: 2026-02-09 19:13:53
 > Total references: 45
 
 ## ACB120
@@ -27,7 +27,7 @@ Les armoires sont munies de vérins de mises à niveau.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Armoire de rangement avec portes coulissantes |  | Famille de produit |
+| COUPE | Armoire de rangement avec portes coulissantes |  |  |
 
 ### Images
 
@@ -39,18 +39,18 @@ Les armoires sont munies de vérins de mises à niveau.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -79,7 +79,7 @@ Les armoires sont munies de vérins de mises à niveau.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Armoire de rangement avec portes |  | Famille de produit |
+| COUPE | Armoire de rangement avec portes |  |  |
 
 ### Images
 
@@ -91,18 +91,18 @@ Les armoires sont munies de vérins de mises à niveau.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -131,7 +131,7 @@ Les armoires sont munies de vérins de mises à niveau.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Armoire de rangement avec portes |  | Famille de produit |
+| COUPE | Armoire de rangement avec portes |  |  |
 
 ### Images
 
@@ -143,18 +143,18 @@ Les armoires sont munies de vérins de mises à niveau.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -183,7 +183,7 @@ Les armoires sont munies de vérins de mises à niveau.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Armoire de rangement avec portes |  | Famille de produit |
+| COUPE | Armoire de rangement avec portes |  |  |
 
 ### Images
 
@@ -195,18 +195,18 @@ Les armoires sont munies de vérins de mises à niveau.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -234,7 +234,7 @@ Couleur chant épais : blanc.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles à tiroirs verticaux |  | Famille de produit |
+| COUPE | Meubles à tiroirs verticaux |  |  |
 
 ### Images
 
@@ -246,18 +246,18 @@ Couleur chant épais : blanc.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -285,7 +285,7 @@ Couleur chant épais : blanc.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles à tiroirs verticaux |  | Famille de produit |
+| COUPE | Meubles à tiroirs verticaux |  |  |
 
 ### Images
 
@@ -297,18 +297,18 @@ Couleur chant épais : blanc.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -336,7 +336,7 @@ Couleur chant épais : blanc.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles à tiroirs verticaux |  | Famille de produit |
+| COUPE | Meubles à tiroirs verticaux |  |  |
 
 ### Images
 
@@ -348,18 +348,18 @@ Couleur chant épais : blanc.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -388,7 +388,7 @@ Couleur chant épais : blanc.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Armoire de rangement avec portes et vitrines |  | Famille de produit |
+| COUPE | Armoire de rangement avec portes et vitrines |  |  |
 
 ### Images
 
@@ -400,18 +400,18 @@ Couleur chant épais : blanc.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -440,7 +440,7 @@ Couleur chant épais : blanc.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Armoire de rangement avec portes et vitrines |  | Famille de produit |
+| COUPE | Armoire de rangement avec portes et vitrines |  |  |
 
 ### Images
 
@@ -452,18 +452,18 @@ Couleur chant épais : blanc.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -491,7 +491,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -503,18 +503,18 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -544,7 +544,7 @@ Existe en version sous cuve
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -556,18 +556,18 @@ Existe en version sous cuve
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -597,7 +597,7 @@ Existe en version sous cuve
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -609,18 +609,18 @@ Existe en version sous cuve
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -651,7 +651,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  |  |
 
 ### Images
 
@@ -663,18 +663,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -705,7 +705,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  |  |
 
 ### Images
 
@@ -717,18 +717,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -756,7 +756,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -768,18 +768,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -808,7 +808,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -820,18 +820,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -859,7 +859,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -871,18 +871,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -910,7 +910,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -922,18 +922,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -962,7 +962,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE |  |  | Famille de produit |
+| COUPE |  |  |  |
 
 ### Images
 
@@ -974,18 +974,18 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1014,7 +1014,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE |  |  | Famille de produit |
+| COUPE |  |  |  |
 
 ### Images
 
@@ -1026,18 +1026,18 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1067,7 +1067,7 @@ Existe en version sous cuve
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -1079,18 +1079,18 @@ Existe en version sous cuve
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1120,7 +1120,7 @@ Existe en version sous cuve
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -1132,18 +1132,18 @@ Existe en version sous cuve
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1172,7 +1172,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE |  |  | Famille de produit |
+| COUPE |  |  |  |
 
 ### Images
 
@@ -1184,18 +1184,18 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1226,7 +1226,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  |  |
 
 ### Images
 
@@ -1238,18 +1238,18 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1280,7 +1280,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  |  |
 
 ### Images
 
@@ -1292,18 +1292,18 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1331,7 +1331,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -1343,18 +1343,18 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1376,7 +1376,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page |  |  | 4 |
-| COUPE |  |  | Famille de produit |
+| COUPE |  |  |  |
 
 ### Images
 
@@ -1388,18 +1388,18 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1427,7 +1427,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -1439,18 +1439,18 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1479,7 +1479,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE |  |  | Famille de produit |
+| COUPE |  |  |  |
 
 ### Images
 
@@ -1491,18 +1491,18 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1530,7 +1530,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -1542,18 +1542,18 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1582,7 +1582,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -1594,18 +1594,18 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1634,7 +1634,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -1646,18 +1646,18 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1687,7 +1687,7 @@ Existe en version sous cuve.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -1699,18 +1699,18 @@ Existe en version sous cuve.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1741,7 +1741,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  |  |
 
 ### Images
 
@@ -1753,18 +1753,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1792,7 +1792,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -1804,18 +1804,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1843,7 +1843,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -1855,18 +1855,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1894,7 +1894,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec tiroirs |  |  |
 
 ### Images
 
@@ -1906,18 +1906,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1945,7 +1945,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes |  |  |
 
 ### Images
 
@@ -1957,18 +1957,18 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1999,7 +1999,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  | Famille de produit |
+| COUPE | Meubles bas sous paillasse avec portes et tiroirs |  |  |
 
 ### Images
 
@@ -2011,18 +2011,18 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -2052,7 +2052,7 @@ Fourni avec système de fixation.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles haut |  | Famille de produit |
+| COUPE | Meubles haut |  |  |
 
 ### Images
 
@@ -2064,18 +2064,18 @@ Fourni avec système de fixation.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -2105,7 +2105,7 @@ Fournis avec système de fixation
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles haut |  | Famille de produit |
+| COUPE | Meubles haut |  |  |
 
 ### Images
 
@@ -2117,18 +2117,18 @@ Fournis avec système de fixation
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -2157,7 +2157,7 @@ Fourni avec système de fixation
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles haut |  | Famille de produit |
+| COUPE | Meubles haut |  |  |
 
 ### Images
 
@@ -2169,18 +2169,18 @@ Fourni avec système de fixation
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -2207,7 +2207,7 @@ Fourni avec système de fixation
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles haut |  | Famille de produit |
+| COUPE | Meubles haut |  |  |
 
 ### Images
 
@@ -2219,18 +2219,18 @@ Fourni avec système de fixation
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -2257,7 +2257,7 @@ Fourni avec système de fixation
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles haut |  | Famille de produit |
+| COUPE | Meubles haut |  |  |
 
 ### Images
 
@@ -2269,18 +2269,18 @@ Fourni avec système de fixation
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 
@@ -2306,7 +2306,7 @@ Fourni avec système de fixation.
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
 | N° de page | 1/1 |  | 4 |
-| COUPE | Meubles haut |  | Famille de produit |
+| COUPE | Meubles haut |  |  |
 
 ### Images
 
@@ -2318,18 +2318,18 @@ Fourni avec système de fixation.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Commentaire |
-|  |  |  | Désignation TOLTECH |
-|  |  |  | Nouvelle Désignation TOLTECH |
-| COUPE | TEXTE |  | Famille de produit |
-|  |  |  | Descriptif détaillé du catalogue ou récupéré |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| COUPE | TEXTE |  |  |
+|  |  |  |  |
 
 ---
 

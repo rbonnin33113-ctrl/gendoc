@@ -61,8 +61,20 @@ def extract_sheet_metadata(ws: Worksheet) -> Dict[str, Dict]:
         # Row 2: Prefix for TEXTE or position for IMAGE
         row2_value = clean_value(ws.cell(2, col_idx).value)
 
-        # Row 3: Shape index
-        shape_index = clean_value(ws.cell(3, col_idx).value)
+        # Row 3: Shape index (should be numeric, but sometimes contains text labels)
+        shape_index_raw = clean_value(ws.cell(3, col_idx).value)
+
+        # Validate shape index - must be numeric or empty
+        # Some columns (like "Famille de produit" in Meubles) have descriptive text here
+        try:
+            if shape_index_raw:
+                int(shape_index_raw)  # Test if numeric
+                shape_index = shape_index_raw
+            else:
+                shape_index = ""
+        except ValueError:
+            # Non-numeric value in row 3 - this is a label/description, not a shape index
+            shape_index = ""
 
         # Row 4: Header
         header = clean_value(ws.cell(4, col_idx).value)
@@ -234,11 +246,105 @@ def format_product_md(product: Dict, family_name: str) -> str:
     return md
 
 
+def extract_fiches_existantes(ws: Worksheet, family_name: str) -> Tuple[List[Dict], int]:
+    """Extract Fiches Existantes - special case with different structure.
+
+    This sheet doesn't have the 4-row metadata structure.
+    Row 1 is headers, Row 2+ is data.
+    """
+    products = []
+
+    # Get headers from row 1
+    headers = {}
+    for col_idx in range(1, ws.max_column + 1):
+        header = clean_value(ws.cell(1, col_idx).value)
+        headers[col_idx] = header
+
+    # Extract products from row 2 onwards
+    for row_idx in range(2, ws.max_row + 1):
+        code = clean_value(ws.cell(row_idx, 1).value)
+        if not code:
+            continue
+
+        product = {
+            "code": code,
+            "famille": family_name,
+            "texte_fields": [],
+            "dimension_fields": [],
+            "image_fields": [],
+            "metadata": [],
+        }
+
+        # Extract each field
+        for col_idx, header in headers.items():
+            value = clean_value(ws.cell(row_idx, col_idx).value)
+            header_lower = header.lower()
+
+            if header_lower == "code":
+                product["code"] = value
+            elif header_lower in ["référence", "reference"]:
+                product["ref"] = value
+            elif header_lower == "titre":
+                product["titre"] = value
+            elif header_lower in ["répertoire", "repertoire"]:
+                product.setdefault("repertoire", value)
+                product["dimension_fields"].append({
+                    "name": "Répertoire",
+                    "value": value,
+                    "prefix": "",
+                    "shape_index": "",
+                })
+            elif header_lower == "fichier":
+                product.setdefault("fichier", value)
+                product["dimension_fields"].append({
+                    "name": "Fichier",
+                    "value": value,
+                    "prefix": "",
+                    "shape_index": "",
+                })
+            elif header_lower == "chemin":
+                product.setdefault("chemin", value)
+                product["dimension_fields"].append({
+                    "name": "Chemin",
+                    "value": value,
+                    "prefix": "",
+                    "shape_index": "",
+                })
+            elif header_lower == "nb pages":
+                product.setdefault("nb_pages", value)
+                product["dimension_fields"].append({
+                    "name": "Nb pages",
+                    "value": value,
+                    "prefix": "",
+                    "shape_index": "",
+                })
+            elif header_lower == "commentaire":
+                product["texte_fields"].append({
+                    "name": "Commentaire",
+                    "value": value,
+                })
+
+        # Ensure defaults
+        product.setdefault("ref", "")
+        product.setdefault("titre", "")
+
+        products.append(product)
+
+    # Sort by code
+    products.sort(key=lambda p: p["code"])
+
+    return products, len(products)
+
+
 def extract_family(ws: Worksheet, family_name: str) -> Tuple[List[Dict], int]:
     """Extract all products from a family sheet.
 
     Returns (products, count).
     """
+    # Special handling for Fiches Existantes
+    if family_name == "Fiches Existantes":
+        return extract_fiches_existantes(ws, family_name)
+
     metadata = extract_sheet_metadata(ws)
     products = []
 

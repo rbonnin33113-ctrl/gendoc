@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Tables EN
-> Date: 2026-02-09 19:11:34
+> Date: 2026-02-09 19:13:53
 > Total references: 23
 
 ## ELE
@@ -50,14 +50,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -106,14 +106,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -162,14 +162,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -218,14 +218,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -270,14 +270,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -322,14 +322,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -374,14 +374,14 @@ Finition : bordure PVC et joint anti-acides.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -426,14 +426,14 @@ Finition : bordure PVC et joint anti-acides.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -482,14 +482,14 @@ Option :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -534,14 +534,14 @@ Finition : bordure PVC et joint anti-acides.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -589,14 +589,14 @@ Option :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -641,14 +641,14 @@ Finition : bordure PVC et joint anti-acides.
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -697,14 +697,14 @@ Option :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -744,14 +744,14 @@ Option :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -798,14 +798,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -852,14 +852,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -905,14 +905,14 @@ Option :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -960,14 +960,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1016,14 +1016,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1077,14 +1077,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1133,14 +1133,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1189,14 +1189,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 
@@ -1250,14 +1250,14 @@ Options :
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 3 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 4 |
 | IMAGE | IMAGE |  |  |
-|  |  |  | Nom de l'image 3D associée (3D cotée idem paillase et Sorbonne) |
-|  |  |  | Désignation |
+|  |  |  |  |
+|  |  |  |  |
 
 ---
 

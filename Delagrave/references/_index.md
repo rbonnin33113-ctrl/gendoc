@@ -1,8 +1,8 @@
 # Index des References Delagrave
 
 > Source: Génération Fiche Technique DELAGRAVE.xlsm
-> Extraction: 2026-02-09 19:11:34
-> Total: 356 references dans 9 familles
+> Extraction: 2026-02-09 19:13:53
+> Total: 359 references dans 9 familles
 
 ## Familles
 
@@ -16,7 +16,7 @@
 | Equipement | [equipement.md](equipement.md) | 154 | PPT (images positionnees) |
 | Elec sorb | [elec-sorb.md](elec-sorb.md) | 32 | PPT (images positionnees) |
 | Compléments | [complements.md](complements.md) | 3 | PPT (images positionnees) |
-| Fiches Existantes | [fiches-existantes.md](fiches-existantes.md) | 23 | EXT (fichiers .pptx) |
+| Fiches Existantes | [fiches-existantes.md](fiches-existantes.md) | 26 | EXT (fichiers .pptx) |
 
 ## Structure d'un fichier famille
 

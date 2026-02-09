@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Sorbonne
-> Date: 2026-02-09 19:11:34
+> Date: 2026-02-09 19:13:53
 > Total references: 10
 
 ## S-A
@@ -52,7 +52,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 690 / 880 / 1090 m³/h 
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -126,7 +126,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 690 / 880 / 1090 m³/h 
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -200,7 +200,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 690 /880 / 1090 m³/h (
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -274,7 +274,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 650 / 850 / 1050 m³/h 
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -349,7 +349,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 380 / 450 / 500 m³/h (
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -420,7 +420,7 @@ L'équilibrage est assuré par contre poids avec blocage de relevé et déverrou
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -494,7 +494,7 @@ Paillasse : vendue séparément (photo non contractuelle) voir fiche technique d
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -568,7 +568,7 @@ Paillasse : vendue séparément (photo non contractuelle) voir fiche technique d
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -642,7 +642,7 @@ Paillasse : vendue séparément (photo non contractuelle) voir fiche technique d
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
@@ -716,7 +716,7 @@ Paillasse : vendue séparément (photo non contractuelle) voir fiche technique d
 
 | Champ | Type | Prefix | Shape Index |
 |-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  | N° objet dans powerPoint |
+| Code | Type Objet dans Powerpoint |  |  |
 | REF | TEXTE |  | 4 |
 | TITRE | TEXTE |  | 2 |
 | TEXTE COMPLEMENTAIRE | TEXTE |  | 1 |
