@@ -8,6 +8,8 @@ dependencies = ["openpyxl>=3.1.0"]
 [project.scripts]
 gendoc-extract = "gendoc.extractors.excel_extractor:main"
 gendoc-validate = "gendoc.validators.reference_validator:main"
+gendoc-images = "gendoc.utils.image_manager:main"
+gendoc-lookup = "gendoc.cli.lookup:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

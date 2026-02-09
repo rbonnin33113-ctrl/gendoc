@@ -49,7 +49,8 @@ def parse_family_md(filepath: Path) -> List[Dict[str, Any]]:
 
     # Split by product sections (## followed by product code)
     # Product sections start with ## {CODE}
-    sections = re.split(r'\n## ([A-Z0-9-]+)\n', content)
+    # Pattern allows: letters, digits, spaces, and common punctuation (-, _, ., /, +)
+    sections = re.split(r'\n## ([A-Za-z0-9_. /+-]+)\n', content)
 
     # First section is header, skip it
     if len(sections) < 3:
