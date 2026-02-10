@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-09)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques
-**Current focus:** Phase 4 - Generation PowerPoint
+**Current focus:** Phase 5 - Document Assembly
 
 ## Current Position
 
-Phase: 4 of 6 (Generation PowerPoint)
-Plan: 2 of 2 in current phase
+Phase: 5 of 6 (Assemblage Document)
+Plan: 1 of 1 in current phase
 Status: Phase complete
-Last activity: 2026-02-10 -- Completed 04-02-PLAN.md - MCP Integration for PowerPoint Generation
+Last activity: 2026-02-10 -- Completed 05-01-PLAN.md - Document Assembly with Cover, TOC, and Chapter Separators
 
-Progress: [#########.] 67%
+Progress: [##########] 83%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 3.8 minutes
-- Total execution time: 0.52 hours
+- Total plans completed: 9
+- Average duration: 4.0 minutes
+- Total execution time: 0.58 hours
 
 **By Phase:**
 
@@ -31,16 +31,17 @@ Progress: [#########.] 67%
 | 02-infrastructure-mcp | 2 | 4.9 min | 2.5 min |
 | 03-analyse-de-devis | 2 | 7.9 min | 4.0 min |
 | 04-generation-powerpoint | 2 | 6.3 min | 3.2 min |
+| 05-assemblage-document | 1 | 4.7 min | 4.7 min |
 
 **Recent Trend:**
-- Last 5 plans: 03-01 (6.1 min), 03-02 (1.8 min), 04-01 (3.8 min), 04-02 (2.5 min)
-- Trend: Excellent velocity maintained - quick integration tasks balance complex implementation
+- Last 5 plans: 03-02 (1.8 min), 04-01 (3.8 min), 04-02 (2.5 min), 05-01 (4.7 min)
+- Trend: Strong velocity - consistent sub-5 minute execution across integration and implementation tasks
 
 *Updated after each plan completion*
 
 **Latest Execution:**
-| Phase 04-generation-powerpoint P01 | 3.8 min | 2 tasks | 3 files |
 | Phase 04-generation-powerpoint P02 | 2.5 min | 2 tasks | 2 files |
+| Phase 05-assemblage-document P01 | 4.7 min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -83,6 +84,8 @@ Recent decisions affecting current work:
 - [Phase 04-02]: /gendoc-generate skill provides 4-step workflow: collect, validate, generate, present
 - [Phase 04-02]: Relative output paths resolved from project root for MCP flexibility
 - [Phase 04-02]: Result presentation includes revetement auto-detection summary
+- [Phase 05]: Two-pass assembly: calculate page numbers first, then build document in order
+- [Phase 05]: Programmatic shapes (python-pptx MSO_SHAPE) for cover and separators instead of template layouts
 
 ### Pending Todos
 
@@ -95,5 +98,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: Completed 04-02-PLAN.md - MCP Integration for PowerPoint Generation (Phase 4 complete)
+Stopped at: Completed 05-01-PLAN.md - Document Assembly with Cover, TOC, and Chapter Separators (Phase 5 complete)
 Resume file: None
