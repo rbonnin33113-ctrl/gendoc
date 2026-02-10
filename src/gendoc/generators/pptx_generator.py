@@ -16,7 +16,7 @@ import shutil
 from pptx import Presentation
 from pptx.util import Emu
 
-from gendoc.parsers.md_parser import find_product
+from gendoc.parsers.md_parser import find_product, find_product_pages
 
 
 # Family to layout index mapping
@@ -238,7 +238,7 @@ def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> i
         if not image_path.exists():
             continue
 
-        # Get position data (values are in pixels at 96 DPI)
+        # Get position data (values are in points - VBA PowerPoint standard unit)
         left = image_data.get('left', 0)
         top = image_data.get('top', 0)
         width = image_data.get('width', 0)
@@ -247,11 +247,11 @@ def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> i
         if left == 0 or top == 0 or width == 0:
             continue
 
-        # Convert pixels to EMUs (1 pixel at 96 DPI = 9525 EMUs)
-        EMU_PER_PIXEL = 9525
-        left_emu = Emu(int(left * EMU_PER_PIXEL))
-        top_emu = Emu(int(top * EMU_PER_PIXEL))
-        width_emu = Emu(int(width * EMU_PER_PIXEL))
+        # Convert points to EMUs (1 point = 1/72 inch = 12700 EMUs)
+        EMU_PER_POINT = 12700
+        left_emu = Emu(int(left * EMU_PER_POINT))
+        top_emu = Emu(int(top * EMU_PER_POINT))
+        width_emu = Emu(int(width * EMU_PER_POINT))
 
         # Insert image, clamping to slide bounds if needed
         # Slide dimensions: A4 portrait = 7561263 x 10693400 EMU
@@ -260,7 +260,7 @@ def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> i
 
         try:
             if height > 0:
-                height_emu = Emu(int(height * EMU_PER_PIXEL))
+                height_emu = Emu(int(height * EMU_PER_POINT))
             else:
                 # Auto-calculate height from image aspect ratio
                 from PIL import Image as PILImage
@@ -342,16 +342,18 @@ def generate_presentation(
     template_path: Path,
     project_root: Path,
     mode: str = "FTI",
-    revetement_codes: Optional[List[str]] = None
+    revetement_codes: Optional[List[str]] = None,
+    devis_info: Optional[Dict[str, str]] = None
 ) -> Dict[str, Any]:
     """
     Generate a PowerPoint presentation with product tech sheets.
 
     This is the main orchestrator function that:
     1. Loads the PowerPoint template
-    2. Generates slides for each product code
-    3. Auto-generates coating slides for products with coatings
-    4. Saves the final presentation
+    2. Groups products by family
+    3. Assembles complete document with cover, TOC, chapter separators, and product slides
+    4. Auto-generates coating slides for products with coatings
+    5. Saves the final presentation
 
     Args:
         product_codes: List of product codes to generate slides for
@@ -361,11 +363,13 @@ def generate_presentation(
         project_root: Root directory for resolving relative paths
         mode: Generation mode (default "FTI")
         revetement_codes: Optional list of coating codes to add manually
+        devis_info: Optional dict with 'numero_devis', 'date', 'client', 'titre_affaire'
 
     Returns:
         Dictionary with generation results:
         {
             'slides_generated': int,
+            'total_pages': int,
             'revetements_added': list of coating codes,
             'skipped': list of {'code': str, 'reason': str}
         }
@@ -373,10 +377,13 @@ def generate_presentation(
     Raises:
         FileNotFoundError: If template or references not found
     """
+    # Lazy import to avoid circular dependency at module load time
+    from gendoc.generators.document_assembler import assemble_document, FAMILY_ORDER
+    from collections import OrderedDict
+
     # Load template
     prs = load_template(template_path)
 
-    slides_generated = 0
     skipped = []
     coating_codes_set = set()
 
@@ -384,28 +391,31 @@ def generate_presentation(
     if revetement_codes:
         coating_codes_set.update(revetement_codes)
 
-    # Generate slides for each product
+    # First pass: group products by family
+    product_groups = OrderedDict()
+    for family in FAMILY_ORDER:
+        product_groups[family] = []
+
+    # Process each product code
     for code in product_codes:
-        # Look up product data
-        product = find_product(code, references_dir)
+        # Look up all pages for this product (multi-page support)
+        pages = find_product_pages(code, references_dir)
 
         # Try with base code if coating suffix present
-        if not product and '-' in code:
-            # Try stripping last segment (potential coating suffix)
+        if not pages and '-' in code:
             base_code = '-'.join(code.split('-')[:-1])
-            product = find_product(base_code, references_dir)
-            if product:
-                # Extract potential coating code from suffix
+            pages = find_product_pages(base_code, references_dir)
+            if pages:
                 potential_coating = code.split('-')[-1]
-                if len(potential_coating) <= 3:  # Coating codes are short
+                if len(potential_coating) <= 3:
                     coating_codes_set.add(potential_coating)
 
-        if not product:
+        if not pages:
             skipped.append({'code': code, 'reason': 'Product not found in references'})
             continue
 
-        # Get family
-        family = product.get('famille', '').lower()
+        # Get family from first page
+        family = pages[0].get('famille', '').lower()
 
         # Skip fiches-existantes (Phase 5 handles these)
         if family == 'fiches-existantes':
@@ -417,35 +427,34 @@ def generate_presentation(
             skipped.append({'code': code, 'reason': f'No layout mapping for family: {family}'})
             continue
 
-        # Get layout index
-        layout_index = FAMILY_LAYOUT_MAP[family]
+        # Add to product groups (all pages for multi-page products)
+        for product in pages:
+            # Check if product has coating information in dimensions
+            for dimension in product.get('dimensions', []):
+                dim_name = dimension.get('name', '').lower()
+                if 'revetement' in dim_name or 'revêtement' in dim_name:
+                    valeur = dimension.get('valeur', '')
+                    for potential_code in valeur.split(','):
+                        cleaned = potential_code.strip()
+                        if cleaned and len(cleaned) <= 3 and cleaned.isupper():
+                            coating_codes_set.add(cleaned)
 
-        # Add slide
-        slide = prs.slides.add_slide(prs.slide_layouts[layout_index])
+            product_groups[family].append(product)
 
-        # Populate text placeholders
-        _populate_slide(slide, product, family)
+    # Assemble complete document with cover, TOC, separators, and product slides
+    if devis_info is None:
+        devis_info = {}
 
-        # Insert images
-        _insert_images(slide, product, project_root)
+    assembly_result = assemble_document(
+        product_groups=product_groups,
+        prs=prs,
+        devis_info=devis_info,
+        references_dir=references_dir,
+        project_root=project_root,
+        logo_path=None  # No logo file available yet
+    )
 
-        slides_generated += 1
-
-        # Check if product has coating information in dimensions
-        for dimension in product.get('dimensions', []):
-            dim_name = dimension.get('name', '').lower()
-            if 'revetement' in dim_name or 'revêtement' in dim_name:
-                # Extract coating codes from the dimension value
-                valeur = dimension.get('valeur', '')
-                # Common coating codes: GE, GR, IN, DA, etc.
-                # They appear in the list separated by commas
-                for potential_code in valeur.split(','):
-                    cleaned = potential_code.strip()
-                    # Simple heuristic: 2-3 uppercase letters likely a coating code
-                    if cleaned and len(cleaned) <= 3 and cleaned.isupper():
-                        coating_codes_set.add(cleaned)
-
-    # Generate coating slides
+    # Generate coating slides (add at end of document)
     revetements_added = []
     if coating_codes_set:
         revetements_added = _add_revetement_slides(
@@ -462,7 +471,8 @@ def generate_presentation(
     prs.save(str(output_path))
 
     return {
-        'slides_generated': slides_generated,
+        'slides_generated': assembly_result['product_count'],
+        'total_pages': assembly_result['total_pages'] + len(revetements_added),
         'revetements_added': revetements_added,
         'skipped': skipped
     }

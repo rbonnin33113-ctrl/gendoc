@@ -135,7 +135,7 @@ async def analyze_devis(pdf_path: str) -> str:
 
 
 @mcp.tool()
-async def generate_slides(product_codes: list[str], output_path: str, mode: str = "FTI") -> str:
+async def generate_slides(product_codes: list[str], output_path: str, mode: str = "FTI", devis_info: dict = None) -> str:
     """
     Generate a PowerPoint presentation with product slides.
 
@@ -143,12 +143,14 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
         product_codes: List of product codes to include
         output_path: Path for the output PowerPoint file
         mode: Slide generation mode ("FTI" or other - default "FTI")
+        devis_info: Optional dict with devis header info: 'numero_devis', 'date', 'client', 'titre_affaire'
 
     Returns:
-        JSON string with generation results: slides_generated, revetements_added, skipped, output_path.
+        JSON string with generation results: slides_generated, total_pages, revetements_added, skipped, output_path.
 
     Example:
-        generate_slides(["PM-D-H-75", "PA-D-60"], "output.pptx") -> {"slides_generated": 2, "revetements_added": 0, ...}
+        generate_slides(["PM-D-H-75", "PA-D-60"], "output.pptx") -> {"slides_generated": 2, "total_pages": 5, ...}
+        generate_slides(["PM-D-H-75"], "output.pptx", devis_info={"numero_devis": "25 64 0637", "client": "TEST"})
     """
     try:
         # Resolve output path - if relative, make absolute from project root
@@ -170,7 +172,8 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
             references_dir=REFERENCES_DIR,
             template_path=TEMPLATE_PATH,
             project_root=PROJECT_ROOT,
-            mode=mode
+            mode=mode,
+            devis_info=devis_info
         )
 
         # Add output path to result
