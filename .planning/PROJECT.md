@@ -18,6 +18,16 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - **Families**: 8 familles validees (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements)
 - **Tests**: 34 tests pytest (8 generation par famille, 4 E2E pipeline, 13 unit md_parser, 9 lookup/util) — <9s
 
+## Current Milestone: v1.2 Outil de Selection SP
+
+**Goal:** Permettre a l'utilisateur de visualiser, selectionner et editer les articles speciaux (SP) d'un devis via une page HTML interactive, avec extraction automatique des designations depuis le PDF.
+
+**Target features:**
+- Correction du bug de detection SP (codes SP tombent dans inconnus)
+- Extraction des designations SP depuis le texte brut du devis PDF
+- Page HTML interactive pour selectionner/editer les articles SP (titre, texte, dimensions, images, famille)
+- Integration MCP file-based : outil genere HTML, outil lit le JSON resultat
+
 ## Requirements
 
 ### Validated
@@ -68,4 +78,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Pytest parametrize par famille | Un test par famille, execution rapide | Good — 34 tests en <9s |
 
 ---
-*Last updated: 2026-02-10 after v1.1 milestone completion*
+*Last updated: 2026-02-10 after v1.2 milestone start*

@@ -6,13 +6,14 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-**Current focus:** v1.1 shipped — planning next milestone
+**Current focus:** v1.2 — Outil de Selection SP
 
 ## Current Position
 
-Milestone: v1.1 Qualite et Couverture Familles — SHIPPED 2026-02-10
-Status: Milestone complete, archived
-Last activity: 2026-02-10 — v1.1 milestone archived
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-02-10 — Milestone v1.2 started
 
 Progress: v1.0 + v1.1 complete (8 phases, 16 plans)
 
@@ -77,6 +78,6 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: v1.1 milestone archived
+Stopped at: v1.2 milestone started — defining requirements
 Resume file: None
-Next step: /gsd:new-milestone to plan v2
+Next step: Define requirements and create roadmap for v1.2
