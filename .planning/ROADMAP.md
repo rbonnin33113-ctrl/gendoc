@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Fondation Donnees** - Migration Excel vers MD et organisation des images locales ✓ (2026-02-09)
 - [x] **Phase 2: Infrastructure MCP** - Squelettes des serveurs MCP et enregistrement des commandes CLI ✓ (2026-02-10)
-- [ ] **Phase 3: Analyse de Devis** - Parsing PDF, extraction de references, detection de familles et revetements
+- [x] **Phase 3: Analyse de Devis** - Parsing PDF, extraction de references, detection de familles et revetements ✓ (2026-02-10)
 - [ ] **Phase 4: Generation PowerPoint** - Creation de slides avec layouts corrects, placeholders et images
 - [ ] **Phase 5: Assemblage Document** - Pages de garde, couvertures de chapitres, sommaire et modes de generation
 - [ ] **Phase 6: Integration Pipeline** - Commande pipeline complete et previsualisation
@@ -63,8 +63,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md -- Modules PDF parser et devis analyzer (extraction texte, identification codes, classification familles/revetements)
-- [ ] 03-02-PLAN.md -- Integration MCP et mise a jour skill /gendoc-analyze
+- [x] 03-01-PLAN.md -- Modules PDF parser et devis analyzer (extraction texte, identification codes, classification familles/revetements) ✓
+- [x] 03-02-PLAN.md -- Integration MCP et mise a jour skill /gendoc-analyze ✓
 
 ### Phase 4: Generation PowerPoint
 **Goal**: Les fiches techniques individuelles sont generees correctement dans des slides PowerPoint avec le bon layout, les bonnes donnees et les bonnes images
@@ -118,7 +118,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 |-------|----------------|--------|-----------|
 | 1. Fondation Donnees | 2/2 | Complete ✓ | 2026-02-09 |
 | 2. Infrastructure MCP | 2/2 | Complete ✓ | 2026-02-10 |
-| 3. Analyse de Devis | 0/2 | Not started | - |
+| 3. Analyse de Devis | 2/2 | Complete ✓ | 2026-02-10 |
 | 4. Generation PowerPoint | 0/2 | Not started | - |
 | 5. Assemblage Document | 0/2 | Not started | - |
 | 6. Integration Pipeline | 0/1 | Not started | - |
