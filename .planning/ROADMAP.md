@@ -50,10 +50,10 @@ Plans:
   2. L'utilisateur peut rechercher et selectionner un article du catalogue comme point de depart pour chaque SP
   3. L'utilisateur peut modifier tous les champs (titre, texte, dimensions, images, famille) pour chaque article selectionne
   4. L'utilisateur peut exporter un fichier JSON contenant tous les articles edites avec leur structure complete
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 10-01: TBD
+- [ ] 10-01-PLAN.md — HTML SP selector generator with catalog search, field editing, and JSON export
 
 #### Phase 11: Integration MCP File-Based
 **Goal**: Le workflow complet analyse-HTML-generation fonctionne de bout en bout
@@ -81,5 +81,5 @@ Plans:
 | 7. Verification et Correction des Familles | v1.1 | 3/3 | Complete | 2026-02-10 |
 | 8. Suite de Tests Automatises | v1.1 | 2/2 | Complete | 2026-02-10 |
 | 9. Detection et Extraction SP | v1.2 | 1/1 | Complete | 2026-02-10 |
-| 10. Interface HTML Interactive | v1.2 | 0/TBD | Not started | - |
+| 10. Interface HTML Interactive | v1.2 | 0/1 | Planned | - |
 | 11. Integration MCP File-Based | v1.2 | 0/TBD | Not started | - |
