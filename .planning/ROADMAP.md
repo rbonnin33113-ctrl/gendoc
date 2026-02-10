@@ -76,11 +76,11 @@ Plans:
   3. Les donnees produit apparaissent dans les bons placeholders du template (titre, caracteristiques, reference, dimensions aux positions correctes)
   4. Les images produit sont inserees aux bonnes positions dans chaque slide
   5. Quand un produit avec revetement est inclus, la fiche revetement correspondante est automatiquement generee dans le document
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: Generation de slides par famille avec layouts corrects
-- [ ] 04-02: Mapping placeholders, images et fiches revetement liees
+- [ ] 04-01-PLAN.md -- Module pptx_generator.py: template loading, layouts par famille, mapping VBA-to-placeholder, images, revetements
+- [ ] 04-02-PLAN.md -- Integration MCP (generate_slides fonctionnel) et mise a jour skill /gendoc-generate
 
 ### Phase 5: Assemblage Document
 **Goal**: Le document PowerPoint genere est un dossier complet et professionnel avec couverture, chapitres, sommaire et choix de mode
