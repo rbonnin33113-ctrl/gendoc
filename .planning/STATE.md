@@ -10,34 +10,35 @@ See: .planning/PROJECT.md (updated 2026-02-09)
 ## Current Position
 
 Phase: 2 of 6 (Infrastructure MCP)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-02-10 -- Completed 02-01-PLAN.md (MCP Server Infrastructure)
+Plan: 2 of 2 in current phase
+Status: Phase Complete
+Last activity: 2026-02-10 -- Completed 02-02-PLAN.md (Claude Code Skill Registration)
 
-Progress: [#####.....] 25%
+Progress: [######....] 33%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 5.6 minutes
-- Total execution time: 0.28 hours
+- Total plans completed: 4
+- Average duration: 4.3 minutes
+- Total execution time: 0.29 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-fondation-donnees | 2 | 13.4 min | 6.7 min |
-| 02-infrastructure-mcp | 1 | 2.9 min | 2.9 min |
+| 02-infrastructure-mcp | 2 | 4.9 min | 2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (6.8 min), 01-02 (6.6 min), 02-01 (2.9 min)
-- Trend: Improving velocity
+- Last 5 plans: 01-01 (6.8 min), 01-02 (6.6 min), 02-01 (2.9 min), 02-02 (2.0 min)
+- Trend: Excellent velocity - consistently under 3 min per plan
 
 *Updated after each plan completion*
 
 **Latest Execution:**
 | Phase 02-infrastructure-mcp P01 | 2.9 min | 2 tasks | 4 files |
+| Phase 02-infrastructure-mcp P02 | 2.0 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -59,6 +60,8 @@ Recent decisions affecting current work:
 - **NEW:** Created .missing placeholders for 268 inaccessible network images
 - [Phase 02-01]: FastMCP uses 'instructions' parameter not 'description' for server description
 - [Phase 02-01]: MCP server uses absolute path resolution for REFERENCES_DIR to work from any directory
+- [Phase 02-02]: Skills written in French for French-speaking end users
+- [Phase 02-02]: Status notes in stub skills set expectations about Phase 3/4 implementation
 
 ### Pending Todos
 
@@ -71,5 +74,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: Completed 02-01-PLAN.md - MCP Server Infrastructure
+Stopped at: Completed 02-02-PLAN.md - Claude Code Skill Registration (Phase 2 Complete)
 Resume file: None
