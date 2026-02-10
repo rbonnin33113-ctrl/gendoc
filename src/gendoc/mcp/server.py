@@ -135,6 +135,95 @@ async def analyze_devis(pdf_path: str) -> str:
 
 
 @mcp.tool()
+async def preview_generation(analysis_result: dict) -> str:
+    """
+    Build a structured preview of what PowerPoint generation would produce.
+
+    Takes the output of analyze_devis and returns a detailed preview with:
+    - Product references grouped by family with titles
+    - Coatings that will be auto-generated
+    - Unknown codes that will be skipped
+    - Estimated page count
+
+    Args:
+        analysis_result: Dictionary from analyze_devis (header, references, revetements, forfaits, inconnus)
+
+    Returns:
+        JSON string with preview data: families (with products), revetements, inconnus, estimated_pages, suggested_filename
+    """
+    try:
+        from gendoc.generators.document_assembler import FAMILY_ORDER, FAMILY_DISPLAY_NAMES
+
+        references = analysis_result.get("references", [])
+        header = analysis_result.get("header", {})
+
+        # Classify each reference by family
+        family_products = {f: [] for f in FAMILY_ORDER}
+
+        for ref in references:
+            code = ref.get("code", "")
+            product = find_product(code, REFERENCES_DIR)
+
+            # Try base code if not found (coating suffix)
+            if not product and "-" in code:
+                base_code = "-".join(code.split("-")[:-1])
+                product = find_product(base_code, REFERENCES_DIR)
+
+            if product:
+                family = product.get("famille", "").lower()
+                titre = product.get("titre", "")
+                family_products.setdefault(family, []).append({
+                    "code": code,
+                    "titre": titre,
+                    "revetement": ref.get("revetement", "")
+                })
+
+        # Build ordered families list
+        families = []
+        total_products = 0
+        for family in FAMILY_ORDER:
+            products = family_products.get(family, [])
+            if products:
+                families.append({
+                    "name": family,
+                    "display_name": FAMILY_DISPLAY_NAMES.get(family, family.title()),
+                    "products": products
+                })
+                total_products += len(products)
+
+        # Estimate pages: cover + TOC + (1 separator + N products) per family + revetements
+        revetements = analysis_result.get("revetements", [])
+        estimated_pages = 2  # cover + TOC
+        for fam in families:
+            estimated_pages += 1 + len(fam["products"])  # separator + products
+        estimated_pages += len(revetements)
+
+        # Suggested filename
+        numero_devis = header.get("numero_devis", "")
+        if numero_devis:
+            safe_numero = numero_devis.replace(" ", "").replace("/", "-")
+            suggested_filename = f"fiches_{safe_numero}.pptx"
+        else:
+            suggested_filename = "fiches_techniques.pptx"
+
+        result = {
+            "header": header,
+            "families": families,
+            "revetements": revetements,
+            "forfaits": analysis_result.get("forfaits", []),
+            "inconnus": analysis_result.get("inconnus", []),
+            "total_products": total_products,
+            "estimated_pages": estimated_pages,
+            "suggested_filename": suggested_filename
+        }
+
+        return json.dumps(result, ensure_ascii=False, indent=2)
+
+    except Exception as e:
+        return json.dumps({"error": f"Erreur de previsualisation: {str(e)}"}, ensure_ascii=False)
+
+
+@mcp.tool()
 async def generate_slides(product_codes: list[str], output_path: str, mode: str = "FTI", devis_info: dict = None) -> str:
     """
     Generate a PowerPoint presentation with product slides.
