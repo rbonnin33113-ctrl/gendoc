@@ -3,13 +3,14 @@ name = "gendoc-delagrave"
 version = "0.1.0"
 description = "Generateur de fiches techniques Delagrave via MCP"
 requires-python = ">=3.10"
-dependencies = ["openpyxl>=3.1.0"]
+dependencies = ["openpyxl>=3.1.0", "fastmcp>=2.0.0"]
 
 [project.scripts]
 gendoc-extract = "gendoc.extractors.excel_extractor:main"
 gendoc-validate = "gendoc.validators.reference_validator:main"
 gendoc-images = "gendoc.utils.image_manager:main"
 gendoc-lookup = "gendoc.cli.lookup:main"
+gendoc-mcp = "gendoc.mcp.server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

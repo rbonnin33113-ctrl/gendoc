@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "gendoc": {
+      "command": "python",
+      "args": ["-m", "gendoc.mcp.server"],
+      "cwd": "H:/IA/Generateur de doc",
+      "env": {
+        "PYTHONPATH": "H:/IA/Generateur de doc/src"
+      }
+    }
+  }
+}
