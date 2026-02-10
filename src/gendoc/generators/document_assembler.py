@@ -16,6 +16,7 @@ from pptx.util import Inches, Pt, Emu, Cm
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
+from pptx.oxml.xmlchemy import OxmlElement
 
 
 # Delagrave corporate blue color (extracted from template theme or standard corporate blue)
@@ -95,35 +96,31 @@ def add_cover_page(prs: Presentation, devis_info: Dict[str, str], logo_path: Opt
     bottom_bandeau.fill.fore_color.rgb = DELAGRAVE_BLUE
     bottom_bandeau.line.fill.background()
 
-    # Logo or "DELAGRAVE" text in top bandeau
+    # Logo in top-left of bandeau
     if logo_path and logo_path.exists():
-        # Insert logo centered in top bandeau
-        logo_max_width = int(slide_width * 0.4)
+        logo_margin = int(top_bandeau_height * 0.15)
         logo_max_height = int(top_bandeau_height * 0.7)
 
-        # Calculate logo position (centered)
-        logo_left = int((slide_width - logo_max_width) / 2)
-        logo_top = int((top_bandeau_height - logo_max_height) / 2)
-
-        slide.shapes.add_picture(
+        # Insert logo at top-left with margin
+        pic = slide.shapes.add_picture(
             str(logo_path),
-            logo_left,
-            logo_top,
-            width=logo_max_width
+            logo_margin,
+            logo_margin,
+            height=logo_max_height
         )
     else:
-        # Add "DELAGRAVE" text in white bold centered in top bandeau
+        # Fallback: "DELAGRAVE" text at top-left in bandeau
         text_box = slide.shapes.add_textbox(
-            0,
+            int(slide_width * 0.05),
             int(top_bandeau_height * 0.25),
-            slide_width,
+            int(slide_width * 0.5),
             int(top_bandeau_height * 0.5)
         )
         text_frame = text_box.text_frame
         text_frame.text = "DELAGRAVE"
 
         paragraph = text_frame.paragraphs[0]
-        paragraph.alignment = PP_ALIGN.CENTER
+        paragraph.alignment = PP_ALIGN.LEFT
         paragraph.font.size = Pt(28)
         paragraph.font.bold = True
         paragraph.font.color.rgb = RGBColor(255, 255, 255)
@@ -282,15 +279,19 @@ def add_toc_page(prs: Presentation, toc_entries: List[Dict[str, Any]]) -> None:
     # Content area
     content_top = int(slide_height * 0.15)
     content_height = int(slide_height * 0.75)
+    content_width = int(slide_width * 0.8)
     content_box = slide.shapes.add_textbox(
         int(slide_width * 0.1),
         content_top,
-        int(slide_width * 0.8),
+        content_width,
         content_height
     )
 
     content_frame = content_box.text_frame
     content_frame.word_wrap = True
+
+    # Right tab stop position for page number alignment
+    tab_pos_emu = content_width
 
     # Build TOC content
     first_paragraph = True
@@ -314,36 +315,65 @@ def add_toc_page(prs: Presentation, toc_entries: List[Dict[str, Any]]) -> None:
         p.font.color.rgb = DELAGRAVE_BLUE
         p.space_after = Pt(6)
 
-        # Products (code + truncated title ... page number)
+        # Products (code + truncated title, page number right-aligned)
         for product in products:
             p = content_frame.add_paragraph()
+
+            # Add right tab stop for page number alignment
+            pPr = p._p.get_or_add_pPr()
+            tabLst = OxmlElement('a:tabLst')
+            tab = OxmlElement('a:tab')
+            tab.set('pos', str(tab_pos_emu))
+            tab.set('algn', 'r')
+            tabLst.append(tab)
+            pPr.append(tabLst)
 
             # Truncate title if too long
             titre = product['titre']
             if len(titre) > 50:
                 titre = titre[:47] + '...'
 
-            # Build line: "CODE - Titre ... Page"
             code = product['code']
             page_num = product['page_number']
 
-            # Product code in regular font
+            # Product text + tab
             run1 = p.add_run()
-            run1.text = f"  {code} - {titre}"
+            run1.text = f"  {code} - {titre}\t"
             run1.font.size = Pt(11)
 
-            # Add spacing dots
+            # Page number (right-aligned via tab stop)
             run2 = p.add_run()
-            run2.text = " "
+            run2.text = str(page_num)
             run2.font.size = Pt(11)
-
-            # Page number right-aligned
-            run3 = p.add_run()
-            run3.text = f" {page_num}"
-            run3.font.size = Pt(11)
-            run3.font.bold = True
+            run2.font.bold = True
 
             p.space_after = Pt(3)
+
+
+def add_page_numbers(prs: Presentation) -> None:
+    """
+    Add page numbers to all slides in the presentation.
+
+    Adds a small text box at bottom-right of each slide with "P. X" format.
+    """
+    slide_width = prs.slide_width
+    slide_height = prs.slide_height
+
+    box_width = Cm(2)
+    box_height = Cm(0.7)
+    left = slide_width - box_width - Cm(0.8)
+    top = slide_height - box_height - Cm(0.3)
+
+    for i, slide in enumerate(prs.slides):
+        page_num = i + 1
+        txBox = slide.shapes.add_textbox(left, top, box_width, box_height)
+        tf = txBox.text_frame
+        tf.word_wrap = False
+        p = tf.paragraphs[0]
+        p.text = f"P. {page_num}"
+        p.alignment = PP_ALIGN.RIGHT
+        p.font.size = Pt(8)
+        p.font.color.rgb = RGBColor(100, 100, 100)
 
 
 def assemble_document(
@@ -455,6 +485,9 @@ def assemble_document(
             # Populate slide
             _populate_slide(slide, product, family)
             _insert_images(slide, product, project_root)
+
+    # Add page numbers to all slides
+    add_page_numbers(prs)
 
     # Return assembly statistics
     return {

@@ -516,7 +516,7 @@ def generate_presentation(
         devis_info=devis_info,
         references_dir=references_dir,
         project_root=project_root,
-        logo_path=None  # No logo file available yet
+        logo_path=project_root / 'Delagrave' / 'images' / 'logo_delagrave_emsm.png'
     )
 
     # Generate coating slides (add at end of document)
