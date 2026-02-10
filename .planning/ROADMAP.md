@@ -60,11 +60,11 @@ Plans:
   2. Chaque reference extraite est automatiquement associee a sa famille produit (Paillasse, Sorbonne, Meuble, etc.)
   3. Les references absentes des fichiers MD sont clairement signalees a l'utilisateur avec un rapport d'erreur
   4. Les produits lies a un revetement (paillasses GE/GR, sorbonnes autoportantes) sont detectes et le revetement associe est identifie dans le resultat
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: Parsing PDF et extraction de references
-- [ ] 03-02: Association familles et detection revetements
+- [ ] 03-01-PLAN.md -- Parsing PDF et extraction de references produit avec quantites
+- [ ] 03-02-PLAN.md -- Association familles, detection revetements et integration MCP complete
 
 ### Phase 4: Generation PowerPoint
 **Goal**: Les fiches techniques individuelles sont generees correctement dans des slides PowerPoint avec le bon layout, les bonnes donnees et les bonnes images
