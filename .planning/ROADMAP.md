@@ -45,11 +45,11 @@ Plans:
   2. Un serveur MCP de references produit demarre et permet de consulter/gerer les donnees MD
   3. Un serveur MCP de generation PowerPoint demarre et peut recevoir des instructions de generation
   4. Les commandes `/gendoc-*` sont disponibles dans Claude Code CLI et declenchent les bons serveurs MCP
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: Serveurs MCP squelettes et configuration
-- [ ] 02-02: Enregistrement des commandes CLI skills
+- [ ] 02-01-PLAN.md -- Serveur MCP unique avec 6 outils (references, devis stub, generation stub) et configuration .mcp.json
+- [ ] 02-02-PLAN.md -- Enregistrement des 4 commandes /gendoc-* comme skills Claude Code
 
 ### Phase 3: Analyse de Devis
 **Goal**: Un devis PDF soumis est parse et produit une liste structuree de references avec familles, quantites et revetements detectes
