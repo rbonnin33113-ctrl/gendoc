@@ -80,6 +80,22 @@ VBA_TO_PLACEHOLDER = {
         2: 15,  # Reference
         3: 16,  # page
     },
+    'tables-en': {
+        1: 13,  # TEXTE
+        2: 0,   # TITRE
+        3: 15,  # REF
+        4: 16,  # page
+    },
+    'elec-sorb': {
+        1: 0,   # TITRE
+        2: 15,  # Reference
+        3: 16,  # page
+    },
+    'complements': {
+        1: 0,   # TITRE
+        2: 15,  # Reference
+        3: 16,  # page
+    },
 }
 
 
