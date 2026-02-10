@@ -3,7 +3,7 @@ name = "gendoc-delagrave"
 version = "0.1.0"
 description = "Generateur de fiches techniques Delagrave via MCP"
 requires-python = ">=3.10"
-dependencies = ["openpyxl>=3.1.0", "fastmcp>=2.0.0", "pdfplumber>=0.11.0", "python-pptx>=1.0.0"]
+dependencies = ["openpyxl>=3.1.0", "fastmcp>=2.0.0", "pdfplumber>=0.11.0", "python-pptx>=1.0.0", "pytest>=7.0.0"]
 
 [project.scripts]
 gendoc-extract = "gendoc.extractors.excel_extractor:main"
@@ -14,3 +14,8 @@ gendoc-mcp = "gendoc.mcp.server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
