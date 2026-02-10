@@ -6,16 +6,15 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-**Current focus:** Phase 8 — Suite de Tests Automatises
+**Current focus:** v1.1 shipped — planning next milestone
 
 ## Current Position
 
-Phase: 8 of 8 (Suite de Tests Automatises)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-02-10 — Phase 8 plan 2 complete (34 tests passing, E2E + unit tests)
+Milestone: v1.1 Qualite et Couverture Familles — SHIPPED 2026-02-10
+Status: Milestone complete, archived
+Last activity: 2026-02-10 — v1.1 milestone archived
 
-Progress: [████████████] 100% (8 of 8 phases complete)
+Progress: v1.0 + v1.1 complete (8 phases, 16 plans)
 
 ## Performance Metrics
 
@@ -78,6 +77,6 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: v1.1 milestone COMPLETE — Phase 8 plan 2 complete (34 tests passing)
+Stopped at: v1.1 milestone archived
 Resume file: None
-Next step: v1.1 production-ready — all 8 families validated, comprehensive test suite
+Next step: /gsd:new-milestone to plan v2
