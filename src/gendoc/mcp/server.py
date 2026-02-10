@@ -224,7 +224,7 @@ async def preview_generation(analysis_result: dict) -> str:
 
 
 @mcp.tool()
-async def generate_slides(product_codes: list[str], output_path: str, mode: str = "FTI", devis_info: dict = None) -> str:
+async def generate_slides(product_codes: list[str], output_path: str, mode: str = "FTI", devis_info: dict = None, custom_products: str = "[]") -> str:
     """
     Generate a PowerPoint presentation with product slides.
 
@@ -233,6 +233,7 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
         output_path: Path for the output PowerPoint file
         mode: Slide generation mode ("FTI" or other - default "FTI")
         devis_info: Optional dict with devis header info: 'numero_devis', 'date', 'client', 'titre_affaire'
+        custom_products: JSON string of custom product dicts (for SP articles)
 
     Returns:
         JSON string with generation results: slides_generated, total_pages, revetements_added, skipped, output_path.
@@ -254,6 +255,12 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
         if not TEMPLATE_PATH.exists():
             return json.dumps({"error": f"Template PowerPoint non trouve: {TEMPLATE_PATH}"}, ensure_ascii=False)
 
+        # Parse custom_products JSON
+        try:
+            custom_products_list = json.loads(custom_products)
+        except json.JSONDecodeError:
+            custom_products_list = []
+
         # Call the generator
         result = run_generate_presentation(
             product_codes=product_codes,
@@ -262,7 +269,8 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
             template_path=TEMPLATE_PATH,
             project_root=PROJECT_ROOT,
             mode=mode,
-            devis_info=devis_info
+            devis_info=devis_info,
+            custom_products=custom_products_list
         )
 
         # Add output path to result

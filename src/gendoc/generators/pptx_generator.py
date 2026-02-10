@@ -424,7 +424,8 @@ def generate_presentation(
     project_root: Path,
     mode: str = "FTI",
     revetement_codes: Optional[List[str]] = None,
-    devis_info: Optional[Dict[str, str]] = None
+    devis_info: Optional[Dict[str, str]] = None,
+    custom_products: Optional[List[Dict]] = None
 ) -> Dict[str, Any]:
     """
     Generate a PowerPoint presentation with product tech sheets.
@@ -445,6 +446,7 @@ def generate_presentation(
         mode: Generation mode (default "FTI")
         revetement_codes: Optional list of coating codes to add manually
         devis_info: Optional dict with 'numero_devis', 'date', 'client', 'titre_affaire'
+        custom_products: Optional list of custom product dicts (for SP articles)
 
     Returns:
         Dictionary with generation results:
@@ -476,6 +478,12 @@ def generate_presentation(
     if revetement_codes:
         coating_codes_set.update(revetement_codes)
 
+    # Build custom products lookup
+    custom_lookup = {}
+    if custom_products:
+        for cp in custom_products:
+            custom_lookup[cp['code'].upper()] = cp
+
     # First pass: group products by family
     product_groups = OrderedDict()
     for family in FAMILY_ORDER:
@@ -483,6 +491,15 @@ def generate_presentation(
 
     # Process each product code
     for code in product_codes:
+        # Check custom products first (SP articles)
+        if code.upper() in custom_lookup:
+            product = custom_lookup[code.upper()]
+            family = product.get('famille', '').lower()
+            if family not in product_groups:
+                product_groups[family] = []
+            product_groups[family].append(product)
+            continue
+
         # Look up all pages for this product (multi-page support)
         pages = find_product_pages(code, references_dir)
 
