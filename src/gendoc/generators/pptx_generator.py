@@ -15,6 +15,7 @@ import zipfile
 import shutil
 from pptx import Presentation
 from pptx.util import Emu
+from pptx.enum.text import MSO_AUTO_SIZE
 
 from gendoc.parsers.md_parser import find_product, find_product_pages
 
@@ -151,6 +152,42 @@ def load_template(template_path: Path) -> Presentation:
         return prs
 
 
+def _split_revetement_text(full_text: str) -> Dict[str, str]:
+    """
+    Split revetement full text into TEXTE, MISE_EN_OEUVRE, and FINITION sections.
+
+    Revetement texts consistently follow this structure:
+    - Block 1 (before first blank line): Product description
+    - Block 2 (after first blank line): Manufacturing/installation method
+    - Block 3+ (after second blank line): Finish, colors, options
+
+    Args:
+        full_text: Full product text with newline separators
+
+    Returns:
+        Dict with keys 'texte', 'mise_en_oeuvre', 'finition'
+    """
+    blocks = [b.strip() for b in full_text.split('\n\n') if b.strip()]
+
+    result = {
+        'texte': '',
+        'mise_en_oeuvre': '',
+        'finition': ''
+    }
+
+    if len(blocks) >= 3:
+        result['texte'] = blocks[0]
+        result['mise_en_oeuvre'] = blocks[1]
+        result['finition'] = '\n\n'.join(blocks[2:])
+    elif len(blocks) == 2:
+        result['texte'] = blocks[0]
+        result['mise_en_oeuvre'] = blocks[1]
+    elif len(blocks) == 1:
+        result['texte'] = blocks[0]
+
+    return result
+
+
 def _populate_slide(slide: Any, product: Dict[str, Any], family: str) -> None:
     """
     Populate slide text placeholders with product data.
@@ -167,6 +204,13 @@ def _populate_slide(slide: Any, product: Dict[str, Any], family: str) -> None:
     placeholder_data[0] = product.get('titre', '')
     placeholder_data[13] = product.get('texte', '')
     placeholder_data[15] = product.get('ref', '')
+
+    # For revetement, split texte into TEXTE, MISE_EN_OEUVRE, FINITION
+    if family == 'revetement' and product.get('texte', ''):
+        text_parts = _split_revetement_text(product['texte'])
+        placeholder_data[13] = text_parts['texte']          # TEXTE
+        placeholder_data[16] = text_parts['mise_en_oeuvre']  # MISE_EN_OEUVRE
+        placeholder_data[17] = text_parts['finition']        # FINITION
 
     # Map dimensions to placeholders using VBA_TO_PLACEHOLDER
     vba_mapping = VBA_TO_PLACEHOLDER.get(family, {})
@@ -197,15 +241,32 @@ def _populate_slide(slide: Any, product: Dict[str, Any], family: str) -> None:
 
         placeholder_data[placeholder_idx] = text_value
 
-    # Populate placeholders
+    # Collect all placeholder indices used by this family
+    family_placeholder_indices = set(vba_mapping.values())
+    family_placeholder_indices.update([0, 13, 15])  # standard fields: titre, texte, ref
+
+    # Populate placeholders (and remove empty ones to hide default template prompt)
+    placeholders_to_remove = []
     for placeholder in slide.placeholders:
         try:
             idx = placeholder.placeholder_format.idx
             if idx in placeholder_data and placeholder_data[idx]:
-                placeholder.text_frame.text = placeholder_data[idx]
+                tf = placeholder.text_frame
+                tf.text = placeholder_data[idx]
+                # Enable auto-shrink so text fits within the placeholder bounds
+                tf.word_wrap = True
+                tf.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
+            elif idx in family_placeholder_indices:
+                # Mark for removal to hide "Cliquez pour ajouter du texte" prompt
+                placeholders_to_remove.append(placeholder)
         except (AttributeError, KeyError):
             # Some shapes may not have placeholder_format or idx
             continue
+
+    # Remove empty placeholders (done after iteration to avoid modifying collection)
+    for placeholder in placeholders_to_remove:
+        sp = placeholder._element
+        sp.getparent().remove(sp)
 
 
 def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> int:
