@@ -9,9 +9,9 @@ Requirements for quality and family coverage milestone.
 
 ### Tests
 
-- [ ] **TEST-01**: L'utilisateur peut executer une suite de tests automatises qui genere une fiche par famille et verifie que le fichier PowerPoint est valide
-- [ ] **TEST-02**: Chaque famille (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements) a au moins un test de generation qui verifie le nombre de slides et placeholders remplis
-- [ ] **TEST-03**: Un test du pipeline complet (analyze -> preview -> generate) valide le flux de bout en bout avec le devis PDF test
+- [x] **TEST-01**: L'utilisateur peut executer une suite de tests automatises qui genere une fiche par famille et verifie que le fichier PowerPoint est valide
+- [x] **TEST-02**: Chaque famille (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements) a au moins un test de generation qui verifie le nombre de slides et placeholders remplis
+- [x] **TEST-03**: Un test du pipeline complet (analyze -> preview -> generate) valide le flux de bout en bout avec le devis PDF test
 
 ### Couverture Familles
 
@@ -62,9 +62,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FAM-08 | Phase 7 | Done |
 | TXT-01 | Phase 7 | Done |
 | TXT-02 | Phase 7 | Done |
-| TEST-01 | Phase 8 | Pending |
-| TEST-02 | Phase 8 | Pending |
-| TEST-03 | Phase 8 | Pending |
+| TEST-01 | Phase 8 | Done |
+| TEST-02 | Phase 8 | Done |
+| TEST-03 | Phase 8 | Done |
 
 **Coverage:**
 - v1.1 requirements: 13 total

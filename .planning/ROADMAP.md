@@ -3,7 +3,7 @@
 ## Milestones
 
 - ✅ **v1.0 Systeme MCP** — Phases 1-6 (shipped 2026-02-10)
-- 🚧 **v1.1 Qualite et Couverture Familles** — Phases 7-8 (in progress)
+- ✅ **v1.1 Qualite et Couverture Familles** — Phases 7-8 (shipped 2026-02-10)
 
 ## Phases
 
@@ -19,7 +19,7 @@
 
 </details>
 
-### 🚧 v1.1 Qualite et Couverture Familles (In Progress)
+### ✅ v1.1 Qualite et Couverture Familles (SHIPPED 2026-02-10)
 
 **Milestone Goal:** S'assurer que toutes les familles produit generent des fiches correctes et mettre en place des tests automatises pour prevenir les regressions.
 
@@ -62,8 +62,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 08-01-PLAN.md — Pytest infrastructure + per-family generation tests (TEST-01, TEST-02)
-- [ ] 08-02-PLAN.md — E2E pipeline test + md_parser unit tests + full suite validation (TEST-03)
+- [x] 08-01-PLAN.md — Pytest infrastructure + per-family generation tests (TEST-01, TEST-02)
+- [x] 08-02-PLAN.md — E2E pipeline test + md_parser unit tests + full suite validation (TEST-03)
 
 ## Progress
 
@@ -76,4 +76,4 @@ Plans:
 | 5. Assemblage Document | v1.0 | 1/1 | Complete | 2026-02-10 |
 | 6. Integration Pipeline | v1.0 | 1/1 | Complete | 2026-02-10 |
 | 7. Verification et Correction des Familles | v1.1 | 3/3 | Complete | 2026-02-10 |
-| 8. Suite de Tests Automatises | v1.1 | 0/2 | Not started | - |
+| 8. Suite de Tests Automatises | v1.1 | 2/2 | Complete | 2026-02-10 |
