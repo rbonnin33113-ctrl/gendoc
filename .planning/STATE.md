@@ -6,23 +6,23 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-**Current focus:** v1.2 — Outil de Selection SP
+**Current focus:** Phase 9 - Detection et Extraction SP
 
 ## Current Position
 
-Phase: Not started (defining requirements)
-Plan: —
-Status: Defining requirements
-Last activity: 2026-02-10 — Milestone v1.2 started
+Phase: 9 of 11 (Detection et Extraction SP)
+Plan: 0 of TBD in current phase
+Status: Ready to plan
+Last activity: 2026-02-10 — v1.2 roadmap created (phases 9-11)
 
-Progress: v1.0 + v1.1 complete (8 phases, 16 plans)
+Progress: [████████░░] 73% (8/11 phases complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 16
-- Average duration: ~8 minutes per plan (v1.1 faster iteration)
-- Total execution time: v1.0 ~20h (2 days), v1.1 ~4h (all 16 plans)
+- Total plans completed: 10
+- Average duration: ~1.6 hours per plan
+- Total execution time: v1.0 ~20h (2 days), v1.1 ~4h (same day)
 
 **By Phase:**
 
@@ -34,17 +34,16 @@ Progress: v1.0 + v1.1 complete (8 phases, 16 plans)
 | 4. Generation PowerPoint | 2 | ~4h | ~2h |
 | 5. Assemblage Document | 1 | ~2h | ~2h |
 | 6. Integration Pipeline | 1 | ~2h | ~2h |
-| 7. Verification Familles | 4 | ~9m | ~2m |
-| 8. Suite Tests Automatises | 2 | 4m 5s | 2m 2s |
+| 7. Verification Familles | 3 | ~9m | ~3m |
+| 8. Suite Tests Automatises | 2 | ~4m | ~2m |
 
 **Recent Trend:**
-- Last plan (08-02): 1m 35s (E2E pipeline + md_parser unit tests)
-- Plans 07-01 through 08-02: All under 3 minutes (quality improvements)
-- v1.1 plans consistently fast — focused scope and mature codebase
-- Phase 8 complete: 34 tests covering all 8 families + E2E workflow
-- Trend: Sub-2-minute execution on focused test additions
+- Last 5 plans (v1.1): All under 3 minutes (quality improvements)
+- v1.0 plans: ~2h average (feature development)
+- v1.1 plans: Sub-3-minute execution (focused scope + mature codebase)
+- Trend: Stable, with shorter durations for quality/test work
 
-*Updated 2026-02-10 after 08-02 completion*
+*Updated 2026-02-10 after v1.2 roadmap creation*
 
 ## Accumulated Context
 
@@ -53,15 +52,10 @@ Progress: v1.0 + v1.1 complete (8 phases, 16 plans)
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- Phase 4: Split texte revetement en 3 zones (TEXTE/MEO/FINITION) — texte debordait du cadre unique
-- Phase 4: Conversion .potm via zipfile — python-pptx ne lit pas les .potm natifs
-- Phase 5: Document complet (pas fiches isolees) — l'utilisateur veut un dossier pret a l'emploi
-- Phase 7: VBA_TO_PLACEHOLDER must include all 8 families — tables-en/elec-sorb/complements were missing
-- Phase 7: "Aucune" is sentinel value (not content) — filter it from texte placeholder
-- Phase 7: Visual verification essential complement to programmatic tests — code verifies structure, humans verify quality
-- Phase 7: SP codes detected by prefix before inconnus fallback — ensures full devis coverage
-- Phase 7: Custom products use deep copy + field override — flexible customization pattern
-- Phase 7: Custom lookup before catalog lookup — priority to custom products
+- Phase 7: Custom products via deep copy + field override for SP articles
+- Phase 7: SP codes detected by prefix before inconnus fallback
+- Phase 7: Custom lookup before catalog lookup (priority to custom products)
+- Phase 8: Pytest parametrize by family for comprehensive testing
 
 ### Pending Todos
 
@@ -69,15 +63,11 @@ None yet.
 
 ### Blockers/Concerns
 
-- Phase 7: VBA mappings complete for all 8 families (RESOLVED in 07-01)
-- Phase 7: Visual verification complete - all 8 families approved (RESOLVED in 07-02)
-- Phase 7: Generator is production-ready for all 8 families (RESOLVED)
-- Phase 8: Test infrastructure established (RESOLVED in 08-01) — pytest + 17 tests covering all 8 families
-- Phase 8: E2E + unit test coverage complete (RESOLVED in 08-02) — 34 tests total, all passing
+None yet.
 
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: v1.2 milestone started — defining requirements
+Stopped at: v1.2 roadmap created (3 phases: 9-11), ready to plan Phase 9
 Resume file: None
-Next step: Define requirements and create roadmap for v1.2
+Next step: `/gsd:plan-phase 9`

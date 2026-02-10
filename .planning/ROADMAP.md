@@ -4,6 +4,7 @@
 
 - ✅ **v1.0 Systeme MCP** — Phases 1-6 (shipped 2026-02-10)
 - ✅ **v1.1 Qualite et Couverture Familles** — Phases 7-8 (shipped 2026-02-10)
+- 🚧 **v1.2 Outil de Selection SP** — Phases 9-11 (in progress)
 
 ## Phases
 
@@ -27,6 +28,50 @@
 
 </details>
 
+### 🚧 v1.2 Outil de Selection SP (In Progress)
+
+**Milestone Goal:** Permettre a l'utilisateur de visualiser, selectionner et editer les articles speciaux (SP) d'un devis via une page HTML interactive, avec extraction automatique des designations depuis le PDF.
+
+#### Phase 9: Detection et Extraction SP
+**Goal**: Les articles SP sont correctement detectes et leurs designations sont extraites du PDF
+**Depends on**: Phase 8
+**Requirements**: BUG-01, EXT-01, EXT-02
+**Success Criteria** (what must be TRUE):
+  1. Les codes SP (SPMOB, SPPAIL, SPTABLEEN, SPUSE) sont classes dans `speciaux` (jamais dans `inconnus`)
+  2. Chaque article SP extrait contient son code, sa famille et la designation complete extraite du PDF
+  3. La designation extraite correspond au texte descriptif complet de l'article dans le devis (ex: "Meuble bas mobile - Dim. 600x500x724mm - Melamine Blanc")
+**Plans**: TBD
+
+Plans:
+- [ ] 09-01: TBD
+
+#### Phase 10: Interface HTML Interactive
+**Goal**: L'utilisateur peut visualiser, selectionner et editer les articles SP via une page HTML
+**Depends on**: Phase 9
+**Requirements**: UI-01, UI-02, UI-03, UI-04
+**Success Criteria** (what must be TRUE):
+  1. La page HTML affiche tous les articles SP avec leurs designations pre-remplies
+  2. L'utilisateur peut rechercher et selectionner un article du catalogue comme point de depart pour chaque SP
+  3. L'utilisateur peut modifier tous les champs (titre, texte, dimensions, images, famille) pour chaque article selectionne
+  4. L'utilisateur peut exporter un fichier JSON contenant tous les articles edites avec leur structure complete
+**Plans**: TBD
+
+Plans:
+- [ ] 10-01: TBD
+
+#### Phase 11: Integration MCP File-Based
+**Goal**: Le workflow complet analyse-HTML-generation fonctionne de bout en bout
+**Depends on**: Phase 10
+**Requirements**: MCP-01, MCP-02
+**Success Criteria** (what must be TRUE):
+  1. Un outil MCP charge le fichier JSON exporte par le HTML et retourne des custom products prets pour la generation
+  2. Le workflow complet fonctionne: analyze_devis detecte les SP → open_sp_selector genere le HTML → utilisateur edite → load_sp_selection charge le JSON → generate_slides produit le PowerPoint avec les SP edites
+  3. Les articles SP edites apparaissent correctement dans le PowerPoint final avec tous les champs customises
+**Plans**: TBD
+
+Plans:
+- [ ] 11-01: TBD
+
 ## Progress
 
 | Phase | Milestone | Plans Complete | Status | Completed |
@@ -39,3 +84,6 @@
 | 6. Integration Pipeline | v1.0 | 1/1 | Complete | 2026-02-10 |
 | 7. Verification et Correction des Familles | v1.1 | 3/3 | Complete | 2026-02-10 |
 | 8. Suite de Tests Automatises | v1.1 | 2/2 | Complete | 2026-02-10 |
+| 9. Detection et Extraction SP | v1.2 | 0/TBD | Not started | - |
+| 10. Interface HTML Interactive | v1.2 | 0/TBD | Not started | - |
+| 11. Integration MCP File-Based | v1.2 | 0/TBD | Not started | - |

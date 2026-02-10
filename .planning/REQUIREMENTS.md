@@ -52,21 +52,26 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUG-01 | TBD | Pending |
-| EXT-01 | TBD | Pending |
-| EXT-02 | TBD | Pending |
-| UI-01 | TBD | Pending |
-| UI-02 | TBD | Pending |
-| UI-03 | TBD | Pending |
-| UI-04 | TBD | Pending |
-| MCP-01 | TBD | Pending |
-| MCP-02 | TBD | Pending |
+| BUG-01 | Phase 9 | Pending |
+| EXT-01 | Phase 9 | Pending |
+| EXT-02 | Phase 9 | Pending |
+| UI-01 | Phase 10 | Pending |
+| UI-02 | Phase 10 | Pending |
+| UI-03 | Phase 10 | Pending |
+| UI-04 | Phase 10 | Pending |
+| MCP-01 | Phase 11 | Pending |
+| MCP-02 | Phase 11 | Pending |
 
 **Coverage:**
 - v1.2 requirements: 9 total
-- Mapped to phases: 0
-- Unmapped: 9
+- Mapped to phases: 9
+- Unmapped: 0
+
+**Phase Mapping:**
+- Phase 9 (Detection et Extraction SP): 3 requirements (BUG-01, EXT-01, EXT-02)
+- Phase 10 (Interface HTML Interactive): 4 requirements (UI-01, UI-02, UI-03, UI-04)
+- Phase 11 (Integration MCP File-Based): 2 requirements (MCP-01, MCP-02)
 
 ---
 *Requirements defined: 2026-02-10*
-*Last updated: 2026-02-10 after initial definition*
+*Last updated: 2026-02-10 after v1.2 roadmap creation*
