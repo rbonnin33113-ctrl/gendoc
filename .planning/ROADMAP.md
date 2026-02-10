@@ -13,7 +13,7 @@ Ce roadmap transforme un systeme Excel+VBA en un pipeline MCP automatise : d'abo
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Fondation Donnees** - Migration Excel vers MD et organisation des images locales ✓ (2026-02-09)
-- [ ] **Phase 2: Infrastructure MCP** - Squelettes des serveurs MCP et enregistrement des commandes CLI
+- [x] **Phase 2: Infrastructure MCP** - Squelettes des serveurs MCP et enregistrement des commandes CLI ✓ (2026-02-10)
 - [ ] **Phase 3: Analyse de Devis** - Parsing PDF, extraction de references, detection de familles et revetements
 - [ ] **Phase 4: Generation PowerPoint** - Creation de slides avec layouts corrects, placeholders et images
 - [ ] **Phase 5: Assemblage Document** - Pages de garde, couvertures de chapitres, sommaire et modes de generation
@@ -48,8 +48,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md -- Serveur MCP unique avec 6 outils (references, devis stub, generation stub) et configuration .mcp.json
-- [ ] 02-02-PLAN.md -- Enregistrement des 4 commandes /gendoc-* comme skills Claude Code
+- [x] 02-01-PLAN.md -- Serveur MCP unique avec 6 outils (references, devis stub, generation stub) et configuration .mcp.json ✓
+- [x] 02-02-PLAN.md -- Enregistrement des 4 commandes /gendoc-* comme skills Claude Code ✓
 
 ### Phase 3: Analyse de Devis
 **Goal**: Un devis PDF soumis est parse et produit une liste structuree de references avec familles, quantites et revetements detectes
@@ -117,7 +117,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fondation Donnees | 2/2 | Complete ✓ | 2026-02-09 |
-| 2. Infrastructure MCP | 0/2 | Not started | - |
+| 2. Infrastructure MCP | 2/2 | Complete ✓ | 2026-02-10 |
 | 3. Analyse de Devis | 0/2 | Not started | - |
 | 4. Generation PowerPoint | 0/2 | Not started | - |
 | 5. Assemblage Document | 0/2 | Not started | - |
