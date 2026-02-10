@@ -10,30 +10,34 @@ See: .planning/PROJECT.md (updated 2026-02-09)
 ## Current Position
 
 Phase: 2 of 6 (Infrastructure MCP)
-Plan: 0 of 2 in current phase
-Status: Ready to plan
-Last activity: 2026-02-09 -- Phase 1 verified (15/15 must-haves, 100%), ready for Phase 2
+Plan: 1 of 2 in current phase
+Status: Executing
+Last activity: 2026-02-10 -- Completed 02-01-PLAN.md (MCP Server Infrastructure)
 
-Progress: [####......] 17%
+Progress: [#####.....] 25%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 6.7 minutes
-- Total execution time: 0.22 hours
+- Total plans completed: 3
+- Average duration: 5.6 minutes
+- Total execution time: 0.28 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-fondation-donnees | 2 | 13.4 min | 6.7 min |
+| 02-infrastructure-mcp | 1 | 2.9 min | 2.9 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (6.8 min), 01-02 (6.6 min)
-- Trend: Consistent velocity
+- Last 5 plans: 01-01 (6.8 min), 01-02 (6.6 min), 02-01 (2.9 min)
+- Trend: Improving velocity
 
 *Updated after each plan completion*
+
+**Latest Execution:**
+| Phase 02-infrastructure-mcp P01 | 2.9 min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -53,6 +57,8 @@ Recent decisions affecting current work:
 - **NEW:** Image paths updated in-place with new "Chemin Original" column
 - **NEW:** Product code regex supports dots, slashes, plus signs, spaces, lowercase
 - **NEW:** Created .missing placeholders for 268 inaccessible network images
+- [Phase 02-01]: FastMCP uses 'instructions' parameter not 'description' for server description
+- [Phase 02-01]: MCP server uses absolute path resolution for REFERENCES_DIR to work from any directory
 
 ### Pending Todos
 
@@ -64,6 +70,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-09
-Stopped at: Completed 01-02-PLAN.md - Phase 1 (Fondation Donnees) complete
+Last session: 2026-02-10
+Stopped at: Completed 02-01-PLAN.md - MCP Server Infrastructure
 Resume file: None
