@@ -4,7 +4,7 @@ MCP server for gendoc - exposes all gendoc tools via Model Context Protocol.
 This server provides Claude Code with direct access to:
 - Reference lookup and search
 - Devis PDF analysis (extract references, families, coatings)
-- PowerPoint generation (stub - Phase 4)
+- PowerPoint generation (fully functional)
 - Reference management (stub - future)
 """
 
@@ -19,10 +19,13 @@ from gendoc.parsers.md_parser import (
     find_products_by_family
 )
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
+from gendoc.generators.pptx_generator import generate_presentation as run_generate_presentation
 
 # Resolve references directory relative to project root
 # This ensures the path works regardless of where the MCP server is started from
-REFERENCES_DIR = Path(__file__).resolve().parent.parent.parent.parent / "Delagrave" / "references"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+REFERENCES_DIR = PROJECT_ROOT / "Delagrave" / "references"
+TEMPLATE_PATH = PROJECT_ROOT / "Delagrave" / "Modele fiches - Powerpoint" / "Modèle fiche technique vide - Ind J.potm"
 
 # Create FastMCP server instance
 mcp = FastMCP("gendoc", instructions="Delagrave product reference and documentation generation tools")
@@ -142,12 +145,40 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
         mode: Slide generation mode ("FTI" or other - default "FTI")
 
     Returns:
-        Stub acknowledgement message (full implementation in Phase 4).
+        JSON string with generation results: slides_generated, revetements_added, skipped, output_path.
 
     Example:
-        generate_slides(["PM-D-H-75", "PA-D-60"], "output.pptx") -> "Generate slides tool registered..."
+        generate_slides(["PM-D-H-75", "PA-D-60"], "output.pptx") -> {"slides_generated": 2, "revetements_added": 0, ...}
     """
-    return f"Generate slides tool registered. Full implementation in Phase 4. Received {len(product_codes)} codes, output: {output_path}, mode: {mode}"
+    try:
+        # Resolve output path - if relative, make absolute from project root
+        output = Path(output_path)
+        if not output.is_absolute():
+            output = PROJECT_ROOT / output
+
+        # Create output directory if it doesn't exist
+        output.parent.mkdir(parents=True, exist_ok=True)
+
+        # Validate template exists
+        if not TEMPLATE_PATH.exists():
+            return json.dumps({"error": f"Template PowerPoint non trouve: {TEMPLATE_PATH}"}, ensure_ascii=False)
+
+        # Call the generator
+        result = run_generate_presentation(
+            product_codes=product_codes,
+            output_path=output,
+            references_dir=REFERENCES_DIR,
+            template_path=TEMPLATE_PATH,
+            project_root=PROJECT_ROOT,
+            mode=mode
+        )
+
+        # Add output path to result
+        result['output_path'] = str(output)
+        return json.dumps(result, ensure_ascii=False, indent=2)
+
+    except Exception as e:
+        return json.dumps({"error": f"Erreur de generation: {str(e)}"}, ensure_ascii=False)
 
 
 @mcp.tool()
