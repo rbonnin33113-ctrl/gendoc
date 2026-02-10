@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Fondation Donnees** - Migration Excel vers MD et organisation des images locales ✓ (2026-02-09)
 - [x] **Phase 2: Infrastructure MCP** - Squelettes des serveurs MCP et enregistrement des commandes CLI ✓ (2026-02-10)
 - [x] **Phase 3: Analyse de Devis** - Parsing PDF, extraction de references, detection de familles et revetements ✓ (2026-02-10)
-- [ ] **Phase 4: Generation PowerPoint** - Creation de slides avec layouts corrects, placeholders et images
+- [x] **Phase 4: Generation PowerPoint** - Creation de slides avec layouts corrects, placeholders et images ✓ (2026-02-10)
 - [ ] **Phase 5: Assemblage Document** - Pages de garde, couvertures de chapitres, sommaire et modes de generation
 - [ ] **Phase 6: Integration Pipeline** - Commande pipeline complete et previsualisation
 
@@ -79,8 +79,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md -- Module pptx_generator.py: template loading, layouts par famille, mapping VBA-to-placeholder, images, revetements
-- [ ] 04-02-PLAN.md -- Integration MCP (generate_slides fonctionnel) et mise a jour skill /gendoc-generate
+- [x] 04-01-PLAN.md -- Module pptx_generator.py: template loading, layouts par famille, mapping VBA-to-placeholder, images, revetements ✓
+- [x] 04-02-PLAN.md -- Integration MCP (generate_slides fonctionnel) et mise a jour skill /gendoc-generate ✓
 
 ### Phase 5: Assemblage Document
 **Goal**: Le document PowerPoint genere est un dossier complet et professionnel avec couverture, chapitres, sommaire et choix de mode
@@ -119,6 +119,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 1. Fondation Donnees | 2/2 | Complete ✓ | 2026-02-09 |
 | 2. Infrastructure MCP | 2/2 | Complete ✓ | 2026-02-10 |
 | 3. Analyse de Devis | 2/2 | Complete ✓ | 2026-02-10 |
-| 4. Generation PowerPoint | 0/2 | Not started | - |
+| 4. Generation PowerPoint | 2/2 | Complete ✓ | 2026-02-10 |
 | 5. Assemblage Document | 0/2 | Not started | - |
 | 6. Integration Pipeline | 0/1 | Not started | - |
