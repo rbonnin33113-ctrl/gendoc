@@ -83,19 +83,18 @@ Plans:
 - [x] 04-02-PLAN.md -- Integration MCP (generate_slides fonctionnel) et mise a jour skill /gendoc-generate ✓
 
 ### Phase 5: Assemblage Document
-**Goal**: Le document PowerPoint genere est un dossier complet et professionnel avec couverture, chapitres, sommaire et choix de mode
+**Goal**: Le document PowerPoint genere est un dossier complet et professionnel avec couverture, chapitres et sommaire
 **Depends on**: Phase 4
-**Requirements**: GEN-06, GEN-07, GEN-08, GEN-09
+**Requirements**: GEN-06, GEN-07, GEN-08 (GEN-09 modes CHI/DOE deferred to future milestone)
 **Success Criteria** (what must be TRUE):
-  1. Le document genere commence par une page de couverture utilisant le layout "Page de garde" du template
-  2. Chaque famille/chapitre est introduite par une page de garde de chapitre
+  1. Le document genere commence par une page de couverture programmatique avec bandeau bleu, logo/texte, titre projet et infos devis
+  2. Chaque famille/chapitre est introduite par une page de separation avec bandeau bleu et nom de famille
   3. Le document inclut un sommaire automatique avec les numeros de page corrects
-  4. L'utilisateur peut choisir le mode de generation (CHI, DOE, FTI) et le document produit reflette ce choix
-**Plans**: TBD
+  4. ~~L'utilisateur peut choisir le mode de generation (CHI, DOE, FTI)~~ DEFERRED — un seul format de sortie pour v1
+**Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: Couverture, chapitres et sommaire
-- [ ] 05-02: Modes de generation CHI/DOE/FTI
+- [ ] 05-01-PLAN.md -- Couverture, chapitres, sommaire et integration document complet
 
 ### Phase 6: Integration Pipeline
 **Goal**: L'utilisateur peut executer le workflow complet en une seule commande, avec previsualisation avant generation
@@ -120,5 +119,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 2. Infrastructure MCP | 2/2 | Complete ✓ | 2026-02-10 |
 | 3. Analyse de Devis | 2/2 | Complete ✓ | 2026-02-10 |
 | 4. Generation PowerPoint | 2/2 | Complete ✓ | 2026-02-10 |
-| 5. Assemblage Document | 0/2 | Not started | - |
+| 5. Assemblage Document | 0/1 | Not started | - |
 | 6. Integration Pipeline | 0/1 | Not started | - |
