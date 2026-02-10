@@ -442,8 +442,12 @@ def generate_presentation(
     from gendoc.generators.document_assembler import assemble_document, FAMILY_ORDER
     from collections import OrderedDict
 
-    # Load template
+    # Load template and remove any pre-existing blank slides
     prs = load_template(template_path)
+    while len(prs.slides) > 0:
+        rId = prs.slides._sldIdLst[0].get('{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id')
+        prs.part.drop_rel(rId)
+        prs.slides._sldIdLst.remove(prs.slides._sldIdLst[0])
 
     skipped = []
     coating_codes_set = set()
