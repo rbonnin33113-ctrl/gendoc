@@ -19,6 +19,14 @@ from gendoc.parsers.md_parser import find_product, parse_family_md, get_all_fami
 # Known coating codes (revêtements) that can appear as suffixes
 REVETEMENT_CODES = {"DA", "GE", "GED", "GR", "IN", "PP", "RP", "RP6", "RPR", "RS", "SP", "ST"}
 
+# Special article prefixes (SP codes) with their family mappings
+SP_PREFIX_MAP = {
+    'SPMOB': 'meubles',
+    'SPPAIL': 'paillasse',
+    'SPTABLEEN': 'tables-en',
+    'SPUSE': 'equipement',
+}
+
 
 def extract_article_codes(pages_text: List[str]) -> List[str]:
     """
@@ -128,6 +136,7 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
         - references: List of product dicts (code, famille, revetement)
         - revetements: List of coating dicts (code, titre)
         - forfaits: List of package code strings
+        - speciaux: List of special article dicts (code, famille, prefix)
         - inconnus: List of unknown code strings
 
     Example:
@@ -138,6 +147,7 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
     references = []
     revetements_detected = set()
     forfaits = []
+    speciaux = []
     inconnus = []
 
     for code in codes:
@@ -210,6 +220,26 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
             forfaits.append(code)
             continue
 
+        # Check if it's a special article (SP prefix)
+        # SP codes: SPMOB, SPPAIL, SPTABLEEN, SPUSE with optional suffix
+        code_upper = code.upper()
+        matched_prefix = None
+        detected_family = None
+
+        for prefix, family in SP_PREFIX_MAP.items():
+            if code_upper.startswith(prefix):
+                matched_prefix = prefix
+                detected_family = family
+                break
+
+        if matched_prefix:
+            speciaux.append({
+                'code': code,
+                'famille': detected_family,
+                'prefix': matched_prefix
+            })
+            continue
+
         # Unknown code
         inconnus.append(code)
 
@@ -241,6 +271,7 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
         'references': references,
         'revetements': revetements,
         'forfaits': forfaits,
+        'speciaux': speciaux,
         'inconnus': inconnus
     }
 
@@ -262,6 +293,7 @@ def analyze_devis(pdf_path: Path, references_dir: Path) -> Dict[str, Any]:
         - references: List of product dicts (code, famille, revetement)
         - revetements: List of coating dicts (code, titre)
         - forfaits: List of package code strings
+        - speciaux: List of special article dicts (code, famille, prefix)
         - inconnus: List of unknown code strings
 
     Raises:
@@ -294,5 +326,6 @@ def analyze_devis(pdf_path: Path, references_dir: Path) -> Dict[str, Any]:
         'references': classification['references'],
         'revetements': classification['revetements'],
         'forfaits': classification['forfaits'],
+        'speciaux': classification['speciaux'],
         'inconnus': classification['inconnus']
     }
