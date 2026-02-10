@@ -274,6 +274,67 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
 
 
 @mcp.tool()
+async def create_custom_product(
+    base_code: str,
+    custom_code: str,
+    overrides: str = "{}"
+) -> str:
+    """
+    Create a custom product by cloning a base product and applying overrides.
+    Used for special articles (SP-prefixed codes) not in the catalog.
+
+    Args:
+        base_code: Code of the standard product to use as template (e.g., "PM-D-H-75")
+        custom_code: The special article code (e.g., "SPPAIL-12345")
+        overrides: JSON string with fields to override. All fields are modifiable:
+                   titre, texte, ref, dimensions, images, metadata_pptx.
+                   Example: {"titre": "Custom title", "texte": "Custom description"}
+
+    Returns:
+        JSON string with the complete custom product data ready for generate_slides.
+    """
+    import copy
+
+    # Look up base product
+    base_product = find_product(base_code, REFERENCES_DIR)
+
+    if not base_product:
+        return json.dumps({
+            "error": f"Base product not found: {base_code}"
+        }, ensure_ascii=False)
+
+    # Deep copy the base product
+    custom_product = copy.deepcopy(base_product)
+
+    # Replace code with custom code
+    custom_product['code'] = custom_code
+
+    # Parse overrides JSON
+    try:
+        overrides_dict = json.loads(overrides)
+    except json.JSONDecodeError as e:
+        return json.dumps({
+            "error": f"Invalid JSON in overrides: {str(e)}"
+        }, ensure_ascii=False)
+
+    # Apply overrides
+    for key, value in overrides_dict.items():
+        if key in custom_product:
+            # For complex fields (lists/dicts), replace entirely or merge
+            if isinstance(custom_product[key], dict) and isinstance(value, dict):
+                # Merge dicts
+                custom_product[key].update(value)
+            else:
+                # Replace directly
+                custom_product[key] = value
+        else:
+            # Add new field
+            custom_product[key] = value
+
+    return json.dumps(custom_product, ensure_ascii=False, indent=2)
+
+
+@mcp.tool()
 async def add_reference(family: str, code: str, ref: str, titre: str, texte: str = "") -> str:
     """
     Add a new product reference to a family.
