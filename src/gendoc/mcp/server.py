@@ -3,9 +3,9 @@ MCP server for gendoc - exposes all gendoc tools via Model Context Protocol.
 
 This server provides Claude Code with direct access to:
 - Reference lookup and search
-- Devis analysis (stub - Phase 3)
+- Devis PDF analysis (extract references, families, coatings)
 - PowerPoint generation (stub - Phase 4)
-- Reference management (stub - Phase 3)
+- Reference management (stub - future)
 """
 
 from pathlib import Path
@@ -18,6 +18,7 @@ from gendoc.parsers.md_parser import (
     search_products,
     find_products_by_family
 )
+from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 
 # Resolve references directory relative to project root
 # This ensures the path works regardless of where the MCP server is started from
@@ -104,18 +105,30 @@ async def search_references(query: str) -> str:
 @mcp.tool()
 async def analyze_devis(pdf_path: str) -> str:
     """
-    Analyze a devis PDF and extract product references.
+    Analyze a devis PDF and extract product references with families and coatings.
 
     Args:
         pdf_path: Path to the devis PDF file
 
     Returns:
-        Stub acknowledgement message (full implementation in Phase 3).
-
-    Example:
-        analyze_devis("devis.pdf") -> "Analyze devis tool registered..."
+        JSON string with analysis results: header, references, revetements, forfaits, inconnus.
     """
-    return f"Analyze devis tool registered. Full implementation in Phase 3. Received path: {pdf_path}"
+    path = Path(pdf_path)
+
+    # Resolve relative paths from project root
+    if not path.is_absolute():
+        path = Path(__file__).resolve().parent.parent.parent.parent / path
+
+    if not path.exists():
+        return json.dumps({"error": f"Fichier PDF non trouve: {pdf_path}"}, ensure_ascii=False)
+
+    try:
+        result = run_analyze_devis(path, REFERENCES_DIR)
+        return json.dumps(result, ensure_ascii=False, indent=2)
+    except ValueError as e:
+        return json.dumps({"error": f"Erreur de lecture du PDF: {str(e)}"}, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": f"Erreur inattendue: {str(e)}"}, ensure_ascii=False)
 
 
 @mcp.tool()
