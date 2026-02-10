@@ -117,6 +117,98 @@ def extract_article_codes(pages_text: List[str]) -> List[str]:
     return sorted(list(codes))
 
 
+def extract_sp_designations(pages_text: List[str], sp_codes: List[str]) -> Dict[str, str]:
+    """
+    Extract designation text for SP (special) article codes from PDF page text.
+
+    The designation is the complete descriptive text that follows the SP code
+    in the PDF, often spanning multiple lines. This function extracts and joins
+    that multi-line text while removing quantity indicators.
+
+    Args:
+        pages_text: List of page texts from extract_text()
+        sp_codes: List of SP article codes to extract designations for
+
+    Returns:
+        Dictionary mapping SP code -> designation text (first occurrence wins)
+
+    Example:
+        >>> designations = extract_sp_designations(pages, ['SPMOB-25355'])
+        >>> 'Paillasse Murale' in designations['SPMOB-25355']
+        True
+    """
+    designations = {}
+
+    # Skip first page (cover), process remaining pages
+    for page in pages_text[1:]:
+        lines = page.split('\n')
+        i = 0
+
+        while i < len(lines):
+            line = lines[i].strip()
+
+            # Check if this line starts with any of our SP codes
+            matched_code = None
+            for sp_code in sp_codes:
+                if sp_code in designations:
+                    # Already found this code
+                    continue
+
+                # Case-insensitive match at start of line
+                if line.upper().startswith(sp_code.upper()):
+                    matched_code = sp_code
+                    break
+
+            if matched_code:
+                # Extract designation starting from this line
+                designation_parts = []
+
+                # First line: text after the code
+                first_line_text = line[len(matched_code):].strip()
+
+                # Strip trailing quantity pattern: "UN \d+" or just "\d+"
+                # The quantity column (e.g., "UN 1") often gets merged into the text
+                first_line_text = re.sub(r'\s+UN\s+\d+$', '', first_line_text)
+                first_line_text = re.sub(r'\s+\d+$', '', first_line_text)
+
+                if first_line_text:
+                    designation_parts.append(first_line_text)
+
+                # Continue reading subsequent lines as continuation
+                i += 1
+                while i < len(lines):
+                    continuation_line = lines[i].strip()
+
+                    # Stop if empty line
+                    if not continuation_line:
+                        break
+
+                    # Stop if line contains exclusion keywords
+                    if any(keyword in continuation_line for keyword in [
+                        'Sous-total', 'Page ', 'Total ', 'MONTANT', 'Article'
+                    ]):
+                        break
+
+                    # Stop if next line starts with an article code
+                    # Article codes match pattern: uppercase letter/digit, 4+ chars, alphanumeric with hyphens
+                    if re.match(r'^[A-Z0-9][A-Za-z0-9\-]{3,19}\s', continuation_line):
+                        # This looks like a new article code
+                        break
+
+                    # Add this line to designation
+                    designation_parts.append(continuation_line)
+                    i += 1
+
+                # Join all parts, collapse multiple spaces
+                designation = ' '.join(designation_parts)
+                designation = re.sub(r'\s+', ' ', designation).strip()
+                designations[matched_code] = designation
+            else:
+                i += 1
+
+    return designations
+
+
 def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
     """
     Classify article codes into product references, coatings, packages, and unknowns.
@@ -160,6 +252,26 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
                 'code': code,
                 'famille': product['famille'],
                 'revetement': None
+            })
+            continue
+
+        # Check if it's a special article (SP prefix)
+        # SP codes: SPMOB, SPPAIL, SPTABLEEN, SPUSE with optional suffix
+        code_upper = code.upper()
+        matched_prefix = None
+        detected_family = None
+
+        for prefix, family in SP_PREFIX_MAP.items():
+            if code_upper.startswith(prefix):
+                matched_prefix = prefix
+                detected_family = family
+                break
+
+        if matched_prefix:
+            speciaux.append({
+                'code': code,
+                'famille': detected_family,
+                'prefix': matched_prefix
             })
             continue
 
@@ -218,26 +330,6 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
 
         if is_forfait:
             forfaits.append(code)
-            continue
-
-        # Check if it's a special article (SP prefix)
-        # SP codes: SPMOB, SPPAIL, SPTABLEEN, SPUSE with optional suffix
-        code_upper = code.upper()
-        matched_prefix = None
-        detected_family = None
-
-        for prefix, family in SP_PREFIX_MAP.items():
-            if code_upper.startswith(prefix):
-                matched_prefix = prefix
-                detected_family = family
-                break
-
-        if matched_prefix:
-            speciaux.append({
-                'code': code,
-                'famille': detected_family,
-                'prefix': matched_prefix
-            })
             continue
 
         # Unknown code
@@ -319,6 +411,14 @@ def analyze_devis(pdf_path: Path, references_dir: Path) -> Dict[str, Any]:
 
     # Classify codes
     classification = classify_codes(codes, references_dir)
+
+    # Extract designations for SP articles
+    sp_codes = [item['code'] for item in classification['speciaux']]
+    if sp_codes:
+        designations = extract_sp_designations(pages_text, sp_codes)
+        # Enrich speciaux entries with designation field
+        for item in classification['speciaux']:
+            item['designation'] = designations.get(item['code'], '')
 
     # Return complete structured result
     return {
