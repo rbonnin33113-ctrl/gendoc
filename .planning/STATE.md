@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-09)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques
-**Current focus:** Phase 3 - Analyse de Devis
+**Current focus:** Phase 4 - Generation PowerPoint
 
 ## Current Position
 
-Phase: 3 of 6 (Analyse de Devis)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-02-10 -- Completed 03-02-PLAN.md - MCP Integration and User Skill
+Phase: 4 of 6 (Generation PowerPoint)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-10 -- Completed 04-01-PLAN.md - PowerPoint Generator Core
 
-Progress: [#######...] 50%
+Progress: [########..] 58%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 4.2 minutes
-- Total execution time: 0.42 hours
+- Total plans completed: 7
+- Average duration: 4.1 minutes
+- Total execution time: 0.48 hours
 
 **By Phase:**
 
@@ -30,16 +30,17 @@ Progress: [#######...] 50%
 | 01-fondation-donnees | 2 | 13.4 min | 6.7 min |
 | 02-infrastructure-mcp | 2 | 4.9 min | 2.5 min |
 | 03-analyse-de-devis | 2 | 7.9 min | 4.0 min |
+| 04-generation-powerpoint | 1 | 3.8 min | 3.8 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-01 (2.9 min), 02-02 (2.0 min), 03-01 (6.1 min), 03-02 (1.8 min)
-- Trend: Excellent velocity - quick integration tasks (1.8-2.0 min) balance complex logic (6+ min)
+- Last 5 plans: 02-02 (2.0 min), 03-01 (6.1 min), 03-02 (1.8 min), 04-01 (3.8 min)
+- Trend: Excellent velocity maintained - quick integration tasks balance complex implementation
 
 *Updated after each plan completion*
 
 **Latest Execution:**
-| Phase 03-analyse-de-devis P01 | 6.1 min | 2 tasks | 3 files |
 | Phase 03-analyse-de-devis P02 | 1.8 min | 2 tasks | 2 files |
+| Phase 04-generation-powerpoint P01 | 3.8 min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -73,6 +74,11 @@ Recent decisions affecting current work:
 - [Phase 03-02]: Relative paths resolved from project root (4 levels up from server.py) for MCP flexibility
 - [Phase 03-02]: /gendoc-analyze skill guides Claude to present structured report with Markdown tables
 - [Phase 03-02]: Import naming convention - alias library function to avoid name conflict with MCP tool
+- [Phase 04-01]: Template conversion - .potm to .pptx via zipfile manipulation, removing VBA macros
+- [Phase 04-01]: VBA shape indices mapped to python-pptx placeholder idx for each family layout
+- [Phase 04-01]: Layout mapping - 1=paillasse, 2=sorbonne, 3=revetement, 4=meubles, 5=equipement
+- [Phase 04-01]: Image insertion skips .missing files and non-existent paths gracefully
+- [Phase 04-01]: Coating slides auto-generated when detected in product dimensions or provided explicitly
 
 ### Pending Todos
 
@@ -85,5 +91,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: Completed 03-02-PLAN.md - MCP Integration and User Skill (Phase 3 Complete)
+Stopped at: Completed 04-01-PLAN.md - PowerPoint Generator Core (Phase 4 in progress)
 Resume file: None
