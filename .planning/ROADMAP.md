@@ -52,19 +52,19 @@ Plans:
 - [x] 02-02-PLAN.md -- Enregistrement des 4 commandes /gendoc-* comme skills Claude Code ✓
 
 ### Phase 3: Analyse de Devis
-**Goal**: Un devis PDF soumis est parse et produit une liste structuree de references avec familles, quantites et revetements detectes
+**Goal**: Un devis PDF soumis est parse et produit une liste structuree de references uniques avec familles et revetements detectes
 **Depends on**: Phase 2
 **Requirements**: DEV-01, DEV-02, DEV-03, DEV-04
 **Success Criteria** (what must be TRUE):
-  1. L'utilisateur soumet un devis PDF via `/gendoc-analyze` et obtient la liste des references produit avec leurs quantites
+  1. L'utilisateur soumet un devis PDF via `/gendoc-analyze` et obtient la liste des references produit uniques
   2. Chaque reference extraite est automatiquement associee a sa famille produit (Paillasse, Sorbonne, Meuble, etc.)
   3. Les references absentes des fichiers MD sont clairement signalees a l'utilisateur avec un rapport d'erreur
   4. Les produits lies a un revetement (paillasses GE/GR, sorbonnes autoportantes) sont detectes et le revetement associe est identifie dans le resultat
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md -- Parsing PDF et extraction de references produit avec quantites
-- [ ] 03-02-PLAN.md -- Association familles, detection revetements et integration MCP complete
+- [ ] 03-01-PLAN.md -- Modules PDF parser et devis analyzer (extraction texte, identification codes, classification familles/revetements)
+- [ ] 03-02-PLAN.md -- Integration MCP et mise a jour skill /gendoc-analyze
 
 ### Phase 4: Generation PowerPoint
 **Goal**: Les fiches techniques individuelles sont generees correctement dans des slides PowerPoint avec le bon layout, les bonnes donnees et les bonnes images
