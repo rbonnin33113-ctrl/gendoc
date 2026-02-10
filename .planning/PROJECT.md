@@ -16,6 +16,15 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - **Skills**: /gendoc-lookup, /gendoc-analyze, /gendoc-generate, /gendoc-full
 - **Template**: Modele fiche technique vide - Ind J.potm (6 layouts, A4 portrait)
 
+## Current Milestone: v1.1 Qualite et Couverture Familles
+
+**Goal:** S'assurer que toutes les familles produit generent des fiches correctes et mettre en place des tests automatises pour prevenir les regressions.
+
+**Target features:**
+- Tests automatises par famille (generation + validation)
+- Verification et correction de chaque famille (paillasse, sorbonne, meubles, tables-en, equipement, elec-sorb, complements)
+- Auto-sizing et split texte generalises si necessaire
+
 ## Requirements
 
 ### Validated
@@ -28,6 +37,8 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 
 ### Active
 
+- [ ] Tests automatises par famille de produit
+- [ ] Couverture complete de toutes les familles (corrections si necessaire)
 - [ ] Modes de generation CHI/DOE/FTI (deferred from v1.0)
 - [ ] Integration des fiches-existantes (fichiers .pptx pre-existants)
 - [ ] Implementation complete de add_reference (actuellement stub)
@@ -56,4 +67,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Split texte revetement en 3 zones | Texte debordait du cadre unique | Good — TEXTE/MEO/FINITION |
 
 ---
-*Last updated: 2026-02-10 after v1.0 milestone*
+*Last updated: 2026-02-10 after v1.1 milestone start*

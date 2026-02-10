@@ -1,0 +1,15 @@
+{
+  "project_name": "Générateur de Fiches Techniques Delagrave",
+  "current_milestone": "v1.1",
+  "workflow": {
+    "research": false
+  },
+  "models": {
+    "researcher": "sonnet",
+    "synthesizer": "sonnet",
+    "roadmapper": "sonnet",
+    "planner": "sonnet",
+    "executor": "sonnet",
+    "verifier": "sonnet"
+  }
+}
