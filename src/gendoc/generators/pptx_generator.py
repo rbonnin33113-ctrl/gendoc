@@ -221,6 +221,10 @@ def _populate_slide(slide: Any, product: Dict[str, Any], family: str) -> None:
     placeholder_data[13] = product.get('texte', '')
     placeholder_data[15] = product.get('ref', '')
 
+    # Filter sentinel "Aucune" value (means no text in source data)
+    if placeholder_data.get(13, '').strip().lower() == 'aucune':
+        placeholder_data[13] = ''
+
     # For revetement, split texte into TEXTE, MISE_EN_OEUVRE, FINITION
     if family == 'revetement' and product.get('texte', ''):
         text_parts = _split_revetement_text(product['texte'])
