@@ -40,10 +40,10 @@
   1. Les codes SP (SPMOB, SPPAIL, SPTABLEEN, SPUSE) sont classes dans `speciaux` (jamais dans `inconnus`)
   2. Chaque article SP extrait contient son code, sa famille et la designation complete extraite du PDF
   3. La designation extraite correspond au texte descriptif complet de l'article dans le devis (ex: "Meuble bas mobile - Dim. 600x500x724mm - Melamine Blanc")
-**Plans**: TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 09-01: TBD
+- [ ] 09-01-PLAN.md — Harden SP detection ordering + extract designation text from PDF
 
 #### Phase 10: Interface HTML Interactive
 **Goal**: L'utilisateur peut visualiser, selectionner et editer les articles SP via une page HTML
@@ -84,6 +84,6 @@ Plans:
 | 6. Integration Pipeline | v1.0 | 1/1 | Complete | 2026-02-10 |
 | 7. Verification et Correction des Familles | v1.1 | 3/3 | Complete | 2026-02-10 |
 | 8. Suite de Tests Automatises | v1.1 | 2/2 | Complete | 2026-02-10 |
-| 9. Detection et Extraction SP | v1.2 | 0/TBD | Not started | - |
+| 9. Detection et Extraction SP | v1.2 | 0/1 | Not started | - |
 | 10. Interface HTML Interactive | v1.2 | 0/TBD | Not started | - |
 | 11. Integration MCP File-Based | v1.2 | 0/TBD | Not started | - |
