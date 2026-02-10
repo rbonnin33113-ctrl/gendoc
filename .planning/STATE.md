@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-02-09)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques
-**Current focus:** Phase 1 - Fondation Donnees
+**Current focus:** Phase 2 - Infrastructure MCP
 
 ## Current Position
 
-Phase: 1 of 6 (Fondation Donnees)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-02-09 -- Completed Plan 01-02: Image organization and lookup CLI
+Phase: 2 of 6 (Infrastructure MCP)
+Plan: 0 of 2 in current phase
+Status: Ready to plan
+Last activity: 2026-02-09 -- Phase 1 verified (15/15 must-haves, 100%), ready for Phase 2
 
 Progress: [####......] 17%
 
