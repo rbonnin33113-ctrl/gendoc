@@ -190,10 +190,17 @@ def extract_sp_designations(pages_text: List[str], sp_codes: List[str]) -> Dict[
                         break
 
                     # Stop if next line starts with an article code
-                    # Article codes match pattern: uppercase letter/digit, 4+ chars, alphanumeric with hyphens
-                    if re.match(r'^[A-Z0-9][A-Za-z0-9\-]{3,19}\s', continuation_line):
-                        # This looks like a new article code
-                        break
+                    # Article codes have specific patterns:
+                    # - Contain hyphens (PM-D-H-75, SPMOB-25355)
+                    # - OR all uppercase short codes (ACB120, CU12G)
+                    # - Must be followed by space to separate from description
+                    # This avoids matching regular words like "Dimension"
+                    if re.match(r'^[A-Z0-9][A-Z0-9\-]{3,19}\s', continuation_line):
+                        # Check if it contains a hyphen or is all uppercase (no lowercase)
+                        first_word = continuation_line.split()[0]
+                        if '-' in first_word or first_word.isupper():
+                            # This looks like a new article code
+                            break
 
                     # Add this line to designation
                     designation_parts.append(continuation_line)
