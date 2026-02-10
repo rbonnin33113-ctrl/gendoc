@@ -103,10 +103,10 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. L'utilisateur execute `/gendoc-full` avec un devis PDF et obtient un dossier PowerPoint complet sans etapes intermediaires manuelles
   2. L'utilisateur peut previsualiser la liste des fiches qui seront generees (avec familles et revetements) et confirmer avant de lancer la generation
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 06-01: Pipeline complet et previsualisation
+- [ ] 06-01-PLAN.md -- Pipeline complet: preview_generation MCP tool + rewrite /gendoc-full skill + end-to-end test
 
 ## Progress
 
