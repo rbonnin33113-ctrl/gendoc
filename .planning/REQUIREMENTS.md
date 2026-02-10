@@ -15,19 +15,19 @@ Requirements for quality and family coverage milestone.
 
 ### Couverture Familles
 
-- [ ] **FAM-01**: Les fiches paillasse sont generees avec le bon layout, les dimensions correctes et les images positionnees
-- [ ] **FAM-02**: Les fiches sorbonne sont generees avec le bon layout, les dimensions correctes et les images positionnees
-- [ ] **FAM-03**: Les fiches meubles sont generees avec le bon layout et les images
-- [ ] **FAM-04**: Les fiches tables-en sont generees avec le bon layout et les images
-- [ ] **FAM-05**: Les fiches equipement sont generees avec le bon layout, la reference et les images positionnees
-- [ ] **FAM-06**: Les fiches elec-sorb sont generees avec le bon layout et les images positionnees
-- [ ] **FAM-07**: Les fiches complements sont generees correctement
-- [ ] **FAM-08**: Les placeholders vides sont supprimes (pas de "Cliquez pour ajouter") pour toutes les familles
+- [x] **FAM-01**: Les fiches paillasse sont generees avec le bon layout, les dimensions correctes et les images positionnees
+- [x] **FAM-02**: Les fiches sorbonne sont generees avec le bon layout, les dimensions correctes et les images positionnees
+- [x] **FAM-03**: Les fiches meubles sont generees avec le bon layout et les images
+- [x] **FAM-04**: Les fiches tables-en sont generees avec le bon layout et les images
+- [x] **FAM-05**: Les fiches equipement sont generees avec le bon layout, la reference et les images positionnees
+- [x] **FAM-06**: Les fiches elec-sorb sont generees avec le bon layout et les images positionnees
+- [x] **FAM-07**: Les fiches complements sont generees correctement
+- [x] **FAM-08**: Les placeholders vides sont supprimes (pas de "Cliquez pour ajouter") pour toutes les familles
 
 ### Qualite Texte
 
-- [ ] **TXT-01**: L'auto-sizing (TEXT_TO_FIT_SHAPE) est applique sur tous les placeholders texte de toutes les familles
-- [ ] **TXT-02**: Les textes longs ne debordent pas des cadres pour aucune famille
+- [x] **TXT-01**: L'auto-sizing (TEXT_TO_FIT_SHAPE) est applique sur tous les placeholders texte de toutes les familles
+- [x] **TXT-02**: Les textes longs ne debordent pas des cadres pour aucune famille
 
 ## v2 Requirements
 
@@ -52,25 +52,27 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TEST-01 | TBD | Pending |
-| TEST-02 | TBD | Pending |
-| TEST-03 | TBD | Pending |
-| FAM-01 | TBD | Pending |
-| FAM-02 | TBD | Pending |
-| FAM-03 | TBD | Pending |
-| FAM-04 | TBD | Pending |
-| FAM-05 | TBD | Pending |
-| FAM-06 | TBD | Pending |
-| FAM-07 | TBD | Pending |
-| FAM-08 | TBD | Pending |
-| TXT-01 | TBD | Pending |
-| TXT-02 | TBD | Pending |
+| FAM-01 | Phase 7 | Done |
+| FAM-02 | Phase 7 | Done |
+| FAM-03 | Phase 7 | Done |
+| FAM-04 | Phase 7 | Done |
+| FAM-05 | Phase 7 | Done |
+| FAM-06 | Phase 7 | Done |
+| FAM-07 | Phase 7 | Done |
+| FAM-08 | Phase 7 | Done |
+| TXT-01 | Phase 7 | Done |
+| TXT-02 | Phase 7 | Done |
+| TEST-01 | Phase 8 | Pending |
+| TEST-02 | Phase 8 | Pending |
+| TEST-03 | Phase 8 | Pending |
 
 **Coverage:**
 - v1.1 requirements: 13 total
-- Mapped to phases: 0
-- Unmapped: 13
+- Mapped to phases: 13
+- Unmapped: 0
+
+✓ 100% requirement coverage achieved
 
 ---
 *Requirements defined: 2026-02-10*
-*Last updated: 2026-02-10 after initial definition*
+*Last updated: 2026-02-10 after roadmap creation*

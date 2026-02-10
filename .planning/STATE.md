@@ -6,16 +6,16 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-**Current focus:** Phase 7 — Verification et Correction des Familles
+**Current focus:** Phase 8 — Suite de Tests Automatises
 
 ## Current Position
 
-Phase: 7 of 8 (Verification et Correction des Familles)
-Plan: 4 of ? in current phase
-Status: In progress
-Last activity: 2026-02-10 — Completed 07-02: Visual verification of all 8 families (user approved)
+Phase: 8 of 8 (Suite de Tests Automatises)
+Plan: 0 of ? in current phase
+Status: Ready to plan
+Last activity: 2026-02-10 — Phase 7 complete (3/3 plans, verification passed 22/22)
 
-Progress: [██████████░░] 75% (6 of 8 phases complete)
+Progress: [███████████░] 88% (7 of 8 phases complete)
 
 ## Performance Metrics
 
@@ -75,6 +75,6 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: Completed Phase 7 Plan 2 (Visual verification: all 8 families approved by user)
+Stopped at: Phase 7 complete — all 3 plans executed, verification passed
 Resume file: None
-Next step: Continue Phase 7 - Testing with real devis or proceed to Phase 8 (Testing Infrastructure)
+Next step: Plan and execute Phase 8 - Suite de Tests Automatises

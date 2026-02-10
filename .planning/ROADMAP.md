@@ -38,11 +38,12 @@
 4. Empty placeholders are removed from all generated slides (no "Cliquez pour ajouter" text remains)
 5. Product reference codes are displayed correctly for all families
 
-**Plans:** 2 plans
+**Plans:** 3 plans
 
 Plans:
-- [ ] 07-01-PLAN.md — Fix VBA-to-placeholder mappings for all 8 families and programmatic verification
-- [ ] 07-02-PLAN.md — Visual verification of all families with human checkpoint and targeted fixes
+- [x] 07-01-PLAN.md — Fix VBA-to-placeholder mappings for all 8 families and programmatic verification
+- [x] 07-02-PLAN.md — Visual verification of all families with human checkpoint and targeted fixes
+- [x] 07-03-PLAN.md — Support articles speciaux (SP-prefixed: SPMOB, SPPAIL, SPTABLEEN, SPUSE)
 
 #### Phase 8: Suite de Tests Automatises
 
@@ -73,5 +74,5 @@ Plans:
 | 4. Generation PowerPoint | v1.0 | 2/2 | Complete | 2026-02-10 |
 | 5. Assemblage Document | v1.0 | 1/1 | Complete | 2026-02-10 |
 | 6. Integration Pipeline | v1.0 | 1/1 | Complete | 2026-02-10 |
-| 7. Verification et Correction des Familles | v1.1 | 0/2 | In progress | - |
+| 7. Verification et Correction des Familles | v1.1 | 3/3 | Complete | 2026-02-10 |
 | 8. Suite de Tests Automatises | v1.1 | 0/? | Not started | - |
