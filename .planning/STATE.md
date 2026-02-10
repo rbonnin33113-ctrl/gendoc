@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-09)
 ## Current Position
 
 Phase: 3 of 6 (Analyse de Devis)
-Plan: 0 of 2 in current phase
-Status: Ready to plan
-Last activity: 2026-02-10 -- Phase 2 verified (15/15 must-haves, 100%), ready for Phase 3
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-10 -- Completed 03-01-PLAN.md - PDF Parsing Core Modules
 
-Progress: [######....] 33%
+Progress: [######....] 42%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: 4.3 minutes
-- Total execution time: 0.29 hours
+- Total plans completed: 5
+- Average duration: 4.8 minutes
+- Total execution time: 0.39 hours
 
 **By Phase:**
 
@@ -29,16 +29,17 @@ Progress: [######....] 33%
 |-------|-------|-------|----------|
 | 01-fondation-donnees | 2 | 13.4 min | 6.7 min |
 | 02-infrastructure-mcp | 2 | 4.9 min | 2.5 min |
+| 03-analyse-de-devis | 1 | 6.1 min | 6.1 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (6.8 min), 01-02 (6.6 min), 02-01 (2.9 min), 02-02 (2.0 min)
-- Trend: Excellent velocity - consistently under 3 min per plan
+- Last 5 plans: 01-02 (6.6 min), 02-01 (2.9 min), 02-02 (2.0 min), 03-01 (6.1 min)
+- Trend: Good velocity - varies by complexity (2-7 min range)
 
 *Updated after each plan completion*
 
 **Latest Execution:**
-| Phase 02-infrastructure-mcp P01 | 2.9 min | 2 tasks | 4 files |
-| Phase 02-infrastructure-mcp P02 | 2.0 | 2 tasks | 4 files |
+| Phase 02-infrastructure-mcp P02 | 2.0 min | 2 tasks | 4 files |
+| Phase 03-analyse-de-devis P01 | 6.1 min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -62,6 +63,12 @@ Recent decisions affecting current work:
 - [Phase 02-01]: MCP server uses absolute path resolution for REFERENCES_DIR to work from any directory
 - [Phase 02-02]: Skills written in French for French-speaking end users
 - [Phase 02-02]: Status notes in stub skills set expectations about Phase 3/4 implementation
+- [Phase 03-01]: Client name extracted from first line pattern (Address COMPANY NAME) - most reliable location
+- [Phase 03-01]: Code extraction uses position + pattern (4+ chars, requires digits/hyphens/consonant-clusters)
+- [Phase 03-01]: Coating suffixes (GE, GR, IN, etc.) detected and base code looked up (PM-D-H-75-GE -> PM-D-H-75)
+- [Phase 03-01]: Forfaits (FPORT, FORPOSE1J) classified separately from product references
+- [Phase 03-01]: No quantities - each code appears once regardless of quote sections (user requirement)
+- [Phase 03-01]: Unknown codes listed in 'inconnus' array without blocking analysis
 
 ### Pending Todos
 
@@ -74,5 +81,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: Completed 02-02-PLAN.md - Claude Code Skill Registration (Phase 2 Complete)
+Stopped at: Completed 03-01-PLAN.md - PDF Parsing Core Modules
 Resume file: None
