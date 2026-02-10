@@ -11,18 +11,18 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 Phase: 9 of 11 (Detection et Extraction SP)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-02-10 — v1.2 roadmap created (phases 9-11)
+Plan: 1 of TBD in current phase
+Status: In progress
+Last activity: 2026-02-10 — Completed 09-01: SP detection and designation extraction
 
 Progress: [████████░░] 73% (8/11 phases complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: ~1.6 hours per plan
-- Total execution time: v1.0 ~20h (2 days), v1.1 ~4h (same day)
+- Total plans completed: 11
+- Average duration: ~1.5 hours per plan
+- Total execution time: v1.0 ~20h (2 days), v1.1 ~4h (same day), v1.2 ~4m (ongoing)
 
 **By Phase:**
 
@@ -36,14 +36,16 @@ Progress: [████████░░] 73% (8/11 phases complete)
 | 6. Integration Pipeline | 1 | ~2h | ~2h |
 | 7. Verification Familles | 3 | ~9m | ~3m |
 | 8. Suite Tests Automatises | 2 | ~4m | ~2m |
+| 9. Detection et Extraction SP | 1 | ~4m | ~4m |
 
 **Recent Trend:**
-- Last 5 plans (v1.1): All under 3 minutes (quality improvements)
+- Last 6 plans (v1.1 + v1.2): All under 5 minutes (quality/feature improvements)
 - v1.0 plans: ~2h average (feature development)
 - v1.1 plans: Sub-3-minute execution (focused scope + mature codebase)
-- Trend: Stable, with shorter durations for quality/test work
+- v1.2 plan 09-01: 4 minutes (feature + tests)
+- Trend: Stable, efficient execution for well-scoped work
 
-*Updated 2026-02-10 after v1.2 roadmap creation*
+*Updated 2026-02-10 after completing 09-01*
 
 ## Accumulated Context
 
@@ -56,6 +58,8 @@ Recent decisions affecting current work:
 - Phase 7: SP codes detected by prefix before inconnus fallback
 - Phase 7: Custom lookup before catalog lookup (priority to custom products)
 - Phase 8: Pytest parametrize by family for comprehensive testing
+- Phase 9 (DES-01): Designation extraction stops at next article code (all uppercase OR contains hyphen)
+- Phase 9 (DES-02): Strip quantity indicators from designation text (UN \d+ patterns)
 
 ### Pending Todos
 
@@ -68,6 +72,6 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-10
-Stopped at: v1.2 roadmap created (3 phases: 9-11), ready to plan Phase 9
+Stopped at: Completed 09-01-PLAN.md (SP detection and designation extraction)
 Resume file: None
-Next step: `/gsd:plan-phase 9`
+Next step: Continue with remaining Phase 9 plans or move to Phase 10
