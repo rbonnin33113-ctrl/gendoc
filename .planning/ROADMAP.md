@@ -32,18 +32,14 @@
 
 **Milestone Goal:** Permettre a l'utilisateur de visualiser, selectionner et editer les articles speciaux (SP) d'un devis via une page HTML interactive, avec extraction automatique des designations depuis le PDF.
 
-#### Phase 9: Detection et Extraction SP
+#### Phase 9: Detection et Extraction SP ✅
 **Goal**: Les articles SP sont correctement detectes et leurs designations sont extraites du PDF
 **Depends on**: Phase 8
 **Requirements**: BUG-01, EXT-01, EXT-02
-**Success Criteria** (what must be TRUE):
-  1. Les codes SP (SPMOB, SPPAIL, SPTABLEEN, SPUSE) sont classes dans `speciaux` (jamais dans `inconnus`)
-  2. Chaque article SP extrait contient son code, sa famille et la designation complete extraite du PDF
-  3. La designation extraite correspond au texte descriptif complet de l'article dans le devis (ex: "Meuble bas mobile - Dim. 600x500x724mm - Melamine Blanc")
-**Plans:** 1 plan
+**Status**: Complete — 2026-02-10
 
 Plans:
-- [ ] 09-01-PLAN.md — Harden SP detection ordering + extract designation text from PDF
+- [x] 09-01-PLAN.md — SP detection hardening + designation extraction from PDF
 
 #### Phase 10: Interface HTML Interactive
 **Goal**: L'utilisateur peut visualiser, selectionner et editer les articles SP via une page HTML
@@ -84,6 +80,6 @@ Plans:
 | 6. Integration Pipeline | v1.0 | 1/1 | Complete | 2026-02-10 |
 | 7. Verification et Correction des Familles | v1.1 | 3/3 | Complete | 2026-02-10 |
 | 8. Suite de Tests Automatises | v1.1 | 2/2 | Complete | 2026-02-10 |
-| 9. Detection et Extraction SP | v1.2 | 0/1 | Not started | - |
+| 9. Detection et Extraction SP | v1.2 | 1/1 | Complete | 2026-02-10 |
 | 10. Interface HTML Interactive | v1.2 | 0/TBD | Not started | - |
 | 11. Integration MCP File-Based | v1.2 | 0/TBD | Not started | - |

@@ -9,12 +9,12 @@ Requirements for SP selection tool milestone.
 
 ### Bug Fix
 
-- [ ] **BUG-01**: Les codes SP (SPMOB, SPPAIL, SPTABLEEN, SPUSE) sont correctement detectes et classes dans `speciaux` (pas dans `inconnus`)
+- [x] **BUG-01**: Les codes SP (SPMOB, SPPAIL, SPTABLEEN, SPUSE) sont correctement detectes et classes dans `speciaux` (pas dans `inconnus`)
 
 ### Extraction
 
-- [ ] **EXT-01**: L'analyse du devis extrait la designation textuelle de chaque article SP depuis le PDF (ex: "Meuble bas mobile - Dim. 600x500x724mm - Melamine Blanc")
-- [ ] **EXT-02**: L'analyse du devis retourne pour chaque SP : code, famille, designation extraite du PDF
+- [x] **EXT-01**: L'analyse du devis extrait la designation textuelle de chaque article SP depuis le PDF (ex: "Meuble bas mobile - Dim. 600x500x724mm - Melamine Blanc")
+- [x] **EXT-02**: L'analyse du devis retourne pour chaque SP : code, famille, designation extraite du PDF
 
 ### Interface HTML
 
@@ -52,9 +52,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUG-01 | Phase 9 | Pending |
-| EXT-01 | Phase 9 | Pending |
-| EXT-02 | Phase 9 | Pending |
+| BUG-01 | Phase 9 | Done |
+| EXT-01 | Phase 9 | Done |
+| EXT-02 | Phase 9 | Done |
 | UI-01 | Phase 10 | Pending |
 | UI-02 | Phase 10 | Pending |
 | UI-03 | Phase 10 | Pending |
