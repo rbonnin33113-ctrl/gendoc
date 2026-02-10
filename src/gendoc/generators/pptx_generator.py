@@ -14,7 +14,7 @@ import tempfile
 import zipfile
 import shutil
 from pptx import Presentation
-from pptx.util import Pt
+from pptx.util import Emu
 
 from gendoc.parsers.md_parser import find_product
 
@@ -238,7 +238,7 @@ def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> i
         if not image_path.exists():
             continue
 
-        # Get position data (in VBA points)
+        # Get position data (values are in pixels at 96 DPI)
         left = image_data.get('left', 0)
         top = image_data.get('top', 0)
         width = image_data.get('width', 0)
@@ -247,29 +247,47 @@ def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> i
         if left == 0 or top == 0 or width == 0:
             continue
 
-        # Convert to EMUs using Pt (1 point = 12700 EMUs)
-        left_emu = Pt(left)
-        top_emu = Pt(top)
-        width_emu = Pt(width)
+        # Convert pixels to EMUs (1 pixel at 96 DPI = 9525 EMUs)
+        EMU_PER_PIXEL = 9525
+        left_emu = Emu(int(left * EMU_PER_PIXEL))
+        top_emu = Emu(int(top * EMU_PER_PIXEL))
+        width_emu = Emu(int(width * EMU_PER_PIXEL))
 
-        # If height is 0 or missing, let python-pptx calculate from aspect ratio
+        # Insert image, clamping to slide bounds if needed
+        # Slide dimensions: A4 portrait = 7561263 x 10693400 EMU
+        SLIDE_WIDTH = 7561263
+        SLIDE_HEIGHT = 10693400
+
         try:
             if height > 0:
-                height_emu = Pt(height)
-                slide.shapes.add_picture(
-                    str(image_path),
-                    left_emu,
-                    top_emu,
-                    width_emu,
-                    height_emu
-                )
+                height_emu = Emu(int(height * EMU_PER_PIXEL))
             else:
-                slide.shapes.add_picture(
-                    str(image_path),
-                    left_emu,
-                    top_emu,
-                    width_emu
-                )
+                # Auto-calculate height from image aspect ratio
+                from PIL import Image as PILImage
+                with PILImage.open(str(image_path)) as im:
+                    img_w, img_h = im.size
+                ratio = img_h / img_w if img_w > 0 else 1.0
+                height_emu = Emu(int(width_emu * ratio))
+
+            # Clamp: if image overflows right, reduce width (keep ratio)
+            if left_emu + width_emu > SLIDE_WIDTH:
+                width_emu = Emu(SLIDE_WIDTH - left_emu)
+                height_emu = Emu(int(width_emu * ratio)) if height <= 0 else height_emu
+
+            # Clamp: if image overflows bottom, reduce height (keep ratio)
+            if top_emu + height_emu > SLIDE_HEIGHT:
+                max_h = Emu(SLIDE_HEIGHT - top_emu)
+                scale = max_h / height_emu
+                height_emu = max_h
+                width_emu = Emu(int(width_emu * scale))
+
+            slide.shapes.add_picture(
+                str(image_path),
+                left_emu,
+                top_emu,
+                width_emu,
+                height_emu
+            )
             images_inserted += 1
         except Exception:
             # Image may be corrupted or invalid format
