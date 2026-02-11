@@ -224,6 +224,14 @@ async def analyze_devis(pdf_path: str) -> str:
 
     try:
         result = run_analyze_devis(path, REFERENCES_DIR)
+
+        # Log each unknown code individually for review
+        for code_inconnu in result.get("inconnus", []):
+            _current_logger.log_error(
+                f"Code inconnu: {code_inconnu}",
+                context={"code": code_inconnu, "action": "a verifier dans le catalogue"}
+            )
+
         _current_logger.end_step(step, result={
             "references": len(result.get("references", [])),
             "revetements": len(result.get("revetements", [])),
