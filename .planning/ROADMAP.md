@@ -98,10 +98,10 @@ Plans:
 3. Unknown product codes (not in catalog, not in exclusions) are logged in the execution log file for later review
 4. Preview output clearly separates valid products, SP articles, and unknown codes with counts
 
-**Plans:** TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 14-01: TBD
+- [ ] 14-01-PLAN.md — Exclusion list filtering, unknown code logging, and detection tests
 
 ---
 
@@ -144,5 +144,5 @@ Plans:
 | 11. Integration MCP File-Based | v1.2 | 1/1 | Complete | 2026-02-11 |
 | 12. Hot-Reload MCP | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 13. Logging Infrastructure | v1.3 | 1/1 | Complete | 2026-02-11 |
-| 14. Detection Robustesse | v1.3 | 0/TBD | Not started | - |
+| 14. Detection Robustesse | v1.3 | 0/1 | Planned | - |
 | 15. Gestion Erreurs et Resume | v1.3 | 0/TBD | Not started | - |
