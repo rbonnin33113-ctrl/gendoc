@@ -27,6 +27,29 @@ SP_PREFIX_MAP = {
     'SPUSE': 'equipement',
 }
 
+# Exclusion list for common false positives in PDF extraction
+# These strings are NOT product codes but frequently appear in devis PDFs:
+# - Measurement values (850MM, 1200MM, etc.)
+# - Section headers (CONDITIONS, LIVRAISON, SALLE, etc.)
+# - Document structure words (DESIGNATION, TOTAL, REMISE, etc.)
+#
+# Users can add entries here to filter additional false positives.
+# Filtering happens in classify_codes() - excluded words do not appear in inconnus output.
+EXCLUSION_WORDS = {
+    # Measurement values
+    "850MM", "750MM", "600MM", "900MM", "1200MM", "1500MM",
+    # Section/header words
+    "CONDITIONS", "LIVRAISON", "SALLE", "DEPOSE", "DIVERS", "MONTANT",
+    "FORFAITS", "MOBILIER", "EQUIPEMENT", "MENUISERIE", "VENTILATION",
+    "PLOMBERIE", "ELECTRICITE", "MACONNERIE", "DEMOLITION", "PEINTURE",
+    "ENSEIGNEMENT",
+    # Document structure words
+    "DESIGNATION", "ARTICLE", "OPTION", "TOTAL", "REMISE", "ACOMPTE",
+    "REGLEMENT",
+    # Existing exclusions (preserved from hardcoded checks)
+    "PAILLASSE", "SORBONNE", "DELAGRAVE"
+}
+
 
 def extract_article_codes(pages_text: List[str]) -> List[str]:
     """
@@ -250,6 +273,16 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
     inconnus = []
 
     for code in codes:
+        # Filter exclusion words FIRST (before any classification)
+        # These are known non-product strings, not unknown codes
+        code_upper = code.upper()
+        if code_upper in EXCLUSION_WORDS:
+            continue  # Silent filter - these are not products, not unknowns
+
+        # Filter measurement patterns (NNN+MM, NNN+M)
+        if re.match(r'^\d+MM?$', code_upper):
+            continue  # Silent filter for measurement values
+
         # Try direct lookup first
         product = find_product(code, references_dir)
 
@@ -316,13 +349,6 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
         # Check if it's a package (forfait)
         # Packages typically start with "FOR" or "F" + keyword
         # Examples: FPORT, FORPOSE1J, FTRANSPORT
-        # Exclude common section headers that got through
-        if code in ['FORFAITS', 'PAILLASSE', 'SORBONNE', 'DELAGRAVE', 'CONDITIONS', 'MONTANT']:
-            # These are section headers or common words, not codes
-            inconnus.append(code)
-            continue
-
-        # Check if it's a package
         is_forfait = False
         if code.startswith('FOR') and len(code) > 3:
             # FORPOSE1J, etc. but not "FORFAITS" (already filtered above)
