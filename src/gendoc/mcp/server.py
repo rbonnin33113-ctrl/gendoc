@@ -21,6 +21,7 @@ from gendoc.parsers.md_parser import (
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 from gendoc.generators.pptx_generator import generate_presentation as run_generate_presentation
 from gendoc.generators.html_sp_selector import generate_sp_selector_html
+from gendoc.utils.sp_server import start_sp_server
 
 # Resolve references directory relative to project root
 # This ensures the path works regardless of where the MCP server is started from
@@ -387,14 +388,15 @@ async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_
             output_path=output
         )
 
-        # Add instructions for user
+        # Start local server and open browser
+        server_info = start_sp_server(output, output.parent)
+
+        result['server_url'] = server_info['url']
+        result['json_output'] = str(output.parent / 'sp_selection.json')
         result['message'] = (
-            f"HTML selector generated successfully. "
-            f"Next steps:\n"
-            f"1. Open the HTML file: {result['output_path']}\n"
-            f"2. Configure each SP article by selecting a base product and editing fields\n"
-            f"3. Click 'Exporter JSON' to save your configuration\n"
-            f"4. Call load_sp_selection with the JSON path to get custom_products for generate_slides"
+            f"Selecteur SP ouvert dans le navigateur ({server_info['url']}). "
+            f"Configurez les articles puis cliquez 'Exporter JSON'. "
+            f"Le fichier sera enregistre dans : {result['json_output']}"
         )
 
         return json.dumps(result, ensure_ascii=False, indent=2)

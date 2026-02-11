@@ -46,6 +46,10 @@ def generate_sp_selector_html(
         >>> result['sp_count']
         1
     """
+    # Ensure Path objects (accept strings too)
+    references_dir = Path(references_dir)
+    output_path = Path(output_path)
+
     # Build catalog from MD files
     catalog = _build_catalog_json(references_dir)
 
@@ -396,6 +400,15 @@ def _generate_html_template(
             background-color: #45a049;
         }}
 
+        .btn-danger {{
+            background-color: #f44336;
+            color: white;
+        }}
+
+        .btn-danger:hover {{
+            background-color: #d32f2f;
+        }}
+
         .edit-form {{
             margin-top: 20px;
         }}
@@ -608,9 +621,14 @@ def _generate_html_template(
                                 <ul class="images-list" id="images-list"></ul>
                             </div>
 
-                            <button type="button" class="btn btn-success" onclick="validateArticle()">
-                                Valider cet article
-                            </button>
+                            <div style="display: flex; gap: 10px;">
+                                <button type="button" class="btn btn-success" onclick="validateArticle()">
+                                    Valider cet article
+                                </button>
+                                <button type="button" class="btn btn-danger" id="cancel-btn" onclick="cancelArticle()" style="display:none;">
+                                    Annuler la configuration
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -623,6 +641,9 @@ def _generate_html_template(
             </div>
             <button id="export-btn" class="btn btn-primary" onclick="exportJSON()" disabled>
                 Exporter JSON
+            </button>
+            <button class="btn" style="background-color:#757575;color:white;margin-left:10px;" onclick="quitWithout()">
+                Quitter sans configurer
             </button>
         </div>
     </div>
@@ -689,9 +710,11 @@ def _generate_html_template(
             if (editedArticles[index]) {{
                 selectedBaseProduct = editedArticles[index].baseProduct;
                 loadEditForm(editedArticles[index].data);
+                document.getElementById('cancel-btn').style.display = '';
             }} else {{
                 // Reset form
                 document.getElementById('edit-form-container').classList.add('hidden');
+                document.getElementById('cancel-btn').style.display = 'none';
                 selectedBaseProduct = null;
             }}
         }}
@@ -821,6 +844,22 @@ def _generate_html_template(
             }});
         }}
 
+        function cancelArticle() {{
+            if (selectedSPIndex === null) return;
+
+            delete editedArticles[selectedSPIndex];
+            selectedBaseProduct = null;
+
+            // Reset editor
+            document.getElementById('edit-form-container').classList.add('hidden');
+            document.getElementById('search-input').value = '';
+            document.getElementById('search-results').classList.add('hidden');
+            document.getElementById('cancel-btn').style.display = 'none';
+
+            renderSPList();
+            updateExportButton();
+        }}
+
         function validateArticle() {{
             if (selectedSPIndex === null || !selectedBaseProduct) {{
                 alert('Veuillez sélectionner un produit de base.');
@@ -898,7 +937,24 @@ def _generate_html_template(
             exportBtn.disabled = configuredCount === 0;
         }}
 
-        function exportJSON() {{
+        async function quitWithout() {{
+            if (!confirm('Quitter sans configurer les articles SP ? Aucun article SP ne sera inclus dans le dossier.')) return;
+
+            // Save empty array so load_sp_selection finds the file
+            if (window.location.protocol === 'http:' && window.location.hostname === '127.0.0.1') {{
+                try {{
+                    await fetch('/save', {{
+                        method: 'POST',
+                        headers: {{ 'Content-Type': 'application/json' }},
+                        body: '[]'
+                    }});
+                }} catch (err) {{ /* ignore */ }}
+            }}
+            document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;font-size:20px;color:#757575;">Aucun article SP configuré. Cette page va se fermer.</div>';
+            setTimeout(() => window.close(), 1500);
+        }}
+
+        async function exportJSON() {{
             // Build custom_products array
             const customProducts = SP_ARTICLES.map((sp, index) => {{
                 if (!editedArticles[index]) {{
@@ -911,7 +967,26 @@ def _generate_html_template(
             // Generate JSON
             const jsonStr = JSON.stringify(customProducts, null, 2);
 
-            // Trigger download
+            // If served from local server, POST to /save (saves directly to output dir)
+            if (window.location.protocol === 'http:' && window.location.hostname === '127.0.0.1') {{
+                try {{
+                    const resp = await fetch('/save', {{
+                        method: 'POST',
+                        headers: {{ 'Content-Type': 'application/json' }},
+                        body: jsonStr
+                    }});
+                    const result = await resp.json();
+                    if (result.success) {{
+                        document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;font-size:20px;color:#2e7d32;">Fichier enregistré : ' + result.path + '<br>Cette page va se fermer.</div>';
+                        setTimeout(() => window.close(), 1500);
+                        return;
+                    }}
+                }} catch (err) {{
+                    console.error('Erreur POST /save', err);
+                }}
+            }}
+
+            // Fallback: trigger download (file:// protocol or server error)
             const blob = new Blob([jsonStr], {{ type: 'application/json' }});
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -922,7 +997,7 @@ def _generate_html_template(
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
-            alert('Fichier JSON exporté avec succès !');
+            alert('Fichier JSON exporté dans le dossier Téléchargements.');
         }}
     </script>
 </body>
