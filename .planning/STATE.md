@@ -10,17 +10,17 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 
 ## Current Position
 
-Phase: 14 (Detection Robustesse)
-Status: Completed
-Last activity: 2026-02-11 — Completed 14-01 (Exclusion Filtering and Unknown Code Logging)
+Phase: 15 (Gestion Erreurs et Resume)
+Status: In Progress
+Last activity: 2026-02-11 — Completed 15-01 (Pipeline Fault Tolerance)
 
-Progress: [██████░░░░] 75% (3/4 phases)
+Progress: [███████░░░] 100% (4/4 phases)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 21 (10 v1.0 + 5 v1.1 + 3 v1.2 + 3 v1.3)
-- Average duration: ~1.4 hours per plan (v1.0), ~3.5 minutes per plan (v1.1+v1.2+v1.3)
+- Total plans completed: 22 (10 v1.0 + 5 v1.1 + 3 v1.2 + 4 v1.3)
+- Average duration: ~1.4 hours per plan (v1.0), ~5 minutes per plan (v1.1+v1.2+v1.3)
 
 **By Milestone:**
 
@@ -29,9 +29,10 @@ Progress: [██████░░░░] 75% (3/4 phases)
 | v1.0 Systeme MCP | 1-6 | 10 | ~20h (2 days) |
 | v1.1 Qualite et Couverture | 7-8 | 5 | ~13m (same day) |
 | v1.2 Outil de Selection SP | 9-11 | 3 | ~15m (same day) |
-| v1.3 Robustesse et Logging | 12-15 | 3 | ~11m (Phases 12-14 complete) |
+| v1.3 Robustesse et Logging | 12-15 | 4 | ~18m (Phase 15 in progress) |
 
-*Updated 2026-02-11 after 14-01 completed*
+*Updated 2026-02-11 after 15-01 completed*
+| Phase 15 P01 | 7 min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -39,7 +40,12 @@ Progress: [██████░░░░] 75% (3/4 phases)
 
 All decisions logged in PROJECT.md Key Decisions table (15 decisions across 3 milestones).
 
-**Recent (Phase 14-01):**
+**Recent (Phase 15-01):**
+- Warning returns from slide builders: Check `_insert_image` return value instead of modifying signature (preserves backward compatibility)
+- Warning structure: Use list[dict] with 'code' and 'message' keys (enables downstream logging to associate warnings with products)
+- Coating error handling: Wrap `_add_revetement_slides` in try/except with generic REVETEMENTS code (revetement errors affect multiple products)
+
+**Previous (Phase 14-01):**
 - Silent filtering for exclusion words (known non-products disappear from output entirely)
 - Pattern-based filtering for measurements (regex \d+MM? catches measurement values)
 - Individual error logging per unknown code (enables precise tracking for catalog expansion)
@@ -62,6 +68,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-11
-Stopped at: Completed Phase 14-01 (Detection Robustesse)
-Resume file: .planning/phases/14-detection-robustesse/14-01-SUMMARY.md
-Next step: /gsd:plan-phase 15 to plan Integration Testing
+Stopped at: Completed Phase 15-01 (Pipeline Fault Tolerance)
+Resume file: .planning/phases/15-gestion-erreurs-et-resume/15-01-SUMMARY.md
+Next step: Execute 15-02 to format warnings for user consumption
