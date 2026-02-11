@@ -14,12 +14,12 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 
 ### Logging Pipeline
 
-- [ ] **LOG-01**: Chaque execution /gendoc-full cree un fichier log horodate dans `Delagrave/output/logs/`
-- [ ] **LOG-02**: Le log contient chaque etape du pipeline : analyse PDF, preview, SP, generation, avec duree
-- [ ] **LOG-03**: Les erreurs rencontrees sont loggees avec le contexte (code produit, fichier, traceback)
-- [ ] **LOG-04**: Les erreurs resolues automatiquement sont loggees avec la solution appliquee
-- [ ] **LOG-05**: Le fichier log.md est structure comme un prompt diagnostique : resume d'execution, erreurs avec contexte, solutions appliquees — exploitable par l'IA en mode dev pour deboguer et ameliorer le pipeline
-- [ ] **LOG-06**: Le log inclut les parametres d'entree (chemin PDF, codes extraits, devis_info) pour permettre la reproduction du probleme
+- [x] **LOG-01**: Chaque execution /gendoc-full cree un fichier log horodate dans `Delagrave/output/logs/`
+- [x] **LOG-02**: Le log contient chaque etape du pipeline : analyse PDF, preview, SP, generation, avec duree
+- [x] **LOG-03**: Les erreurs rencontrees sont loggees avec le contexte (code produit, fichier, traceback)
+- [x] **LOG-04**: Les erreurs resolues automatiquement sont loggees avec la solution appliquee
+- [x] **LOG-05**: Le fichier log.md est structure comme un prompt diagnostique : resume d'execution, erreurs avec contexte, solutions appliquees — exploitable par l'IA en mode dev pour deboguer et ameliorer le pipeline
+- [x] **LOG-06**: Le log inclut les parametres d'entree (chemin PDF, codes extraits, devis_info) pour permettre la reproduction du probleme
 
 ### Sortie Resume
 
@@ -61,12 +61,12 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 |-------------|-------|--------|
 | RELOAD-01 | Phase 12 | Done |
 | RELOAD-02 | Phase 12 | Done |
-| LOG-01 | Phase 13 | Pending |
-| LOG-02 | Phase 13 | Pending |
-| LOG-03 | Phase 13 | Pending |
-| LOG-04 | Phase 13 | Pending |
-| LOG-05 | Phase 13 | Pending |
-| LOG-06 | Phase 13 | Pending |
+| LOG-01 | Phase 13 | Done |
+| LOG-02 | Phase 13 | Done |
+| LOG-03 | Phase 13 | Done |
+| LOG-04 | Phase 13 | Done |
+| LOG-05 | Phase 13 | Done |
+| LOG-06 | Phase 13 | Done |
 | DETECT-01 | Phase 14 | Pending |
 | DETECT-02 | Phase 14 | Pending |
 | DETECT-03 | Phase 14 | Pending |

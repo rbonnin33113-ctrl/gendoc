@@ -59,4 +59,4 @@ None.
 Last session: 2026-02-11
 Stopped at: Completed Phase 13-01 (Pipeline Logging)
 Resume file: .planning/phases/13-logging-infrastructure/13-01-SUMMARY.md
-Next step: /gsd:plan-phase 14 to plan Output Summarizer
+Next step: /gsd:plan-phase 14 to plan Detection Robustesse
