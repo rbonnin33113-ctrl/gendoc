@@ -727,74 +727,81 @@ def _build_standard_slide(prs, product, family, project_root, logo_path):
 
 
 def _build_revetement_slide(prs, product, project_root, logo_path):
-    """Revetement slide: full-width sections + bottom split for images."""
-    slide = prs.slides.add_slide(prs.slide_layouts[0])
+    """Revetement slide: full-width sections + bottom split for images.
 
-    _header(slide, prs, logo_path)
-    _title_band(slide, prs, product.get('titre', ''))
-    _footer(slide, prs)
+    Returns list of warning strings.
+    """
+    try:
+        slide = prs.slides.add_slide(prs.slide_layouts[0])
 
-    fw = prs.slide_width - Cm(1.2)
-    lx = Cm(0.6)
-    y = Cm(3.5)
+        _header(slide, prs, logo_path)
+        _title_band(slide, prs, product.get('titre', ''))
+        _footer(slide, prs)
 
-    texte = product.get('texte', '')
-    blocks = [b.strip() for b in texte.split('\n\n') if b.strip()]
+        fw = prs.slide_width - Cm(1.2)
+        lx = Cm(0.6)
+        y = Cm(3.5)
 
-    description = blocks[0] if len(blocks) >= 1 else ''
-    mise_en_oeuvre = blocks[1] if len(blocks) >= 2 else ''
-    finition = '\n\n'.join(blocks[2:]) if len(blocks) >= 3 else ''
+        texte = product.get('texte', '')
+        blocks = [b.strip() for b in texte.split('\n\n') if b.strip()]
 
-    applications = ''
-    for dim in product.get('dimensions', []):
-        name_lower = dim.get('name', '').lower()
-        if 'application' in name_lower:
-            applications = dim.get('valeur', '')
+        description = blocks[0] if len(blocks) >= 1 else ''
+        mise_en_oeuvre = blocks[1] if len(blocks) >= 2 else ''
+        finition = '\n\n'.join(blocks[2:]) if len(blocks) >= 3 else ''
 
-    # APPLICATIONS (full width)
-    if applications:
-        y = _section_label(slide, 'Applications', lx, y, fw)
-        box = slide.shapes.add_textbox(lx + Cm(0.2), y, fw - Cm(0.2), Cm(1.2))
-        tf = box.text_frame
-        tf.word_wrap = True
-        p = tf.paragraphs[0]
-        p.text = applications
-        p.font.size = Pt(10)
-        p.font.name = FONT
-        p.font.color.rgb = TEXT_MAIN
-        y += Cm(1.5)
+        applications = ''
+        for dim in product.get('dimensions', []):
+            name_lower = dim.get('name', '').lower()
+            if 'application' in name_lower:
+                applications = dim.get('valeur', '')
 
-    # CARACTERISTIQUES (full width)
-    if description:
-        y = _section_label(slide, 'Caract\u00e9ristiques', lx, y, fw)
-        lines_count = len([l for l in description.split('\n') if l.strip()])
-        desc_h = min(Cm(8), max(Cm(2), Cm(0.45) * lines_count + Cm(0.5)))
-        y = _text_with_bullets(slide, description, lx, y, fw, desc_h)
-        y += Cm(0.4)
+        # APPLICATIONS (full width)
+        if applications:
+            y = _section_label(slide, 'Applications', lx, y, fw)
+            box = slide.shapes.add_textbox(lx + Cm(0.2), y, fw - Cm(0.2), Cm(1.2))
+            tf = box.text_frame
+            tf.word_wrap = True
+            p = tf.paragraphs[0]
+            p.text = applications
+            p.font.size = Pt(10)
+            p.font.name = FONT
+            p.font.color.rgb = TEXT_MAIN
+            y += Cm(1.5)
 
-    # Split: text left + images right
-    text_w = Cm(11)
-    img_x = Cm(12.5)
-    img_w = Cm(7.5)
+        # CARACTERISTIQUES (full width)
+        if description:
+            y = _section_label(slide, 'Caract\u00e9ristiques', lx, y, fw)
+            lines_count = len([l for l in description.split('\n') if l.strip()])
+            desc_h = min(Cm(8), max(Cm(2), Cm(0.45) * lines_count + Cm(0.5)))
+            y = _text_with_bullets(slide, description, lx, y, fw, desc_h)
+            y += Cm(0.4)
 
-    if mise_en_oeuvre:
-        y = _section_label(slide, 'Mise en \u0153uvre', lx, y, text_w)
-        lines_count = len([l for l in mise_en_oeuvre.split('\n') if l.strip()])
-        h = min(Cm(5), max(Cm(1.5), Cm(0.45) * lines_count + Cm(0.5)))
-        y = _text_with_bullets(slide, mise_en_oeuvre, lx, y, text_w, h)
-        y += Cm(0.3)
+        # Split: text left + images right
+        text_w = Cm(11)
+        img_x = Cm(12.5)
+        img_w = Cm(7.5)
 
-    if finition:
-        y = _section_label(slide, 'Finition', lx, y, text_w)
-        lines_count = len([l for l in finition.split('\n') if l.strip()])
-        h = min(Cm(4), max(Cm(1), Cm(0.45) * lines_count + Cm(0.5)))
-        _text_with_bullets(slide, finition, lx, y, text_w, h)
+        if mise_en_oeuvre:
+            y = _section_label(slide, 'Mise en \u0153uvre', lx, y, text_w)
+            lines_count = len([l for l in mise_en_oeuvre.split('\n') if l.strip()])
+            h = min(Cm(5), max(Cm(1.5), Cm(0.45) * lines_count + Cm(0.5)))
+            y = _text_with_bullets(slide, mise_en_oeuvre, lx, y, text_w, h)
+            y += Cm(0.3)
 
-    # Images (right column)
-    _insert_all_images(
-        slide, product.get('images', []), project_root,
-        img_x, Cm(12), img_w, Cm(7)
-    )
+        if finition:
+            y = _section_label(slide, 'Finition', lx, y, text_w)
+            lines_count = len([l for l in finition.split('\n') if l.strip()])
+            h = min(Cm(4), max(Cm(1), Cm(0.45) * lines_count + Cm(0.5)))
+            _text_with_bullets(slide, finition, lx, y, text_w, h)
+
+        # Images (right column)
+        _insert_all_images(
+            slide, product.get('images', []), project_root,
+            img_x, Cm(12), img_w, Cm(7)
+        )
+        return []
+    except Exception as e:
+        return [f"Erreur inattendue sur slide: {str(e)}"]
 
 
 def _build_simple_slide(prs, product, project_root, logo_path):
