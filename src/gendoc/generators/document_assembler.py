@@ -96,20 +96,20 @@ def add_cover_page(prs: Presentation, devis_info: Dict[str, str], logo_path: Opt
     bottom_bandeau.fill.fore_color.rgb = DELAGRAVE_BLUE
     bottom_bandeau.line.fill.background()
 
-    # Logo in top-left of bandeau
+    # Logo below bandeau on white background (logo is light blue, invisible on blue)
     if logo_path and logo_path.exists():
-        logo_margin = int(top_bandeau_height * 0.15)
-        logo_max_height = int(top_bandeau_height * 0.7)
+        logo_margin_left = int(slide_width * 0.03)
+        logo_top = top_bandeau_height + int(slide_height * 0.02)
+        logo_max_height = int(slide_height * 0.08)
 
-        # Insert logo at top-left with margin
         pic = slide.shapes.add_picture(
             str(logo_path),
-            logo_margin,
-            logo_margin,
+            logo_margin_left,
+            logo_top,
             height=logo_max_height
         )
     else:
-        # Fallback: "DELAGRAVE" text at top-left in bandeau
+        # Fallback: "DELAGRAVE" text in bandeau
         text_box = slide.shapes.add_textbox(
             int(slide_width * 0.05),
             int(top_bandeau_height * 0.25),
@@ -413,12 +413,10 @@ def assemble_document(
             'toc_entries': list of TOC entry dicts
         }
     """
-    # Import slide builders from pptx_generator
-    # (lazy import to avoid circular dependency at module load time)
-    from gendoc.generators.pptx_generator import (
-        _populate_slide,
-        _insert_images,
-        FAMILY_LAYOUT_MAP
+    # Use modern template for all slide building
+    from gendoc.generators.modern_template import (
+        build_cover, build_toc, build_separator,
+        build_product_slide, add_page_numbers as modern_page_numbers
     )
 
     # Step 1: First pass - calculate page numbers and build TOC entries
@@ -460,39 +458,34 @@ def assemble_document(
     total_pages = page_counter
     product_count = sum(len(products) for products in product_groups.values())
 
-    # Step 2: Now build the actual slides in order
-    # Add cover page (slide 1)
-    add_cover_page(prs, devis_info, logo_path)
-
-    # Add TOC page (slide 2) with calculated page numbers
-    add_toc_page(prs, toc_entries)
+    # Step 2: Build slides using modern template
+    build_cover(prs, devis_info, logo_path)
+    build_toc(prs, toc_entries)
 
     # Step 3: Add content slides
+    all_warnings = []
     for family in FAMILY_ORDER:
         if family not in product_groups or not product_groups[family]:
             continue
 
         # Add chapter separator
-        add_chapter_separator(prs, family)
+        family_display = FAMILY_DISPLAY_NAMES.get(family, family.title())
+        build_separator(prs, family, family_display)
 
         # Add product slides
-        products = product_groups[family]
-        for product in products:
-            # Get layout for this family
-            layout_index = FAMILY_LAYOUT_MAP.get(family, 1)
-            slide = prs.slides.add_slide(prs.slide_layouts[layout_index])
+        for product in product_groups[family]:
+            slide_warnings = build_product_slide(prs, product, family, project_root, logo_path)
+            if slide_warnings:
+                for w in slide_warnings:
+                    all_warnings.append({"code": product.get("code", "?"), "message": w})
 
-            # Populate slide
-            _populate_slide(slide, product, family)
-            _insert_images(slide, product, project_root)
-
-    # Add page numbers to all slides
-    add_page_numbers(prs)
+    # Page numbers added later by generate_presentation (after revetement slides)
 
     # Return assembly statistics
     return {
         'total_pages': total_pages,
         'families_included': families_included,
         'product_count': product_count,
-        'toc_entries': toc_entries
+        'toc_entries': toc_entries,
+        'warnings': all_warnings
     }

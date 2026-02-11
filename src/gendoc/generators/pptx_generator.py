@@ -14,10 +14,14 @@ import tempfile
 import zipfile
 import shutil
 from pptx import Presentation
-from pptx.util import Emu
-from pptx.enum.text import MSO_AUTO_SIZE
+from pptx.util import Emu, Pt
+from pptx.dml.color import RGBColor
+from pptx.enum.text import MSO_AUTO_SIZE, PP_ALIGN
 
 from gendoc.parsers.md_parser import find_product, find_product_pages
+
+# Delagrave corporate blue for arrow bullets
+DELAGRAVE_BLUE = RGBColor(0, 85, 164)
 
 
 # Family to layout index mapping
@@ -97,6 +101,28 @@ VBA_TO_PLACEHOLDER = {
         3: 16,  # page
     },
 }
+
+
+def _strip_template_shapes(prs: Presentation) -> None:
+    """Remove all shapes from slide master and layouts to prevent template artifacts."""
+    shape_tags = {'sp', 'pic', 'grpSp', 'cxnSp'}
+    nsmap = {'p': 'http://schemas.openxmlformats.org/presentationml/2006/main'}
+
+    for master in prs.slide_masters:
+        spTree = master._element.find('.//p:cSld/p:spTree', nsmap)
+        if spTree is not None:
+            for child in list(spTree):
+                tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+                if tag in shape_tags:
+                    spTree.remove(child)
+
+    for layout in prs.slide_layouts:
+        spTree = layout._element.find('.//p:cSld/p:spTree', nsmap)
+        if spTree is not None:
+            for child in list(spTree):
+                tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+                if tag in shape_tags:
+                    spTree.remove(child)
 
 
 def load_template(template_path: Path) -> Presentation:
@@ -204,6 +230,49 @@ def _split_revetement_text(full_text: str) -> Dict[str, str]:
     return result
 
 
+def _format_text_with_arrows(placeholder: Any, text_content: str) -> None:
+    """
+    Format text placeholder with blue arrow prefix on each line and justified alignment.
+
+    Each non-empty line gets a separate paragraph with:
+    - Blue "▸ " arrow prefix
+    - Justified text alignment
+    - Compact line spacing
+
+    Args:
+        placeholder: python-pptx placeholder shape
+        text_content: Raw text with newline separators
+    """
+    lines = [l.strip() for l in text_content.split('\n') if l.strip()]
+    if not lines:
+        return
+
+    tf = placeholder.text_frame
+    tf.text = ""  # Clear existing content (creates one empty paragraph)
+
+    for i, line in enumerate(lines):
+        if i == 0:
+            p = tf.paragraphs[0]
+        else:
+            p = tf.add_paragraph()
+
+        # Blue arrow prefix
+        arrow = p.add_run()
+        arrow.text = "\u25B8 "  # ▸ small right-pointing triangle
+        arrow.font.color.rgb = DELAGRAVE_BLUE
+
+        # Text content
+        text_run = p.add_run()
+        text_run.text = line
+
+        # Paragraph formatting
+        p.alignment = PP_ALIGN.JUSTIFY
+        p.space_after = Pt(1)
+
+    tf.word_wrap = True
+    tf.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
+
+
 def _populate_slide(slide: Any, product: Dict[str, Any], family: str) -> None:
     """
     Populate slide text placeholders with product data.
@@ -265,17 +334,25 @@ def _populate_slide(slide: Any, product: Dict[str, Any], family: str) -> None:
     family_placeholder_indices = set(vba_mapping.values())
     family_placeholder_indices.update([0, 13, 15])  # standard fields: titre, texte, ref
 
+    # Determine which placeholders get blue arrow formatting
+    arrow_indices = {13}  # TEXTE always gets arrows
+    if family == 'revetement':
+        arrow_indices.update({16, 17})  # mise_en_oeuvre and finition too
+
     # Populate placeholders (and remove empty ones to hide default template prompt)
     placeholders_to_remove = []
     for placeholder in slide.placeholders:
         try:
             idx = placeholder.placeholder_format.idx
             if idx in placeholder_data and placeholder_data[idx]:
-                tf = placeholder.text_frame
-                tf.text = placeholder_data[idx]
-                # Enable auto-shrink so text fits within the placeholder bounds
-                tf.word_wrap = True
-                tf.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
+                if idx in arrow_indices:
+                    _format_text_with_arrows(placeholder, placeholder_data[idx])
+                else:
+                    tf = placeholder.text_frame
+                    tf.text = placeholder_data[idx]
+                    # Enable auto-shrink so text fits within the placeholder bounds
+                    tf.word_wrap = True
+                    tf.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
             elif idx in family_placeholder_indices:
                 # Mark for removal to hide "Cliquez pour ajouter du texte" prompt
                 placeholders_to_remove.append(placeholder)
@@ -289,7 +366,7 @@ def _populate_slide(slide: Any, product: Dict[str, Any], family: str) -> None:
         sp.getparent().remove(sp)
 
 
-def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> int:
+def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path, family: str = '') -> int:
     """
     Insert product images into slide at specified positions.
 
@@ -297,6 +374,7 @@ def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> i
         slide: python-pptx Slide object
         product: Product dictionary from md_parser
         project_root: Root directory for resolving relative image paths
+        family: Family name for family-specific adjustments
 
     Returns:
         Number of images successfully inserted
@@ -333,6 +411,13 @@ def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path) -> i
         left_emu = Emu(int(left * EMU_PER_POINT))
         top_emu = Emu(int(top * EMU_PER_POINT))
         width_emu = Emu(int(width * EMU_PER_POINT))
+
+        # Reduce paillasse images slightly to give more space to description
+        if family == 'paillasse':
+            original_width = width_emu
+            width_emu = Emu(int(width_emu * 0.85))
+            # Shift image right to compensate
+            left_emu = Emu(int(left_emu + (original_width - width_emu) * 0.5))
 
         # Insert image, clamping to slide bounds if needed
         # Slide dimensions: A4 portrait = 7561263 x 10693400 EMU
@@ -381,7 +466,8 @@ def _add_revetement_slides(
     prs: Presentation,
     revetement_codes: List[str],
     references_dir: Path,
-    project_root: Path
+    project_root: Path,
+    logo_path: Optional[Path] = None
 ) -> List[str]:
     """
     Add revetement (coating) slides for specified coating codes.
@@ -391,10 +477,13 @@ def _add_revetement_slides(
         revetement_codes: List of coating codes to generate slides for
         references_dir: Path to Delagrave/references/
         project_root: Root directory for resolving image paths
+        logo_path: Optional path to logo image
 
     Returns:
         List of coating codes that were successfully added
     """
+    from gendoc.generators.modern_template import build_product_slide
+
     added = []
 
     for code in revetement_codes:
@@ -403,14 +492,7 @@ def _add_revetement_slides(
         if not product:
             continue
 
-        # Use revetement layout (layout 3)
-        layout_index = FAMILY_LAYOUT_MAP.get('revetement', 3)
-        slide = prs.slides.add_slide(prs.slide_layouts[layout_index])
-
-        # Populate slide
-        _populate_slide(slide, product, 'revetement')
-        _insert_images(slide, product, project_root)
-
+        build_product_slide(prs, product, 'revetement', project_root, logo_path)
         added.append(code)
 
     return added
@@ -462,7 +544,11 @@ def generate_presentation(
     """
     # Lazy import to avoid circular dependency at module load time
     from gendoc.generators.document_assembler import assemble_document, FAMILY_ORDER
+    from gendoc.generators.modern_template import init_company_info
     from collections import OrderedDict
+
+    # Load company info from _entreprise.md
+    init_company_info(references_dir)
 
     # Load template and remove any pre-existing blank slides
     prs = load_template(template_path)
@@ -470,6 +556,9 @@ def generate_presentation(
         rId = prs.slides._sldIdLst[0].get('{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id')
         prs.part.drop_rel(rId)
         prs.slides._sldIdLst.remove(prs.slides._sldIdLst[0])
+
+    # Strip template master/layout shapes (modern template builds all visuals)
+    _strip_template_shapes(prs)
 
     skipped = []
     coating_codes_set = set()
@@ -555,16 +644,26 @@ def generate_presentation(
         project_root=project_root,
         logo_path=project_root / 'Delagrave' / 'images' / 'logo_delagrave_emsm.png'
     )
+    all_warnings = assembly_result.get('warnings', [])
 
     # Generate coating slides (add at end of document)
+    logo_path = project_root / 'Delagrave' / 'images' / 'logo_delagrave_emsm.png'
     revetements_added = []
     if coating_codes_set:
-        revetements_added = _add_revetement_slides(
-            prs,
-            list(coating_codes_set),
-            references_dir,
-            project_root
-        )
+        try:
+            revetements_added = _add_revetement_slides(
+                prs,
+                list(coating_codes_set),
+                references_dir,
+                project_root,
+                logo_path
+            )
+        except Exception as e:
+            all_warnings.append({"code": "REVETEMENTS", "message": f"Erreur revetements: {str(e)}"})
+
+    # Add page numbers LAST (after all slides including revetements)
+    from gendoc.generators.modern_template import add_page_numbers
+    add_page_numbers(prs)
 
     # Ensure output directory exists
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -576,5 +675,6 @@ def generate_presentation(
         'slides_generated': assembly_result['product_count'],
         'total_pages': assembly_result['total_pages'] + len(revetements_added),
         'revetements_added': revetements_added,
-        'skipped': skipped
+        'skipped': skipped,
+        'warnings': all_warnings
     }
