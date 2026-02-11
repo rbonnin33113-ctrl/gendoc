@@ -874,12 +874,10 @@ def _generate_html_template(
             renderSPList();
             updateExportButton();
 
-            // Move to next unconfigured SP
+            // Move to next unconfigured SP if available
             const nextIndex = findNextUnconfigured();
             if (nextIndex !== null) {{
                 selectSP(nextIndex);
-            }} else {{
-                alert('Tous les articles ont été configurés ! Vous pouvez maintenant exporter le JSON.');
             }}
         }}
 
@@ -897,7 +895,7 @@ def _generate_html_template(
             document.getElementById('export-count').textContent = `${{configuredCount}} / ${{SP_ARTICLES.length}}`;
 
             const exportBtn = document.getElementById('export-btn');
-            exportBtn.disabled = configuredCount !== SP_ARTICLES.length;
+            exportBtn.disabled = configuredCount === 0;
         }}
 
         function exportJSON() {{
