@@ -76,9 +76,15 @@ def _reload_generators():
             # Update stored mtime
             _module_mtimes[module_path] = current_mtime
 
-            # Log the reload with timestamp
+            # Log the reload with timestamp (to log file, not console)
             timestamp = datetime.now().isoformat(timespec='seconds')
-            print(f"[gendoc hot-reload] Reloaded {module_name} ({timestamp})")
+            if _current_logger:
+                _current_logger.log_solution(
+                    f"Hot-reload {module_name}",
+                    f"Module {module_name} recharge ({timestamp})",
+                    auto_resolved=True
+                )
+            # No print() -- hot-reload info is not user-facing
 
     return pg.generate_presentation
 
@@ -243,11 +249,27 @@ async def analyze_devis(pdf_path: str) -> str:
             codes_extraits=[r["code"] for r in result.get("references", [])],
             devis_header=result.get("header", {})
         )
+
+        # Build compact resume
+        refs_count = len(result.get("references", []))
+        rev_count = len(result.get("revetements", []))
+        sp_count = len(result.get("speciaux", []))
+        inconnus_count = len(result.get("inconnus", []))
+        resume_parts = [f"Analyse OK -- {refs_count} references"]
+        if rev_count:
+            resume_parts.append(f"{rev_count} revetements")
+        if sp_count:
+            resume_parts.append(f"{sp_count} speciaux")
+        if inconnus_count:
+            resume_parts.append(f"{inconnus_count} inconnus")
+        result["resume"] = ", ".join(resume_parts)
+
         return json.dumps(result, ensure_ascii=False, indent=2)
     except ValueError as e:
         _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
         log_path = _safe_write_log()
         resp = {"error": f"Erreur de lecture du PDF: {str(e)}"}
+        resp["resume"] = f"ECHEC analyse: {str(e)}"
         if log_path:
             resp["log_path"] = log_path
         return json.dumps(resp, ensure_ascii=False)
@@ -255,6 +277,7 @@ async def analyze_devis(pdf_path: str) -> str:
         _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
         log_path = _safe_write_log()
         resp = {"error": f"Erreur inattendue: {str(e)}"}
+        resp["resume"] = f"ECHEC analyse: {str(e)}"
         if log_path:
             resp["log_path"] = log_path
         return json.dumps(resp, ensure_ascii=False)
@@ -359,6 +382,9 @@ async def preview_generation(analysis_result: dict) -> str:
                 "families_count": len(families)
             })
 
+        # Add compact resume
+        result["resume"] = f"Preview OK -- {total_products} produits, {estimated_pages} pages estimees"
+
         return json.dumps(result, ensure_ascii=False, indent=2)
 
     except Exception as e:
@@ -443,11 +469,17 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
                     f"Produit ignore: {s['code']}",
                     context={"code": s["code"], "reason": s["reason"]}
                 )
+            for w in result.get("warnings", []):
+                _current_logger.log_error(
+                    f"Avertissement produit: {w['code']} - {w['message']}",
+                    context={"code": w["code"], "type": "warning", "detail": w["message"]}
+                )
             _current_logger.end_step(step, result={
                 "slides_generated": result.get("slides_generated", 0),
                 "total_pages": result.get("total_pages", 0),
                 "revetements_added": result.get("revetements_added", 0),
-                "skipped": len(result.get("skipped", []))
+                "skipped": len(result.get("skipped", [])),
+                "warnings": len(result.get("warnings", []))
             })
 
         # Write log in success path and capture log_path for the response
@@ -455,6 +487,29 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
             log_path = _current_logger.write_log()
             result['log_path'] = str(log_path)
             _current_logger = None
+
+        # Build compact resume
+        slides_ok = result.get('slides_generated', 0)
+        warnings_list = result.get('warnings', [])
+        skipped_list = result.get('skipped', [])
+        total_pages = result.get('total_pages', 0)
+        revetements = result.get('revetements_added', [])
+
+        resume_lines = []
+        resume_lines.append(f"Generation OK -- {slides_ok} fiches, {total_pages} pages")
+        if revetements:
+            resume_lines.append(f"Revetements ajoutes: {len(revetements)}")
+        if warnings_list:
+            resume_lines.append(f"Avertissements: {len(warnings_list)} produit(s) avec problemes")
+            for w in warnings_list:
+                resume_lines.append(f"  - {w['code']}: {w['message']}")
+        if skipped_list:
+            resume_lines.append(f"Ignores: {len(skipped_list)} produit(s) non trouves")
+            for s in skipped_list:
+                resume_lines.append(f"  - {s['code']}: {s['reason']}")
+        resume_lines.append(f"Fichier: {output}")
+
+        result['resume'] = "\n".join(resume_lines)
 
         # Add output path to result
         result['output_path'] = str(output)
@@ -465,6 +520,7 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
             _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
         log_path = _safe_write_log()
         resp = {"error": f"Erreur de generation: {str(e)}"}
+        resp["resume"] = f"ECHEC generation: {str(e)}"
         if log_path:
             resp["log_path"] = log_path
         return json.dumps(resp, ensure_ascii=False)

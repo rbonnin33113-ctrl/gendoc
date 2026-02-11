@@ -36,28 +36,26 @@ def test_reload_tracks_mtimes():
         assert mtime > 0, f"Expected positive mtime, got {mtime}"
 
 
-def test_reload_skips_unchanged_modules(capsys):
-    """When called twice without file changes, second call should produce no output."""
-    # First call (may produce output)
+def test_reload_skips_unchanged_modules():
+    """When called twice without file changes, second call should not re-track mtimes."""
+    # First call (may populate mtimes)
     _reload_generators()
 
-    # Clear captured output
-    capsys.readouterr()
+    # Capture mtimes after first call
+    initial_mtimes = dict(_module_mtimes)
 
-    # Second call - modules unchanged, should be silent
+    # Second call - modules unchanged, mtimes should remain same
     _reload_generators()
 
-    # Verify no reload messages
-    captured = capsys.readouterr()
-    assert "[gendoc hot-reload]" not in captured.out, \
-        "Expected no reload output when modules are unchanged"
+    # Verify mtimes are unchanged (no reload occurred)
+    assert _module_mtimes == initial_mtimes, \
+        "Expected mtimes to remain unchanged when modules are unchanged"
 
 
-def test_reload_detects_mtime_change(capsys):
-    """When a module's mtime changes, _reload_generators should reload it and log."""
+def test_reload_detects_mtime_change():
+    """When a module's mtime changes, _reload_generators should reload it and update mtime."""
     # First call to populate mtimes
     _reload_generators()
-    capsys.readouterr()  # Clear output
 
     # Simulate a file change by setting one mtime to 0.0
     first_path = list(_module_mtimes.keys())[0]
@@ -66,13 +64,6 @@ def test_reload_detects_mtime_change(capsys):
 
     # Call reload again
     _reload_generators()
-
-    # Capture output
-    captured = capsys.readouterr()
-
-    # Verify reload message was logged
-    assert "[gendoc hot-reload] Reloaded" in captured.out, \
-        "Expected reload message when mtime changed"
 
     # Verify mtime was updated (no longer 0.0)
     assert _module_mtimes[first_path] != 0.0, "Expected mtime to be updated after reload"
