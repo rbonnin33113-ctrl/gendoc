@@ -4,7 +4,7 @@
 
 - ✅ **v1.0 Systeme MCP** — Phases 1-6 (shipped 2026-02-10)
 - ✅ **v1.1 Qualite et Couverture Familles** — Phases 7-8 (shipped 2026-02-10)
-- 🚧 **v1.2 Outil de Selection SP** — Phases 9-11 (in progress)
+- ✅ **v1.2 Outil de Selection SP** — Phases 9-11 (shipped 2026-02-11)
 
 ## Phases
 
@@ -28,40 +28,14 @@
 
 </details>
 
-### 🚧 v1.2 Outil de Selection SP (In Progress)
+<details>
+<summary>✅ v1.2 Outil de Selection SP (Phases 9-11) — SHIPPED 2026-02-11</summary>
 
-**Milestone Goal:** Permettre a l'utilisateur de visualiser, selectionner et editer les articles speciaux (SP) d'un devis via une page HTML interactive, avec extraction automatique des designations depuis le PDF.
+- [x] Phase 9: Detection et Extraction SP (1/1 plan) — completed 2026-02-10
+- [x] Phase 10: Interface HTML Interactive (1/1 plan) — completed 2026-02-11
+- [x] Phase 11: Integration MCP File-Based (1/1 plan) — completed 2026-02-11
 
-#### Phase 9: Detection et Extraction SP ✅
-**Goal**: Les articles SP sont correctement detectes et leurs designations sont extraites du PDF
-**Depends on**: Phase 8
-**Requirements**: BUG-01, EXT-01, EXT-02
-**Status**: Complete — 2026-02-10
-
-Plans:
-- [x] 09-01-PLAN.md — SP detection hardening + designation extraction from PDF
-
-#### Phase 10: Interface HTML Interactive ✅
-**Goal**: L'utilisateur peut visualiser, selectionner et editer les articles SP via une page HTML
-**Depends on**: Phase 9
-**Requirements**: UI-01, UI-02, UI-03, UI-04
-**Status**: Complete — 2026-02-11
-
-Plans:
-- [x] 10-01-PLAN.md — HTML SP selector generator with catalog search, field editing, and JSON export
-
-#### Phase 11: Integration MCP File-Based
-**Goal**: Le workflow complet analyse-HTML-generation fonctionne de bout en bout
-**Depends on**: Phase 10
-**Requirements**: MCP-01, MCP-02
-**Success Criteria** (what must be TRUE):
-  1. Un outil MCP charge le fichier JSON exporte par le HTML et retourne des custom products prets pour la generation
-  2. Le workflow complet fonctionne: analyze_devis detecte les SP → open_sp_selector genere le HTML → utilisateur edite → load_sp_selection charge le JSON → generate_slides produit le PowerPoint avec les SP edites
-  3. Les articles SP edites apparaissent correctement dans le PowerPoint final avec tous les champs customises
-**Plans**: 1 plan
-
-Plans:
-- [ ] 11-01-PLAN.md — MCP tools (open_sp_selector, load_sp_selection) + SP workflow tests + e2e verification
+</details>
 
 ## Progress
 
@@ -77,4 +51,4 @@ Plans:
 | 8. Suite de Tests Automatises | v1.1 | 2/2 | Complete | 2026-02-10 |
 | 9. Detection et Extraction SP | v1.2 | 1/1 | Complete | 2026-02-10 |
 | 10. Interface HTML Interactive | v1.2 | 1/1 | Complete | 2026-02-11 |
-| 11. Integration MCP File-Based | v1.2 | 0/1 | Not started | - |
+| 11. Integration MCP File-Based | v1.2 | 1/1 | Complete | 2026-02-11 |
