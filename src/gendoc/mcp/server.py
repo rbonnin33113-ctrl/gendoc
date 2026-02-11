@@ -10,6 +10,9 @@ This server provides Claude Code with direct access to:
 
 from pathlib import Path
 import json
+import importlib
+import os
+from datetime import datetime
 from fastmcp import FastMCP
 
 from gendoc.parsers.md_parser import (
@@ -19,9 +22,74 @@ from gendoc.parsers.md_parser import (
     find_products_by_family
 )
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
-from gendoc.generators.pptx_generator import generate_presentation as run_generate_presentation
 from gendoc.generators.html_sp_selector import generate_sp_selector_html
 from gendoc.utils.sp_server import start_sp_server
+
+# Module mtime tracking for hot-reload mechanism
+_module_mtimes: dict[str, float] = {}
+
+
+def _reload_generators():
+    """Hot-reload generator modules so code changes take effect without restarting the MCP server.
+
+    Uses file modification time (mtime) tracking to avoid unnecessary reloads.
+    Only reloads modules that have changed since last call.
+    Logs reloaded modules with timestamps.
+
+    Returns:
+        The generate_presentation function from the (potentially refreshed) pptx_generator module.
+    """
+    import gendoc.generators.modern_template as mt
+    import gendoc.generators.document_assembler as da
+    import gendoc.generators.pptx_generator as pg
+
+    # List of modules to check, in reload order (dependencies first)
+    modules = [
+        (mt, "modern_template"),
+        (da, "document_assembler"),
+        (pg, "pptx_generator")
+    ]
+
+    for module, module_name in modules:
+        # Get the module's file path
+        module_path = module.__file__
+        if module_path is None:
+            continue
+
+        # Get current modification time
+        try:
+            current_mtime = os.path.getmtime(module_path)
+        except OSError:
+            continue
+
+        # Check if module has changed (or first time)
+        if module_path not in _module_mtimes or _module_mtimes[module_path] != current_mtime:
+            # Reload the module
+            importlib.reload(module)
+
+            # Update stored mtime
+            _module_mtimes[module_path] = current_mtime
+
+            # Log the reload with timestamp
+            timestamp = datetime.now().isoformat(timespec='seconds')
+            print(f"[gendoc hot-reload] Reloaded {module_name} ({timestamp})")
+
+    return pg.generate_presentation
+
+
+def _reload_assembler_constants():
+    """Reload generators and return fresh FAMILY_ORDER and FAMILY_DISPLAY_NAMES.
+
+    Ensures preview_generation picks up changes to family ordering and display names
+    without server restart.
+
+    Returns:
+        Tuple of (FAMILY_ORDER, FAMILY_DISPLAY_NAMES) from the reloaded document_assembler.
+    """
+    _reload_generators()
+
+    import gendoc.generators.document_assembler as da
+    return (da.FAMILY_ORDER, da.FAMILY_DISPLAY_NAMES)
 
 # Resolve references directory relative to project root
 # This ensures the path works regardless of where the MCP server is started from
@@ -154,7 +222,8 @@ async def preview_generation(analysis_result: dict) -> str:
         JSON string with preview data: families (with products), revetements, inconnus, estimated_pages, suggested_filename
     """
     try:
-        from gendoc.generators.document_assembler import FAMILY_ORDER, FAMILY_DISPLAY_NAMES
+        # Hot-reload generators and get fresh constants
+        FAMILY_ORDER, FAMILY_DISPLAY_NAMES = _reload_assembler_constants()
 
         references = analysis_result.get("references", [])
         header = analysis_result.get("header", {})
@@ -263,8 +332,11 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
         except json.JSONDecodeError:
             custom_products_list = []
 
+        # Hot-reload generators to pick up source changes
+        _generate = _reload_generators()
+
         # Call the generator
-        result = run_generate_presentation(
+        result = _generate(
             product_codes=product_codes,
             output_path=output,
             references_dir=REFERENCES_DIR,
