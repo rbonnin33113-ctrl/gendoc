@@ -58,10 +58,10 @@ Plans:
   1. Un outil MCP charge le fichier JSON exporte par le HTML et retourne des custom products prets pour la generation
   2. Le workflow complet fonctionne: analyze_devis detecte les SP → open_sp_selector genere le HTML → utilisateur edite → load_sp_selection charge le JSON → generate_slides produit le PowerPoint avec les SP edites
   3. Les articles SP edites apparaissent correctement dans le PowerPoint final avec tous les champs customises
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 11-01: TBD
+- [ ] 11-01-PLAN.md — MCP tools (open_sp_selector, load_sp_selection) + SP workflow tests + e2e verification
 
 ## Progress
 
@@ -77,4 +77,4 @@ Plans:
 | 8. Suite de Tests Automatises | v1.1 | 2/2 | Complete | 2026-02-10 |
 | 9. Detection et Extraction SP | v1.2 | 1/1 | Complete | 2026-02-10 |
 | 10. Interface HTML Interactive | v1.2 | 1/1 | Complete | 2026-02-11 |
-| 11. Integration MCP File-Based | v1.2 | 0/TBD | Not started | - |
+| 11. Integration MCP File-Based | v1.2 | 0/1 | Not started | - |
