@@ -6,22 +6,21 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-**Current focus:** Planning next milestone
+**Current focus:** v1.3 Robustesse et Logging
 
 ## Current Position
 
-Phase: All phases complete (v1.0 + v1.1 + v1.2 shipped)
-Status: v1.2 milestone archived
-Last activity: 2026-02-11 — v1.2 milestone completed
+Phase: Not started (defining requirements)
+Status: Defining requirements
+Last activity: 2026-02-11 — Milestone v1.3 started
 
-Progress: [███████████] 100% (11/11 phases complete across 3 milestones)
+Progress: [░░░░░░░░░░] 0%
 
 ## Performance Metrics
 
 **Velocity:**
 - Total plans completed: 18 (10 v1.0 + 5 v1.1 + 3 v1.2)
 - Average duration: ~1.4 hours per plan (v1.0), ~3 minutes per plan (v1.1+)
-- Total execution time: v1.0 ~20h, v1.1 ~4h, v1.2 ~15m
 
 **By Milestone:**
 
@@ -30,8 +29,9 @@ Progress: [███████████] 100% (11/11 phases complete across
 | v1.0 Systeme MCP | 1-6 | 10 | ~20h (2 days) |
 | v1.1 Qualite et Couverture | 7-8 | 5 | ~13m (same day) |
 | v1.2 Outil de Selection SP | 9-11 | 3 | ~15m (same day) |
+| v1.3 Robustesse et Logging | TBD | TBD | In progress |
 
-*Updated 2026-02-11 after v1.2 milestone completion*
+*Updated 2026-02-11 after v1.3 milestone start*
 
 ## Accumulated Context
 
@@ -45,11 +45,12 @@ None.
 
 ### Blockers/Concerns
 
-None.
+- Hot-reload MCP partiellement implemente (code ajoute dans server.py mais serveur pas redemarre)
+- Footer modifie dans modern_template.py (non committe)
 
 ## Session Continuity
 
 Last session: 2026-02-11
-Stopped at: v1.2 milestone completed and archived
+Stopped at: Defining v1.3 requirements
 Resume file: None
-Next step: /gsd:new-milestone to plan next version
+Next step: Define REQUIREMENTS.md then create roadmap

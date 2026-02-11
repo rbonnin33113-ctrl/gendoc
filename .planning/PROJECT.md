@@ -8,6 +8,17 @@ Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la genera
 
 Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
+## Current Milestone: v1.3 Robustesse et Logging
+
+**Goal:** Rendre le pipeline fiable et transparent — hot-reload MCP, logging complet, detection devis amelioree, gestion d'erreurs claire.
+
+**Target features:**
+- Hot-reload des modules generateurs dans le serveur MCP
+- Systeme de logging pipeline (fichier LOG par execution, erreurs + solutions)
+- Sortie resume compact pour /gendoc-full (au lieu du defilement)
+- Reduction des faux positifs dans l'analyse devis PDF
+- Messages d'erreur clairs et exploitables
+
 ## Current State (v1.2 shipped 2026-02-11)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, utils, mcp, cli)
@@ -42,6 +53,11 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 
 ### Active
 
+- [ ] Hot-reload MCP : changements de code pris en compte sans redemarrage serveur
+- [ ] Logging pipeline : fichier LOG par execution /gendoc-full avec toutes les etapes
+- [ ] Sortie resume compact : progression concise au lieu du defilement
+- [ ] Detection devis : reduction des faux positifs (mots detectes a tort comme codes)
+- [ ] Gestion d'erreurs : messages clairs, erreurs loggees meme quand resolues
 - [ ] Modes de generation CHI/DOE/FTI (deferred from v1.0)
 - [ ] Integration des fiches-existantes (fichiers .pptx pre-existants)
 - [ ] Implementation complete de add_reference (actuellement stub)
@@ -81,4 +97,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | MCP file-based workflow | HTML doit persister pour interaction navigateur | Good — workflow asynchrone utilisateur |
 
 ---
-*Last updated: 2026-02-11 after v1.2 milestone completion*
+*Last updated: 2026-02-11 after v1.3 milestone start*
