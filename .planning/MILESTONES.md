@@ -70,3 +70,27 @@ See: `.planning/milestones/v1.2-ROADMAP.md` for full details.
 
 ---
 
+
+## v1.3 — Robustesse et Logging (SHIPPED 2026-02-11)
+
+**Goal:** Rendre le pipeline fiable et transparent avec hot-reload MCP, logging complet, detection devis amelioree, et gestion d'erreurs claire.
+
+**Started:** 2026-02-11
+**Shipped:** 2026-02-11
+**Phases:** 12-15 (6 plans)
+**Tests:** 87 automated (31 new: 20 hot-reload, 6 detection, 5 error handling)
+**Lines of code:** 6,912 Python (source) + 1,517 (tests)
+
+**Key Accomplishments:**
+1. Hot-reload MCP avec mtime tracking — modifications des generateurs prises en compte sans redemarrage serveur
+2. PipelineLogger avec logs Markdown structures — chaque execution cree un fichier diagnostique AI-lisible dans Delagrave/output/logs/
+3. Filtrage faux positifs devis (EXCLUSION_WORDS: 33 entries + pattern mesures \d+MM?) — inconnus propres pour analyse catalogue
+4. Pipeline resilient aux erreurs produit — try/except sur chaque slide builder, warnings propages dans la chaine modern_template -> document_assembler -> pptx_generator
+5. Resume compact en francais sur chaque outil MCP — "Analyse OK -- 28 references, 5 revetements" au lieu du defilement technique
+
+**Deferred:** ADV-01 (modes CHI/DOE), ADV-02 (fiches-existantes), ADV-03 (add_reference), ADV-04 (Excel sync)
+
+See: `.planning/milestones/v1.3-ROADMAP.md` for full details.
+
+---
+

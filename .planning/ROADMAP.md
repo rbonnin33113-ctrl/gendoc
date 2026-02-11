@@ -5,7 +5,7 @@
 - ✅ **v1.0 Systeme MCP** — Phases 1-6 (shipped 2026-02-10)
 - ✅ **v1.1 Qualite et Couverture Familles** — Phases 7-8 (shipped 2026-02-10)
 - ✅ **v1.2 Outil de Selection SP** — Phases 9-11 (shipped 2026-02-11)
-- 🚧 **v1.3 Robustesse et Logging** — Phases 12-15 (in progress)
+- ✅ **v1.3 Robustesse et Logging** — Phases 12-15 (shipped 2026-02-11)
 
 ## Phases
 
@@ -38,95 +38,15 @@
 
 </details>
 
-### 🚧 v1.3 Robustesse et Logging (In Progress)
+<details>
+<summary>✅ v1.3 Robustesse et Logging (Phases 12-15) — SHIPPED 2026-02-11</summary>
 
-**Milestone Goal:** Rendre le pipeline fiable et transparent avec hot-reload MCP, logging complet, detection devis amelioree, et gestion d'erreurs claire.
+- [x] Phase 12: Hot-Reload MCP (1/1 plan) — completed 2026-02-11
+- [x] Phase 13: Logging Infrastructure (1/1 plan) — completed 2026-02-11
+- [x] Phase 14: Detection Robustesse (1/1 plan) — completed 2026-02-11
+- [x] Phase 15: Gestion Erreurs et Resume (2/2 plans) — completed 2026-02-11
 
-#### Phase 12: Hot-Reload MCP
-
-**Goal:** Le serveur MCP prend en compte les modifications des modules generateurs sans redemarrage manuel.
-
-**Depends on:** Nothing (independent infrastructure improvement)
-
-**Requirements:** RELOAD-01, RELOAD-02
-
-**Success Criteria** (what must be TRUE):
-1. Developer can modify generator modules (modern_template.py, document_assembler.py, pptx_generator.py) and changes are reflected in next MCP tool call without server restart
-2. Hot-reload works transparently — no errors if modules haven't changed, no performance degradation
-3. Server logs when modules are reloaded with module names and timestamps
-
-**Plans:** 1 plan
-
-Plans:
-- [x] 12-01-PLAN.md — Harden hot-reload with mtime tracking, logging, and tests
-
----
-
-#### Phase 13: Logging Infrastructure
-
-**Goal:** Every pipeline execution creates a structured diagnostic log file that captures all steps, errors, and solutions.
-
-**Depends on:** Nothing (independent infrastructure)
-
-**Requirements:** LOG-01, LOG-02, LOG-03, LOG-04, LOG-05, LOG-06
-
-**Success Criteria** (what must be TRUE):
-1. Each /gendoc-full execution creates a timestamped log file in Delagrave/output/logs/
-2. Log file contains all pipeline steps (analyze PDF, preview, SP, generation) with durations and outcomes
-3. Errors are logged with full context (product code, file path, traceback) and any automatic recovery solutions applied
-4. Log file is structured as Markdown with sections: Execution Summary, Input Parameters, Pipeline Steps, Errors Encountered, Solutions Applied
-5. Log is AI-readable — an LLM can parse the log and understand what happened, what failed, and how it was resolved
-
-**Plans:** 1 plan
-
-Plans:
-- [x] 13-01-PLAN.md — PipelineLogger module, MCP integration, and unit tests
-
----
-
-#### Phase 14: Detection Robustesse
-
-**Goal:** Devis PDF analysis filters out common false positives and logs unknown codes for review.
-
-**Depends on:** Phase 13 (logging system for unknown codes)
-
-**Requirements:** DETECT-01, DETECT-02, DETECT-03
-
-**Success Criteria** (what must be TRUE):
-1. Common false positives (850MM, CONDITIONS, LIVRAISON, SALLE, etc.) are filtered during devis analysis
-2. Exclusion list is configurable in a dedicated file (e.g., Delagrave/config/exclusions.txt or embedded in code with clear documentation)
-3. Unknown product codes (not in catalog, not in exclusions) are logged in the execution log file for later review
-4. Preview output clearly separates valid products, SP articles, and unknown codes with counts
-
-**Plans:** 1 plan
-
-Plans:
-- [x] 14-01-PLAN.md — Exclusion list filtering, unknown code logging, and detection tests
-
----
-
-#### Phase 15: Gestion Erreurs et Resume
-
-**Goal:** Pipeline handles errors gracefully and provides compact progress output instead of technical scrolling.
-
-**Depends on:** Phase 13 (logging system to capture errors)
-
-**Requirements:** ERR-01, ERR-02, ERR-03, OUTPUT-01, OUTPUT-02
-
-**Success Criteria** (what must be TRUE):
-1. /gendoc-full displays compact progress messages per step (Analyze OK, 28 refs... Generation OK, 45 pages) instead of technical details scrolling
-2. Technical details (file paths, debug info) go to log file, not console
-3. Generation errors (image missing, template issue, etc.) produce clear user-facing messages with the product code affected
-4. Pipeline continues after individual product errors (skip + log) rather than halting completely
-5. Final output includes summary of products processed successfully vs. in error with reasons
-
-**Plans:** 2 plans
-
-Plans:
-- [x] 15-01-PLAN.md — Generator resilience: per-product try/except, warnings propagation
-- [x] 15-02-PLAN.md — Compact resume output, warning logging, hot-reload silence, tests
-
----
+</details>
 
 ## Progress
 
