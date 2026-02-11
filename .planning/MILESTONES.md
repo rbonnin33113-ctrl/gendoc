@@ -45,3 +45,28 @@ See: `.planning/milestones/v1.1-ROADMAP.md` for full details.
 
 ---
 
+
+## v1.2 — Outil de Selection SP (SHIPPED 2026-02-11)
+
+**Goal:** Permettre a l'utilisateur de visualiser, selectionner et editer les articles speciaux (SP) d'un devis via une page HTML interactive, avec extraction automatique des designations depuis le PDF.
+
+**Started:** 2026-02-10
+**Shipped:** 2026-02-11
+**Phases:** 9-11 (3 plans)
+**Tests:** 56 automated (22 new: 14 SP detection + 8 SP workflow)
+**Lines of code:** 5,308 Python (source) + 932 (tests)
+**Commits:** 21
+
+**Key Accomplishments:**
+1. Fixed SP article detection — SP-prefixed codes (SPMOB, SPPAIL, SPTABLEEN, SPUSE) correctly classified, never falling into inconnus
+2. Built multi-line designation extraction from PDF devis for each SP article (handles quantity stripping, article code boundaries)
+3. Created self-contained HTML page (no external dependencies) for browsing catalog (320 products), editing SP article fields, and exporting JSON
+4. Added 2 new MCP tools (open_sp_selector, load_sp_selection) completing the file-based SP workflow
+5. Full E2E chain: analyze_devis -> HTML selector -> JSON -> generate_slides with SP articles in PowerPoint
+
+**Deferred:** ADV-01 (modes CHI/DOE), ADV-02 (fiches-existantes), ADV-03 (add_reference), ADV-04 (Excel sync)
+
+See: `.planning/milestones/v1.2-ROADMAP.md` for full details.
+
+---
+

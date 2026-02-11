@@ -2,81 +2,54 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-02-10)
+See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-**Current focus:** Phase 11 - Integration MCP File-Based
+**Current focus:** Planning next milestone
 
 ## Current Position
 
-Phase: 11 of 11 (Integration MCP File-Based)
-Plan: 1 of 1 in current phase
-Status: Phase 11 complete — All phases shipped
-Last activity: 2026-02-11 — Phase 11-01 complete (MCP file-based integration)
+Phase: All phases complete (v1.0 + v1.1 + v1.2 shipped)
+Status: v1.2 milestone archived
+Last activity: 2026-02-11 — v1.2 milestone completed
 
-Progress: [███████████] 100% (11/11 phases complete)
+Progress: [███████████] 100% (11/11 phases complete across 3 milestones)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
+- Total plans completed: 18 (10 v1.0 + 5 v1.1 + 3 v1.2)
 - Average duration: ~1.4 hours per plan (v1.0), ~3 minutes per plan (v1.1+)
-- Total execution time: v1.0 ~20h (2 days), v1.1 ~4h (same day), v1.2 ~10m (complete)
+- Total execution time: v1.0 ~20h, v1.1 ~4h, v1.2 ~15m
 
-**By Phase:**
+**By Milestone:**
 
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 1. Fondation Donnees | 2 | ~4h | ~2h |
-| 2. Infrastructure MCP | 2 | ~4h | ~2h |
-| 3. Analyse de Devis | 2 | ~4h | ~2h |
-| 4. Generation PowerPoint | 2 | ~4h | ~2h |
-| 5. Assemblage Document | 1 | ~2h | ~2h |
-| 6. Integration Pipeline | 1 | ~2h | ~2h |
-| 7. Verification Familles | 3 | ~9m | ~3m |
-| 8. Suite Tests Automatises | 2 | ~4m | ~2m |
-| 9. Detection et Extraction SP | 1 | ~4m | ~4m |
-| 10. Interface HTML Interactive | 1 | ~5m | ~5m |
-| 11. Integration MCP File-Based | 1 | ~5m | ~5m |
+| Milestone | Phases | Plans | Duration |
+|-----------|--------|-------|----------|
+| v1.0 Systeme MCP | 1-6 | 10 | ~20h (2 days) |
+| v1.1 Qualite et Couverture | 7-8 | 5 | ~13m (same day) |
+| v1.2 Outil de Selection SP | 9-11 | 3 | ~15m (same day) |
 
-**Recent Trend:**
-- Last 8 plans (v1.1 + v1.2): All under 5 minutes (quality/feature improvements)
-- v1.0 plans: ~2h average (feature development)
-- v1.1 plans: Sub-3-minute execution (focused scope + mature codebase)
-- v1.2 plans: 4-5 minutes (feature + checkpoint verification)
-- Trend: Stable, efficient execution for well-scoped work
-- **ALL PHASES COMPLETE** — System ready for production use
-
-*Updated 2026-02-11 after completing 11-01*
+*Updated 2026-02-11 after v1.2 milestone completion*
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- Phase 7: Custom products via deep copy + field override for SP articles
-- Phase 7: SP codes detected by prefix before inconnus fallback
-- Phase 7: Custom lookup before catalog lookup (priority to custom products)
-- Phase 8: Pytest parametrize by family for comprehensive testing
-- Phase 9 (DES-01): Designation extraction stops at next article code (all uppercase OR contains hyphen)
-- Phase 9 (DES-02): Strip quantity indicators from designation text (UN \d+ patterns)
-- Phase 10 (EXPORT): Partial export allowed — user not forced to configure all SP articles
-- Phase 11 (FILE-BASED): MCP tools operate on files for user-interactive workflow (HTML → browser → JSON)
+All decisions logged in PROJECT.md Key Decisions table (12 decisions across 3 milestones).
 
 ### Pending Todos
 
-None yet.
+None.
 
 ### Blockers/Concerns
 
-None yet.
+None.
 
 ## Session Continuity
 
 Last session: 2026-02-11
-Stopped at: Phase 11 complete — ALL PHASES SHIPPED
+Stopped at: v1.2 milestone completed and archived
 Resume file: None
-Next step: System ready for production use. Consider v2 features or optimization.
+Next step: /gsd:new-milestone to plan next version
