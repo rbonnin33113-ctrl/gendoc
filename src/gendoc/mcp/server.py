@@ -20,6 +20,7 @@ from gendoc.parsers.md_parser import (
 )
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 from gendoc.generators.pptx_generator import generate_presentation as run_generate_presentation
+from gendoc.generators.html_sp_selector import generate_sp_selector_html
 
 # Resolve references directory relative to project root
 # This ensures the path works regardless of where the MCP server is started from
@@ -340,6 +341,132 @@ async def create_custom_product(
             custom_product[key] = value
 
     return json.dumps(custom_product, ensure_ascii=False, indent=2)
+
+
+@mcp.tool()
+async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_selector.html") -> str:
+    """
+    Generate an interactive HTML selector for configuring SP articles from devis analysis.
+
+    Takes the output of analyze_devis, extracts SP articles (speciaux), and generates
+    a self-contained HTML page for editing. User can search catalog, select base products,
+    edit fields, and export JSON for use with generate_slides.
+
+    Args:
+        analysis_result: Dictionary from analyze_devis (must contain 'speciaux' key)
+        output_path: Path for the HTML file (default: "output/sp_selector.html")
+
+    Returns:
+        JSON string with output_path, sp_count, catalog_size, and instructions.
+
+    Example:
+        open_sp_selector(analysis_result, "output/sp_selector.html")
+    """
+    try:
+        # Extract speciaux list from analysis result
+        speciaux = analysis_result.get("speciaux", [])
+
+        if not speciaux or len(speciaux) == 0:
+            return json.dumps({
+                "error": "Aucun article special (SP) detecte dans ce devis",
+                "sp_count": 0
+            }, ensure_ascii=False)
+
+        # Resolve output path - if relative, make absolute from project root
+        output = Path(output_path)
+        if not output.is_absolute():
+            output = PROJECT_ROOT / output
+
+        # Create output directory if it doesn't exist
+        output.parent.mkdir(parents=True, exist_ok=True)
+
+        # Generate HTML
+        result = generate_sp_selector_html(
+            sp_articles=speciaux,
+            references_dir=REFERENCES_DIR,
+            output_path=output
+        )
+
+        # Add instructions for user
+        result['message'] = (
+            f"HTML selector generated successfully. "
+            f"Next steps:\n"
+            f"1. Open the HTML file: {result['output_path']}\n"
+            f"2. Configure each SP article by selecting a base product and editing fields\n"
+            f"3. Click 'Exporter JSON' to save your configuration\n"
+            f"4. Call load_sp_selection with the JSON path to get custom_products for generate_slides"
+        )
+
+        return json.dumps(result, ensure_ascii=False, indent=2)
+
+    except Exception as e:
+        return json.dumps({
+            "error": f"Erreur lors de la generation du selecteur SP: {str(e)}"
+        }, ensure_ascii=False)
+
+
+@mcp.tool()
+async def load_sp_selection(json_path: str) -> str:
+    """
+    Load SP article configuration from JSON file exported by the HTML selector.
+
+    Reads the sp_selection.json file and returns custom product data ready for use
+    with generate_slides's custom_products parameter.
+
+    Args:
+        json_path: Path to the sp_selection.json file exported from HTML selector
+
+    Returns:
+        JSON string with custom product data array (pass this to generate_slides).
+
+    Example:
+        load_sp_selection("output/sp_selection.json") -> JSON string of custom products
+    """
+    try:
+        # Resolve path - if relative, make absolute from project root
+        path = Path(json_path)
+        if not path.is_absolute():
+            path = PROJECT_ROOT / path
+
+        # Validate file exists
+        if not path.exists():
+            return json.dumps({
+                "error": f"Fichier JSON non trouve: {json_path}"
+            }, ensure_ascii=False)
+
+        # Read and parse JSON
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                custom_products = json.load(f)
+        except json.JSONDecodeError as e:
+            return json.dumps({
+                "error": f"JSON invalide: {str(e)}"
+            }, ensure_ascii=False)
+
+        # Validate structure
+        if not isinstance(custom_products, list):
+            return json.dumps({
+                "error": "Le JSON doit contenir un tableau de produits"
+            }, ensure_ascii=False)
+
+        # Validate each product has minimum required keys
+        for idx, product in enumerate(custom_products):
+            if not isinstance(product, dict):
+                return json.dumps({
+                    "error": f"Produit a l'index {idx} n'est pas un objet"
+                }, ensure_ascii=False)
+            if 'code' not in product or 'famille' not in product:
+                return json.dumps({
+                    "error": f"Produit a l'index {idx} manque 'code' ou 'famille'"
+                }, ensure_ascii=False)
+
+        # Return as JSON string (format expected by generate_slides)
+        return json.dumps(custom_products, ensure_ascii=False, indent=2)
+
+    except Exception as e:
+        return json.dumps({
+            "error": f"Erreur lors du chargement du fichier JSON: {str(e)}"
+        }, ensure_ascii=False)
 
 
 @mcp.tool()
