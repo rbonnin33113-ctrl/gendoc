@@ -28,9 +28,9 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 
 ### Detection Devis
 
-- [ ] **DETECT-01**: Les faux positifs courants (850MM, CONDITIONS, LIVRAISON, SALLE, etc.) sont filtres
-- [ ] **DETECT-02**: Un mecanisme de liste d'exclusion configurable existe pour les mots a ignorer
-- [ ] **DETECT-03**: Les codes inconnus sont logges pour analyse ulterieure
+- [x] **DETECT-01**: Les faux positifs courants (850MM, CONDITIONS, LIVRAISON, SALLE, etc.) sont filtres
+- [x] **DETECT-02**: Un mecanisme de liste d'exclusion configurable existe pour les mots a ignorer
+- [x] **DETECT-03**: Les codes inconnus sont logges pour analyse ulterieure
 
 ### Gestion Erreurs
 
@@ -67,9 +67,9 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 | LOG-04 | Phase 13 | Done |
 | LOG-05 | Phase 13 | Done |
 | LOG-06 | Phase 13 | Done |
-| DETECT-01 | Phase 14 | Pending |
-| DETECT-02 | Phase 14 | Pending |
-| DETECT-03 | Phase 14 | Pending |
+| DETECT-01 | Phase 14 | Done |
+| DETECT-02 | Phase 14 | Done |
+| DETECT-03 | Phase 14 | Done |
 | OUTPUT-01 | Phase 15 | Pending |
 | OUTPUT-02 | Phase 15 | Pending |
 | ERR-01 | Phase 15 | Pending |

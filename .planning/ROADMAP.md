@@ -101,7 +101,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 14-01-PLAN.md — Exclusion list filtering, unknown code logging, and detection tests
+- [x] 14-01-PLAN.md — Exclusion list filtering, unknown code logging, and detection tests
 
 ---
 
@@ -144,5 +144,5 @@ Plans:
 | 11. Integration MCP File-Based | v1.2 | 1/1 | Complete | 2026-02-11 |
 | 12. Hot-Reload MCP | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 13. Logging Infrastructure | v1.3 | 1/1 | Complete | 2026-02-11 |
-| 14. Detection Robustesse | v1.3 | 0/1 | Planned | - |
+| 14. Detection Robustesse | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 15. Gestion Erreurs et Resume | v1.3 | 0/TBD | Not started | - |
