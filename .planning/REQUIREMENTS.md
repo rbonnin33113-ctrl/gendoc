@@ -59,28 +59,34 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| RELOAD-01 | TBD | Pending |
-| RELOAD-02 | TBD | Pending |
-| LOG-01 | TBD | Pending |
-| LOG-02 | TBD | Pending |
-| LOG-03 | TBD | Pending |
-| LOG-04 | TBD | Pending |
-| LOG-05 | TBD | Pending |
-| LOG-06 | TBD | Pending |
-| OUTPUT-01 | TBD | Pending |
-| OUTPUT-02 | TBD | Pending |
-| DETECT-01 | TBD | Pending |
-| DETECT-02 | TBD | Pending |
-| DETECT-03 | TBD | Pending |
-| ERR-01 | TBD | Pending |
-| ERR-02 | TBD | Pending |
-| ERR-03 | TBD | Pending |
+| RELOAD-01 | Phase 12 | Pending |
+| RELOAD-02 | Phase 12 | Pending |
+| LOG-01 | Phase 13 | Pending |
+| LOG-02 | Phase 13 | Pending |
+| LOG-03 | Phase 13 | Pending |
+| LOG-04 | Phase 13 | Pending |
+| LOG-05 | Phase 13 | Pending |
+| LOG-06 | Phase 13 | Pending |
+| DETECT-01 | Phase 14 | Pending |
+| DETECT-02 | Phase 14 | Pending |
+| DETECT-03 | Phase 14 | Pending |
+| OUTPUT-01 | Phase 15 | Pending |
+| OUTPUT-02 | Phase 15 | Pending |
+| ERR-01 | Phase 15 | Pending |
+| ERR-02 | Phase 15 | Pending |
+| ERR-03 | Phase 15 | Pending |
 
 **Coverage:**
 - v1.3 requirements: 16 total
-- Mapped to phases: 0
-- Unmapped: 16
+- Mapped to phases: 16
+- Unmapped: 0
+
+**Phase Distribution:**
+- Phase 12 (Hot-Reload MCP): 2 requirements
+- Phase 13 (Logging Infrastructure): 6 requirements
+- Phase 14 (Detection Robustesse): 3 requirements
+- Phase 15 (Gestion Erreurs et Resume): 5 requirements
 
 ---
 *Requirements defined: 2026-02-11*
-*Last updated: 2026-02-11 after initial definition*
+*Last updated: 2026-02-11 after roadmap creation*
