@@ -23,8 +23,8 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 
 ### Sortie Resume
 
-- [ ] **OUTPUT-01**: /gendoc-full affiche un resume compact par etape (Analyse OK, 28 refs... Generation OK, 45 pages)
-- [ ] **OUTPUT-02**: Les details techniques ne defilent plus a l'ecran pendant l'execution
+- [x] **OUTPUT-01**: /gendoc-full affiche un resume compact par etape (Analyse OK, 28 refs... Generation OK, 45 pages)
+- [x] **OUTPUT-02**: Les details techniques ne defilent plus a l'ecran pendant l'execution
 
 ### Detection Devis
 
@@ -34,9 +34,9 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 
 ### Gestion Erreurs
 
-- [ ] **ERR-01**: Les erreurs de generation (image manquante, template non trouve, etc.) produisent des messages clairs
-- [ ] **ERR-02**: Le pipeline continue malgre une erreur sur un produit individuel (skip + log)
-- [ ] **ERR-03**: Le rapport final liste les produits en erreur avec la raison
+- [x] **ERR-01**: Les erreurs de generation (image manquante, template non trouve, etc.) produisent des messages clairs
+- [x] **ERR-02**: Le pipeline continue malgre une erreur sur un produit individuel (skip + log)
+- [x] **ERR-03**: Le rapport final liste les produits en erreur avec la raison
 
 ## Future Requirements (v1.4+)
 
@@ -70,11 +70,11 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 | DETECT-01 | Phase 14 | Done |
 | DETECT-02 | Phase 14 | Done |
 | DETECT-03 | Phase 14 | Done |
-| OUTPUT-01 | Phase 15 | Pending |
-| OUTPUT-02 | Phase 15 | Pending |
-| ERR-01 | Phase 15 | Pending |
-| ERR-02 | Phase 15 | Pending |
-| ERR-03 | Phase 15 | Pending |
+| OUTPUT-01 | Phase 15 | Done |
+| OUTPUT-02 | Phase 15 | Done |
+| ERR-01 | Phase 15 | Done |
+| ERR-02 | Phase 15 | Done |
+| ERR-03 | Phase 15 | Done |
 
 **Coverage:**
 - v1.3 requirements: 16 total
