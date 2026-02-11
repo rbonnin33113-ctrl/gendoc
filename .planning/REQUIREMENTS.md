@@ -9,8 +9,8 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 
 ### Hot-Reload MCP
 
-- [ ] **RELOAD-01**: Le serveur MCP prend en compte les modifications des modules generateurs sans redemarrage
-- [ ] **RELOAD-02**: Le hot-reload est transparent (pas d'erreur si les modules n'ont pas change)
+- [x] **RELOAD-01**: Le serveur MCP prend en compte les modifications des modules generateurs sans redemarrage
+- [x] **RELOAD-02**: Le hot-reload est transparent (pas d'erreur si les modules n'ont pas change)
 
 ### Logging Pipeline
 
@@ -59,8 +59,8 @@ Requirements pour le milestone v1.3 Robustesse et Logging.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| RELOAD-01 | Phase 12 | Pending |
-| RELOAD-02 | Phase 12 | Pending |
+| RELOAD-01 | Phase 12 | Done |
+| RELOAD-02 | Phase 12 | Done |
 | LOG-01 | Phase 13 | Pending |
 | LOG-02 | Phase 13 | Pending |
 | LOG-03 | Phase 13 | Pending |
