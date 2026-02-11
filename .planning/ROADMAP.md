@@ -120,10 +120,11 @@ Plans:
 4. Pipeline continues after individual product errors (skip + log) rather than halting completely
 5. Final output includes summary of products processed successfully vs. in error with reasons
 
-**Plans:** TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 15-01: TBD
+- [ ] 15-01-PLAN.md — Generator resilience: per-product try/except, warnings propagation
+- [ ] 15-02-PLAN.md — Compact resume output, warning logging, hot-reload silence, tests
 
 ---
 
@@ -145,4 +146,4 @@ Plans:
 | 12. Hot-Reload MCP | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 13. Logging Infrastructure | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 14. Detection Robustesse | v1.3 | 1/1 | Complete | 2026-02-11 |
-| 15. Gestion Erreurs et Resume | v1.3 | 0/TBD | Not started | - |
+| 15. Gestion Erreurs et Resume | v1.3 | 0/2 | Not started | - |
