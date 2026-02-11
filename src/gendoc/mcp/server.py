@@ -12,6 +12,8 @@ from pathlib import Path
 import json
 import importlib
 import os
+import time
+import traceback
 from datetime import datetime
 from fastmcp import FastMCP
 
@@ -24,9 +26,13 @@ from gendoc.parsers.md_parser import (
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 from gendoc.generators.html_sp_selector import generate_sp_selector_html
 from gendoc.utils.sp_server import start_sp_server
+from gendoc.utils.pipeline_logger import PipelineLogger
 
 # Module mtime tracking for hot-reload mechanism
 _module_mtimes: dict[str, float] = {}
+
+# Pipeline logger tracking
+_current_logger: PipelineLogger | None = None
 
 
 def _reload_generators():
@@ -96,9 +102,24 @@ def _reload_assembler_constants():
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 REFERENCES_DIR = PROJECT_ROOT / "Delagrave" / "references"
 TEMPLATE_PATH = PROJECT_ROOT / "Delagrave" / "Modele fiches - Powerpoint" / "Modèle fiche technique vide - Ind J.potm"
+OUTPUT_DIR = PROJECT_ROOT / "Delagrave" / "output"
 
 # Create FastMCP server instance
 mcp = FastMCP("gendoc", instructions="Delagrave product reference and documentation generation tools")
+
+
+def _safe_write_log() -> str | None:
+    """Write the current pipeline log and reset. Returns log path or None."""
+    global _current_logger
+    if _current_logger is None:
+        return None
+    try:
+        log_path = _current_logger.write_log()
+        return str(log_path)
+    except Exception:
+        return None
+    finally:
+        _current_logger = None
 
 
 @mcp.tool()
@@ -186,6 +207,7 @@ async def analyze_devis(pdf_path: str) -> str:
     Returns:
         JSON string with analysis results: header, references, revetements, forfaits, inconnus.
     """
+    global _current_logger
     path = Path(pdf_path)
 
     # Resolve relative paths from project root
@@ -195,13 +217,39 @@ async def analyze_devis(pdf_path: str) -> str:
     if not path.exists():
         return json.dumps({"error": f"Fichier PDF non trouve: {pdf_path}"}, ensure_ascii=False)
 
+    # Create new pipeline logger (start of pipeline)
+    _current_logger = PipelineLogger(OUTPUT_DIR)
+    _current_logger.set_input_params(pdf_path=str(path))
+    step = _current_logger.start_step("Analyse PDF")
+
     try:
         result = run_analyze_devis(path, REFERENCES_DIR)
+        _current_logger.end_step(step, result={
+            "references": len(result.get("references", [])),
+            "revetements": len(result.get("revetements", [])),
+            "speciaux": len(result.get("speciaux", [])),
+            "forfaits": len(result.get("forfaits", [])),
+            "inconnus": len(result.get("inconnus", []))
+        })
+        _current_logger.set_input_params(
+            codes_extraits=[r["code"] for r in result.get("references", [])],
+            devis_header=result.get("header", {})
+        )
         return json.dumps(result, ensure_ascii=False, indent=2)
     except ValueError as e:
-        return json.dumps({"error": f"Erreur de lecture du PDF: {str(e)}"}, ensure_ascii=False)
+        _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
+        log_path = _safe_write_log()
+        resp = {"error": f"Erreur de lecture du PDF: {str(e)}"}
+        if log_path:
+            resp["log_path"] = log_path
+        return json.dumps(resp, ensure_ascii=False)
     except Exception as e:
-        return json.dumps({"error": f"Erreur inattendue: {str(e)}"}, ensure_ascii=False)
+        _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
+        log_path = _safe_write_log()
+        resp = {"error": f"Erreur inattendue: {str(e)}"}
+        if log_path:
+            resp["log_path"] = log_path
+        return json.dumps(resp, ensure_ascii=False)
 
 
 @mcp.tool()
@@ -221,7 +269,14 @@ async def preview_generation(analysis_result: dict) -> str:
     Returns:
         JSON string with preview data: families (with products), revetements, inconnus, estimated_pages, suggested_filename
     """
+    global _current_logger
+    step = None
+
     try:
+        # Log step if logger exists
+        if _current_logger:
+            step = _current_logger.start_step("Preview generation")
+
         # Hot-reload generators and get fresh constants
         FAMILY_ORDER, FAMILY_DISPLAY_NAMES = _reload_assembler_constants()
 
@@ -288,10 +343,24 @@ async def preview_generation(analysis_result: dict) -> str:
             "suggested_filename": suggested_filename
         }
 
+        # End step if logger exists
+        if _current_logger and step:
+            _current_logger.end_step(step, result={
+                "total_products": total_products,
+                "estimated_pages": estimated_pages,
+                "families_count": len(families)
+            })
+
         return json.dumps(result, ensure_ascii=False, indent=2)
 
     except Exception as e:
-        return json.dumps({"error": f"Erreur de previsualisation: {str(e)}"}, ensure_ascii=False)
+        if _current_logger and step:
+            _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
+        log_path = _safe_write_log()
+        resp = {"error": f"Erreur de previsualisation: {str(e)}"}
+        if log_path:
+            resp["log_path"] = log_path
+        return json.dumps(resp, ensure_ascii=False)
 
 
 @mcp.tool()
@@ -313,6 +382,9 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
         generate_slides(["PM-D-H-75", "PA-D-60"], "output.pptx") -> {"slides_generated": 2, "total_pages": 5, ...}
         generate_slides(["PM-D-H-75"], "output.pptx", devis_info={"numero_devis": "25 64 0637", "client": "TEST"})
     """
+    global _current_logger
+    step = None
+
     try:
         # Resolve output path - if relative, make absolute from project root
         output = Path(output_path)
@@ -332,6 +404,15 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
         except json.JSONDecodeError:
             custom_products_list = []
 
+        # Log step if logger exists
+        if _current_logger:
+            _current_logger.set_input_params(
+                product_codes=product_codes,
+                output_path=str(output),
+                devis_info=devis_info
+            )
+            step = _current_logger.start_step("Generation PPTX")
+
         # Hot-reload generators to pick up source changes
         _generate = _reload_generators()
 
@@ -347,12 +428,43 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
             custom_products=custom_products_list
         )
 
+        # Log per-product errors from result (products skipped during generation)
+        if _current_logger:
+            for s in result.get("skipped", []):
+                _current_logger.log_error(
+                    f"Produit ignore: {s['code']}",
+                    context={"code": s["code"], "reason": s["reason"]}
+                )
+            _current_logger.end_step(step, result={
+                "slides_generated": result.get("slides_generated", 0),
+                "total_pages": result.get("total_pages", 0),
+                "revetements_added": result.get("revetements_added", 0),
+                "skipped": len(result.get("skipped", []))
+            })
+
+        # Write log in success path and capture log_path for the response
+        if _current_logger:
+            log_path = _current_logger.write_log()
+            result['log_path'] = str(log_path)
+            _current_logger = None
+
         # Add output path to result
         result['output_path'] = str(output)
         return json.dumps(result, ensure_ascii=False, indent=2)
 
     except Exception as e:
-        return json.dumps({"error": f"Erreur de generation: {str(e)}"}, ensure_ascii=False)
+        if _current_logger and step:
+            _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
+        log_path = _safe_write_log()
+        resp = {"error": f"Erreur de generation: {str(e)}"}
+        if log_path:
+            resp["log_path"] = log_path
+        return json.dumps(resp, ensure_ascii=False)
+
+    finally:
+        # Safety net: if logger was not written by try or except, write now
+        if _current_logger:
+            _safe_write_log()
 
 
 @mcp.tool()
@@ -435,11 +547,20 @@ async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_
     Example:
         open_sp_selector(analysis_result, "output/sp_selector.html")
     """
+    global _current_logger
+    step = None
+
     try:
+        # Log step if logger exists
+        if _current_logger:
+            step = _current_logger.start_step("Selection SP (HTML)")
+
         # Extract speciaux list from analysis result
         speciaux = analysis_result.get("speciaux", [])
 
         if not speciaux or len(speciaux) == 0:
+            if _current_logger and step:
+                _current_logger.end_step(step, result={"sp_count": 0})
             return json.dumps({
                 "error": "Aucun article special (SP) detecte dans ce devis",
                 "sp_count": 0
@@ -471,12 +592,20 @@ async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_
             f"Le fichier sera enregistre dans : {result['json_output']}"
         )
 
+        # End step if logger exists
+        if _current_logger and step:
+            _current_logger.end_step(step, result={"sp_count": len(speciaux)})
+
         return json.dumps(result, ensure_ascii=False, indent=2)
 
     except Exception as e:
-        return json.dumps({
-            "error": f"Erreur lors de la generation du selecteur SP: {str(e)}"
-        }, ensure_ascii=False)
+        if _current_logger and step:
+            _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
+        log_path = _safe_write_log()
+        resp = {"error": f"Erreur lors de la generation du selecteur SP: {str(e)}"}
+        if log_path:
+            resp["log_path"] = log_path
+        return json.dumps(resp, ensure_ascii=False)
 
 
 @mcp.tool()
@@ -496,7 +625,14 @@ async def load_sp_selection(json_path: str) -> str:
     Example:
         load_sp_selection("output/sp_selection.json") -> JSON string of custom products
     """
+    global _current_logger
+    step = None
+
     try:
+        # Log step if logger exists
+        if _current_logger:
+            step = _current_logger.start_step("Chargement selection SP")
+
         # Resolve path - if relative, make absolute from project root
         path = Path(json_path)
         if not path.is_absolute():
@@ -504,43 +640,73 @@ async def load_sp_selection(json_path: str) -> str:
 
         # Validate file exists
         if not path.exists():
-            return json.dumps({
-                "error": f"Fichier JSON non trouve: {json_path}"
-            }, ensure_ascii=False)
+            if _current_logger and step:
+                _current_logger.fail_step(step, f"Fichier JSON non trouve: {json_path}")
+            log_path = _safe_write_log()
+            resp = {"error": f"Fichier JSON non trouve: {json_path}"}
+            if log_path:
+                resp["log_path"] = log_path
+            return json.dumps(resp, ensure_ascii=False)
 
         # Read and parse JSON
         try:
             with open(path, 'r', encoding='utf-8') as f:
                 custom_products = json.load(f)
         except json.JSONDecodeError as e:
-            return json.dumps({
-                "error": f"JSON invalide: {str(e)}"
-            }, ensure_ascii=False)
+            if _current_logger and step:
+                _current_logger.fail_step(step, f"JSON invalide: {str(e)}")
+            log_path = _safe_write_log()
+            resp = {"error": f"JSON invalide: {str(e)}"}
+            if log_path:
+                resp["log_path"] = log_path
+            return json.dumps(resp, ensure_ascii=False)
 
         # Validate structure
         if not isinstance(custom_products, list):
-            return json.dumps({
-                "error": "Le JSON doit contenir un tableau de produits"
-            }, ensure_ascii=False)
+            if _current_logger and step:
+                _current_logger.fail_step(step, "Le JSON doit contenir un tableau de produits")
+            log_path = _safe_write_log()
+            resp = {"error": "Le JSON doit contenir un tableau de produits"}
+            if log_path:
+                resp["log_path"] = log_path
+            return json.dumps(resp, ensure_ascii=False)
 
         # Validate each product has minimum required keys
         for idx, product in enumerate(custom_products):
             if not isinstance(product, dict):
-                return json.dumps({
-                    "error": f"Produit a l'index {idx} n'est pas un objet"
-                }, ensure_ascii=False)
+                error_msg = f"Produit a l'index {idx} n'est pas un objet"
+                if _current_logger and step:
+                    _current_logger.fail_step(step, error_msg)
+                log_path = _safe_write_log()
+                resp = {"error": error_msg}
+                if log_path:
+                    resp["log_path"] = log_path
+                return json.dumps(resp, ensure_ascii=False)
             if 'code' not in product or 'famille' not in product:
-                return json.dumps({
-                    "error": f"Produit a l'index {idx} manque 'code' ou 'famille'"
-                }, ensure_ascii=False)
+                error_msg = f"Produit a l'index {idx} manque 'code' ou 'famille'"
+                if _current_logger and step:
+                    _current_logger.fail_step(step, error_msg)
+                log_path = _safe_write_log()
+                resp = {"error": error_msg}
+                if log_path:
+                    resp["log_path"] = log_path
+                return json.dumps(resp, ensure_ascii=False)
+
+        # End step if logger exists
+        if _current_logger and step:
+            _current_logger.end_step(step, result={"custom_products": len(custom_products)})
 
         # Return as JSON string (format expected by generate_slides)
         return json.dumps(custom_products, ensure_ascii=False, indent=2)
 
     except Exception as e:
-        return json.dumps({
-            "error": f"Erreur lors du chargement du fichier JSON: {str(e)}"
-        }, ensure_ascii=False)
+        if _current_logger and step:
+            _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
+        log_path = _safe_write_log()
+        resp = {"error": f"Erreur lors du chargement du fichier JSON: {str(e)}"}
+        if log_path:
+            resp["log_path"] = log_path
+        return json.dumps(resp, ensure_ascii=False)
 
 
 @mcp.tool()
