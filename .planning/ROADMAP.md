@@ -55,10 +55,10 @@
 2. Hot-reload works transparently — no errors if modules haven't changed, no performance degradation
 3. Server logs when modules are reloaded with module names and timestamps
 
-**Plans:** TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 12-01: TBD
+- [ ] 12-01-PLAN.md — Harden hot-reload with mtime tracking, logging, and tests
 
 ---
 
@@ -142,7 +142,7 @@ Plans:
 | 9. Detection et Extraction SP | v1.2 | 1/1 | Complete | 2026-02-10 |
 | 10. Interface HTML Interactive | v1.2 | 1/1 | Complete | 2026-02-11 |
 | 11. Integration MCP File-Based | v1.2 | 1/1 | Complete | 2026-02-11 |
-| 12. Hot-Reload MCP | v1.3 | 0/TBD | Not started | - |
+| 12. Hot-Reload MCP | v1.3 | 0/1 | Not started | - |
 | 13. Logging Infrastructure | v1.3 | 0/TBD | Not started | - |
 | 14. Detection Robustesse | v1.3 | 0/TBD | Not started | - |
 | 15. Gestion Erreurs et Resume | v1.3 | 0/TBD | Not started | - |
