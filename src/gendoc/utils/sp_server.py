@@ -3,6 +3,7 @@ Local HTTP server for SP selector HTML page.
 
 Serves the HTML page and handles POST /save to write the JSON export
 directly to the output directory — no browser download dialog needed.
+The server auto-stops after saving, so the calling process gets notified.
 """
 
 import http.server
@@ -46,6 +47,9 @@ class _SPHandler(http.server.BaseHTTPRequestHandler):
                 "success": True,
                 "path": str(out)
             }).encode("utf-8"))
+
+            # Auto-stop server after response is sent
+            threading.Timer(0.5, self.server.shutdown).start()
         else:
             self.send_error(404)
 
@@ -95,6 +99,37 @@ def start_sp_server(html_path: Path, output_dir: Path) -> dict:
     webbrowser.open(url)
 
     return {"url": url, "port": port, "output_dir": str(output_dir)}
+
+
+def run_sp_server(html_path: Path, output_dir: Path) -> str:
+    """
+    Start server, open browser, and BLOCK until the user exports or quits.
+
+    Returns the path to sp_selection.json when done.
+    Use this from a blocking context (e.g. background Bash command).
+    """
+    html_path = Path(html_path)
+    output_dir = Path(output_dir)
+
+    handler = type("Handler", (_SPHandler,), {
+        "html_path": str(html_path),
+        "output_dir": str(output_dir),
+    })
+
+    server = http.server.HTTPServer(("127.0.0.1", 0), handler)
+    port = server.server_address[1]
+
+    url = f"http://127.0.0.1:{port}/"
+    webbrowser.open(url)
+    print(f"SP selector: {url}", flush=True)
+    print(f"En attente de l'export...", flush=True)
+
+    # Blocks until shutdown() is called (triggered by POST /save)
+    server.serve_forever()
+
+    out = output_dir / "sp_selection.json"
+    print(f"Export recu: {out}", flush=True)
+    return str(out)
 
 
 def stop_sp_server():

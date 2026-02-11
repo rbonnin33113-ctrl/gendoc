@@ -126,7 +126,13 @@ def _build_catalog_json(references_dir: Path) -> List[Dict[str, Any]]:
                 'images': [
                     {
                         'position': img['position'],
-                        'chemin': img['chemin']
+                        'chemin': img['chemin'],
+                        'chemin_original': img.get('chemin_original', ''),
+                        'left': img.get('left', 0),
+                        'top': img.get('top', 0),
+                        'width': img.get('width', 0),
+                        'height': img.get('height', 0),
+                        'shape_index': img.get('shape_index', '')
                     }
                     for img in product.get('images', [])
                 ],
@@ -496,29 +502,10 @@ def _generate_html_template(
             border-radius: 3px;
         }}
 
-        .images-list {{
-            list-style: none;
-            padding: 0;
-        }}
-
-        .images-list li {{
-            padding: 8px;
-            border-bottom: 1px solid #f0f0f0;
-            font-size: 13px;
-        }}
-
-        .images-list li:last-child {{
-            border-bottom: none;
-        }}
-
         .image-position {{
             font-weight: 500;
             color: #333;
-        }}
-
-        .image-path {{
-            color: #666;
-            margin-left: 8px;
+            font-size: 13px;
         }}
 
         .export-section {{
@@ -617,8 +604,8 @@ def _generate_html_template(
                             </div>
 
                             <div class="form-group">
-                                <label class="form-label">Images (lecture seule)</label>
-                                <ul class="images-list" id="images-list"></ul>
+                                <label class="form-label">Images</label>
+                                <div id="images-editor"></div>
                             </div>
 
                             <div style="display: flex; gap: 10px;">
@@ -782,7 +769,20 @@ def _generate_html_template(
             if (!product) return;
 
             selectedBaseProduct = product;
-            loadEditForm(product);
+
+            // Auto-format title: "SPMOB-25042 (RB600D) - Meuble mobile ..."
+            const sp = SP_ARTICLES[selectedSPIndex];
+            const baseCode = product.code;
+            // Strip base code prefix from title if present (e.g. "RB600D - Meuble..." -> "Meuble...")
+            let desc = product.titre;
+            if (desc.startsWith(baseCode)) {{
+                desc = desc.substring(baseCode.length).replace(/^\\s*-\\s*/, '');
+            }}
+            const formattedProduct = Object.assign({{}}, product, {{
+                titre: `${{sp.code}} (${{baseCode}}) - ${{desc}}`
+            }});
+
+            loadEditForm(formattedProduct);
 
             // Hide search results
             document.getElementById('search-results').classList.add('hidden');
@@ -814,21 +814,24 @@ def _generate_html_template(
                 dimensionsBody.innerHTML = '<tr><td colspan="2" style="text-align: center; color: #999;">Aucune dimension</td></tr>';
             }}
 
-            // Populate images list
-            const imagesList = document.getElementById('images-list');
-            imagesList.innerHTML = '';
+            // Populate images editor
+            const imagesEditor = document.getElementById('images-editor');
+            imagesEditor.innerHTML = '';
 
             if (productData.images && productData.images.length > 0) {{
-                productData.images.forEach(img => {{
-                    const li = document.createElement('li');
-                    li.innerHTML = `
-                        <span class="image-position">${{img.position}}</span>
-                        <span class="image-path">${{img.chemin}}</span>
+                productData.images.forEach((img, index) => {{
+                    const div = document.createElement('div');
+                    div.style.cssText = 'padding:8px;border:1px solid #e0e0e0;border-radius:4px;margin-bottom:8px;';
+                    div.innerHTML = `
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+                            <span class="image-position">${{img.position}}</span>
+                        </div>
+                        <input type="text" class="form-control image-chemin" data-index="${{index}}" value="${{img.chemin || ''}}" placeholder="Chemin de l'image (ex: Delagrave/images/meubles/RB600D.jpg)">
                     `;
-                    imagesList.appendChild(li);
+                    imagesEditor.appendChild(div);
                 }});
             }} else {{
-                imagesList.innerHTML = '<li style="color: #999; text-align: center;">Aucune image</li>';
+                imagesEditor.innerHTML = '<div style="color:#999;text-align:center;padding:10px;">Aucune image (produit de base sans image)</div>';
             }}
         }}
 
@@ -841,6 +844,22 @@ def _generate_html_template(
                 option.value = family;
                 option.textContent = family;
                 select.appendChild(option);
+            }});
+        }}
+
+        function collectImages() {{
+            return (selectedBaseProduct.images || []).map((img, index) => {{
+                const input = document.querySelector(`.image-chemin[data-index="${{index}}"]`);
+                return {{
+                    position: img.position,
+                    chemin: input ? input.value : img.chemin,
+                    chemin_original: img.chemin_original || '',
+                    left: img.left || 0,
+                    top: img.top || 0,
+                    width: img.width || 0,
+                    height: img.height || 0,
+                    shape_index: img.shape_index || ''
+                }};
             }});
         }}
 
@@ -890,16 +909,7 @@ def _generate_html_template(
                 famille: famille,
                 texte: texte,
                 dimensions: dimensions,
-                images: selectedBaseProduct.images.map(img => ({{
-                    position: img.position,
-                    chemin: img.chemin,
-                    chemin_original: img.chemin_original || '',
-                    left: 0,
-                    top: 0,
-                    width: 0,
-                    height: 0,
-                    shape_index: ''
-                }})),
+                images: collectImages(),
                 metadata_pptx: selectedBaseProduct.metadata_pptx || []
             }};
 

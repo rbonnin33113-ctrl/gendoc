@@ -57,6 +57,10 @@ Liste des forfaits detectes (transport, pose, etc.)
    ```
 4. Appeler `generate_slides(product_codes, output_path, mode="FTI", devis_info=devis_info)`
 5. Si erreur, afficher le message et proposer de reessayer
+6. Ouvrir automatiquement le fichier PowerPoint genere :
+   ```python
+   python -c "import os; os.startfile(r'{output_path}')"
+   ```
 
 ### Etape 4 : Rapport final
 
@@ -87,8 +91,24 @@ Presenter un rapport complet et structure :
 | Code | Raison |
 ...
 
-Le fichier PowerPoint est pret. Tu peux l'ouvrir dans PowerPoint.
+Le fichier PowerPoint est ouvert dans PowerPoint.
 ```
+
+## Gestion des articles speciaux (SP)
+
+Si le devis contient des articles speciaux (cle `speciaux` non vide dans le resultat d'analyse) :
+
+1. Proposer a l'utilisateur : generer sans SP ou ouvrir le selecteur SP
+2. Si l'utilisateur choisit le selecteur SP :
+   a. Generer le HTML : `generate_sp_selector_html(speciaux, references_dir, output_path)`
+   b. Lancer le serveur en background (bloquant) :
+      ```python
+      python -c "from gendoc.utils.sp_server import run_sp_server; run_sp_server('output/sp_selector.html', 'output')"
+      ```
+   c. Attendre que la tache background se termine (= l'utilisateur a exporte ou quitte)
+   d. Lire `output/sp_selection.json` et l'utiliser comme `custom_products` dans `generate_slides`
+   e. Ajouter les codes SP a la liste `product_codes`
+3. Si le JSON est vide (`[]`), continuer sans articles SP
 
 ## Points importants
 
@@ -97,6 +117,8 @@ Le fichier PowerPoint est pret. Tu peux l'ouvrir dans PowerPoint.
 - **Nommage automatique** : Le fichier de sortie est nomme d'apres le numero de devis.
 - **Passage d'informations** : Les infos d'en-tete du devis doivent etre passees a generate_slides via devis_info.
 - **Gestion d'erreurs** : A chaque etape, verifier si le resultat contient une cle "error" et reagir.
+- **Ouverture automatique** : Le PowerPoint genere est ouvert automatiquement a la fin.
+- **Serveur SP auto-stop** : Le serveur local s'arrete automatiquement apres l'export JSON, pas besoin de demander a l'utilisateur.
 
 ## Argument
 
