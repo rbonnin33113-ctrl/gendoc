@@ -5,50 +5,64 @@
 See: .planning/PROJECT.md (updated 2026-02-15)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
-
-**Current focus:** v1.4 Gestion CRUD des References
+**Current focus:** Phase 16: CRUD Operations
 
 ## Current Position
 
-Milestone: v1.4 Gestion CRUD des References
-Phase: Not started (defining requirements)
-Plan: —
-Status: Defining requirements
-Last activity: 2026-02-15 — Milestone v1.4 started
+Phase: 16 of 19 (CRUD Operations)
+Plan: 0 of 2 in current phase
+Status: Ready to plan
+Last activity: 2026-02-15 — v1.4 milestone started, roadmap created
 
-Progress: 4 milestones shipped (v1.0, v1.1, v1.2, v1.3)
+Progress: [███████████████░░░░] 76% (15/19 phases complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 24 (10 v1.0 + 5 v1.1 + 3 v1.2 + 6 v1.3)
-- Average duration: ~1.4 hours per plan (v1.0), ~5 minutes per plan (v1.1+v1.2+v1.3)
+- Total plans completed: 24
+- Average duration: ~45 min (estimated)
+- Total execution time: ~18 hours across v1.0-v1.3
 
 **By Milestone:**
 
-| Milestone | Phases | Plans | Duration |
-|-----------|--------|-------|----------|
-| v1.0 Systeme MCP | 1-6 | 10 | ~20h (2 days) |
-| v1.1 Qualite et Couverture | 7-8 | 5 | ~13m (same day) |
-| v1.2 Outil de Selection SP | 9-11 | 3 | ~15m (same day) |
-| v1.3 Robustesse et Logging | 12-15 | 6 | ~28m (same day) |
+| Milestone | Phases | Plans | Status |
+|-----------|--------|-------|--------|
+| v1.0 | 1-6 | 10 | Shipped 2026-02-10 |
+| v1.1 | 7-8 | 5 | Shipped 2026-02-10 |
+| v1.2 | 9-11 | 3 | Shipped 2026-02-11 |
+| v1.3 | 12-15 | 6 | Shipped 2026-02-11 |
+| v1.4 | 16-19 | 0/5 (est) | In progress |
+
+**Recent Trend:**
+- v1.3 completed in 1 day with robust error handling and logging
+- Steady velocity maintained across milestones
+
+*Updated: 2026-02-15*
 
 ## Accumulated Context
 
 ### Decisions
 
-All decisions logged in PROJECT.md Key Decisions table (17 decisions across 4 milestones).
+Recent decisions from PROJECT.md affecting current work:
+
+- **v1.0**: MD files as single source of truth (decoupled from Excel VBA)
+- **v1.0**: FastMCP server with tool-based API for Claude integration
+- **v1.2**: File-based SP workflow (HTML + JSON) avoids HTTP server complexity
+- **v1.3**: Module-level PipelineLogger for guaranteed partial logs
+- **v1.3**: Compact French resume in MCP tool responses for user clarity
+
+Full decision log: .planning/PROJECT.md — Key Decisions table
 
 ### Pending Todos
 
-None.
+None yet.
 
 ### Blockers/Concerns
 
-None.
+None yet — v1.4 starting fresh after v1.3 shipped successfully.
 
 ## Session Continuity
 
 Last session: 2026-02-15
-Stopped at: Milestone v1.4 started, defining requirements
-Next step: Complete requirements and roadmap
+Stopped at: v1.4 roadmap created with 4 phases (16-19) covering 15 requirements
+Resume file: None — ready to plan Phase 16

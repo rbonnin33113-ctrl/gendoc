@@ -64,27 +64,33 @@ Deferred to future milestones.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CRUD-01 | — | Pending |
-| CRUD-02 | — | Pending |
-| CRUD-03 | — | Pending |
-| CRUD-04 | — | Pending |
-| CRUD-05 | — | Pending |
-| FAM-01 | — | Pending |
-| FAM-02 | — | Pending |
-| FAM-03 | — | Pending |
-| IMG-01 | — | Pending |
-| IMG-02 | — | Pending |
-| IMG-03 | — | Pending |
-| IDX-01 | — | Pending |
-| IDX-02 | — | Pending |
-| TEST-01 | — | Pending |
-| TEST-02 | — | Pending |
+| CRUD-01 | Phase 16 | Pending |
+| CRUD-02 | Phase 16 | Pending |
+| CRUD-03 | Phase 16 | Pending |
+| CRUD-04 | Phase 16 | Pending |
+| CRUD-05 | Phase 16 | Pending |
+| FAM-01 | Phase 17 | Pending |
+| FAM-02 | Phase 17 | Pending |
+| FAM-03 | Phase 17 | Pending |
+| IMG-01 | Phase 18 | Pending |
+| IMG-02 | Phase 18 | Pending |
+| IMG-03 | Phase 18 | Pending |
+| IDX-01 | Phase 17 | Pending |
+| IDX-02 | Phase 17 | Pending |
+| TEST-01 | Phase 19 | Pending |
+| TEST-02 | Phase 19 | Pending |
 
 **Coverage:**
 - v1.4 requirements: 15 total
-- Mapped to phases: 0
-- Unmapped: 15
+- Mapped to phases: 15/15 (100%)
+- Unmapped: 0
+
+**Phase Mapping:**
+- Phase 16 (CRUD Operations): 5 requirements
+- Phase 17 (Family and Index Management): 5 requirements
+- Phase 18 (Image Management): 3 requirements
+- Phase 19 (Tests and Integration): 2 requirements
 
 ---
 *Requirements defined: 2026-02-15*
-*Last updated: 2026-02-15 after initial definition*
+*Last updated: 2026-02-15 after roadmap creation*

@@ -6,6 +6,7 @@
 - ✅ **v1.1 Qualite et Couverture Familles** — Phases 7-8 (shipped 2026-02-10)
 - ✅ **v1.2 Outil de Selection SP** — Phases 9-11 (shipped 2026-02-11)
 - ✅ **v1.3 Robustesse et Logging** — Phases 12-15 (shipped 2026-02-11)
+- 🚧 **v1.4 Gestion CRUD des References** — Phases 16-19 (in progress)
 
 ## Phases
 
@@ -48,6 +49,67 @@
 
 </details>
 
+### 🚧 v1.4 Gestion CRUD des References (In Progress)
+
+**Milestone Goal:** Permettre la gestion complete du catalogue de references produit (ajout, modification, suppression) via des outils MCP, avec copie automatique des images et mise a jour de l'index.
+
+#### Phase 16: CRUD Operations
+**Goal**: Les utilisateurs peuvent ajouter, modifier et supprimer des references produit via des outils MCP avec validation des codes
+**Depends on**: Phase 15
+**Requirements**: CRUD-01, CRUD-02, CRUD-03, CRUD-04, CRUD-05
+**Success Criteria** (what must be TRUE):
+  1. User can add a new product reference with minimum fields (code, titre, famille)
+  2. User can add optional fields (texte, dimensions, ref commerciale) to new products
+  3. User can update existing product fields (titre, texte, dimensions, ref, images)
+  4. User can delete a product reference from the catalog
+  5. System prevents duplicate codes on add and validates existence on update/delete
+**Plans**: TBD
+
+Plans:
+- [ ] 16-01: TBD
+- [ ] 16-02: TBD
+
+#### Phase 17: Family and Index Management
+**Goal**: Le systeme gere automatiquement les nouvelles familles et met a jour l'index apres chaque operation
+**Depends on**: Phase 16
+**Requirements**: FAM-01, FAM-02, FAM-03, IDX-01, IDX-02
+**Success Criteria** (what must be TRUE):
+  1. Adding a product to existing family appends to correct MD file
+  2. Adding a product to new family creates family MD file and images directory
+  3. New families are registered in _index.md with generation template
+  4. _index.md updates automatically after every add/update/delete operation
+  5. Family product counters in _index.md recalculate correctly
+**Plans**: TBD
+
+Plans:
+- [ ] 17-01: TBD
+
+#### Phase 18: Image Management
+**Goal**: Les images produit sont copiees automatiquement depuis des chemins fournis et gerees lors des suppressions
+**Depends on**: Phase 17
+**Requirements**: IMG-01, IMG-02, IMG-03
+**Success Criteria** (what must be TRUE):
+  1. User can provide image paths when adding or updating products
+  2. System copies images automatically to Delagrave/images/{famille}/
+  3. Images are removed from filesystem when product is deleted
+**Plans**: TBD
+
+Plans:
+- [ ] 18-01: TBD
+
+#### Phase 19: Tests and Integration
+**Goal**: Le systeme CRUD est teste de maniere exhaustive avec tests unitaires et integration
+**Depends on**: Phase 18
+**Requirements**: TEST-01, TEST-02
+**Success Criteria** (what must be TRUE):
+  1. Unit tests cover add, update, and delete operations
+  2. Integration test validates full workflow: add product, lookup, then delete
+  3. All CRUD tests pass in CI pipeline
+**Plans**: TBD
+
+Plans:
+- [ ] 19-01: TBD
+
 ## Progress
 
 | Phase | Milestone | Plans Complete | Status | Completed |
@@ -67,3 +129,7 @@
 | 13. Logging Infrastructure | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 14. Detection Robustesse | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 15. Gestion Erreurs et Resume | v1.3 | 2/2 | Complete | 2026-02-11 |
+| 16. CRUD Operations | v1.4 | 0/2 | Not started | - |
+| 17. Family and Index Management | v1.4 | 0/1 | Not started | - |
+| 18. Image Management | v1.4 | 0/1 | Not started | - |
+| 19. Tests and Integration | v1.4 | 0/1 | Not started | - |
