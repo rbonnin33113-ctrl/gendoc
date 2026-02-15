@@ -92,10 +92,10 @@ Plans:
   1. User can provide image paths when adding or updating products
   2. System copies images automatically to Delagrave/images/{famille}/
   3. Images are removed from filesystem when product is deleted
-**Plans**: TBD
+**Plans**: 1 plan in 1 wave
 
 Plans:
-- [ ] 18-01: TBD
+- [ ] 18-01-PLAN.md — Image handler module + MCP CRUD integration
 
 #### Phase 19: Tests and Integration
 **Goal**: Le systeme CRUD est teste de maniere exhaustive avec tests unitaires et integration
