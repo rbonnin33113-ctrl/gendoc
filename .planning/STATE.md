@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-15)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
-**Current focus:** Phase 17: Family Index Management
+**Current focus:** Phase 18: Image Management
 
 ## Current Position
 
-Phase: 17 of 19 (Family Index Management)
+Phase: 18 of 19 (Image Management)
 Plan: 1 of 1 in current phase
 Status: Phase complete
-Last activity: 2026-02-15 — Plan 17-01 complete (automatic index refresh and family infrastructure)
+Last activity: 2026-02-15 — Plan 18-01 complete (automatic image management for CRUD operations)
 
-Progress: [█████████████████░░] 89% (17/19 phases complete)
+Progress: [██████████████████░] 95% (18/19 phases complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 28
-- Average duration: ~25 min (estimated)
-- Total execution time: ~19 hours across v1.0-v1.4
+- Total plans completed: 29
+- Average duration: ~20 min (estimated)
+- Total execution time: ~19.5 hours across v1.0-v1.4
 
 **By Milestone:**
 
@@ -31,12 +31,13 @@ Progress: [█████████████████░░] 89% (17/19
 | v1.1 | 7-8 | 5 | Shipped 2026-02-10 |
 | v1.2 | 9-11 | 3 | Shipped 2026-02-11 |
 | v1.3 | 12-15 | 6 | Shipped 2026-02-11 |
-| v1.4 | 16-19 | 3/5 (est) | In progress |
+| v1.4 | 16-19 | 4/5 (est) | In progress |
 
 **Recent Trend:**
 - v1.3 completed in 1 day with robust error handling and logging
 - v1.4 Phase 16 completed in 6 minutes total (2 plans, full CRUD capability)
 - v1.4 Phase 17 completed in 3 minutes (1 plan, automatic index management)
+- v1.4 Phase 18 completed in 3 minutes (1 plan, automatic image management)
 - Exceptional velocity: 3 minutes per plan average for v1.4
 
 *Updated: 2026-02-15*
@@ -59,6 +60,9 @@ Recent decisions from PROJECT.md affecting current work:
 - **v1.4 (17-01)**: _index.md auto-refreshes after every CRUD operation (always accurate)
 - **v1.4 (17-01)**: New families get images directory created automatically on first add
 - **v1.4 (17-01)**: Index refresh failures don't cause CRUD operations to fail (secondary operation)
+- **v1.4 (18-01)**: Image sources take precedence over manual images list (simplifies API)
+- **v1.4 (18-01)**: Image operations use per-file error recovery (partial results on failures)
+- **v1.4 (18-01)**: Image operations follow secondary operation pattern (failures don't block CRUD)
 
 Full decision log: .planning/PROJECT.md — Key Decisions table
 
@@ -73,5 +77,5 @@ None yet — v1.4 starting fresh after v1.3 shipped successfully.
 ## Session Continuity
 
 Last session: 2026-02-15
-Stopped at: Phase 17 Plan 01 completed (automatic index refresh and family infrastructure)
-Resume file: .planning/phases/17-family-index-management/17-01-SUMMARY.md
+Stopped at: Phase 18 Plan 01 completed (automatic image management for CRUD operations)
+Resume file: .planning/phases/18-image-management/18-01-SUMMARY.md
