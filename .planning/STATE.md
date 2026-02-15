@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-15)
 ## Current Position
 
 Phase: 16 of 19 (CRUD Operations)
-Plan: 0 of 2 in current phase
-Status: Ready to plan
-Last activity: 2026-02-15 — v1.4 milestone started, roadmap created
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-15 — Plan 16-01 complete (md_writer + add_reference)
 
 Progress: [███████████████░░░░] 76% (15/19 phases complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 24
+- Total plans completed: 25
 - Average duration: ~45 min (estimated)
 - Total execution time: ~18 hours across v1.0-v1.3
 
@@ -31,10 +31,11 @@ Progress: [███████████████░░░░] 76% (15/19
 | v1.1 | 7-8 | 5 | Shipped 2026-02-10 |
 | v1.2 | 9-11 | 3 | Shipped 2026-02-11 |
 | v1.3 | 12-15 | 6 | Shipped 2026-02-11 |
-| v1.4 | 16-19 | 0/5 (est) | In progress |
+| v1.4 | 16-19 | 1/5 (est) | In progress |
 
 **Recent Trend:**
 - v1.3 completed in 1 day with robust error handling and logging
+- v1.4 Phase 16 Plan 01 completed in 3 minutes (md_writer + add_reference)
 - Steady velocity maintained across milestones
 
 *Updated: 2026-02-15*
@@ -50,6 +51,8 @@ Recent decisions from PROJECT.md affecting current work:
 - **v1.2**: File-based SP workflow (HTML + JSON) avoids HTTP server complexity
 - **v1.3**: Module-level PipelineLogger for guaranteed partial logs
 - **v1.3**: Compact French resume in MCP tool responses for user clarity
+- **v1.4 (16-01)**: md_writer is pure library with no runtime dependency on md_parser (round-trip validated by tests)
+- **v1.4 (16-01)**: add_reference uses 'famille' parameter (not 'family') for French naming consistency
 
 Full decision log: .planning/PROJECT.md — Key Decisions table
 
@@ -64,5 +67,5 @@ None yet — v1.4 starting fresh after v1.3 shipped successfully.
 ## Session Continuity
 
 Last session: 2026-02-15
-Stopped at: v1.4 roadmap created with 4 phases (16-19) covering 15 requirements
-Resume file: None — ready to plan Phase 16
+Stopped at: Phase 16 Plan 01 completed (md_writer + add_reference MCP tool)
+Resume file: .planning/phases/16-crud-operations/16-01-SUMMARY.md
