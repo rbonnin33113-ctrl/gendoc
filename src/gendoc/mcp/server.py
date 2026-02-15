@@ -23,7 +23,7 @@ from gendoc.parsers.md_parser import (
     search_products,
     find_products_by_family
 )
-from gendoc.parsers.md_writer import append_product_to_family
+from gendoc.parsers.md_writer import append_product_to_family, update_product_in_family, remove_product_from_family
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 from gendoc.generators.html_sp_selector import generate_sp_selector_html
 from gendoc.utils.sp_server import start_sp_server
@@ -881,6 +881,167 @@ async def add_reference(
         return json.dumps({
             "error": f"Erreur inattendue: {str(e)}",
             "resume": f"Erreur lors de l'ajout de {code}"
+        }, ensure_ascii=False)
+
+
+@mcp.tool()
+async def update_reference(
+    code: str,
+    ref: str | None = None,
+    titre: str | None = None,
+    texte: str | None = None,
+    dimensions: str | None = None,
+    images: str | None = None,
+    metadata_pptx: str | None = None
+) -> str:
+    """
+    Update an existing product reference.
+
+    Args:
+        code: Product code to update
+        ref: Reference string (optional)
+        titre: Product title (optional)
+        texte: Descriptive text (optional)
+        dimensions: JSON string of dimension list (optional)
+        images: JSON string of image list (optional)
+        metadata_pptx: JSON string of PowerPoint metadata list (optional)
+
+    Returns:
+        JSON string with status and resume, or error.
+
+    Example:
+        update_reference("PM-TEST", titre="Updated title", texte="New text")
+        -> {"status": "ok", "code": "PM-TEST", "famille": "paillasse", ...}
+    """
+    try:
+        # Validate required inputs
+        code = code.strip()
+
+        if not code:
+            return json.dumps({
+                "error": "Le code produit est requis",
+                "resume": "ECHEC modification: code vide"
+            }, ensure_ascii=False)
+
+        # Check existence (CRUD-05)
+        product = find_product(code, REFERENCES_DIR)
+        if not product:
+            return json.dumps({
+                "error": f"Code non trouve: {code}",
+                "resume": f"ECHEC modification: code {code} non trouve"
+            }, ensure_ascii=False)
+
+        # Build updates dict from non-None parameters
+        updates = {}
+
+        if ref is not None:
+            updates['ref'] = ref
+
+        if titre is not None:
+            updates['titre'] = titre
+
+        if texte is not None:
+            updates['texte'] = texte
+
+        # Parse JSON fields
+        try:
+            if dimensions is not None:
+                updates['dimensions'] = json.loads(dimensions)
+
+            if images is not None:
+                updates['images'] = json.loads(images)
+
+            if metadata_pptx is not None:
+                updates['metadata_pptx'] = json.loads(metadata_pptx)
+        except json.JSONDecodeError as e:
+            return json.dumps({
+                "error": f"Erreur JSON: {str(e)}",
+                "resume": "ECHEC modification: format JSON invalide"
+            }, ensure_ascii=False)
+
+        # Check if any updates provided
+        if not updates:
+            return json.dumps({
+                "error": "Aucun champ a modifier",
+                "resume": "ECHEC modification: aucun champ specifie"
+            }, ensure_ascii=False)
+
+        # Get family file from product
+        famille = product.get('famille', '')
+        family_path = REFERENCES_DIR / f"{famille}.md"
+
+        # Update product
+        update_product_in_family(family_path, code, updates)
+
+        # Return success
+        champs_modifies = list(updates.keys())
+        return json.dumps({
+            "status": "ok",
+            "code": code,
+            "famille": famille,
+            "champs_modifies": champs_modifies,
+            "resume": f"Reference modifiee: {code} ({len(champs_modifies)} champ(s))"
+        }, ensure_ascii=False, indent=2)
+
+    except Exception as e:
+        return json.dumps({
+            "error": f"Erreur inattendue: {str(e)}",
+            "resume": f"ECHEC modification de {code}"
+        }, ensure_ascii=False)
+
+
+@mcp.tool()
+async def delete_reference(code: str) -> str:
+    """
+    Delete a product reference from the catalog.
+
+    Args:
+        code: Product code to delete
+
+    Returns:
+        JSON string with status and resume, or error.
+
+    Example:
+        delete_reference("PM-TEST")
+        -> {"status": "ok", "code": "PM-TEST", "famille": "paillasse", ...}
+    """
+    try:
+        # Validate required inputs
+        code = code.strip()
+
+        if not code:
+            return json.dumps({
+                "error": "Le code produit est requis",
+                "resume": "ECHEC suppression: code vide"
+            }, ensure_ascii=False)
+
+        # Check existence (CRUD-05)
+        product = find_product(code, REFERENCES_DIR)
+        if not product:
+            return json.dumps({
+                "error": f"Code non trouve: {code}",
+                "resume": f"ECHEC suppression: code {code} non trouve"
+            }, ensure_ascii=False)
+
+        # Get family file from product
+        famille = product.get('famille', '')
+        family_path = REFERENCES_DIR / f"{famille}.md"
+
+        # Delete product
+        remove_product_from_family(family_path, code)
+
+        # Return success
+        return json.dumps({
+            "status": "ok",
+            "code": code,
+            "famille": famille,
+            "resume": f"Reference supprimee: {code} de {famille}"
+        }, ensure_ascii=False, indent=2)
+
+    except Exception as e:
+        return json.dumps({
+            "error": f"Erreur inattendue: {str(e)}",
+            "resume": f"ECHEC suppression de {code}"
         }, ensure_ascii=False)
 
 
