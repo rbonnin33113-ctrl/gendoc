@@ -94,3 +94,27 @@ See: `.planning/milestones/v1.3-ROADMAP.md` for full details.
 
 ---
 
+
+## v1.4 — Gestion CRUD des References (SHIPPED 2026-02-15)
+
+**Goal:** Permettre la gestion complete du catalogue de references produit (ajout, modification, suppression) via des outils MCP, avec copie automatique des images et mise a jour de l'index.
+
+**Started:** 2026-02-15
+**Shipped:** 2026-02-15
+**Phases:** 16-19 (5 plans)
+**Tests:** 108 automated (21 new CRUD tests)
+**Lines of code:** 8,407 Python (source) + 1,965 (tests)
+
+**Key Accomplishments:**
+1. CRUD complet (add_reference, update_reference, delete_reference) via outils MCP avec validation duplicates et existence
+2. Module md_writer avec compatibilite aller-retour md_parser (round-trip valide par tests)
+3. Index automatique (_index.md) regenere apres chaque operation CRUD avec creation infrastructure nouvelles familles
+4. Gestion automatique des images — copie depuis chemin fourni sur add/update, suppression sur delete
+5. Suite de tests CRUD : 21 tests (md_writer, image_handler, index_manager) + test integration lifecycle complet
+
+**Deferred:** GEN-01 (modes CHI/DOE), GEN-02 (fiches-existantes), SYNC-01 (Excel sync)
+
+See: `.planning/milestones/v1.4-ROADMAP.md` for full details.
+
+---
+

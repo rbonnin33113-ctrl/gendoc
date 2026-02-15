@@ -2,36 +2,27 @@
 
 ## What This Is
 
-Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 6,912 lignes Python + 1,517 lignes de tests, 359 references produit, 10 outils MCP, 87 tests automatises.
+Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 8,407 lignes Python + 1,965 lignes de tests, 359+ references produit, 12 outils MCP, 108 tests automatises.
 
 ## Core Value
 
 Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-## Current Milestone: v1.4 Gestion CRUD des References
-
-**Goal:** Permettre la gestion complete du catalogue de references produit (ajout, modification, suppression) via des outils MCP, avec copie automatique des images et mise a jour de l'index.
-
-**Target features:**
-- CRUD complet : add_reference, update_reference, delete_reference
-- Gestion des images : copie automatique depuis un chemin fourni vers Delagrave/images/{famille}/
-- Mise a jour automatique de _index.md a chaque operation
-- Input variable : minimum code + titre + famille, optionnellement texte, dimensions, ref, images
-
-## Current State (v1.3 shipped 2026-02-11)
+## Current State (v1.4 shipped 2026-02-15)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, validators, utils, mcp, cli)
-- **Data**: 359 references dans 9 fichiers MD, 268 images locales
-- **MCP Tools**: lookup_reference, search_references, list_families, analyze_devis, preview_generation, generate_slides, add_reference (stub), create_custom_product, open_sp_selector, load_sp_selection
-- **Skills**: /gendoc-lookup, /gendoc-analyze, /gendoc-generate, /gendoc-full
+- **Data**: 359+ references dans 9+ fichiers MD, 268+ images locales
+- **MCP Tools**: lookup_reference, search_references, list_families, analyze_devis, preview_generation, generate_slides, add_reference, update_reference, delete_reference, create_custom_product, open_sp_selector, load_sp_selection
+- **Skills**: /gendoc-lookup, /gendoc-analyze, /gendoc-generate, /gendoc-full, /gendoc-addarm
 - **Template**: Modele fiche technique vide - Ind J.potm (6 layouts, A4 portrait)
-- **Families**: 8 familles validees (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements)
+- **Families**: 9 familles validees (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements, armoire-securite)
 - **SP Workflow**: analyze_devis -> open_sp_selector (HTML) -> load_sp_selection (JSON) -> generate_slides
+- **CRUD**: add_reference, update_reference, delete_reference avec md_writer, image_handler, index_manager
 - **Logging**: PipelineLogger cree un fichier LOG.md par execution dans Delagrave/output/logs/
 - **Resilience**: try/except par produit, warnings propages, resume compact en francais
 - **Detection**: EXCLUSION_WORDS (33 entries) + pattern mesures, inconnus logges individuellement
 - **Hot-reload**: Modifications des generateurs prises en compte sans redemarrage MCP
-- **Tests**: 87 tests pytest (16 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling) — <20s
+- **Tests**: 108 tests pytest (16 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling, 21 CRUD) — <20s
 
 ## Requirements
 
@@ -58,12 +49,15 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - Detection devis : reduction des faux positifs (33 mots exclusion + pattern mesures) — v1.3
 - Gestion d'erreurs : pipeline resilient, try/except par produit, warnings propages — v1.3
 - Sortie resume compact : progression concise en francais dans chaque outil MCP — v1.3
+- CRUD complet des references (add, update, delete) via outils MCP — v1.4
+- Copie automatique des images depuis chemin fourni sur add/update — v1.4
+- Suppression automatique des images sur delete — v1.4
+- Mise a jour automatique de _index.md apres chaque operation CRUD — v1.4
+- Creation automatique infrastructure nouvelles familles (MD + images dir) — v1.4
+- Suite de tests CRUD : 21 tests unitaires + integration lifecycle — v1.4
 
 ### Active
 
-- [ ] CRUD complet des references (add, update, delete) via outils MCP — v1.4
-- [ ] Copie automatique des images depuis chemin fourni — v1.4
-- [ ] Mise a jour automatique de _index.md — v1.4
 - [ ] Modes de generation CHI/DOE/FTI (deferred from v1.0)
 - [ ] Integration des fiches-existantes (fichiers .pptx pre-existants)
 - [ ] Synchronisation automatique Excel -> MD
@@ -78,6 +72,7 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - Gestion des quantites SP — non necessaire pour les fiches techniques
 - Dashboard web de logs — les fichiers LOG.md suffisent
 - Retry automatique — les erreurs doivent etre analysees, pas masquees
+- Bulk import CSV/Excel — une reference a la fois via CRUD MCP
 
 ## Constraints
 
@@ -91,13 +86,13 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
 | MD comme source de verite | Decouple des macros Excel, versionnable | Good — 359 refs extraites, lookup fonctionnel |
-| Serveur MCP unique FastMCP | Permet a Claude d'appeler les outils directement | Good — 10 outils, pipeline complet |
+| Serveur MCP unique FastMCP | Permet a Claude d'appeler les outils directement | Good — 12 outils, pipeline complet |
 | Document complet (pas fiches isolees) | L'utilisateur veut un dossier pret a l'emploi | Good — couverture, sommaire, chapitres |
 | Conversion .potm via zipfile | python-pptx ne lit pas les .potm natifs | Good — trick fiable |
 | Split texte revetement en 3 zones | Texte debordait du cadre unique | Good — TEXTE/MEO/FINITION |
-| VBA_TO_PLACEHOLDER pour toutes les familles | Mapping systematique VBA -> placeholder idx | Good — 8 familles couvertes |
+| VBA_TO_PLACEHOLDER pour toutes les familles | Mapping systematique VBA -> placeholder idx | Good — 9 familles couvertes |
 | Custom products via deep copy + field override | Articles speciaux SP sans reference catalogue | Good — flexible, MCP tool cree |
-| Pytest parametrize par famille | Un test par famille, execution rapide | Good — 87 tests en <20s |
+| Pytest parametrize par famille | Un test par famille, execution rapide | Good — 108 tests en <20s |
 | Designation extraction multi-lignes | Articles SP ont des descriptions longues dans le PDF | Good — texte complet avec dimensions |
 | HTML auto-contenu avec catalogue embarque | Pas de serveur HTTP, pas de dependances externes | Good — 320 produits, ~500KB HTML |
 | Partial export SP | L'utilisateur peut configurer seulement certains SP | Good — feedback utilisateur integre |
@@ -107,6 +102,11 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | EXCLUSION_WORDS set + pattern regex | Double filtrage : mots connus + mesures NNN+MM | Good — inconnus propres |
 | try/except par slide builder | Erreur individuelle n'arrete pas le pipeline | Good — warnings propages jusqu'au resume |
 | Resume compact en francais | L'utilisateur voit la progression, pas les details techniques | Good — exploitable directement par Claude |
+| md_writer decouple de md_parser | Round-trip valide par tests, pas par couplage runtime | Good — modules independants, format compatible |
+| Partial updates dans update_reference | Modifier un champ sans envoyer les autres | Good — API flexible |
+| Code/famille protege en update | Identifiants structurels non modifiables | Good — coherence preservee |
+| Index refresh secondaire | Echec index ne bloque pas CRUD | Good — operations CRUD fiables |
+| Image operations secondaires | Echec copie/suppression ne bloque pas CRUD | Good — degradation gracieuse |
 
 ---
-*Last updated: 2026-02-15 after v1.4 milestone started*
+*Last updated: 2026-02-16 after v1.4 milestone*
