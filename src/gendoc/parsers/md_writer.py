@@ -255,3 +255,163 @@ def update_header_count(filepath: Path, new_count: int) -> None:
     )
 
     filepath.write_text(content, encoding='utf-8')
+
+
+def _read_header(filepath: Path) -> str:
+    """
+    Read the header section of a family MD file.
+
+    The header is everything before the first product section (before first '\\n## ').
+
+    Args:
+        filepath: Path to the family MD file
+
+    Returns:
+        Header text (includes family name, metadata, extraction date, etc.)
+
+    Example:
+        >>> from pathlib import Path
+        >>> import tempfile
+        >>> tmp = Path(tempfile.mktemp(suffix='.md'))
+        >>> tmp.write_text('# Test\\n\\n> Total references: 1\\n\\n## PROD1\\n', encoding='utf-8')
+        44
+        >>> header = _read_header(tmp)
+        >>> '# Test' in header
+        True
+        >>> tmp.unlink()
+    """
+    if not filepath.exists():
+        return ""
+
+    content = filepath.read_text(encoding='utf-8')
+
+    # Split on first product section
+    parts = content.split('\n## ', 1)
+    return parts[0] if parts else ""
+
+
+def update_product_in_family(filepath: Path, code: str, updates: dict) -> dict:
+    """
+    Update an existing product in a family MD file.
+
+    Performs read-modify-write of the entire file. Only updates fields present
+    in the updates dict (partial update). Cannot update 'code' or 'famille'
+    (structural identifiers).
+
+    Args:
+        filepath: Path to the family MD file
+        code: Product code to update (case-insensitive match)
+        updates: Dictionary of fields to update. Valid keys:
+            - ref, titre, texte, dimensions, images, metadata_pptx
+
+    Returns:
+        Updated product dictionary
+
+    Raises:
+        ValueError: If code not found, or if trying to update code/famille
+
+    Example:
+        >>> from pathlib import Path
+        >>> import tempfile
+        >>> tmp = Path(tempfile.mktemp(suffix='.md'))
+        >>> product = {'code': 'P1', 'ref': '', 'titre': 'Original',
+        ...            'famille': 'test', 'texte': '', 'dimensions': [],
+        ...            'images': [], 'metadata_pptx': []}
+        >>> append_product_to_family(tmp, product)
+        >>> updated = update_product_in_family(tmp, 'P1', {'titre': 'Updated'})
+        >>> updated['titre']
+        'Updated'
+        >>> tmp.unlink()
+    """
+    # Import here to avoid circular dependency at module level
+    from gendoc.parsers.md_parser import parse_family_md
+
+    # Validate updates
+    if 'code' in updates or 'famille' in updates:
+        raise ValueError("Cannot update code or famille - use delete + add instead")
+
+    # Parse all products
+    products = parse_family_md(filepath)
+
+    # Find product by code (case-insensitive)
+    product_index = None
+    for i, product in enumerate(products):
+        if product.get('code', '').upper() == code.upper():
+            product_index = i
+            break
+
+    if product_index is None:
+        raise ValueError(f"Code non trouve dans {filepath.name}: {code}")
+
+    # Apply updates to the found product
+    for key, value in updates.items():
+        products[product_index][key] = value
+
+    # Read header to preserve it
+    header = _read_header(filepath)
+    header_lines = header.split('\n') if header else []
+
+    # Rewrite file
+    write_family_file(filepath, header_lines, products)
+
+    return products[product_index]
+
+
+def remove_product_from_family(filepath: Path, code: str) -> dict:
+    """
+    Remove a product from a family MD file.
+
+    Performs read-filter-write of the entire file. Updates the reference count.
+
+    Args:
+        filepath: Path to the family MD file
+        code: Product code to remove (case-insensitive match)
+
+    Returns:
+        Removed product dictionary (for confirmation)
+
+    Raises:
+        ValueError: If code not found
+
+    Example:
+        >>> from pathlib import Path
+        >>> import tempfile
+        >>> tmp = Path(tempfile.mktemp(suffix='.md'))
+        >>> p1 = {'code': 'P1', 'ref': '', 'titre': 'Product 1',
+        ...       'famille': 'test', 'texte': '', 'dimensions': [],
+        ...       'images': [], 'metadata_pptx': []}
+        >>> append_product_to_family(tmp, p1)
+        >>> removed = remove_product_from_family(tmp, 'P1')
+        >>> removed['code']
+        'P1'
+        >>> tmp.unlink()
+    """
+    # Import here to avoid circular dependency at module level
+    from gendoc.parsers.md_parser import parse_family_md
+
+    # Parse all products
+    products = parse_family_md(filepath)
+
+    # Find and remove product by code (case-insensitive)
+    removed_product = None
+    remaining_products = []
+    for product in products:
+        if product.get('code', '').upper() == code.upper():
+            removed_product = product
+        else:
+            remaining_products.append(product)
+
+    if removed_product is None:
+        raise ValueError(f"Code non trouve dans {filepath.name}: {code}")
+
+    # Read header to preserve it
+    header = _read_header(filepath)
+    header_lines = header.split('\n') if header else []
+
+    # Rewrite file with remaining products
+    write_family_file(filepath, header_lines, remaining_products)
+
+    # Update reference count in header
+    update_header_count(filepath, len(remaining_products))
+
+    return removed_product
