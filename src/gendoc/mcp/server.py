@@ -24,6 +24,7 @@ from gendoc.parsers.md_parser import (
     find_products_by_family
 )
 from gendoc.parsers.md_writer import append_product_to_family, update_product_in_family, remove_product_from_family
+from gendoc.parsers.index_manager import ensure_family_infrastructure, refresh_index
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 from gendoc.generators.html_sp_selector import generate_sp_selector_html
 from gendoc.utils.sp_server import start_sp_server
@@ -861,21 +862,39 @@ async def add_reference(
             'metadata_pptx': metadata_pptx_list
         }
 
+        # Ensure family infrastructure exists (creates images directory for new families)
+        infra_result = ensure_family_infrastructure(famille, REFERENCES_DIR)
+
         # Write to family file
         family_path = REFERENCES_DIR / f"{famille.lower()}.md"
         append_product_to_family(family_path, product)
 
+        # Refresh _index.md
+        try:
+            refresh_index(REFERENCES_DIR)
+        except Exception as idx_err:
+            # Index refresh failed but CRUD operation succeeded
+            pass
+
         # Calculate relative path for response
         relative_path = f"Delagrave/references/{famille.lower()}.md"
 
-        # Return success
-        return json.dumps({
+        # Build response
+        result = {
             "status": "ok",
             "code": code,
             "famille": famille.lower(),
             "fichier": relative_path,
             "resume": f"Reference ajoutee: {code} dans {famille.lower()}"
-        }, ensure_ascii=False)
+        }
+
+        # Add nouvelle_famille flag if this was a new family
+        if infra_result.get("images_dir_created"):
+            result["nouvelle_famille"] = True
+            result["resume"] += " (nouvelle famille)"
+
+        # Return success
+        return json.dumps(result, ensure_ascii=False)
 
     except Exception as e:
         return json.dumps({
@@ -973,6 +992,13 @@ async def update_reference(
         # Update product
         update_product_in_family(family_path, code, updates)
 
+        # Refresh _index.md
+        try:
+            refresh_index(REFERENCES_DIR)
+        except Exception as idx_err:
+            # Index refresh failed but CRUD operation succeeded
+            pass
+
         # Return success
         champs_modifies = list(updates.keys())
         return json.dumps({
@@ -1029,6 +1055,13 @@ async def delete_reference(code: str) -> str:
 
         # Delete product
         remove_product_from_family(family_path, code)
+
+        # Refresh _index.md
+        try:
+            refresh_index(REFERENCES_DIR)
+        except Exception as idx_err:
+            # Index refresh failed but CRUD operation succeeded
+            pass
 
         # Return success
         return json.dumps({
