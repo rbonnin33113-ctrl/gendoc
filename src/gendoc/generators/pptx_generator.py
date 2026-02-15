@@ -26,14 +26,15 @@ DELAGRAVE_BLUE = RGBColor(0, 85, 164)
 
 # Family to layout index mapping
 FAMILY_LAYOUT_MAP = {
-    'paillasse': 1,   # Fiche technique profil paillasse
-    'sorbonne': 2,    # Fiche technique sorbonne
-    'revetement': 3,  # Fiche technique revetement
-    'meubles': 4,     # Fiche technique meuble
-    'tables-en': 4,   # Same layout as meubles
-    'equipement': 5,  # Fiche technique equipement
-    'elec-sorb': 5,   # Same layout as equipement
-    'complements': 5, # Same layout as equipement
+    'paillasse': 1,        # Fiche technique profil paillasse
+    'sorbonne': 2,         # Fiche technique sorbonne
+    'revetement': 3,       # Fiche technique revetement
+    'meubles': 4,          # Fiche technique meuble
+    'tables-en': 4,        # Same layout as meubles
+    'equipement': 5,       # Fiche technique equipement
+    'elec-sorb': 5,        # Same layout as equipement
+    'complements': 5,      # Same layout as equipement
+    'armoire-securite': 0, # Modern template only (2 pages per product)
 }
 
 # VBA shape index to python-pptx placeholder index mapping

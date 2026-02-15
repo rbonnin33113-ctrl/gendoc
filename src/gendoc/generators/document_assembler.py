@@ -31,7 +31,8 @@ FAMILY_ORDER = [
     'tables-en',
     'equipement',
     'elec-sorb',
-    'complements'
+    'complements',
+    'armoire-securite'
 ]
 
 # Family display names (French with proper accents)
@@ -43,7 +44,8 @@ FAMILY_DISPLAY_NAMES = {
     'tables-en': 'Tables EN',
     'equipement': 'Équipement',
     'elec-sorb': 'Électricité Sorbonne',
-    'complements': 'Compléments'
+    'complements': 'Compléments',
+    'armoire-securite': 'Armoires de Sécurité'
 }
 
 

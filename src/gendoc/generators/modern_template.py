@@ -618,7 +618,9 @@ def build_separator(prs, family_name, family_display):
 def build_product_slide(prs, product, family, project_root, logo_path):
     """Dispatch to family-specific builder. Returns list of warning strings."""
     try:
-        if family in ('equipement', 'elec-sorb', 'complements'):
+        if family == 'armoire-securite':
+            return _build_armoire_slide(prs, product, project_root, logo_path)
+        elif family in ('equipement', 'elec-sorb', 'complements'):
             return _build_simple_slide(prs, product, project_root, logo_path)
         elif family == 'revetement':
             return _build_revetement_slide(prs, product, project_root, logo_path)
@@ -846,3 +848,340 @@ def add_page_numbers(prs):
         r.font.bold = True
         r.font.name = FONT
         r.font.color.rgb = BRAND
+
+
+# ═════════════════════════════════════════════════════════════
+# Armoire-securite helpers and builder
+# ═════════════════════════════════════════════════════════════
+
+def _parse_armoire_texte(texte):
+    """Parse armoire texte field into description, certificats, and fonction.
+
+    Format in MD texte:
+        Description lines...
+        ---CERTIFICATS---
+        cert1
+        cert2
+        ---FONCTION---
+        Keyword : description
+    """
+    description = texte
+    certificats = []
+    fonctions = []
+
+    if '---CERTIFICATS---' in texte:
+        parts = texte.split('---CERTIFICATS---')
+        description = parts[0].strip()
+        rest = parts[1]
+
+        if '---FONCTION---' in rest:
+            cert_part, fonc_part = rest.split('---FONCTION---')
+        else:
+            cert_part = rest
+            fonc_part = ''
+
+        certificats = [l.strip() for l in cert_part.strip().split('\n') if l.strip()]
+        for line in fonc_part.strip().split('\n'):
+            line = line.strip()
+            if not line:
+                continue
+            if ' : ' in line:
+                kw, desc = line.split(' : ', 1)
+                fonctions.append((kw.strip(), desc.strip()))
+            else:
+                fonctions.append(line)
+
+    return description, certificats, fonctions
+
+
+def _ref_line(slide, prs, ref_text):
+    """Small reference line right-aligned just below the title band."""
+    if not ref_text:
+        return
+    sw = prs.slide_width
+    box = slide.shapes.add_textbox(sw - Cm(10.5), Cm(3.2), Cm(10), Cm(0.4))
+    p = box.text_frame.paragraphs[0]
+    p.alignment = PP_ALIGN.RIGHT
+    r = p.add_run()
+    r.text = ref_text
+    r.font.size = Pt(8)
+    r.font.name = FONT
+    r.font.color.rgb = TEXT_LIGHT
+    r.font.italic = True
+
+
+def _rich_bullets(slide, items, x, y, w, h):
+    """Bullet list with bold keyword + normal description.
+    items: list of (keyword, description) tuples or plain strings.
+    """
+    box = slide.shapes.add_textbox(x, y, w, h)
+    tf = box.text_frame
+    tf.word_wrap = True
+    tf.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
+    tf.text = ""
+    indent = Cm(0.4)
+
+    for i, item in enumerate(items):
+        p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+
+        bullet_run = p.add_run()
+        bullet_run.text = f"{BULLET} "
+        bullet_run.font.color.rgb = ACCENT
+        bullet_run.font.size = Pt(10)
+        bullet_run.font.name = FONT
+        bullet_run.font.bold = True
+
+        if isinstance(item, tuple):
+            keyword, desc = item
+            kw_run = p.add_run()
+            kw_run.text = f"{keyword} : "
+            kw_run.font.size = Pt(9)
+            kw_run.font.name = FONT
+            kw_run.font.color.rgb = BRAND
+            kw_run.font.bold = True
+            desc_run = p.add_run()
+            desc_run.text = desc
+            desc_run.font.size = Pt(9)
+            desc_run.font.name = FONT
+            desc_run.font.color.rgb = TEXT_MAIN
+        else:
+            text_run = p.add_run()
+            text_run.text = item
+            text_run.font.size = Pt(9)
+            text_run.font.name = FONT
+            text_run.font.color.rgb = TEXT_MAIN
+
+        p.alignment = PP_ALIGN.LEFT
+        p.space_after = Pt(3)
+        pPr = p._p.get_or_add_pPr()
+        pPr.set('marL', str(indent))
+        pPr.set('indent', str(-indent))
+
+    return y + h
+
+
+def _certif_badges(slide, certificats, x, y, w):
+    """Compact certification list."""
+    box = slide.shapes.add_textbox(x, y, w, Cm(2.5))
+    tf = box.text_frame
+    tf.word_wrap = True
+    tf.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
+    tf.text = ""
+
+    for i, cert in enumerate(certificats):
+        p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+        bullet_run = p.add_run()
+        bullet_run.text = f"{BULLET} "
+        bullet_run.font.color.rgb = ACCENT
+        bullet_run.font.size = Pt(8)
+        bullet_run.font.name = FONT
+        bullet_run.font.bold = True
+
+        text_run = p.add_run()
+        text_run.text = cert
+        text_run.font.size = Pt(8)
+        text_run.font.name = FONT
+        text_run.font.color.rgb = TEXT_MAIN
+
+        p.space_after = Pt(1)
+        p.alignment = PP_ALIGN.LEFT
+
+    return y + Cm(2.5)
+
+
+def _wide_dimensions_table(slide, dims, x, y, w):
+    """Wide dimensions table. Two side-by-side columns if > 6 rows."""
+    if not dims:
+        return y
+
+    row_h = Cm(0.50)
+
+    if len(dims) > 6:
+        mid = (len(dims) + 1) // 2
+        col1 = dims[:mid]
+        col2 = dims[mid:]
+        col_w = (w - Cm(0.5)) / 2
+
+        _draw_dim_column(slide, col1, x, y, col_w, row_h)
+        _draw_dim_column(slide, col2, x + col_w + Cm(0.5), y, col_w, row_h)
+
+        max_rows = max(len(col1), len(col2))
+        return y + (max_rows + 1) * row_h + Cm(0.15)
+    else:
+        _draw_dim_column(slide, dims, x, y, w, row_h)
+        return y + (len(dims) + 1) * row_h + Cm(0.15)
+
+
+def _draw_dim_column(slide, dims, x, y, w, row_h):
+    """Draw a single dimensions column with header."""
+    _rect(slide, x, y, w, row_h, BRAND)
+    hb = slide.shapes.add_textbox(x + Cm(0.3), y, int(w * 0.6), row_h)
+    tf = hb.text_frame
+    tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+    p = tf.paragraphs[0]
+    p.text = "Caractéristique"
+    p.font.size = Pt(7.5)
+    p.font.bold = True
+    p.font.name = FONT
+    p.font.color.rgb = WHITE
+
+    hb2 = slide.shapes.add_textbox(x + int(w * 0.6), y, int(w * 0.37), row_h)
+    tf = hb2.text_frame
+    tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+    p = tf.paragraphs[0]
+    p.alignment = PP_ALIGN.RIGHT
+    p.text = "Valeur"
+    p.font.size = Pt(7.5)
+    p.font.bold = True
+    p.font.name = FONT
+    p.font.color.rgb = WHITE
+
+    for i, dim in enumerate(dims):
+        name = dim.get('name', '').strip()
+        valeur = dim.get('valeur', '').strip()
+        if not name or not valeur:
+            continue
+
+        ry = y + (i + 1) * row_h
+        bg = BG_ALT if i % 2 == 0 else WHITE
+        _rect(slide, x, ry, w, row_h, bg)
+
+        lb = slide.shapes.add_textbox(x + Cm(0.3), ry, int(w * 0.58), row_h)
+        tf = lb.text_frame
+        tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+        p = tf.paragraphs[0]
+        p.text = name
+        p.font.size = Pt(7.5)
+        p.font.name = FONT
+        p.font.color.rgb = TEXT_MAIN
+
+        vb = slide.shapes.add_textbox(x + int(w * 0.58), ry, int(w * 0.37), row_h)
+        tf = vb.text_frame
+        tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+        p = tf.paragraphs[0]
+        p.alignment = PP_ALIGN.RIGHT
+        p.text = valeur
+        p.font.size = Pt(7.5)
+        p.font.bold = True
+        p.font.name = FONT
+        p.font.color.rgb = BRAND
+
+    _rect(slide, x, y + (len(dims) + 1) * row_h, w, Cm(0.04), ACCENT)
+
+
+def _build_armoire_slide(prs, product, project_root, logo_path):
+    """Armoire-securite: 2 pages per product (Option C layout).
+
+    Page 1: Photo + schema interieur (left) / Description + certificats + fonction (right)
+    Page 2: Full-width specs table + plan technique
+
+    Returns list of warning strings.
+    """
+    try:
+        warnings = []
+        texte = product.get('texte', '')
+        description, certificats, fonctions = _parse_armoire_texte(texte)
+        images = product.get('images', [])
+
+        # ── PAGE 1: Presentation ──
+        slide1 = prs.slides.add_slide(prs.slide_layouts[0])
+
+        _header(slide1, prs, logo_path)
+        _title_band(slide1, prs, product.get('titre', ''))
+        _ref_line(slide1, prs, product.get('ref', ''))
+        _footer(slide1, prs)
+
+        # Image zone (left) — card
+        img_x = Cm(0.5)
+        img_w = Cm(8.5)
+        img_top = Cm(3.5)
+        img_bot = Cm(27)
+        img_h = img_bot - img_top
+
+        card = _rect(slide1, img_x, img_top, img_w, img_h, WHITE)
+        card.line.color.rgb = DIVIDER
+        card.line.width = Pt(0.5)
+        _add_shadow(card)
+        _rect(slide1, img_x, img_top, Cm(0.08), img_h, ACCENT)
+
+        # Photo produit in upper half
+        photo_images = [img for img in images if 'photo' in img.get('position', '').lower()]
+        if not photo_images:
+            photo_images = [img for img in images if 'schema' not in img.get('position', '').lower()
+                            and 'plan' not in img.get('position', '').lower()]
+        if not photo_images:
+            photo_images = images[:1]
+
+        half_h = img_h // 2 - Cm(0.5)
+        inserted = _insert_image(
+            slide1, photo_images, project_root,
+            img_x + Cm(0.5), img_top + Cm(0.4), img_w - Cm(1.0), half_h
+        )
+        if not inserted and photo_images:
+            warnings.append(f"Aucune photo inseree pour {product.get('code', '?')}")
+
+        # Schema interieur in lower half
+        schema_images = [img for img in images if 'schema' in img.get('position', '').lower()]
+        if schema_images:
+            _insert_image(
+                slide1, schema_images, project_root,
+                img_x + Cm(0.5), img_top + half_h + Cm(1.0),
+                img_w - Cm(1.0), half_h
+            )
+
+        # Text zone (right)
+        tx = Cm(9.8)
+        tw = Cm(10.5)
+        y = Cm(3.5)
+
+        if description:
+            y = _section_label(slide1, 'Description', tx, y, tw)
+            lines = description.split('\n')
+            desc_h = min(Cm(5), max(Cm(2.5), Cm(0.5) * len(lines) + Cm(0.5)))
+            y = _text_with_bullets(slide1, description, tx, y, tw, desc_h)
+            y += Cm(0.4)
+
+        if certificats:
+            y = _section_label(slide1, 'Certificats & Normes', tx, y, tw)
+            y = _certif_badges(slide1, certificats, tx, y, tw)
+            y += Cm(0.4)
+
+        if fonctions:
+            y = _section_label(slide1, 'Fonction / Construction', tx, y, tw)
+            remaining_h = Cm(27) - y
+            _rich_bullets(slide1, fonctions, tx, y, tw, remaining_h)
+
+        # ── PAGE 2: Specs + plan technique ──
+        slide2 = prs.slides.add_slide(prs.slide_layouts[0])
+        sw = prs.slide_width
+
+        _header(slide2, prs, logo_path)
+        code = product.get('code', '')
+        _title_band(slide2, prs, f"Caractéristiques techniques — {code}")
+        _ref_line(slide2, prs, product.get('ref', ''))
+        _footer(slide2, prs)
+
+        y = Cm(3.8)
+        dims = product.get('dimensions', [])
+        table_w = sw - Cm(2)
+        table_x = Cm(1.0)
+
+        _section_label(slide2, 'Caractéristiques techniques', table_x, y, table_w)
+        y += Cm(0.7)
+        y = _wide_dimensions_table(slide2, dims, table_x, y, table_w)
+        y += Cm(0.8)
+
+        plan_images = [img for img in images if 'plan' in img.get('position', '').lower()]
+
+        if plan_images:
+            _section_label(slide2, 'Plan dimensionnel', table_x, y, table_w)
+            y += Cm(0.7)
+            remaining_h = Cm(27) - y
+            _insert_image(
+                slide2, plan_images, project_root,
+                table_x, y, table_w, remaining_h
+            )
+
+        return warnings
+    except Exception as e:
+        return [f"Erreur inattendue sur slide armoire: {str(e)}"]
