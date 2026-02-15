@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-15)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
-**Current focus:** Phase 16: CRUD Operations
+**Current focus:** Phase 17: Family Index Management
 
 ## Current Position
 
-Phase: 16 of 19 (CRUD Operations)
-Plan: 2 of 2 in current phase
+Phase: 17 of 19 (Family Index Management)
+Plan: 1 of 1 in current phase
 Status: Phase complete
-Last activity: 2026-02-15 — Plan 16-02 complete (update_reference + delete_reference, complete CRUD)
+Last activity: 2026-02-15 — Plan 17-01 complete (automatic index refresh and family infrastructure)
 
-Progress: [████████████████░░░] 84% (16/19 phases complete)
+Progress: [█████████████████░░] 89% (17/19 phases complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 27
-- Average duration: ~30 min (estimated)
-- Total execution time: ~18.5 hours across v1.0-v1.4
+- Total plans completed: 28
+- Average duration: ~25 min (estimated)
+- Total execution time: ~19 hours across v1.0-v1.4
 
 **By Milestone:**
 
@@ -31,12 +31,13 @@ Progress: [████████████████░░░] 84% (16/19
 | v1.1 | 7-8 | 5 | Shipped 2026-02-10 |
 | v1.2 | 9-11 | 3 | Shipped 2026-02-11 |
 | v1.3 | 12-15 | 6 | Shipped 2026-02-11 |
-| v1.4 | 16-19 | 2/5 (est) | In progress |
+| v1.4 | 16-19 | 3/5 (est) | In progress |
 
 **Recent Trend:**
 - v1.3 completed in 1 day with robust error handling and logging
 - v1.4 Phase 16 completed in 6 minutes total (2 plans, full CRUD capability)
-- Exceptional velocity: 3 minutes per plan for CRUD operations
+- v1.4 Phase 17 completed in 3 minutes (1 plan, automatic index management)
+- Exceptional velocity: 3 minutes per plan average for v1.4
 
 *Updated: 2026-02-15*
 
@@ -55,6 +56,9 @@ Recent decisions from PROJECT.md affecting current work:
 - **v1.4 (16-01)**: add_reference uses 'famille' parameter (not 'family') for French naming consistency
 - **v1.4 (16-02)**: update_reference performs partial updates only (more flexible than full replacement)
 - **v1.4 (16-02)**: Cannot update code or famille via update_reference (structural identifiers protected)
+- **v1.4 (17-01)**: _index.md auto-refreshes after every CRUD operation (always accurate)
+- **v1.4 (17-01)**: New families get images directory created automatically on first add
+- **v1.4 (17-01)**: Index refresh failures don't cause CRUD operations to fail (secondary operation)
 
 Full decision log: .planning/PROJECT.md — Key Decisions table
 
@@ -69,5 +73,5 @@ None yet — v1.4 starting fresh after v1.3 shipped successfully.
 ## Session Continuity
 
 Last session: 2026-02-15
-Stopped at: Phase 16 Plan 02 completed (update_reference + delete_reference, full CRUD capability)
-Resume file: .planning/phases/16-crud-operations/16-02-SUMMARY.md
+Stopped at: Phase 17 Plan 01 completed (automatic index refresh and family infrastructure)
+Resume file: .planning/phases/17-family-index-management/17-01-SUMMARY.md
