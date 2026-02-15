@@ -66,8 +66,8 @@
 **Plans**: 2 plans in 2 waves
 
 Plans:
-- [ ] 16-01-PLAN.md — MD writer foundation + add_reference
-- [ ] 16-02-PLAN.md — update_reference + delete_reference
+- [x] 16-01-PLAN.md — MD writer foundation + add_reference
+- [x] 16-02-PLAN.md — update_reference + delete_reference
 
 #### Phase 17: Family and Index Management
 **Goal**: Le systeme gere automatiquement les nouvelles familles et met a jour l'index apres chaque operation
@@ -129,7 +129,7 @@ Plans:
 | 13. Logging Infrastructure | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 14. Detection Robustesse | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 15. Gestion Erreurs et Resume | v1.3 | 2/2 | Complete | 2026-02-11 |
-| 16. CRUD Operations | v1.4 | 0/2 | Not started | - |
+| 16. CRUD Operations | v1.4 | 2/2 | Complete | 2026-02-15 |
 | 17. Family and Index Management | v1.4 | 0/1 | Not started | - |
 | 18. Image Management | v1.4 | 0/1 | Not started | - |
 | 19. Tests and Integration | v1.4 | 0/1 | Not started | - |
