@@ -63,11 +63,11 @@
   3. User can update existing product fields (titre, texte, dimensions, ref, images)
   4. User can delete a product reference from the catalog
   5. System prevents duplicate codes on add and validates existence on update/delete
-**Plans**: TBD
+**Plans**: 2 plans in 2 waves
 
 Plans:
-- [ ] 16-01: TBD
-- [ ] 16-02: TBD
+- [ ] 16-01-PLAN.md — MD writer foundation + add_reference
+- [ ] 16-02-PLAN.md — update_reference + delete_reference
 
 #### Phase 17: Family and Index Management
 **Goal**: Le systeme gere automatiquement les nouvelles familles et met a jour l'index apres chaque operation
