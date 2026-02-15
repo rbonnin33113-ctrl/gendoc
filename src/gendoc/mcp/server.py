@@ -25,6 +25,7 @@ from gendoc.parsers.md_parser import (
 )
 from gendoc.parsers.md_writer import append_product_to_family, update_product_in_family, remove_product_from_family
 from gendoc.parsers.index_manager import ensure_family_infrastructure, refresh_index
+from gendoc.parsers.image_handler import copy_product_images, remove_product_images
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 from gendoc.generators.html_sp_selector import generate_sp_selector_html
 from gendoc.utils.sp_server import start_sp_server
@@ -109,6 +110,7 @@ def _reload_assembler_constants():
 # This ensures the path works regardless of where the MCP server is started from
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 REFERENCES_DIR = PROJECT_ROOT / "Delagrave" / "references"
+IMAGES_DIR = PROJECT_ROOT / "Delagrave" / "images"
 TEMPLATE_PATH = PROJECT_ROOT / "Delagrave" / "Modele fiches - Powerpoint" / "Modèle fiche technique vide - Ind J.potm"
 OUTPUT_DIR = PROJECT_ROOT / "Delagrave" / "output"
 
@@ -784,7 +786,8 @@ async def add_reference(
     texte: str = "",
     dimensions: str = "[]",
     images: str = "[]",
-    metadata_pptx: str = "[]"
+    metadata_pptx: str = "[]",
+    image_sources: str = "[]"
 ) -> str:
     """
     Add a new product reference to a family.
@@ -798,6 +801,7 @@ async def add_reference(
         dimensions: JSON string of dimension list (optional)
         images: JSON string of image list (optional)
         metadata_pptx: JSON string of PowerPoint metadata list (optional)
+        image_sources: JSON string of absolute file paths to copy (optional)
 
     Returns:
         JSON string with status and resume, or error.
@@ -850,6 +854,21 @@ async def add_reference(
                 "resume": "Erreur: format JSON invalide"
             }, ensure_ascii=False)
 
+        # Parse image source paths
+        try:
+            image_source_paths = json.loads(image_sources)
+        except json.JSONDecodeError as e:
+            return json.dumps({
+                "error": f"Erreur JSON image_sources: {str(e)}",
+                "resume": "Erreur: format JSON invalide"
+            }, ensure_ascii=False)
+
+        # If user provided source paths, copy images and use returned dicts
+        if image_source_paths:
+            copied_images = copy_product_images(image_source_paths, famille.lower(), IMAGES_DIR)
+            # Merge: copied images replace any manual images list
+            images_list = copied_images
+
         # Build product dict
         product = {
             'code': code,
@@ -893,6 +912,11 @@ async def add_reference(
             result["nouvelle_famille"] = True
             result["resume"] += " (nouvelle famille)"
 
+        # Add images count if any were copied
+        if image_source_paths:
+            result["images_copiees"] = len([i for i in images_list if "error" not in i])
+            result["resume"] += f", {result['images_copiees']} image(s) copiee(s)"
+
         # Return success
         return json.dumps(result, ensure_ascii=False)
 
@@ -911,7 +935,8 @@ async def update_reference(
     texte: str | None = None,
     dimensions: str | None = None,
     images: str | None = None,
-    metadata_pptx: str | None = None
+    metadata_pptx: str | None = None,
+    image_sources: str | None = None
 ) -> str:
     """
     Update an existing product reference.
@@ -924,6 +949,7 @@ async def update_reference(
         dimensions: JSON string of dimension list (optional)
         images: JSON string of image list (optional)
         metadata_pptx: JSON string of PowerPoint metadata list (optional)
+        image_sources: JSON string of absolute file paths to copy (optional)
 
     Returns:
         JSON string with status and resume, or error.
@@ -977,6 +1003,22 @@ async def update_reference(
                 "error": f"Erreur JSON: {str(e)}",
                 "resume": "ECHEC modification: format JSON invalide"
             }, ensure_ascii=False)
+
+        # Handle image source copying
+        if image_sources is not None:
+            try:
+                image_source_paths = json.loads(image_sources)
+            except json.JSONDecodeError as e:
+                return json.dumps({
+                    "error": f"Erreur JSON image_sources: {str(e)}",
+                    "resume": "ECHEC modification: format JSON invalide"
+                }, ensure_ascii=False)
+
+            if image_source_paths:
+                # Get famille from existing product
+                famille = product.get('famille', '')
+                copied_images = copy_product_images(image_source_paths, famille, IMAGES_DIR)
+                updates['images'] = copied_images
 
         # Check if any updates provided
         if not updates:
@@ -1056,6 +1098,9 @@ async def delete_reference(code: str) -> str:
         # Delete product
         remove_product_from_family(family_path, code)
 
+        # Remove associated image files from disk
+        image_stats = remove_product_images(product, IMAGES_DIR)
+
         # Refresh _index.md
         try:
             refresh_index(REFERENCES_DIR)
@@ -1063,13 +1108,19 @@ async def delete_reference(code: str) -> str:
             # Index refresh failed but CRUD operation succeeded
             pass
 
-        # Return success
-        return json.dumps({
+        # Build response
+        result = {
             "status": "ok",
             "code": code,
             "famille": famille,
+            "images_supprimees": image_stats.get("removed", 0),
             "resume": f"Reference supprimee: {code} de {famille}"
-        }, ensure_ascii=False, indent=2)
+        }
+        if image_stats.get("removed", 0) > 0:
+            result["resume"] += f", {image_stats['removed']} image(s) supprimee(s)"
+
+        # Return success
+        return json.dumps(result, ensure_ascii=False, indent=2)
 
     except Exception as e:
         return json.dumps({
