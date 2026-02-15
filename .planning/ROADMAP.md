@@ -79,10 +79,10 @@ Plans:
   3. New families are registered in _index.md with generation template
   4. _index.md updates automatically after every add/update/delete operation
   5. Family product counters in _index.md recalculate correctly
-**Plans**: TBD
+**Plans**: 1 plan in 1 wave
 
 Plans:
-- [ ] 17-01: TBD
+- [ ] 17-01-PLAN.md — Index manager module + MCP CRUD integration
 
 #### Phase 18: Image Management
 **Goal**: Les images produit sont copiees automatiquement depuis des chemins fournis et gerees lors des suppressions
