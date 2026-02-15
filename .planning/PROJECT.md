@@ -8,6 +8,16 @@ Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la genera
 
 Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
+## Current Milestone: v1.4 Gestion CRUD des References
+
+**Goal:** Permettre la gestion complete du catalogue de references produit (ajout, modification, suppression) via des outils MCP, avec copie automatique des images et mise a jour de l'index.
+
+**Target features:**
+- CRUD complet : add_reference, update_reference, delete_reference
+- Gestion des images : copie automatique depuis un chemin fourni vers Delagrave/images/{famille}/
+- Mise a jour automatique de _index.md a chaque operation
+- Input variable : minimum code + titre + famille, optionnellement texte, dimensions, ref, images
+
 ## Current State (v1.3 shipped 2026-02-11)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, validators, utils, mcp, cli)
@@ -51,9 +61,11 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 
 ### Active
 
+- [ ] CRUD complet des references (add, update, delete) via outils MCP — v1.4
+- [ ] Copie automatique des images depuis chemin fourni — v1.4
+- [ ] Mise a jour automatique de _index.md — v1.4
 - [ ] Modes de generation CHI/DOE/FTI (deferred from v1.0)
 - [ ] Integration des fiches-existantes (fichiers .pptx pre-existants)
-- [ ] Implementation complete de add_reference (actuellement stub)
 - [ ] Synchronisation automatique Excel -> MD
 
 ### Out of Scope
@@ -97,4 +109,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Resume compact en francais | L'utilisateur voit la progression, pas les details techniques | Good — exploitable directement par Claude |
 
 ---
-*Last updated: 2026-02-11 after v1.3 milestone complete*
+*Last updated: 2026-02-15 after v1.4 milestone started*

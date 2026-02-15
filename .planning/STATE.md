@@ -2,17 +2,19 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-02-11)
+See: .planning/PROJECT.md (updated 2026-02-15)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-**Current focus:** Planning next milestone
+**Current focus:** v1.4 Gestion CRUD des References
 
 ## Current Position
 
-Milestone: v1.3 Robustesse et Logging — SHIPPED
-Status: Complete
-Last activity: 2026-02-11 — v1.3 milestone archived
+Milestone: v1.4 Gestion CRUD des References
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-02-15 — Milestone v1.4 started
 
 Progress: 4 milestones shipped (v1.0, v1.1, v1.2, v1.3)
 
@@ -47,6 +49,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-02-11
-Stopped at: v1.3 milestone archived
-Next step: /gsd:new-milestone to start next milestone
+Last session: 2026-02-15
+Stopped at: Milestone v1.4 started, defining requirements
+Next step: Complete requirements and roadmap
