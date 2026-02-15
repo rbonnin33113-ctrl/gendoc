@@ -82,7 +82,7 @@ Plans:
 **Plans**: 1 plan in 1 wave
 
 Plans:
-- [ ] 17-01-PLAN.md — Index manager module + MCP CRUD integration
+- [x] 17-01-PLAN.md — Index manager module + MCP CRUD integration
 
 #### Phase 18: Image Management
 **Goal**: Les images produit sont copiees automatiquement depuis des chemins fournis et gerees lors des suppressions
@@ -130,6 +130,6 @@ Plans:
 | 14. Detection Robustesse | v1.3 | 1/1 | Complete | 2026-02-11 |
 | 15. Gestion Erreurs et Resume | v1.3 | 2/2 | Complete | 2026-02-11 |
 | 16. CRUD Operations | v1.4 | 2/2 | Complete | 2026-02-15 |
-| 17. Family and Index Management | v1.4 | 0/1 | Not started | - |
+| 17. Family and Index Management | v1.4 | 1/1 | Complete | 2026-02-15 |
 | 18. Image Management | v1.4 | 0/1 | Not started | - |
 | 19. Tests and Integration | v1.4 | 0/1 | Not started | - |
