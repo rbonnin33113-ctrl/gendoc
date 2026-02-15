@@ -105,10 +105,10 @@ Plans:
   1. Unit tests cover add, update, and delete operations
   2. Integration test validates full workflow: add product, lookup, then delete
   3. All CRUD tests pass in CI pipeline
-**Plans**: TBD
+**Plans**: 1 plan in 1 wave
 
 Plans:
-- [ ] 19-01: TBD
+- [ ] 19-01-PLAN.md — CRUD unit tests (md_writer, image_handler, index_manager) + integration lifecycle test
 
 ## Progress
 
