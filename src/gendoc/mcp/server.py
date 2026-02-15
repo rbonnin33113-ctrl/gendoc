@@ -23,6 +23,7 @@ from gendoc.parsers.md_parser import (
     search_products,
     find_products_by_family
 )
+from gendoc.parsers.md_writer import append_product_to_family
 from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 from gendoc.generators.html_sp_selector import generate_sp_selector_html
 from gendoc.utils.sp_server import start_sp_server
@@ -774,24 +775,113 @@ async def load_sp_selection(json_path: str) -> str:
 
 
 @mcp.tool()
-async def add_reference(family: str, code: str, ref: str, titre: str, texte: str = "") -> str:
+async def add_reference(
+    famille: str,
+    code: str,
+    titre: str,
+    ref: str = "",
+    texte: str = "",
+    dimensions: str = "[]",
+    images: str = "[]",
+    metadata_pptx: str = "[]"
+) -> str:
     """
     Add a new product reference to a family.
 
     Args:
-        family: Family name (e.g., "paillasse")
+        famille: Family name (e.g., "paillasse")
         code: Product code
-        ref: Reference string
         titre: Product title
+        ref: Reference string (optional)
         texte: Descriptive text (optional)
+        dimensions: JSON string of dimension list (optional)
+        images: JSON string of image list (optional)
+        metadata_pptx: JSON string of PowerPoint metadata list (optional)
 
     Returns:
-        Stub acknowledgement message (full implementation in Phase 3).
+        JSON string with status and resume, or error.
 
     Example:
-        add_reference("paillasse", "PM-TEST", "123456", "Test product") -> "Add reference tool registered..."
+        add_reference("paillasse", "PM-TEST", "Test product", ref="Ref: 123")
+        -> {"status": "ok", "code": "PM-TEST", "famille": "paillasse", ...}
     """
-    return f"Add reference tool registered. Full implementation in Phase 3. Would add {code} to {family}"
+    try:
+        # Validate required inputs
+        code = code.strip()
+        titre = titre.strip()
+        famille = famille.strip()
+
+        if not code:
+            return json.dumps({
+                "error": "Le code produit est requis",
+                "resume": "Erreur: code vide"
+            }, ensure_ascii=False)
+
+        if not titre:
+            return json.dumps({
+                "error": "Le titre est requis",
+                "resume": "Erreur: titre vide"
+            }, ensure_ascii=False)
+
+        if not famille:
+            return json.dumps({
+                "error": "La famille est requise",
+                "resume": "Erreur: famille vide"
+            }, ensure_ascii=False)
+
+        # Check for duplicates
+        existing = find_product(code, REFERENCES_DIR)
+        if existing:
+            return json.dumps({
+                "error": f"Code deja existant: {code}",
+                "famille_existante": existing.get('famille', ''),
+                "resume": f"Erreur: {code} existe deja dans {existing.get('famille', '')}"
+            }, ensure_ascii=False)
+
+        # Parse JSON fields
+        try:
+            dimensions_list = json.loads(dimensions)
+            images_list = json.loads(images)
+            metadata_pptx_list = json.loads(metadata_pptx)
+        except json.JSONDecodeError as e:
+            return json.dumps({
+                "error": f"Erreur JSON: {str(e)}",
+                "resume": "Erreur: format JSON invalide"
+            }, ensure_ascii=False)
+
+        # Build product dict
+        product = {
+            'code': code,
+            'ref': ref,
+            'titre': titre,
+            'famille': famille.lower(),
+            'texte': texte,
+            'dimensions': dimensions_list,
+            'images': images_list,
+            'metadata_pptx': metadata_pptx_list
+        }
+
+        # Write to family file
+        family_path = REFERENCES_DIR / f"{famille.lower()}.md"
+        append_product_to_family(family_path, product)
+
+        # Calculate relative path for response
+        relative_path = f"Delagrave/references/{famille.lower()}.md"
+
+        # Return success
+        return json.dumps({
+            "status": "ok",
+            "code": code,
+            "famille": famille.lower(),
+            "fichier": relative_path,
+            "resume": f"Reference ajoutee: {code} dans {famille.lower()}"
+        }, ensure_ascii=False)
+
+    except Exception as e:
+        return json.dumps({
+            "error": f"Erreur inattendue: {str(e)}",
+            "resume": f"Erreur lors de l'ajout de {code}"
+        }, ensure_ascii=False)
 
 
 def main():
