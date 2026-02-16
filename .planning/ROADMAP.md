@@ -79,10 +79,12 @@
   3. Fichiers MD references ne contiennent pas de doublons et utilisent des formats uniformes
   4. modern_template.py consolide proprement les ajouts armoire-securite Option C et enceinte-ventilee
   5. document_assembler.py modifications hors milestone documentees avec commentaires clairs
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 20-01: [TBD during planning]
+- [ ] 20-01-PLAN.md — Update PROJECT.md and _index.md with current state (11 families, 369+ references)
+- [ ] 20-02-PLAN.md — Deduplicate reference MD files and consolidate image variants
+- [ ] 20-03-PLAN.md — Consolidate and document code modifications (modern_template, document_assembler, md_parser)
 
 ### Phase 21: Tests et Validation
 **Goal**: Couverture de tests complete pour les nouvelles familles et modifications, zero regressions
@@ -121,5 +123,5 @@ Plans:
 | 17. Family and Index Management | v1.4 | 1/1 | Complete | 2026-02-15 |
 | 18. Image Management | v1.4 | 1/1 | Complete | 2026-02-15 |
 | 19. Tests and Integration | v1.4 | 1/1 | Complete | 2026-02-15 |
-| 20. Documentation et Code Consolidation | v1.5 | 0/TBD | Not started | - |
+| 20. Documentation et Code Consolidation | v1.5 | 0/3 | Planning complete | - |
 | 21. Tests et Validation | v1.5 | 0/TBD | Not started | - |
