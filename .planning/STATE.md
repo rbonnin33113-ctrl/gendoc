@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-16)
 ## Current Position
 
 Phase: 20 of 21 (Documentation et Code Consolidation)
-Plan: 3 of 3 complete (20-03-PLAN.md)
+Plan: 4 of 4 complete (20-04-PLAN.md)
 Status: Complete
-Last activity: 2026-02-16 — Code consolidation and documentation complete
+Last activity: 2026-02-16 — Reference count gap closure complete
 
-Progress: [████████████████████░] 97% (19/21 phases complete, 3/3 plans in phase 20)
+Progress: [████████████████████░] 97% (19/21 phases complete, 4/4 plans in phase 20)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 32 (phases 1-19 + 20-01, 20-02, 20-03)
+- Total plans completed: 33 (phases 1-19 + 20-01, 20-02, 20-03, 20-04)
 - Average duration: ~15 min (estimated)
 - Total execution time: ~19.8 hours across v1.0-v1.5 (partial)
 
@@ -39,6 +39,7 @@ Progress: [████████████████████░] 97% 
 - v1.5 is consolidation milestone (2 phases)
 - Trend: Stable, focused on quality
 | Phase 20 P03 | 4.7 | 3 tasks | 3 files |
+| Phase 20 P04 | 1.07 | 1 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -58,6 +59,7 @@ Recent decisions affecting current work:
 - **v1.3**: Module-level PipelineLogger (Logs partiels garantis)
 - [Phase 20-03]: Documented armoire-securite as ONLY family using multi-page Option C template
 - [Phase 20-03]: Round-trip validation confirms md_parser/md_writer compatibility for all families
+- [Phase 20-04]: Updated reference counts to 317 (actual parsed count)
 
 ### Pending Todos
 
@@ -69,6 +71,7 @@ None.
 - ✓ Documentation synchronization complete (20-01)
 - ✓ Data quality validation complete (20-02) - 317 unique products across 11 families, zero duplicates
 - ✓ Code consolidation complete (20-03) - All hors-milestone code documented with commit references
+- ✓ Reference count gap closure complete (20-04) - Documentation now shows accurate 317 count
 
 **Phase 21 considerations:**
 - New family tests (armoire-securite, enceinte-ventilee) require understanding of template layouts
@@ -78,6 +81,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-16
-Stopped at: Completed 20-03-PLAN.md (code consolidation and documentation)
+Stopped at: Completed 20-04-PLAN.md (reference count gap closure)
 Resume file: None
-Next: Phase 20 complete — advance to Phase 21
+Next: Phase 20 complete (all 4 plans + verification gaps closed) — advance to Phase 21
