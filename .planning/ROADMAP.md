@@ -96,10 +96,13 @@ Plans:
   2. Tests de generation famille enceinte-ventilee passent
   3. Tous les 108 tests existants passent apres nettoyage code (aucune regression)
   4. Modifications modern_template et document_assembler couvertes par tests
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 21-01: [TBD during planning]
+- [ ] 21-01-PLAN.md — Add test coverage for armoire-securite and enceinte-ventilee with 2-page validation
+- [ ] 21-02-PLAN.md — Fix failing SP workflow test (catalog size assertion)
+- [ ] 21-03-PLAN.md — Add modern_template.py dispatch and builder validation tests
+- [ ] 21-04-PLAN.md — Add document_assembler.py multi-page family validation tests
 
 ## Progress
 
