@@ -760,7 +760,7 @@ async def open_sp_selector(analysis_result: dict, output_path: str = None) -> st
 
 
 @mcp.tool()
-async def load_sp_selection(json_path: str) -> str:
+async def load_sp_selection(json_path: str = None) -> str:
     """
     Load SP article configuration from JSON file exported by the HTML selector.
 
@@ -768,7 +768,7 @@ async def load_sp_selection(json_path: str) -> str:
     with generate_slides's custom_products parameter.
 
     Args:
-        json_path: Path to the sp_selection.json file exported from HTML selector
+        json_path: Path to sp_selection.json (optional - reads from current devis context if not provided)
 
     Returns:
         JSON string with custom product data array (pass this to generate_slides).
@@ -784,17 +784,32 @@ async def load_sp_selection(json_path: str) -> str:
         if _current_logger:
             step = _current_logger.start_step("Chargement selection SP")
 
-        # Resolve path - if relative, make absolute from project root
-        path = Path(json_path)
-        if not path.is_absolute():
-            path = _PROJECT_ROOT / path
+        # If no path provided, try to infer from current logger context
+        if json_path is None:
+            # Try to get devis info from current logger
+            devis_info = None
+            if _current_logger and hasattr(_current_logger, 'input_params'):
+                devis_info = _current_logger.input_params.get('devis_header')
+
+            # Compute output directory (will use fallback if no devis info)
+            devis_output_dir = _get_devis_output_dir(devis_info, fallback_name="default")
+            path = devis_output_dir / "sp_selection.json"
+        else:
+            # Path provided - resolve relative to CWD or use absolute
+            path = Path(json_path)
+            if not path.is_absolute():
+                # If relative, resolve from CWD (user-provided paths are relative to CWD)
+                path = Path.cwd() / path
 
         # Validate file exists
         if not path.exists():
             if _current_logger and step:
-                _current_logger.fail_step(step, f"Fichier JSON non trouve: {json_path}")
+                _current_logger.fail_step(step, f"Fichier sp_selection.json non trouve: {path}")
             log_path = _safe_write_log()
-            resp = {"error": f"Fichier JSON non trouve: {json_path}"}
+            resp = {
+                "error": f"Fichier sp_selection.json non trouve: {path}",
+                "hint": "Verifiez que le selecteur SP a bien ete exporte (bouton 'Exporter JSON')"
+            }
             if log_path:
                 resp["log_path"] = log_path
             return json.dumps(resp, ensure_ascii=False)
