@@ -45,22 +45,22 @@ Requirements pour la consolidation et remise au propre. Chaque requirement mappe
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DOC-01 | — | Pending |
-| DOC-02 | — | Pending |
-| DOC-03 | — | Pending |
-| CODE-01 | — | Pending |
-| CODE-02 | — | Pending |
-| CODE-03 | — | Pending |
-| TEST-01 | — | Pending |
-| TEST-02 | — | Pending |
-| TEST-03 | — | Pending |
-| TEST-04 | — | Pending |
+| DOC-01 | Phase 20 | Pending |
+| DOC-02 | Phase 20 | Pending |
+| DOC-03 | Phase 20 | Pending |
+| CODE-01 | Phase 20 | Pending |
+| CODE-02 | Phase 20 | Pending |
+| CODE-03 | Phase 20 | Pending |
+| TEST-01 | Phase 21 | Pending |
+| TEST-02 | Phase 21 | Pending |
+| TEST-03 | Phase 21 | Pending |
+| TEST-04 | Phase 21 | Pending |
 
 **Coverage:**
 - v1.5 requirements: 10 total
-- Mapped to phases: 0
-- Unmapped: 10 (awaiting roadmap)
+- Mapped to phases: 10 (100% coverage)
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-16*
-*Last updated: 2026-02-16 after initial definition*
+*Last updated: 2026-02-16 after roadmap creation*

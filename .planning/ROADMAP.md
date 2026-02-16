@@ -7,6 +7,7 @@
 - ✅ **v1.2 Outil de Selection SP** — Phases 9-11 (shipped 2026-02-11)
 - ✅ **v1.3 Robustesse et Logging** — Phases 12-15 (shipped 2026-02-11)
 - ✅ **v1.4 Gestion CRUD des References** — Phases 16-19 (shipped 2026-02-15)
+- 🚧 **v1.5 Consolidation et Qualite** — Phases 20-21 (in progress)
 
 ## Phases
 
@@ -59,6 +60,44 @@
 
 </details>
 
+### 🚧 v1.5 Consolidation et Qualite (In Progress)
+
+**Milestone Goal:** Remettre au propre la documentation projet, le code modifie hors milestone, et ajouter les tests manquants pour les nouvelles familles et modifications recentes.
+
+- [ ] **Phase 20: Documentation et Code Consolidation** - Synchronisation de la documentation et nettoyage du code modifie hors milestone
+- [ ] **Phase 21: Tests et Validation** - Tests pour armoire-securite, enceinte-ventilee, et validation regression zero
+
+## Phase Details
+
+### Phase 20: Documentation et Code Consolidation
+**Goal**: Documentation projet synchronisee avec l'etat reel, code nettoye et refactore
+**Depends on**: Phase 19
+**Requirements**: DOC-01, DOC-02, DOC-03, CODE-01, CODE-02, CODE-03
+**Success Criteria** (what must be TRUE):
+  1. PROJECT.md reflete l'etat reel (11 familles, 369+ refs, armoire-securite, enceinte-ventilee avec images reelles)
+  2. _index.md contient toutes les 11 familles avec compteurs de references corrects
+  3. Fichiers MD references ne contiennent pas de doublons et utilisent des formats uniformes
+  4. modern_template.py consolide proprement les ajouts armoire-securite Option C et enceinte-ventilee
+  5. document_assembler.py modifications hors milestone documentees avec commentaires clairs
+**Plans**: TBD
+
+Plans:
+- [ ] 20-01: [TBD during planning]
+
+### Phase 21: Tests et Validation
+**Goal**: Couverture de tests complete pour les nouvelles familles et modifications, zero regressions
+**Depends on**: Phase 20
+**Requirements**: TEST-01, TEST-02, TEST-03, TEST-04
+**Success Criteria** (what must be TRUE):
+  1. Tests de generation famille armoire-securite passent (template Option C, 2 pages par produit)
+  2. Tests de generation famille enceinte-ventilee passent
+  3. Tous les 108 tests existants passent apres nettoyage code (aucune regression)
+  4. Modifications modern_template et document_assembler couvertes par tests
+**Plans**: TBD
+
+Plans:
+- [ ] 21-01: [TBD during planning]
+
 ## Progress
 
 | Phase | Milestone | Plans Complete | Status | Completed |
@@ -82,3 +121,5 @@
 | 17. Family and Index Management | v1.4 | 1/1 | Complete | 2026-02-15 |
 | 18. Image Management | v1.4 | 1/1 | Complete | 2026-02-15 |
 | 19. Tests and Integration | v1.4 | 1/1 | Complete | 2026-02-15 |
+| 20. Documentation et Code Consolidation | v1.5 | 0/TBD | Not started | - |
+| 21. Tests et Validation | v1.5 | 0/TBD | Not started | - |
