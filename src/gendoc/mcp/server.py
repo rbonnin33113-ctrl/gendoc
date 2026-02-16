@@ -488,6 +488,10 @@ async def generate_slides(product_codes: list[str], output_path: str = None, mod
         # Compute output directory from devis_info (uses helper from Plan 01)
         devis_output_dir = _get_devis_output_dir(devis_info, fallback_name="default")
 
+        # If no logger exists (generate_slides called standalone), create one
+        if _current_logger is None:
+            _current_logger = PipelineLogger(devis_output_dir)
+
         # If output_path provided, use it (relative to devis output dir)
         if output_path:
             output = Path(output_path)
