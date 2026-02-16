@@ -2,7 +2,7 @@
 
 ## What This Is
 
-Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 8,407 lignes Python + 1,965 lignes de tests, 359+ references produit, 12 outils MCP, 108 tests automatises.
+Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 8,407 lignes Python + 1,965 lignes de tests, 369+ references produit, 12 outils MCP, 108 tests automatises.
 
 ## Core Value
 
@@ -33,7 +33,7 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - **Detection**: EXCLUSION_WORDS (33 entries) + pattern mesures, inconnus logges individuellement
 - **Hot-reload**: Modifications des generateurs prises en compte sans redemarrage MCP
 - **Tests**: 108 tests pytest (16 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling, 21 CRUD) — <20s
-- **Note**: armoire-securite et enceinte-ventilee ajoutees hors milestone, code modifie (modern_template, document_assembler, md_parser) sans tests correspondants
+- **Note**: armoire-securite et enceinte-ventilee ajoutees hors milestone v1.4 (commits 0b3600b, 0cee8d5), code modifie (modern_template, document_assembler, md_parser) sans tests correspondants
 
 ## Requirements
 
@@ -120,4 +120,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Image operations secondaires | Echec copie/suppression ne bloque pas CRUD | Good — degradation gracieuse |
 
 ---
-*Last updated: 2026-02-16 after v1.5 milestone start*
+*Last updated: 2026-02-16 after Phase 20 documentation consolidation*
