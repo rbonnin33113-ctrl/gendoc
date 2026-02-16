@@ -14,23 +14,18 @@ def test_logger_creates_log_file(tmp_path):
     log_path = logger.write_log()
 
     assert log_path.exists()
-    assert log_path.parent == tmp_path / "logs"
+    assert log_path.parent == tmp_path  # LOG.md written directly to output_dir
     assert log_path.suffix == ".md"
 
 
 def test_log_file_name_format(tmp_path):
-    """Test that log filename matches the expected pattern."""
+    """Test that log filename is LOG.md (fixed name for devis-specific directories)."""
     logger = PipelineLogger(tmp_path)
     log_path = logger.write_log()
 
-    # Filename should be YYYYMMDD_HHMMSS_pipeline.md
+    # Filename should be LOG.md (fixed name since each devis has its own directory)
     filename = log_path.name
-    assert filename.endswith("_pipeline.md")
-
-    # Extract timestamp part
-    timestamp_part = filename.replace("_pipeline.md", "")
-    assert len(timestamp_part) == 15  # YYYYMMDD_HHMMSS
-    assert timestamp_part[8] == "_"  # Underscore separator
+    assert filename == "LOG.md"
 
 
 def test_log_contains_all_sections(tmp_path):
