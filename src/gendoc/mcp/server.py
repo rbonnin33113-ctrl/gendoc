@@ -171,6 +171,23 @@ def _get_devis_output_dir(devis_info: dict | None, fallback_name: str = "output"
     return devis_output_dir.resolve()
 
 
+def _require_admin(operation_name: str) -> str | None:
+    """Check if admin mode is enabled for write operations.
+
+    Args:
+        operation_name: Name of the operation (e.g., "ajout", "modification", "suppression")
+
+    Returns:
+        JSON error string if admin=false, None if admin=true (operation can proceed)
+    """
+    if not _config.get("admin", False):
+        return json.dumps({
+            "error": "Operation reservee a l'administrateur",
+            "resume": f"ECHEC {operation_name}: mode administrateur requis"
+        }, ensure_ascii=False)
+    return None
+
+
 # Create FastMCP server instance
 mcp = FastMCP("gendoc", instructions="Delagrave product reference and documentation generation tools")
 
@@ -908,6 +925,7 @@ async def add_reference(
         add_reference("paillasse", "PM-TEST", "Test product", ref="Ref: 123")
         -> {"status": "ok", "code": "PM-TEST", "famille": "paillasse", ...}
     """
+    if (err := _require_admin("ajout")): return err
     try:
         # Validate required inputs
         code = code.strip()
@@ -1056,6 +1074,7 @@ async def update_reference(
         update_reference("PM-TEST", titre="Updated title", texte="New text")
         -> {"status": "ok", "code": "PM-TEST", "famille": "paillasse", ...}
     """
+    if (err := _require_admin("modification")): return err
     try:
         # Validate required inputs
         code = code.strip()
@@ -1171,6 +1190,7 @@ async def delete_reference(code: str) -> str:
         delete_reference("PM-TEST")
         -> {"status": "ok", "code": "PM-TEST", "famille": "paillasse", ...}
     """
+    if (err := _require_admin("suppression")): return err
     try:
         # Validate required inputs
         code = code.strip()
