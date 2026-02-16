@@ -12,7 +12,7 @@ Rendre le systeme deployable sur des postes PC utilisant Claude CLI, avec donnee
 ## Phases
 
 - [x] **Phase 22: Configuration and Path Resolution** - Read config, resolve all paths from network share (completed 2026-02-16)
-- [ ] **Phase 23: Output Restructuring** - Isolate output per devis in user working directory
+- [x] **Phase 23: Output Restructuring** - Isolate output per devis in user working directory (completed 2026-02-16)
 - [ ] **Phase 24: Access Control** - Admin flag and CRUD restrictions
 - [ ] **Phase 25: Deployment Package** - Package, MCP config, deployment guide
 - [ ] **Phase 26: Testing and Validation** - Full test suite with config and admin tests
@@ -90,7 +90,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 22. Configuration and Path Resolution | 0/2 | Complete    | 2026-02-16 |
-| 23. Output Restructuring | 0/TBD | Not started | - |
+| 23. Output Restructuring | 0/TBD | Complete    | 2026-02-16 |
 | 24. Access Control | 0/TBD | Not started | - |
 | 25. Deployment Package | 0/TBD | Not started | - |
 | 26. Testing and Validation | 0/TBD | Not started | - |
