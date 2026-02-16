@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-16)
 ## Current Position
 
 Phase: 20 of 21 (Documentation et Code Consolidation)
-Plan: 2 of 3 complete (20-02-PLAN.md)
-Status: In progress
-Last activity: 2026-02-16 — Data quality validation complete
+Plan: 3 of 3 complete (20-03-PLAN.md)
+Status: Complete
+Last activity: 2026-02-16 — Code consolidation and documentation complete
 
-Progress: [████████████████████░] 96% (19/21 phases complete, 2/3 plans in phase 20)
+Progress: [████████████████████░] 97% (19/21 phases complete, 3/3 plans in phase 20)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 31 (phases 1-19 + 20-01, 20-02)
+- Total plans completed: 32 (phases 1-19 + 20-01, 20-02, 20-03)
 - Average duration: ~15 min (estimated)
-- Total execution time: ~19.7 hours across v1.0-v1.5 (partial)
+- Total execution time: ~19.8 hours across v1.0-v1.5 (partial)
 
 **By Milestone:**
 
@@ -38,6 +38,7 @@ Progress: [████████████████████░] 96% 
 - v1.4 completed in 1 day (4 phases, 5 plans)
 - v1.5 is consolidation milestone (2 phases)
 - Trend: Stable, focused on quality
+| Phase 20 P03 | 4.7 | 3 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -55,6 +56,8 @@ Recent decisions affecting current work:
 - **v1.4**: Image operations secondaires (Degradation gracieuse)
 - **v1.3**: Resume compact en francais (Progression concise pour Claude)
 - **v1.3**: Module-level PipelineLogger (Logs partiels garantis)
+- [Phase 20-03]: Documented armoire-securite as ONLY family using multi-page Option C template
+- [Phase 20-03]: Round-trip validation confirms md_parser/md_writer compatibility for all families
 
 ### Pending Todos
 
@@ -65,7 +68,7 @@ None.
 **Phase 20 considerations:**
 - ✓ Documentation synchronization complete (20-01)
 - ✓ Data quality validation complete (20-02) - 317 unique products across 11 families, zero duplicates
-- Code consolidation remains for plan 20-03
+- ✓ Code consolidation complete (20-03) - All hors-milestone code documented with commit references
 
 **Phase 21 considerations:**
 - New family tests (armoire-securite, enceinte-ventilee) require understanding of template layouts
@@ -75,6 +78,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-16
-Stopped at: Completed 20-02-PLAN.md (data quality validation)
+Stopped at: Completed 20-03-PLAN.md (code consolidation and documentation)
 Resume file: None
-Next: Execute 20-03-PLAN.md (code consolidation)
+Next: Phase 20 complete — advance to Phase 21
