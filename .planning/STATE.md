@@ -9,10 +9,10 @@ See: .planning/PROJECT.md (updated 2026-02-16)
 
 ## Current Position
 
-Phase: 23 (Output Restructuring)
-Plan: 04
-Status: Plan 23-03 complete (SP selector devis-aware paths)
-Last activity: 2026-02-16 — Completed 23-03-PLAN.md (open_sp_selector and load_sp_selection auto-path resolution)
+Phase: 24 (Access Control)
+Plan: 02
+Status: Plan 24-01 complete (admin guard on CRUD tools)
+Last activity: 2026-02-16 — Completed 24-01-PLAN.md (fixed MCP tool test calls for admin guard verification)
 
 Progress: ▰▰▱▱▱ 2/5 phases (40%)
 
@@ -30,22 +30,25 @@ Progress: ▰▰▱▱▱ 2/5 phases (40%)
 | v1.5 | 20-21 | 8 | Shipped 2026-02-16 |
 | v1.6 | 22-26 | TBD | In Progress |
 
-**Totals:** 26 phases defined, 41 plans executed, 6 milestones shipped
+**Totals:** 26 phases defined, 42 plans executed, 6 milestones shipped
 
 **Recent execution:**
 
 | Phase-Plan | Duration | Tasks | Files | Completed |
 |------------|----------|-------|-------|-----------|
+| 24-01 | 2 min | 1 | 1 | 2026-02-16 |
 | 23-03 | 2 min | 3 | 1 | 2026-02-16 |
 | 23-02 | 2 min | 3 | 1 | 2026-02-16 |
 | 23-01 | 2 min | 3 | 3 | 2026-02-16 |
-| 22-02 | 3 min | 2 | 3 | 2026-02-16 |
 
 ## Accumulated Context
 
 ### Decisions
 
-**Recent (Phase 23-03):**
+**Recent (Phase 24-01):**
+1. FastMCP-decorated tools require .fn attribute access in tests (FunctionTool wrapper behavior)
+
+**Phase 23-03:**
 1. open_sp_selector output_path parameter now optional (defaults to None for auto-computed paths)
 2. SP selector HTML and JSON written to ./output/{devis_numero}/ by default
 3. load_sp_selection json_path parameter now optional (infers from logger context)
@@ -89,6 +92,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-16
-Stopped at: Completed 23-03-PLAN.md (SP selector devis-aware paths)
-Resume file: .planning/phases/23-output-restructuring/23-03-SUMMARY.md
-Next: Continue Phase 23 or proceed to Phase 24
+Stopped at: Completed 24-01-PLAN.md (admin guard on CRUD tools)
+Resume file: .planning/phases/24-access-control/24-01-SUMMARY.md
+Next: Continue Phase 24 (plan 24-02 or verification)
