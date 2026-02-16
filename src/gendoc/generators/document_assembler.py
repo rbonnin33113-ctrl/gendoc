@@ -22,7 +22,7 @@ from pptx.oxml.xmlchemy import OxmlElement
 # Delagrave corporate blue color (extracted from template theme or standard corporate blue)
 DELAGRAVE_BLUE = RGBColor(0, 85, 164)  # Corporate blue
 
-# Fixed family ordering for document structure
+# Family order in final document (matches ROADMAP milestone progression)
 FAMILY_ORDER = [
     'paillasse',
     'sorbonne',
@@ -32,8 +32,8 @@ FAMILY_ORDER = [
     'equipement',
     'elec-sorb',
     'complements',
-    'armoire-securite',
-    'enceinte-ventilee'
+    'armoire-securite',      # Added: commit 0b3600b (v1.4 hors-milestone)
+    'enceinte-ventilee'      # Added: commit 0cee8d5 (v1.4 hors-milestone)
 ]
 
 # Family display names (French with proper accents)
@@ -46,8 +46,8 @@ FAMILY_DISPLAY_NAMES = {
     'equipement': 'Équipement',
     'elec-sorb': 'Électricité Sorbonne',
     'complements': 'Compléments',
-    'armoire-securite': 'Armoires de Sécurité',
-    'enceinte-ventilee': 'Enceintes Ventilées (PSM)'
+    'armoire-securite': 'Armoires de Sécurité',           # Added: 0b3600b
+    'enceinte-ventilee': 'Enceintes Ventilées (PSM)'      # Added: 0cee8d5
 }
 
 
@@ -455,12 +455,16 @@ def assemble_document(
     num_toc_pages = estimate_toc_pages(toc_entries)
     page_counter = 1 + num_toc_pages  # Cover=1, TOC=num_toc_pages
 
-    # Families that generate 2 slides per product
-    multi_page_families = {'armoire-securite', 'enceinte-ventilee'}
+    # Multi-page families: armoire-securite uses 2 pages per product (Option C template)
+    # enceinte-ventilee also uses 2-page layout for PSM product specifications
+    # This set is checked when counting total slides for progress reporting
+    multi_page_families = {'armoire-securite', 'enceinte-ventilee'}  # Added: commits 0b3600b, 0cee8d5
 
     for entry in toc_entries:
         page_counter += 1  # Chapter separator
 
+        # Estimate slide count: armoire-securite and enceinte-ventilee use 2 slides per product, others use 1
+        # This affects progress reporting and total page count in table of contents
         slides_per_product = 2 if entry['family'] in multi_page_families else 1
         for product_entry in entry['products']:
             page_counter += 1  # First product slide (page number shown in TOC)
