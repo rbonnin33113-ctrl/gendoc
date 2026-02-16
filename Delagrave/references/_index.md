@@ -2,7 +2,7 @@
 
 > Source: Génération Fiche Technique DELAGRAVE.xlsm
 > Extraction: 2026-02-16
-> Total: 369 references dans 11 familles
+> Total: 317 references dans 11 familles
 
 ## Familles
 
@@ -13,9 +13,9 @@
 | Revètement | [revetement.md](revetement.md) | 12 | PPT (texte + 2 images) |
 | Meubles | [meubles.md](meubles.md) | 45 | PPT (texte + image) |
 | Tables EN | [tables-en.md](tables-en.md) | 23 | PPT (texte + image) |
-| Equipement | [equipement.md](equipement.md) | 154 | PPT (images positionnees) |
-| Elec sorb | [elec-sorb.md](elec-sorb.md) | 32 | PPT (images positionnees) |
-| Compléments | [complements.md](complements.md) | 3 | PPT (images positionnees) |
+| Equipement | [equipement.md](equipement.md) | 122 | PPT (images positionnees) |
+| Elec sorb | [elec-sorb.md](elec-sorb.md) | 14 | PPT (images positionnees) |
+| Compléments | [complements.md](complements.md) | 1 | PPT (images positionnees) |
 | Fiches Existantes | [fiches-existantes.md](fiches-existantes.md) | 26 | EXT (fichiers .pptx) |
 | Armoire Securite | [armoire-securite.md](armoire-securite.md) | 6 | PPT (texte + image) |
 | Enceinte Ventilée (PSM) | [enceinte-ventilee.md](enceinte-ventilee.md) | 4 | PPT (texte + image) |

@@ -2,7 +2,7 @@
 
 ## What This Is
 
-Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 8,407 lignes Python + 1,965 lignes de tests, 369+ references produit, 12 outils MCP, 108 tests automatises.
+Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 8,407 lignes Python + 1,965 lignes de tests, 317 references produit, 12 outils MCP, 108 tests automatises.
 
 ## Core Value
 
@@ -13,7 +13,7 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 **Goal:** Remettre au propre la documentation projet, le code modifie hors milestone, et ajouter les tests manquants pour les nouvelles familles et modifications recentes.
 
 **Target features:**
-- Documentation projet synchronisee avec l'etat reel (11 familles, 369+ refs)
+- Documentation projet synchronisee avec l'etat reel (11 familles, 317 refs)
 - Code nettoye et refactore (modifications hors milestone consolidees)
 - Tests ajoutes pour armoire-securite, enceinte-ventilee, et modifications recentes
 - References MD coherentes, index complet, images reelles
@@ -21,7 +21,7 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 ## Current State (v1.4 shipped 2026-02-15, + ajouts hors milestone)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, validators, utils, mcp, cli)
-- **Data**: 369+ references dans 11 fichiers MD, images reelles pour toutes les familles
+- **Data**: 317 references dans 11 fichiers MD, images reelles pour toutes les familles
 - **MCP Tools**: lookup_reference, search_references, list_families, analyze_devis, preview_generation, generate_slides, add_reference, update_reference, delete_reference, create_custom_product, open_sp_selector, load_sp_selection
 - **Skills**: /gendoc-lookup, /gendoc-analyze, /gendoc-generate, /gendoc-full, /gendoc-addarm
 - **Template**: Modele fiche technique vide - Ind J.potm (6 layouts, A4 portrait)
@@ -96,7 +96,7 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| MD comme source de verite | Decouple des macros Excel, versionnable | Good — 359 refs extraites, lookup fonctionnel |
+| MD comme source de verite | Decouple des macros Excel, versionnable | Good — 317 refs extraites, lookup fonctionnel |
 | Serveur MCP unique FastMCP | Permet a Claude d'appeler les outils directement | Good — 12 outils, pipeline complet |
 | Document complet (pas fiches isolees) | L'utilisateur veut un dossier pret a l'emploi | Good — couverture, sommaire, chapitres |
 | Conversion .potm via zipfile | python-pptx ne lit pas les .potm natifs | Good — trick fiable |
