@@ -79,12 +79,13 @@
   3. Fichiers MD references ne contiennent pas de doublons et utilisent des formats uniformes
   4. modern_template.py consolide proprement les ajouts armoire-securite Option C et enceinte-ventilee
   5. document_assembler.py modifications hors milestone documentees avec commentaires clairs
-**Plans**: 3 plans
+**Plans**: 4 plans
 
 Plans:
 - [ ] 20-01-PLAN.md — Update PROJECT.md and _index.md with current state (11 families, 369+ references)
 - [ ] 20-02-PLAN.md — Deduplicate reference MD files and consolidate image variants
 - [ ] 20-03-PLAN.md — Consolidate and document code modifications (modern_template, document_assembler, md_parser)
+- [ ] 20-04-PLAN.md — Fix reference count discrepancies (317 actual vs 369 documented)
 
 ### Phase 21: Tests et Validation
 **Goal**: Couverture de tests complete pour les nouvelles familles et modifications, zero regressions
