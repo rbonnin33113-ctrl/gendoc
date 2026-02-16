@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-02-16)
 
 ## Current Position
 
-Phase: 22 (Configuration and Path Resolution)
-Plan: 03
-Status: Plan 22-02 complete (server.py config integration, 135 tests pass)
-Last activity: 2026-02-16 — Completed 22-02-PLAN.md (config-resolved paths in server.py, 4 integration tests)
+Phase: 23 (Output Restructuring)
+Plan: 02
+Status: Plan 23-01 complete (per-devis output infrastructure, 15 tests pass)
+Last activity: 2026-02-16 — Completed 23-01-PLAN.md (devis-specific output directories, PipelineLogger refactor)
 
-Progress: ▰▱▱▱▱ 1/5 phases (20%)
+Progress: ▰▰▱▱▱ 2/5 phases (40%)
 
 ## Performance Metrics
 
@@ -30,12 +30,13 @@ Progress: ▰▱▱▱▱ 1/5 phases (20%)
 | v1.5 | 20-21 | 8 | Shipped 2026-02-16 |
 | v1.6 | 22-26 | TBD | In Progress |
 
-**Totals:** 26 phases defined, 38 plans executed, 6 milestones shipped
+**Totals:** 26 phases defined, 39 plans executed, 6 milestones shipped
 
 **Recent execution:**
 
 | Phase-Plan | Duration | Tasks | Files | Completed |
 |------------|----------|-------|-------|-----------|
+| 23-01 | 2 min | 3 | 3 | 2026-02-16 |
 | 22-02 | 3 min | 2 | 3 | 2026-02-16 |
 | 22-01 | 2 min | 2 | 2 | 2026-02-16 |
 
@@ -43,7 +44,13 @@ Progress: ▰▱▱▱▱ 1/5 phases (20%)
 
 ### Decisions
 
-**Recent (Phase 22-02):**
+**Recent (Phase 23-01):**
+1. Fixed LOG.md filename: Use "LOG.md" instead of timestamped filenames (each devis has isolated directory)
+2. Sanitization rules: Spaces→underscores, slashes→dashes, strip non-alphanumeric except [._-]
+3. Eager directory creation: _get_devis_output_dir creates directory immediately (fail-fast on permission issues)
+4. Analyze first, log second: Call run_analyze_devis before creating logger to extract devis numero from header
+
+**Phase 22-02:**
 1. Config loading at module level: server.py loads config at import (fail-fast startup validation)
 2. OUTPUT_DIR remains local for Phase 22: Path("output").resolve() (Phase 23 will refactor to per-devis subdirs)
 3. PROJECT_ROOT kept for output resolution: used by tools at lines 442, 475, 652, 719 (Phase 23 will remove)
@@ -68,6 +75,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-16
-Stopped at: Completed 22-02-PLAN.md (server.py config integration, 135 tests pass)
-Resume file: .planning/phases/22-configuration-path-resolution/22-02-SUMMARY.md
-Next: Check for 22-03 or move to Phase 23 (output refactoring)
+Stopped at: Completed 23-01-PLAN.md (per-devis output infrastructure, 15 tests pass)
+Resume file: .planning/phases/23-output-restructuring/23-01-SUMMARY.md
+Next: Execute 23-02 (refactor generate_slides for per-devis output)
