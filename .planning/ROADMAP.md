@@ -29,7 +29,11 @@ Rendre le systeme deployable sur des postes PC utilisant Claude CLI, avec donnee
   3. System validates network share is accessible and contains references/, images/, template at startup
   4. All modules receive paths as parameters (no hardcoded paths except in server.py config loader)
   5. Existing references, images, and template are resolved from the network share path
-**Plans**: TBD
+**Plans**: 2 plans (Wave 1: 22-01, Wave 2: 22-02)
+
+Plans:
+- [ ] 22-01-PLAN.md — Config loader with search, load, and validation
+- [ ] 22-02-PLAN.md — Refactor server.py to use config-resolved paths
 
 ### Phase 23: Output Restructuring
 **Goal**: Each devis generation creates isolated output in ./output/{devis_numero}/
@@ -80,7 +84,7 @@ Rendre le systeme deployable sur des postes PC utilisant Claude CLI, avec donnee
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 22. Configuration and Path Resolution | 0/TBD | Not started | - |
+| 22. Configuration and Path Resolution | 0/2 | Planning complete | - |
 | 23. Output Restructuring | 0/TBD | Not started | - |
 | 24. Access Control | 0/TBD | Not started | - |
 | 25. Deployment Package | 0/TBD | Not started | - |
