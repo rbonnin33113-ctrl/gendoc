@@ -123,8 +123,9 @@ except ConfigurationError as e:
     print("[FATAL] MCP server will not start. Please create gendoc.json.", file=sys.stderr)
     sys.exit(1)
 
-# Keep PROJECT_ROOT for output path resolution (Phase 23 will refactor)
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+# Used only for internal project structure references (not output paths)
+# Phase 23: Output paths now use devis-specific directories via _get_devis_output_dir
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 
 
 def _sanitize_devis_numero(numero: str) -> str:
@@ -532,7 +533,7 @@ async def generate_slides(product_codes: list[str], output_path: str = None, mod
             output_path=output,
             references_dir=REFERENCES_DIR,
             template_path=TEMPLATE_PATH,
-            project_root=PROJECT_ROOT,
+            project_root=_PROJECT_ROOT,
             mode=mode,
             devis_info=devis_info,
             custom_products=custom_products_list
@@ -709,7 +710,7 @@ async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_
         # Resolve output path - if relative, make absolute from project root
         output = Path(output_path)
         if not output.is_absolute():
-            output = PROJECT_ROOT / output
+            output = _PROJECT_ROOT / output
 
         # Create output directory if it doesn't exist
         output.parent.mkdir(parents=True, exist_ok=True)
@@ -776,7 +777,7 @@ async def load_sp_selection(json_path: str) -> str:
         # Resolve path - if relative, make absolute from project root
         path = Path(json_path)
         if not path.is_absolute():
-            path = PROJECT_ROOT / path
+            path = _PROJECT_ROOT / path
 
         # Validate file exists
         if not path.exists():
