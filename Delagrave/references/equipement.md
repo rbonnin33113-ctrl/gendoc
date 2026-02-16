@@ -3,7 +3,7 @@
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Equipement
 > Date: 2026-02-10 12:06:27
-> Total references: 154
+> Total references: 122
 
 ## 2CU12G
 
@@ -12,7 +12,7 @@
 | code | 2CU12G |
 | ref |  |
 | titre | 2CU12G - Cuve grès double 61x45 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -29,7 +29,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU12G.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU12G.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -40,13 +40,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -57,7 +50,7 @@ Aucune
 | code | 2CU12V |
 | ref |  |
 | titre | 2CU12V - Bac double polypropylène blanc 45x60 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -74,7 +67,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/2CU12PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\2CU12PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2CU12PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\2CU12PPH.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -85,13 +78,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -102,7 +88,7 @@ Aucune
 | code | 2CU9G |
 | ref |  |
 | titre | 2CU9G - Cuve grès double 45x45 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -119,7 +105,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU9G.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU9G.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -130,13 +116,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -147,7 +126,7 @@ Aucune
 | code | 2CU9V |
 | ref |  |
 | titre | 2CU9V - Bac double polypropylène blanc 45x90 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -164,7 +143,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/2CU9PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\2CU9PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2CU9PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\2CU9PPH.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -175,13 +154,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -192,7 +164,7 @@ Aucune
 | code | 5625 |
 | ref |  |
 | titre | 5625 - Mitigeur de prélavage |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -209,7 +181,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/5625.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\5625.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/5625.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\5625.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -220,13 +192,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -237,7 +202,7 @@ Aucune
 | code | 76037 |
 | ref |  |
 | titre | 76037 - Grand chandelier eau froide simple sur table |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -254,7 +219,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/76037.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\76037.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/76037.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\76037.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -265,13 +230,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -282,7 +240,7 @@ Aucune
 | code | 76085 |
 | ref |  |
 | titre | 76085 - Colonne à un robinet à bec orientable anti-siphonnage |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -299,7 +257,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/76085.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\76085.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/76085.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\76085.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -310,13 +268,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -327,7 +278,7 @@ Aucune
 | code | 787.54 |
 | ref |  |
 | titre | 787.54 - Prise RCA 1 module |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -344,7 +295,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RCA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RCA.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RCA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RCA.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -355,13 +306,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -372,7 +316,7 @@ Aucune
 | code | 787.57 |
 | ref |  |
 | titre | 787.57 - Prise VGA 2 modules |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -389,7 +333,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/VGA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\VGA.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/VGA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\VGA.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -400,13 +344,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -417,7 +354,7 @@ Aucune
 | code | 787.61 |
 | ref |  |
 | titre | 787.61 - Prise USB 1 module |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -434,7 +371,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/USB.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\USB.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/USB.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\USB.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -445,13 +382,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -462,7 +392,7 @@ Aucune
 | code | 787.68 |
 | ref |  |
 | titre | 787.68 - Prise HDMI 2 modules |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -479,7 +409,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/HDMI.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\HDMI.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/HDMI.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\HDMI.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -490,13 +420,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -507,7 +430,7 @@ Aucune
 | code | 787.74 |
 | ref |  |
 | titre | 787.74 - Prise VGA+J 2 modules |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -524,7 +447,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/VGA+J.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\VGA+J.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/VGA+J.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\VGA+J.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -535,13 +458,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -552,7 +468,7 @@ Aucune
 | code | 9102 |
 | ref |  |
 | titre | 9102 - Lave-yeux mural |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -569,7 +485,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/9102.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9102.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9102.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9102.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -580,13 +496,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -597,7 +506,7 @@ Aucune
 | code | 9140C |
 | ref |  |
 | titre | 9140C - Douchette d'yeux 1 sortie |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -614,7 +523,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/9140C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9140C.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9140C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9140C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -625,13 +534,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -642,7 +544,7 @@ Aucune
 | code | 9141 |
 | ref |  |
 | titre | 9141 - Douchette d'yeux 2 sorties |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -659,7 +561,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/9141.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9141.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9141.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9141.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -670,13 +572,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -687,7 +582,7 @@ Aucune
 | code | 9203 |
 | ref |  |
 | titre | 9203 - Combiné douche de sécurité lave-yeux |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -699,102 +594,16 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE 9203 2026-2 |  | 2 |
 | N° de page | 1/3 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/9203.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## 9203
-
-| Champ | Valeur |
-|-------|--------|
-| code | 9203 |
-| ref |  |
-| titre | 9203 - Combiné douche de sécurité lave-yeux |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE 9203 2026-2 |  | 2 |
 | N° de page | 2/3 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/9203-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203-2.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## 9203
-
-| Champ | Valeur |
-|-------|--------|
-| code | 9203 |
-| ref |  |
-| titre | 9203 - Combiné douche de sécurité lave-yeux |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE 9203 2026-2 |  | 2 |
 | N° de page | 3/3 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/9203-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203-3.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9203.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9203-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/9203-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\9203-3.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -805,13 +614,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -822,7 +624,7 @@ Aucune
 | code | B-BECELEC2 |
 | ref |  |
 | titre | B-BECELEC2 - BEC ELECTRIQUE 500W avec grille de protection |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -839,7 +641,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/BECELEC2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\accessoires labo\BECELEC2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/BECELEC2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\accessoires labo\BECELEC2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -850,13 +652,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -867,7 +662,7 @@ Aucune
 | code | BONDE513 |
 | ref |  |
 | titre | BONDE513 - Bonde évier à panier manuel sans trop plein Ø114mm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -884,7 +679,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/BONDE513.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\BONDE513.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/BONDE513.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\BONDE513.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -895,13 +690,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -912,7 +700,7 @@ Aucune
 | code | CGROB |
 | ref |  |
 | titre | CGROB - Abaques |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -924,192 +712,20 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE CGROB 2026-2 |  | 2 |
 | N° de page | 1/5 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/abaques.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\abaques.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## CGROB
-
-| Champ | Valeur |
-|-------|--------|
-| code | CGROB |
-| ref |  |
-| titre | CGROB - Résistance chimique du revêtement Nyolac |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE CGROB 2026-2 |  | 2 |
 | N° de page | 2/5 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_nyolac.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_nyolac.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## CGROB
-
-| Champ | Valeur |
-|-------|--------|
-| code | CGROB |
-| ref |  |
-| titre | CGROB - Résistance chimique du polypropylène |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE CGROB 2026-2 |  | 2 |
 | N° de page | 3/5 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_poly.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_poly.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## CGROB
-
-| Champ | Valeur |
-|-------|--------|
-| code | CGROB |
-| ref |  |
-| titre | CGROB - Résistance chimique du polypropylène |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE CGROB 2026-2 |  | 2 |
 | N° de page | 4/5 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_poly-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_poly-2.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## CGROB
-
-| Champ | Valeur |
-|-------|--------|
-| code | CGROB |
-| ref |  |
-| titre | CGROB - Codes de couleur des éléments de robinetterie |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE CGROB 2026-2 |  | 2 |
 | N° de page | 5/5 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/couleurs.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\couleurs.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/abaques.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\abaques.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_nyolac.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_nyolac.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_poly.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_poly.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/resistance_poly-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\resistance_poly-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/couleurs.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\cg\couleurs.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1120,13 +736,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1137,7 +746,7 @@ Aucune
 | code | CHARN RESS |
 | ref |  |
 | titre | CHARN RESS - Charnière 165° |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1154,7 +763,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CHARN RESS.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CHARN RESS.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CHARN RESS.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CHARN RESS.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1165,13 +774,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1182,7 +784,7 @@ Aucune
 | code | CHSVENTIL |
 | ref |  |
 | titre | CHSVENTIL - Chaise de ventilateur extérieur en acier galvanisé |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1199,7 +801,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/supventil.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\supventil.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/supventil.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\supventil.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1210,13 +812,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1227,7 +822,7 @@ Aucune
 | code | CONS320CRE |
 | ref |  |
 | titre | CONS320CRE - Console 320mm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1244,7 +839,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CONS320CRE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CONS320CRE.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CONS320CRE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CONS320CRE.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1255,13 +850,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1272,7 +860,7 @@ Aucune
 | code | CREMAILLERE950 |
 | ref |  |
 | titre | CREMAILLERE950 - Crémaillère pas de 32mm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1289,7 +877,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CREMAILLERE950.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CREMAILLERE950.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CREMAILLERE950.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\CREMAILLERE950.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1300,13 +888,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1317,7 +898,7 @@ Aucune
 | code | CU12G |
 | ref |  |
 | titre | CU12G - Cuve grès 61x45 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1334,7 +915,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU12G.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU12G.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1345,13 +926,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1362,7 +936,7 @@ Aucune
 | code | CU12V / CU12PPH |
 | ref |  |
 | titre | CU12V / CU12PPH - Bac simple polypropylène blanc 45x60 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1379,7 +953,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU12PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU12PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU12PPH.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1390,13 +964,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1407,7 +974,7 @@ Aucune
 | code | CU2G |
 | ref |  |
 | titre | CU2G - Cuve grès 15x30 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1424,7 +991,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU2G.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU2G.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1435,13 +1002,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1452,7 +1012,7 @@ Aucune
 | code | CU2SORBHD |
 | ref |  |
 | titre | CU2SORBHD - Cuve pour sorbonne homme debout |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1469,7 +1029,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2SORBHD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU2SORBHD.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2SORBHD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU2SORBHD.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1480,13 +1040,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1497,7 +1050,7 @@ Aucune
 | code | CU2V / CU2PPH |
 | ref |  |
 | titre | CU2V / CU2PPH - Bac simple polypropylène blanc 15x30 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1514,7 +1067,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU2PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU2PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU2PPH.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1525,13 +1078,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1542,7 +1088,7 @@ Aucune
 | code | CU30X30ENGR |
 | ref |  |
 | titre | CU30X30ENGR - Cuve polypropylène 30x30 grise |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1559,7 +1105,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU30X30ENGR.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU30X30ENGR.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU30X30ENGR.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU30X30ENGR.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1570,13 +1116,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1587,7 +1126,7 @@ Aucune
 | code | CU4G |
 | ref |  |
 | titre | CU4G - Cuve grès 30x30 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1604,7 +1143,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU4G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU4G.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU4G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU4G.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1615,13 +1154,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1632,7 +1164,7 @@ Aucune
 | code | CU4V / CU4PPH |
 | ref |  |
 | titre | CU4V / CU4PPH - Bac simple polypropylène blanc 30x30 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1649,7 +1181,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU4PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU4PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU4PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU4PPH.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1660,13 +1192,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1677,7 +1202,7 @@ Aucune
 | code | CU9G |
 | ref |  |
 | titre | CU9G - Cuve grès 45x45 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1694,7 +1219,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU9G.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9G.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CU9G.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1705,13 +1230,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1722,7 +1240,7 @@ Aucune
 | code | CU9V / CU9PPH |
 | ref |  |
 | titre | CU9V / CU9PPH - Bac simple polypropylène blanc 45x45 cm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1739,7 +1257,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU9PPH.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CU9PPH.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\pph\CU9PPH.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1750,13 +1268,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1767,7 +1278,7 @@ Aucune
 | code | CUGR50X60X38 |
 | ref |  |
 | titre | CUGR50X60X38 - Cuve grès pour PE500 et PE600 |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1784,7 +1295,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CUGR50X60X38.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CUGR50X60X38.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUGR50X60X38.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CUGR50X60X38.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1795,13 +1306,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1812,7 +1316,7 @@ Aucune
 | code | CUVGR92X56X20 |
 | ref |  |
 | titre | CUVGR92X56X20 - Cuve grès évier double pour meuble collection |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1829,7 +1333,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVGR92X56X20.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CUVGR92X56X20.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVGR92X56X20.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\CUVGR92X56X20.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1840,13 +1344,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1857,7 +1354,7 @@ Aucune
 | code | CUVIN40 |
 | ref |  |
 | titre | CUVIN40 - Cuve inox 400x400x300mm avec bonde |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1874,7 +1371,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVIN40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\inox\CUVIN40.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVIN40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\inox\CUVIN40.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1885,13 +1382,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1902,7 +1392,7 @@ Aucune
 | code | CUVIN60 |
 | ref |  |
 | titre | CUVIN60 - Cuve inox 600x450x300mm avec bonde |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1919,7 +1409,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVIN40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\inox\CUVIN40.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVIN40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\inox\CUVIN40.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1930,13 +1420,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1947,7 +1430,7 @@ Aucune
 | code | CUVRS40 |
 | ref |  |
 | titre | CUVRS40 - Cuve résine synthétique 400x400x300mm avec bonde |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -1964,7 +1447,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVRS40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\CUVRS40.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVRS40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\CUVRS40.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -1975,13 +1458,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -1992,7 +1468,7 @@ Aucune
 | code | CUVRS55 |
 | ref |  |
 | titre | CUVRS55 - Cuve résine synthétique 550x400x300mm avec bonde |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2009,7 +1485,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVRS55.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\CUVRS55.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/CUVRS55.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\resine\CUVRS55.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2020,13 +1496,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2037,7 +1506,7 @@ Aucune
 | code | DLP100 |
 | ref |  |
 | titre | DLP100 - Goulotte 50x105 avec séparation |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2054,7 +1523,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/DLP100.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\DLP100.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/DLP100.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\DLP100.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2065,13 +1534,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2082,7 +1544,7 @@ Aucune
 | code | DPA6 |
 | ref |  |
 | titre | DPA6 - Douche portative 6 litres |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2099,7 +1561,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/DPA6.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\DPA6.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/DPA6.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\DPA6.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2110,13 +1572,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2127,7 +1582,7 @@ Aucune
 | code | DPA9 |
 | ref |  |
 | titre | DPA9 - Douche portative 9 litres |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2144,7 +1599,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/DPA9.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\DPA9.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/DPA9.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\DPA9.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2155,13 +1610,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2172,7 +1620,7 @@ Aucune
 | code | EFDE |
 | ref |  |
 | titre | EFDE - Chandelier eau froide double sur table élève |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2189,7 +1637,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/EFDE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFDE.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EFDE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFDE.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2200,13 +1648,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2217,7 +1658,7 @@ Aucune
 | code | EFDP |
 | ref |  |
 | titre | EFDP - Chandelier eau froide double sur table professeur |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2234,7 +1675,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/EFDP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFDP.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EFDP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFDP.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2245,13 +1686,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2262,7 +1696,7 @@ Aucune
 | code | EFSE |
 | ref |  |
 | titre | EFSE - Chandelier eau froide simple sur table |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2279,7 +1713,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/EFSE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFSE.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EFSE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFSE.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2290,13 +1724,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2307,7 +1734,7 @@ Aucune
 | code | ELEC-EN |
 | ref |  |
 | titre | ELEC-EN - Boitiers de prises de courant |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2324,7 +1751,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/prises_2cbe.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\prises_2cbe.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/prises_2cbe.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\prises_2cbe.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2335,13 +1762,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2352,7 +1772,7 @@ Aucune
 | code | ELEC-PC |
 | ref |  |
 | titre | ELEC-PC - Prises de courant |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2369,7 +1789,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/prises_Legrand.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\prises_Legrand.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/prises_Legrand.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\prises_Legrand.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2380,13 +1800,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2397,7 +1810,7 @@ Aucune
 | code | EVGR100X60 |
 | ref |  |
 | titre | EVGR100X60 - Cuve grès pour meuble MPG101 |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2414,7 +1827,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/EVGR100X60.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\EVGR100X60.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EVGR100X60.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\cuves\gres\EVGR100X60.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2425,13 +1838,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2442,7 +1848,7 @@ Aucune
 | code | FLEXEVAC40 |
 | ref |  |
 | titre | FLEXEVAC40 - Raccord souple d'évacuation |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2459,7 +1865,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/FLEXEVAC40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\FLEXEVAC40.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/FLEXEVAC40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\FLEXEVAC40.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2470,13 +1876,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2487,7 +1886,7 @@ Aucune
 | code | G6632 |
 | ref |  |
 | titre | G6632 - Ensemble de prélavage avec mélangeur monotrou |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2504,7 +1903,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/G6632.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\G6632.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/G6632.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\G6632.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2515,13 +1914,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2532,7 +1924,7 @@ Aucune
 | code | GOULBL80X50 |
 | ref |  |
 | titre | GOULBL80X50 - Goulotte 80x50 avec séparation |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2549,7 +1941,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/GOULBL80X50.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\GOULBL80X50.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/GOULBL80X50.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\GOULBL80X50.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2560,13 +1952,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2577,7 +1962,7 @@ Aucune
 | code | KERAPOXY |
 | ref |  |
 | titre | KERAPOXY - Joints époxy pour dalles |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2589,192 +1974,20 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE KERAPOXY 2026-2 |  | 2 |
 | N° de page | 1/5 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## KERAPOXY
-
-| Champ | Valeur |
-|-------|--------|
-| code | KERAPOXY |
-| ref |  |
-| titre | KERAPOXY - Joints époxy pour dalles |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE KERAPOXY 2026-2 |  | 2 |
 | N° de page | 2/5 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-2.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## KERAPOXY
-
-| Champ | Valeur |
-|-------|--------|
-| code | KERAPOXY |
-| ref |  |
-| titre | KERAPOXY - Joints époxy pour dalles |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE KERAPOXY 2026-2 |  | 2 |
 | N° de page | 3/5 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-3.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## KERAPOXY
-
-| Champ | Valeur |
-|-------|--------|
-| code | KERAPOXY |
-| ref |  |
-| titre | KERAPOXY - Joints époxy pour dalles |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE KERAPOXY 2026-2 |  | 2 |
 | N° de page | 4/5 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-4.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-4.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## KERAPOXY
-
-| Champ | Valeur |
-|-------|--------|
-| code | KERAPOXY |
-| ref |  |
-| titre | KERAPOXY - Joints époxy pour dalles |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE KERAPOXY 2026-2 |  | 2 |
 | N° de page | 5/5 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-5.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-5.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-3.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-4.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-4.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/kerapoxy-5.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\kerapoxy-5.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2785,13 +1998,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2802,7 +2008,7 @@ Aucune
 | code | KITBAL15LD |
 | ref |  |
 | titre | KITBAL15LD - Ballon d'eau-chaude 15L avec groupe de sécurité et siphon |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2819,7 +2025,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/KITBAL15LD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\chauffe-eau\KITBAL15LD.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/KITBAL15LD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\chauffe-eau\KITBAL15LD.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2830,13 +2036,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2847,7 +2046,7 @@ Aucune
 | code | KITBAL15LG |
 | ref |  |
 | titre | KITBAL15LG - Ballon d'eau-chaude 15L avec groupe de sécurité et siphon |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2864,7 +2063,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/KITBAL15LD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\chauffe-eau\KITBAL15LD.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/KITBAL15LD.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\chauffe-eau\KITBAL15LD.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2875,13 +2074,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2892,7 +2084,7 @@ Aucune
 | code | MMN |
 | ref |  |
 | titre | MMN - Mélangeur EF/EC monotrou sur table |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2909,7 +2101,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/MMN.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\MMN.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/MMN.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\MMN.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2920,13 +2112,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2937,7 +2122,7 @@ Aucune
 | code | PASCAB60 |
 | ref |  |
 | titre | PASCAB60 - Passe cable Ø60 mm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2954,7 +2139,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/PASCAB60.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\PASCAB60.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/PASCAB60.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\goulottes et caches\PASCAB60.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -2965,13 +2150,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -2982,7 +2160,7 @@ Aucune
 | code | POTSUPECR |
 | ref |  |
 | titre | POTSUPECR - Poteau support-écran |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -2999,7 +2177,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/poteau support écran.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\poteau support écran.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/poteau support écran.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\poteau support écran.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3010,13 +2188,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3027,7 +2198,7 @@ Aucune
 | code | RACD1 |
 | ref |  |
 | titre | RACD1 - Robinet sur embase sur dosseret pour air comprimé |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3044,7 +2215,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3055,13 +2226,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3072,7 +2236,7 @@ Aucune
 | code | RACD1C |
 | ref |  |
 | titre | RACD1C - Tétine sur dosseret avec robinet commande à distance pour air comprimé |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3084,57 +2248,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RACD1C 2026-2 |  | 2 |
 | N° de page | 1/1 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RACD1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RACD1C |
-| ref |  |
-| titre | RACD1C - Tétine sur dosseret avec robinet commande à distance pour air comprimé |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RACD1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3145,13 +2266,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3162,7 +2276,7 @@ Aucune
 | code | RACD2 |
 | ref |  |
 | titre | RACD2 - Nourrice à deux robinets sur embase pour air comprimé |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3179,7 +2293,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACD2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACD2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3190,13 +2304,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3207,7 +2314,7 @@ Aucune
 | code | RACT1 |
 | ref |  |
 | titre | RACT1 - Prise à un robinet sur table pour air comprimé |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3224,7 +2331,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3235,13 +2342,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3252,7 +2352,7 @@ Aucune
 | code | RACT1C |
 | ref |  |
 | titre | RACT1C - Tétine sur table avec robinet commande à distance pour air comprimé |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3264,57 +2364,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RACT1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RACT1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RACT1C |
-| ref |  |
-| titre | RACT1C - Tétine sur table avec robinet commande à distance pour air comprimé |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RACT1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3325,13 +2382,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3342,7 +2392,7 @@ Aucune
 | code | RACT2 |
 | ref |  |
 | titre | RACT2 - Prise à deux robinets sur table pour air comprimé |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3359,7 +2409,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RACT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\air nyolac\RACT2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3370,13 +2420,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3387,7 +2430,7 @@ Aucune
 | code | RECD1C |
 | ref |  |
 | titre | RECD1C - Col de cygne sur dosseret robinet commande à distance pour eau froide |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3399,57 +2442,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RECD1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RECD1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RECD1C |
-| ref |  |
-| titre | RECD1C - Col de cygne sur dosseret robinet commande à distance pour eau froide |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RECD1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3460,13 +2460,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3477,7 +2470,7 @@ Aucune
 | code | RECD1D |
 | ref |  |
 | titre | RECD1D - Col de cygne sur dosseret volant à droite pour eau chaude |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3494,7 +2487,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1D.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1D.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3505,13 +2498,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3522,7 +2508,7 @@ Aucune
 | code | RECD1G |
 | ref |  |
 | titre | RECD1G - Col de cygne sur dosseret volant à gauche pour eau chaude |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3539,7 +2525,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1D.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECD1D.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3550,13 +2536,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3567,7 +2546,7 @@ Aucune
 | code | RECT1 |
 | ref |  |
 | titre | RECT1 - Robinet simple sur table pour eau chaude |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3584,7 +2563,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3595,13 +2574,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3612,7 +2584,7 @@ Aucune
 | code | RECT1C |
 | ref |  |
 | titre | RECT1C - Colonne sur table robinet commande à distance pour eau chaude |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3624,57 +2596,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RECT1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RECT1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RECT1C |
-| ref |  |
-| titre | RECT1C - Colonne sur table robinet commande à distance pour eau chaude |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RECT1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RECT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RECT1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3685,13 +2614,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3702,7 +2624,7 @@ Aucune
 | code | REDD1 |
 | ref |  |
 | titre | REDD1 - Col de cygne à bec fixe pour eau déminéralisée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3719,7 +2641,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3730,13 +2652,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3747,7 +2662,7 @@ Aucune
 | code | REDD1C |
 | ref |  |
 | titre | REDD1C - Tétine Ø6 mm sur dosseret commande à distance pour eau déminéralisée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3759,57 +2674,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE REDD1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## REDD1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | REDD1C |
-| ref |  |
-| titre | REDD1C - Tétine Ø6 mm sur dosseret commande à distance pour eau déminéralisée |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE REDD1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDD1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3820,13 +2692,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3837,7 +2702,7 @@ Aucune
 | code | REDT1 |
 | ref |  |
 | titre | REDT1 - Colonne à un robinet à bec fixe sur table pour eau déminéralisée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3854,7 +2719,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3865,13 +2730,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3882,7 +2740,7 @@ Aucune
 | code | REDT1C |
 | ref |  |
 | titre | REDT1C - Colonne à bec fixe sur table commande à distance pour eau déminéralisée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -3894,57 +2752,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE REDT1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## REDT1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | REDT1C |
-| ref |  |
-| titre | REDT1C - Colonne à bec fixe sur table commande à distance pour eau déminéralisée |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE REDT1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REDT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau polypro\REDT1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -3955,13 +2770,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -3971,8 +2779,8 @@ Aucune
 |-------|--------|
 | code | REFD1C |
 | ref |  |
-| titre | REFD1C - Col de cygne sur dosseret robinet commande à distance pour eau froide |
-| famille | Equipement |
+| titre |  |
+| famille | equipement |
 
 ### Texte
 
@@ -3984,57 +2792,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE REFD1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## REFD1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | REFD1C |
-| ref |  |
-| titre | REFD1C - Col de cygne sur dosseret robinet commande à distance pour eau froide |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE REFD1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4045,13 +2810,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4061,8 +2819,8 @@ Aucune
 |-------|--------|
 | code | REFD1D |
 | ref |  |
-| titre | REFD1D - Col de cygne sur dosseret volant à droite pour eau froide |
-| famille | Equipement |
+| titre |  |
+| famille | equipement |
 
 ### Texte
 
@@ -4079,7 +2837,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1D.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1D.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4090,13 +2848,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4106,8 +2857,8 @@ Aucune
 |-------|--------|
 | code | REFD1G |
 | ref |  |
-| titre | REFD1G - Col de cygne sur dosseret volant à gauche pour eau froide |
-| famille | Equipement |
+| titre |  |
+| famille | equipement |
 
 ### Texte
 
@@ -4124,7 +2875,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1D.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFD1D.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFD1D.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4135,13 +2886,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4151,8 +2895,8 @@ Aucune
 |-------|--------|
 | code | REFDCG |
 | ref |  |
-| titre | REFDCG - Col de cygne sur dosseret robinet commande au genou pour eau mitigée |
-| famille | Equipement |
+| titre |  |
+| famille | equipement |
 
 ### Texte
 
@@ -4164,57 +2908,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE REFDCG 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCG.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCG.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## REFDCG
-
-| Champ | Valeur |
-|-------|--------|
-| code | REFDCG |
-| ref |  |
-| titre | REFDCG - Col de cygne sur dosseret robinet commande au genou pour eau mitigée |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE REFDCG 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCG-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCG-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCG.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCG.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCG-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCG-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4225,13 +2926,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4241,8 +2935,8 @@ Aucune
 |-------|--------|
 | code | REFDCP |
 | ref |  |
-| titre | REFDCP - Col de cygne sur dosseret robinet commande au pied pour eau froide |
-| famille | Equipement |
+| titre |  |
+| famille | equipement |
 
 ### Texte
 
@@ -4254,57 +2948,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE REFDCP 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCP.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## REFDCP
-
-| Champ | Valeur |
-|-------|--------|
-| code | REFDCP |
-| ref |  |
-| titre | REFDCP - Col de cygne sur dosseret robinet commande au pied pour eau froide |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE REFDCP 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCP-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCP.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFDCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFDCP-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4315,13 +2966,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4331,8 +2975,8 @@ Aucune
 |-------|--------|
 | code | REFT1 |
 | ref |  |
-| titre | REFT1 - Robinet simple sur table pour eau froide |
-| famille | Equipement |
+| titre |  |
+| famille | equipement |
 
 ### Texte
 
@@ -4349,7 +2993,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/EFT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFT.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EFT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\EFT.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4360,13 +3004,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4376,8 +3013,8 @@ Aucune
 |-------|--------|
 | code | REFT1C |
 | ref |  |
-| titre | REFT1C - Colonne sur table robinet commande à distance pour eau froide |
-| famille | Equipement |
+| titre |  |
+| famille | equipement |
 
 ### Texte
 
@@ -4389,57 +3026,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE REFT1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFT1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## REFT1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | REFT1C |
-| ref |  |
-| titre | REFT1C - Colonne sur table robinet commande à distance pour eau froide |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE REFT1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFT1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFT1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4450,13 +3044,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4466,8 +3053,8 @@ Aucune
 |-------|--------|
 | code | REFTCP |
 | ref |  |
-| titre | REFTCP - Colonne sur table robinet commande au pied pour eau froide |
-| famille | Equipement |
+| titre |  |
+| famille | equipement |
 
 ### Texte
 
@@ -4479,57 +3066,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE REFTCP 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFTCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFTCP.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## REFTCP
-
-| Champ | Valeur |
-|-------|--------|
-| code | REFTCP |
-| ref |  |
-| titre | REFTCP - Colonne sur table robinet commande au pied pour eau froide |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE REFTCP 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/REFTCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFTCP-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFTCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFTCP.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/REFTCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\REFTCP-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4540,13 +3084,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4557,7 +3094,7 @@ Aucune
 | code | RGCD1 |
 | ref |  |
 | titre | RGCD1 - Robinet de sécurité pour sur dosseret gaz combustibles |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -4574,7 +3111,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4585,13 +3122,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4602,7 +3132,7 @@ Aucune
 | code | RGCD1C |
 | ref |  |
 | titre | RGCD1C - Tétine sur dosseret commande à distance pour gaz combustibles |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -4614,57 +3144,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RGCD1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RGCD1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RGCD1C |
-| ref |  |
-| titre | RGCD1C - Tétine sur dosseret commande à distance pour gaz combustibles |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RGCD1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4675,13 +3162,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4692,7 +3172,7 @@ Aucune
 | code | RGCD2 |
 | ref |  |
 | titre | RGCD2 - Nourrice à deux robinets de sécurité sur dosseret pour gaz combustibles |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -4709,7 +3189,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCD2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCD2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4720,13 +3200,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4737,7 +3210,7 @@ Aucune
 | code | RGCT1 |
 | ref |  |
 | titre | RGCT1 - Prise à un robinet de sécurité sur table pour gaz combustibles |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -4754,7 +3227,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4765,13 +3238,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4782,7 +3248,7 @@ Aucune
 | code | RGCT1C |
 | ref |  |
 | titre | RGCT1C - Tétine sur dosseret commande à distance pour gaz combustibles |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -4794,57 +3260,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RGCT1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RGCT1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RGCT1C |
-| ref |  |
-| titre | RGCT1C - Tétine sur dosseret commande à distance pour gaz combustibles |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RGCT1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4855,13 +3278,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4872,7 +3288,7 @@ Aucune
 | code | RGCT2 |
 | ref |  |
 | titre | RGCT2 - Prise à deux robinets de sécurité sur table pour gaz combustibles |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -4889,7 +3305,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RGCT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\gaz nyolac\RGCT2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4900,13 +3316,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4917,7 +3326,7 @@ Aucune
 | code | RJ45CAT6 |
 | ref |  |
 | titre | RJ45CAT6 - Prise RJ45 Schneider |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -4934,7 +3343,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RJ45CAT6.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RJ45CAT6.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RJ45CAT6.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RJ45CAT6.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4945,13 +3354,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -4962,7 +3364,7 @@ Aucune
 | code | RJ45MOSA |
 | ref |  |
 | titre | RJ45MOSA - Prise RJ45 Legrand |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -4979,7 +3381,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RJ45MOSA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RJ45MOSA.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RJ45MOSA.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\inform\RJ45MOSA.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4990,13 +3392,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5007,7 +3402,7 @@ Aucune
 | code | RMED2 |
 | ref |  |
 | titre | RMED2 - Mélangeur entraxe 150 mm sur dosseret à bec orientable par-dessus |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5024,7 +3419,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMED2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMED2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMED2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMED2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5035,13 +3430,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5052,7 +3440,7 @@ Aucune
 | code | RMEDCE |
 | ref |  |
 | titre | RMEDCE - Col de cygne sur dosseret robinet commande électronique pour eau mitigée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5064,57 +3452,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RMEDCE 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCE.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RMEDCE
-
-| Champ | Valeur |
-|-------|--------|
-| code | RMEDCE |
-| ref |  |
-| titre | RMEDCE - Col de cygne sur dosseret robinet commande électronique pour eau mitigée |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RMEDCE 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCE-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCE-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCE.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCE-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCE-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5125,13 +3470,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5142,7 +3480,7 @@ Aucune
 | code | RMEDCP |
 | ref |  |
 | titre | RMEDCP - Col de cygne sur dosseret robinet commande au pied pour eau mitigée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5154,57 +3492,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RMEDCP 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCP.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RMEDCP
-
-| Champ | Valeur |
-|-------|--------|
-| code | RMEDCP |
-| ref |  |
-| titre | RMEDCP - Col de cygne sur dosseret robinet commande au pied pour eau mitigée |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RMEDCP 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCP-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCP.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMEDCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMEDCP-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5215,13 +3510,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5232,7 +3520,7 @@ Aucune
 | code | RMET2 |
 | ref |  |
 | titre | RMET2 - Mélangeur entraxe 150 mm sur table à bec orientable par-dessus |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5249,7 +3537,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMET2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMET2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMET2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMET2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5260,13 +3548,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5277,7 +3558,7 @@ Aucune
 | code | RMET2M |
 | ref |  |
 | titre | RMET2M - Mélangeur entraxe 150 mm sur table à bec orientable par-dessus |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5294,7 +3575,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMET2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMET2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMET2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMET2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5305,13 +3586,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5322,7 +3596,7 @@ Aucune
 | code | RMETCE |
 | ref |  |
 | titre | RMETCE - Colonne sur table robinet commande électronique pour eau mitigée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5334,57 +3608,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RMETCE 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCE.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RMETCE
-
-| Champ | Valeur |
-|-------|--------|
-| code | RMETCE |
-| ref |  |
-| titre | RMETCE - Colonne sur table robinet commande électronique pour eau mitigée |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RMETCE 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCE-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCE-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCE.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCE-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCE-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5395,13 +3626,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5412,7 +3636,7 @@ Aucune
 | code | RMETCP |
 | ref |  |
 | titre | RMETCP - Colonne sur table robinet commande au pied pour eau mitigée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5424,57 +3648,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RMETCP 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCP.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RMETCP
-
-| Champ | Valeur |
-|-------|--------|
-| code | RMETCP |
-| ref |  |
-| titre | RMETCP - Colonne sur table robinet commande au pied pour eau mitigée |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RMETCP 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCP-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCP.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCP.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMETCP-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMETCP-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5485,13 +3666,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5502,7 +3676,7 @@ Aucune
 | code | RMIT |
 | ref |  |
 | titre | RMIT - Mitigeur à bec orientable L.200 |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5519,7 +3693,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMIT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMIT.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMIT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMIT.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5530,13 +3704,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5547,7 +3714,7 @@ Aucune
 | code | RMITC |
 | ref |  |
 | titre | RMITC - Robinet mitigeur commande au coude |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5564,7 +3731,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITC.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITC.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITC.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITC.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5575,13 +3742,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5592,7 +3752,7 @@ Aucune
 | code | RMITCIRT |
 | ref |  |
 | titre | RMITCIRT - Mitigeur électronique à bec haut |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5604,57 +3764,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RMITCIRT 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITCIRT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITCIRT.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RMITCIRT
-
-| Champ | Valeur |
-|-------|--------|
-| code | RMITCIRT |
-| ref |  |
-| titre | RMITCIRT - Mitigeur électronique à bec haut |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RMITCIRT 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITCIRT-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITCIRT-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITCIRT.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITCIRT.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITCIRT-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITCIRT-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5665,13 +3782,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5682,7 +3792,7 @@ Aucune
 | code | RMITDE |
 | ref |  |
 | titre | RMITDE - Mitigeur avec douchette extractible |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5699,7 +3809,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITDE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITDE.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITDE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\RMITDE.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5710,13 +3820,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5727,7 +3830,7 @@ Aucune
 | code | RMITG |
 | ref |  |
 | titre | RMITG - Col de cygne à bec orientable robinet commande au genou pour eau mitigée |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5739,57 +3842,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RMITG 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITG.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMITG.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RMITG
-
-| Champ | Valeur |
-|-------|--------|
-| code | RMITG |
-| ref |  |
-| titre | RMITG - Col de cygne à bec orientable robinet commande au genou pour eau mitigée |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RMITG 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITG-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMITG-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITG.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMITG.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RMITG-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\eau nyolac\RMITG-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5800,13 +3860,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5817,7 +3870,7 @@ Aucune
 | code | RN2D1 |
 | ref |  |
 | titre | RN2D1 - Robinet simple sur dosseret pour azote |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5834,7 +3887,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2D1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2D1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2D1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2D1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5845,13 +3898,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5862,7 +3908,7 @@ Aucune
 | code | RN2T1 |
 | ref |  |
 | titre | RN2T1 - Robinet simple sur table pour azote |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5879,7 +3925,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5890,13 +3936,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5907,7 +3946,7 @@ Aucune
 | code | RN2T1C |
 | ref |  |
 | titre | RN2T1C - Tétine sur table avec robinet commande à distance pour azote |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -5919,57 +3958,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RN2T1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RN2T1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RN2T1C |
-| ref |  |
-| titre | RN2T1C - Tétine sur table avec robinet commande à distance pour azote |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RN2T1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RN2T1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\azote nyolac\RN2T1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -5980,13 +3976,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -5997,7 +3986,7 @@ Aucune
 | code | ROULD50+F |
 | ref |  |
 | titre | ROULD50+F - Roulette Ø50 pivotante avec frein |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6014,7 +4003,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/ROULD50+F.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\ROULD50+F.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/ROULD50+F.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\ROULD50+F.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6025,13 +4014,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6042,7 +4024,7 @@ Aucune
 | code | RVID1 |
 | ref |  |
 | titre | RVID1 - Prise à un robinet sur dosseret pour vide |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6059,7 +4041,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6070,13 +4052,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6087,7 +4062,7 @@ Aucune
 | code | RVID1C |
 | ref |  |
 | titre | RVID1C - Tétine sur dosseret avec robinet commande à distance pour vide |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6099,57 +4074,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RVID1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RVID1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RVID1C |
-| ref |  |
-| titre | RVID1C - Tétine sur dosseret avec robinet commande à distance pour vide |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RVID1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6160,13 +4092,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6177,7 +4102,7 @@ Aucune
 | code | RVID2 |
 | ref |  |
 | titre | RVID2 - Prise à deux robinets sur dosseret pour vide |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6194,7 +4119,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVID2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVID2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6205,13 +4130,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6222,7 +4140,7 @@ Aucune
 | code | RVIT1 |
 | ref |  |
 | titre | RVIT1 - Prise à un robinet sur table pour vide |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6239,7 +4157,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6250,13 +4168,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6267,7 +4178,7 @@ Aucune
 | code | RVIT1C |
 | ref |  |
 | titre | RVIT1C - Tétine sur table avec robinet commande à distance pour vide |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6279,57 +4190,14 @@ Aucune
 |-----------|--------|--------|-------------|
 | Référence | Réf : FTE RVIT1C 2026-2 |  | 2 |
 | N° de page | 1/2 |  | 3 |
-
-### Images
-
-| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
-|----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1C.PNG | 17 | 100 | 560 | 658 |  |
-
-### Metadata PowerPoint
-
-| Champ | Type | Prefix | Shape Index |
-|-------|------|--------|-------------|
-| Code | Type Objet dans Powerpoint |  |  |
-| Référence | TEXTE |  | 2 |
-| Titre | TEXTE |  | 1 |
-| N° de page | TEXTE |  | 3 |
-| Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
-
----
-
-## RVIT1C
-
-| Champ | Valeur |
-|-------|--------|
-| code | RVIT1C |
-| ref |  |
-| titre | RVIT1C - Tétine sur table avec robinet commande à distance pour vide |
-| famille | Equipement |
-
-### Texte
-
-Aucune
-
-### Dimensions
-
-| Dimension | Valeur | Prefix | Shape Index |
-|-----------|--------|--------|-------------|
-| Référence | Réf : FTE RVIT1C 2026-2 |  | 2 |
 | N° de page | 2/2 |  | 3 |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1C-2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1C.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1C.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT1C-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT1C-2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6340,13 +4208,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6357,7 +4218,7 @@ Aucune
 | code | RVIT2 |
 | ref |  |
 | titre | RVIT2 - Prise à deux robinets sur table pour vide |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6374,7 +4235,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT2.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/RVIT2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\labo\vide nyolac\RVIT2.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6385,13 +4246,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6402,7 +4256,7 @@ Aucune
 | code | SERV |
 | ref |  |
 | titre | SERV - Système de blocage 4 tiroirs |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6419,7 +4273,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/SERV.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\blocage 4 tiroirs\SERV.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SERV.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\blocage 4 tiroirs\SERV.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6430,13 +4284,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6447,7 +4294,7 @@ Aucune
 | code | SILICO |
 | ref |  |
 | titre | SILICO - Joints silicone |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6464,7 +4311,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/silico.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\silico.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/silico.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\colles\silico.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6475,13 +4322,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6492,7 +4332,7 @@ Aucune
 | code | SIPHEN |
 | ref |  |
 | titre | SIPHEN - Siphon évier EASYPHON Ø 40mm |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6509,7 +4349,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/SIPHEN.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\SIPHEN.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SIPHEN.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\SIPHEN.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6520,13 +4360,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6537,7 +4370,7 @@ Aucune
 | code | SIPHPRIL40 |
 | ref |  |
 | titre | SIPHPRIL40 - Siphon polypropylène Ø40 |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6554,7 +4387,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/SIPHPRIL40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\SIPHPRIL40.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SIPHPRIL40.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\evacuation\SIPHPRIL40.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6565,13 +4398,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6582,7 +4408,7 @@ Aucune
 | code | SP2F |
 | ref |  |
 | titre | SP2F - Solution saline |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6599,7 +4425,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/SP2F.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\SP2F.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SP2F.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\secu\SP2F.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6610,13 +4436,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6627,7 +4446,7 @@ Aucune
 | code | SUPCLAV |
 | ref |  |
 | titre | SUPCLAV - Support clavier |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6644,7 +4463,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/SUPCLAV.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\SUPCLAV.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SUPCLAV.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\SUPCLAV.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6655,13 +4474,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6672,7 +4484,7 @@ Aucune
 | code | SUPUCNO |
 | ref |  |
 | titre | SUPUCNO - Support unité centrale |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6689,7 +4501,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/SUPUCNO.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\SUPUCNO.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/SUPUCNO.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\SUPUCNO.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6700,13 +4512,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6717,7 +4522,7 @@ Aucune
 | code | TABTRY |
 | ref |  |
 | titre | Tableau triptyque 200x120 Blanc |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6734,7 +4539,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/tableau_triptyque.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\tableau_triptyque.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/tableau_triptyque.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\tableau_triptyque.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6745,13 +4550,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6762,7 +4560,7 @@ Aucune
 | code | TAV |
 | ref |  |
 | titre | Table antivibratile |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6779,7 +4577,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/table-antivib.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\table-antivib.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/table-antivib.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\table-antivib.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6790,13 +4588,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6807,7 +4598,7 @@ Aucune
 | code | VAE |
 | ref |  |
 | titre | VAE - Vanne à boisseau sphérique laiton mâle-mâle 15x21 |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6824,7 +4615,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/VAE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\VAE.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/VAE.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\divers\VAE.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6835,13 +4626,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6852,7 +4636,7 @@ Aucune
 | code | WAGO.R |
 | ref |  |
 | titre | WAGO.R - Connecteur WAGO pour fil rigide |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6869,7 +4653,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/WAGO.R.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.R.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/WAGO.R.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.R.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6880,13 +4664,6 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
 
@@ -6897,7 +4674,7 @@ Aucune
 | code | WAGO.S |
 | ref |  |
 | titre | WAGO.S - Connecteur WAGO pour fil souple |
-| famille | Equipement |
+| famille | equipement |
 
 ### Texte
 
@@ -6914,7 +4691,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/WAGO.S.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.S.PNG | 17 | 100 | 560 | 658 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/WAGO.S.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.S.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -6925,13 +4702,5 @@ Aucune
 | Titre | TEXTE |  | 1 |
 | N° de page | TEXTE |  | 3 |
 | Emplacement IMAGE_1 | IMAGE |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  | 19 |
-|  |  |  |  |
 
 ---
-
