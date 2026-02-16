@@ -463,13 +463,13 @@ async def preview_generation(analysis_result: dict) -> str:
 
 
 @mcp.tool()
-async def generate_slides(product_codes: list[str], output_path: str, mode: str = "FTI", devis_info: dict = None, custom_products: str = "[]") -> str:
+async def generate_slides(product_codes: list[str], output_path: str = None, mode: str = "FTI", devis_info: dict = None, custom_products: str = "[]") -> str:
     """
     Generate a PowerPoint presentation with product slides.
 
     Args:
         product_codes: List of product codes to include
-        output_path: Path for the output PowerPoint file
+        output_path: Path for the output PowerPoint file (optional - auto-computed from devis_info if not provided)
         mode: Slide generation mode ("FTI" or other - default "FTI")
         devis_info: Optional dict with devis header info: 'numero_devis', 'date', 'client', 'titre_affaire'
         custom_products: JSON string of custom product dicts (for SP articles)
@@ -485,12 +485,19 @@ async def generate_slides(product_codes: list[str], output_path: str, mode: str 
     step = None
 
     try:
-        # Resolve output path - if relative, make absolute from project root
-        output = Path(output_path)
-        if not output.is_absolute():
-            output = PROJECT_ROOT / output
+        # Compute output directory from devis_info (uses helper from Plan 01)
+        devis_output_dir = _get_devis_output_dir(devis_info, fallback_name="default")
 
-        # Create output directory if it doesn't exist
+        # If output_path provided, use it (relative to devis output dir)
+        if output_path:
+            output = Path(output_path)
+            if not output.is_absolute():
+                output = devis_output_dir / output_path
+        else:
+            # Auto-compute: devis_output_dir/fiches.pptx
+            output = devis_output_dir / "fiches.pptx"
+
+        # Ensure parent directory exists
         output.parent.mkdir(parents=True, exist_ok=True)
 
         # Validate template exists
