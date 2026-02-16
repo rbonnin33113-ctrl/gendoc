@@ -118,3 +118,13 @@ See: `.planning/milestones/v1.4-ROADMAP.md` for full details.
 
 ---
 
+
+## v1.5 Consolidation et Qualite (Shipped: 2026-02-16)
+
+**Phases completed:** 21 phases, 36 plans, 36 tasks
+
+**Key accomplishments:**
+- (none recorded)
+
+---
+

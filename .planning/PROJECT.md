@@ -2,23 +2,13 @@
 
 ## What This Is
 
-Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 8,407 lignes Python + 1,965 lignes de tests, 317 references produit, 12 outils MCP, 108 tests automatises.
+Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 8,557 lignes Python + 2,288 lignes de tests, 317 references produit dans 11 familles, 12 outils MCP, 123 tests automatises.
 
 ## Core Value
 
 Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-## Current Milestone: v1.5 Consolidation et Qualite
-
-**Goal:** Remettre au propre la documentation projet, le code modifie hors milestone, et ajouter les tests manquants pour les nouvelles familles et modifications recentes.
-
-**Target features:**
-- Documentation projet synchronisee avec l'etat reel (11 familles, 317 refs)
-- Code nettoye et refactore (modifications hors milestone consolidees)
-- Tests ajoutes pour armoire-securite, enceinte-ventilee, et modifications recentes
-- References MD coherentes, index complet, images reelles
-
-## Current State (v1.4 shipped 2026-02-15, + ajouts hors milestone)
+## Current State (v1.5 shipped 2026-02-16)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, validators, utils, mcp, cli)
 - **Data**: 317 references dans 11 fichiers MD, images reelles pour toutes les familles
@@ -32,8 +22,8 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - **Resilience**: try/except par produit, warnings propages, resume compact en francais
 - **Detection**: EXCLUSION_WORDS (33 entries) + pattern mesures, inconnus logges individuellement
 - **Hot-reload**: Modifications des generateurs prises en compte sans redemarrage MCP
-- **Tests**: 108 tests pytest (16 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling, 21 CRUD) — <20s
-- **Note**: armoire-securite et enceinte-ventilee ajoutees hors milestone v1.4 (commits 0b3600b, 0cee8d5), code modifie (modern_template, document_assembler, md_parser) sans tests correspondants
+- **Tests**: 123 tests pytest (22 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling, 21 CRUD, 6 modern_template, 4 document_assembler) — <20s
+- **Code quality**: armoire-securite Option C template et enceinte-ventilee entierement documentes avec docstrings, round-trip md_parser/md_writer valide
 
 ## Requirements
 
@@ -66,6 +56,12 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - Mise a jour automatique de _index.md apres chaque operation CRUD — v1.4
 - Creation automatique infrastructure nouvelles familles (MD + images dir) — v1.4
 - Suite de tests CRUD : 21 tests unitaires + integration lifecycle — v1.4
+- Documentation projet synchronisee avec etat reel (11 familles, 317 refs, index complet) — v1.5
+- References MD deduplicees et coherentes (52 doublons consolides, formats uniformes) — v1.5
+- Code hors-milestone consolide et documente (armoire-securite Option C, enceinte-ventilee) — v1.5
+- Tests armoire-securite et enceinte-ventilee (generation 2 pages, multi-page validation) — v1.5
+- Tests modern_template dispatch et document_assembler multi-page — v1.5
+- 123 tests passent avec zero regressions apres consolidation — v1.5
 
 ### Active
 
@@ -118,6 +114,9 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Code/famille protege en update | Identifiants structurels non modifiables | Good — coherence preservee |
 | Index refresh secondaire | Echec index ne bloque pas CRUD | Good — operations CRUD fiables |
 | Image operations secondaires | Echec copie/suppression ne bloque pas CRUD | Good — degradation gracieuse |
+| Dedup references avant comptage | Les compteurs MD etaient faux (369 vs 317 reel) | Good — donnees fiables apres consolidation |
+| armoire-securite Option C template documente | Seule famille multi-page, docstring complet | Good — maintenabilite assuree |
+| Assertions tests realistes | SP catalog 283 visible (pas 317 total) | Good — tests stables apres dedup |
 
 ---
-*Last updated: 2026-02-16 after Phase 20 documentation consolidation*
+*Last updated: 2026-02-16 after v1.5 milestone*
