@@ -15,7 +15,7 @@ from gendoc.parsers.md_parser import find_product
 FAMILIES = [
     'paillasse', 'sorbonne', 'revetement', 'meubles',
     'tables-en', 'equipement', 'elec-sorb', 'complements',
-    'enceinte-ventilee'
+    'enceinte-ventilee', 'armoire-securite'
 ]
 
 
@@ -98,3 +98,36 @@ def test_split_revetement_text():
     assert result['texte'] == "Just one block."
     assert result['mise_en_oeuvre'] == ""
     assert result['finition'] == ""
+
+
+def test_multi_page_families_generate_two_slides(sample_codes, template_path, references_dir, project_root, output_dir):
+    """armoire-securite and enceinte-ventilee generate 2 slides per product (Option C template)."""
+    multi_page_families = ['armoire-securite', 'enceinte-ventilee']
+
+    for family in multi_page_families:
+        code = sample_codes[family]
+        output_path = output_dir / f"test_{family}_multi.pptx"
+
+        # Generate presentation
+        result = generate_presentation(
+            product_codes=[code],
+            output_path=output_path,
+            references_dir=references_dir,
+            template_path=template_path,
+            project_root=project_root,
+            mode="FTI"
+        )
+
+        # Verify 1 product generated
+        # (vs 1 slide for standard families)
+        assert result['slides_generated'] == 1, f"Expected 1 product, got {result['slides_generated']}"
+
+        # Total pages: cover(1) + TOC(1) + separator(1) + product_page1(1) + product_page2(1) = 5
+        assert result['total_pages'] >= 5, f"Expected at least 5 pages for {family}, got {result['total_pages']}"
+
+        # Verify .pptx created
+        assert output_path.exists()
+        prs = PptxPresentation(str(output_path))
+
+        # Minimum slides: 5 (cover + TOC + separator + 2 product slides)
+        assert len(prs.slides) >= 5, f"Expected at least 5 slides for {family}, got {len(prs.slides)}"
