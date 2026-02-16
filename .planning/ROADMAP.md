@@ -45,7 +45,12 @@ Plans:
   3. LOG.md for the execution is written to the devis subfolder
   4. SP selector HTML and JSON export are written to the devis subfolder
   5. Multiple devis generations create separate folders without conflicts
-**Plans**: TBD
+**Plans**: 3 plans (Wave 1)
+
+Plans:
+- [ ] 23-01-PLAN.md — Create devis output directory infrastructure and refactor PipelineLogger
+- [ ] 23-02-PLAN.md — Refactor generate_slides for per-devis output paths
+- [ ] 23-03-PLAN.md — Refactor SP selector tools for per-devis output paths
 
 ### Phase 24: Access Control
 **Goal**: Admin flag controls CRUD access, users operate in read-only mode
