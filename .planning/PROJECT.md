@@ -8,14 +8,24 @@ Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la genera
 
 Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-## Current State (v1.4 shipped 2026-02-15)
+## Current Milestone: v1.5 Consolidation et Qualite
+
+**Goal:** Remettre au propre la documentation projet, le code modifie hors milestone, et ajouter les tests manquants pour les nouvelles familles et modifications recentes.
+
+**Target features:**
+- Documentation projet synchronisee avec l'etat reel (11 familles, 369+ refs)
+- Code nettoye et refactore (modifications hors milestone consolidees)
+- Tests ajoutes pour armoire-securite, enceinte-ventilee, et modifications recentes
+- References MD coherentes, index complet, images reelles
+
+## Current State (v1.4 shipped 2026-02-15, + ajouts hors milestone)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, validators, utils, mcp, cli)
-- **Data**: 359+ references dans 9+ fichiers MD, 268+ images locales
+- **Data**: 369+ references dans 11 fichiers MD, images reelles pour toutes les familles
 - **MCP Tools**: lookup_reference, search_references, list_families, analyze_devis, preview_generation, generate_slides, add_reference, update_reference, delete_reference, create_custom_product, open_sp_selector, load_sp_selection
 - **Skills**: /gendoc-lookup, /gendoc-analyze, /gendoc-generate, /gendoc-full, /gendoc-addarm
 - **Template**: Modele fiche technique vide - Ind J.potm (6 layouts, A4 portrait)
-- **Families**: 9 familles validees (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements, armoire-securite)
+- **Families**: 11 familles (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements, armoire-securite, enceinte-ventilee, fiches-existantes)
 - **SP Workflow**: analyze_devis -> open_sp_selector (HTML) -> load_sp_selection (JSON) -> generate_slides
 - **CRUD**: add_reference, update_reference, delete_reference avec md_writer, image_handler, index_manager
 - **Logging**: PipelineLogger cree un fichier LOG.md par execution dans Delagrave/output/logs/
@@ -23,6 +33,7 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - **Detection**: EXCLUSION_WORDS (33 entries) + pattern mesures, inconnus logges individuellement
 - **Hot-reload**: Modifications des generateurs prises en compte sans redemarrage MCP
 - **Tests**: 108 tests pytest (16 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling, 21 CRUD) — <20s
+- **Note**: armoire-securite et enceinte-ventilee ajoutees hors milestone, code modifie (modern_template, document_assembler, md_parser) sans tests correspondants
 
 ## Requirements
 
@@ -109,4 +120,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Image operations secondaires | Echec copie/suppression ne bloque pas CRUD | Good — degradation gracieuse |
 
 ---
-*Last updated: 2026-02-16 after v1.4 milestone*
+*Last updated: 2026-02-16 after v1.5 milestone start*
