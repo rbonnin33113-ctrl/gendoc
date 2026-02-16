@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "gendoc": {
+      "command": "python",
+      "args": ["-m", "gendoc.mcp.server"],
+      "cwd": "C:/chemin/vers/le/projet",
+      "env": {
+        "PYTHONPATH": "C:/chemin/vers/le/projet/src"
+      }
+    }
+  }
+}
