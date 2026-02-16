@@ -7,6 +7,16 @@ truth for parsing MD files - all other modules (lookup, image_manager,
 validators, MCP servers) must use these functions.
 
 This is a pure library module with no I/O operations (no print/input).
+
+Round-trip compatibility:
+  - parse_family_md() -> md_writer.write_family_file() -> parse_family_md()
+  - Validated: 2026-02-16 (phase 20) — all families pass round-trip test
+  - Last modified: 2026-02-16 (commit 0cee8d5)
+
+Changes since v1.4 milestone:
+  - Fixed image table column count detection (10 parts for new "Chemin Original" field)
+  - Added find_product_pages() function for multi-page product lookup
+  - Both changes maintain backward compatibility with existing MD files
 """
 
 from pathlib import Path
