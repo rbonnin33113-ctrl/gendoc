@@ -457,19 +457,35 @@ def assemble_document(
 
     # Multi-page families: armoire-securite uses 2 pages per product (Option C template)
     # enceinte-ventilee also uses 2-page layout for PSM product specifications
-    # This set is checked when counting total slides for progress reporting
     multi_page_families = {'armoire-securite', 'enceinte-ventilee'}  # Added: commits 0b3600b, 0cee8d5
+    # Simple families: one slide per image (multi-image products = multiple slides)
+    simple_families = {'equipement', 'elec-sorb', 'complements'}
+
+    def _count_valid_images(product):
+        """Count valid (non-missing, non-empty) images for a product."""
+        count = 0
+        for img in product.get('images', []):
+            chemin = img.get('chemin', '').strip()
+            if chemin and not chemin.endswith('.missing'):
+                count += 1
+        return count
 
     for entry in toc_entries:
         page_counter += 1  # Chapter separator
+        family = entry['family']
+        products = product_groups.get(family, [])
 
-        # Estimate slide count: armoire-securite and enceinte-ventilee use 2 slides per product, others use 1
-        # This affects progress reporting and total page count in table of contents
-        slides_per_product = 2 if entry['family'] in multi_page_families else 1
-        for product_entry in entry['products']:
+        for i, product_entry in enumerate(entry['products']):
             page_counter += 1  # First product slide (page number shown in TOC)
             product_entry['page_number'] = page_counter
-            page_counter += slides_per_product - 1  # Additional slides for multi-page
+
+            # Additional slides for multi-page families
+            if family in multi_page_families:
+                page_counter += 1  # 2nd page for armoire/enceinte
+            elif family in simple_families and i < len(products):
+                valid_images = _count_valid_images(products[i])
+                if valid_images > 1:
+                    page_counter += valid_images - 1  # Additional image slides
 
     total_pages = page_counter
     product_count = sum(len(products) for products in product_groups.values())

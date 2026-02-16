@@ -72,7 +72,7 @@ class TestBuildProductSlideDispatch:
         assert isinstance(warnings, list)
 
     def test_simple_families_use_simple_builder(self, sample_codes, references_dir, project_root, template_path):
-        """equipement, elec-sorb, complements use _build_simple_slide (single slide)."""
+        """equipement, elec-sorb, complements use _build_simple_slide (one slide per image)."""
         simple_families = ['equipement', 'elec-sorb', 'complements']
 
         for family in simple_families:
@@ -84,11 +84,20 @@ class TestBuildProductSlideDispatch:
             prs = load_template(template_path)
             logo_path = project_root / "Delagrave" / "images" / "delagrave2022_high.png"
 
+            # Count valid images to predict expected slide count
+            valid_images = sum(
+                1 for img in product.get('images', [])
+                if img.get('chemin', '').strip()
+                and not img.get('chemin', '').strip().endswith('.missing')
+            )
+            expected_slides = max(1, valid_images)
+
             initial_count = len(prs.slides)
             warnings = build_product_slide(prs, product, family, project_root, logo_path)
 
-            # Verify 1 slide added
-            assert len(prs.slides) == initial_count + 1, f"{family} should add 1 slide"
+            # Verify one slide per valid image (min 1)
+            assert len(prs.slides) == initial_count + expected_slides, \
+                f"{family}/{code} should add {expected_slides} slide(s) ({valid_images} valid images)"
 
     def test_standard_families_use_standard_builder(self, sample_codes, references_dir, project_root, template_path):
         """paillasse, sorbonne, meubles, tables-en use _build_standard_slide (single slide)."""

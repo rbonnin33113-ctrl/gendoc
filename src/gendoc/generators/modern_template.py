@@ -878,25 +878,40 @@ def _build_revetement_slide(prs, product, project_root, logo_path):
 
 
 def _build_simple_slide(prs, product, project_root, logo_path):
-    """Simple slide for equipement/elec-sorb/complements: title band + large centered images.
+    """Simple slide for equipement/elec-sorb/complements: one slide per image.
+
+    Multi-image products (e.g. BC1Vx with 5 datasheets) get one slide per image,
+    matching original VBA behavior. Single-image products are unchanged.
 
     Returns list of warning strings.
     """
     try:
-        slide = prs.slides.add_slide(prs.slide_layouts[0])
+        warnings = []
+        images = [img for img in product.get('images', [])
+                  if img.get('chemin', '').strip()
+                  and not img.get('chemin', '').strip().endswith('.missing')]
 
-        _header(slide, prs, logo_path)
-        _title_band(slide, prs, product.get('titre', ''))
-        _footer(slide, prs)
+        if not images:
+            images = [{}]  # Still create one slide even with no images
 
-        # Large image area (3.5cm to 27cm = 23.5cm available height)
         sw = prs.slide_width
-        _insert_all_images(
-            slide, product.get('images', []), project_root,
-            Cm(1.5), Cm(3.8), sw - Cm(3), Cm(22)
-        )
+        for img_data in images:
+            slide = prs.slides.add_slide(prs.slide_layouts[0])
+            _header(slide, prs, logo_path)
+            _title_band(slide, prs, product.get('titre', ''))
+            _footer(slide, prs)
 
-        return []
+            chemin = img_data.get('chemin', '').strip()
+            if chemin:
+                inserted = _insert_image(
+                    slide, [img_data], project_root,
+                    Cm(1.5), Cm(3.8), sw - Cm(3), Cm(22)
+                )
+                if not inserted:
+                    code = product.get('code', '?')
+                    warnings.append(f"Image non inseree pour {code}: {chemin}")
+
+        return warnings
     except Exception as e:
         return [f"Erreur inattendue sur slide: {str(e)}"]
 
