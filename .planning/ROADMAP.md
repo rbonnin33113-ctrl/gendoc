@@ -61,7 +61,10 @@ Plans:
   2. User sets "admin": false and CRUD tools return error: "Operation reservee a l'administrateur"
   3. Non-admin users can still analyze devis, generate slides, use SP selector (read-only operations)
   4. Admin validation happens in server.py before delegating to CRUD modules
-**Plans**: TBD
+**Plans**: 1 plan (Wave 1)
+
+Plans:
+- [ ] 24-01-PLAN.md -- Admin guard on CRUD tools + tests
 
 ### Phase 25: Deployment Package
 **Goal**: Complete deployment artifacts for setting up a new workstation
