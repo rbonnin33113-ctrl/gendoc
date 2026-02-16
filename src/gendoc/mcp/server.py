@@ -12,6 +12,7 @@ from pathlib import Path
 import json
 import importlib
 import os
+import sys
 import time
 import traceback
 from datetime import datetime
@@ -106,13 +107,21 @@ def _reload_assembler_constants():
     import gendoc.generators.document_assembler as da
     return (da.FAMILY_ORDER, da.FAMILY_DISPLAY_NAMES)
 
-# Resolve references directory relative to project root
-# This ensures the path works regardless of where the MCP server is started from
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
-REFERENCES_DIR = PROJECT_ROOT / "Delagrave" / "references"
-IMAGES_DIR = PROJECT_ROOT / "Delagrave" / "images"
-TEMPLATE_PATH = PROJECT_ROOT / "Delagrave" / "Modele fiches - Powerpoint" / "Modèle fiche technique vide - Ind J.potm"
-OUTPUT_DIR = PROJECT_ROOT / "Delagrave" / "output"
+# Load configuration and resolve all resource paths
+try:
+    from gendoc.utils.config_loader import load_config, ConfigurationError
+    _config = load_config()
+    REFERENCES_DIR = _config["references_dir"]
+    IMAGES_DIR = _config["images_dir"]
+    TEMPLATE_PATH = _config["template_path"]
+    # OUTPUT_DIR will be refactored in Phase 23 (per-devis subdirectories)
+    # For now, keep it as local ./output for backward compatibility
+    OUTPUT_DIR = Path("output").resolve()
+except ConfigurationError as e:
+    # MCP server cannot start without valid config
+    print(f"[FATAL] Configuration error: {e}", file=sys.stderr)
+    print("[FATAL] MCP server will not start. Please create gendoc.json.", file=sys.stderr)
+    sys.exit(1)
 
 # Create FastMCP server instance
 mcp = FastMCP("gendoc", instructions="Delagrave product reference and documentation generation tools")
