@@ -40,13 +40,14 @@ class PipelineLogger:
     """
 
     def __init__(self, output_dir: Path):
-        """Initialize logger with output directory.
+        """Initialize logger with devis-specific output directory.
+
+        LOG.md will be written directly to output_dir/LOG.md.
 
         Args:
-            output_dir: Base output directory (logs will be in output_dir/logs/)
+            output_dir: Devis-specific output directory (e.g., output/25_64_0637/)
         """
         self.output_dir = Path(output_dir)
-        self.log_dir = self.output_dir / "logs"
         self.start_time = datetime.now()
         self.start_perf = time.perf_counter()
         self.log_id = self.start_time.strftime("%Y%m%d_%H%M%S")
@@ -172,14 +173,14 @@ class PipelineLogger:
     def write_log(self) -> Path:
         """Write the Markdown log file.
 
-        Creates logs directory if needed, writes {log_id}_pipeline.md with all
+        Creates output directory if needed, writes LOG.md with all
         tracked data, returns the path to the written file.
 
         Returns:
             Path to the written log file
         """
-        # Create logs directory
-        self.log_dir.mkdir(parents=True, exist_ok=True)
+        # Create output directory
+        self.output_dir.mkdir(parents=True, exist_ok=True)
 
         # Calculate total duration
         end_perf = time.perf_counter()
@@ -326,8 +327,8 @@ class PipelineLogger:
             md_lines.append("")
 
         # Write file
-        log_filename = f"{self.log_id}_pipeline.md"
-        log_path = self.log_dir / log_filename
+        log_filename = "LOG.md"
+        log_path = self.output_dir / log_filename
 
         with open(log_path, 'w', encoding='utf-8') as f:
             f.write("\n".join(md_lines))
