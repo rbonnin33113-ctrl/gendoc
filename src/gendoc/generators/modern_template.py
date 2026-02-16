@@ -687,6 +687,9 @@ def build_product_slide(prs, product, family, project_root, logo_path):
     """Dispatch to family-specific builder. Returns list of warning strings."""
     try:
         if family in ('armoire-securite', 'enceinte-ventilee'):
+            # Both armoire-securite and enceinte-ventilee use Option C 2-page template
+            # armoire-securite: commit 0b3600b (2026-02-15)
+            # enceinte-ventilee: commit 0cee8d5 (2026-02-16)
             return _build_armoire_slide(prs, product, project_root, logo_path)
         elif family in ('equipement', 'elec-sorb', 'complements'):
             return _build_simple_slide(prs, product, project_root, logo_path)
@@ -919,19 +922,40 @@ def add_page_numbers(prs):
 
 
 # ═════════════════════════════════════════════════════════════
-# Armoire-securite helpers and builder
+# Armoire-securite: Option C Template (2-page layout)
+# ═════════════════════════════════════════════════════════════
+# Security cabinets require dedicated layout for:
+#   - Dual images (product photo + interior schema)
+#   - Certification badges (EN 14470-1, FM, etc.)
+#   - Construction details (keyword-based bullets)
+#   - Full-width specifications table
+#
+# This is the only family using multi-page template.
+# Added: commit 0b3600b (2026-02-15)
 # ═════════════════════════════════════════════════════════════
 
 def _parse_armoire_texte(texte):
     """Parse armoire texte field into description, certificats, and fonction.
 
-    Format in MD texte:
-        Description lines...
+    Format expected in MD texte field:
+        Description text (multiple lines)
         ---CERTIFICATS---
-        cert1
-        cert2
+        Cert line 1
+        Cert line 2
         ---FONCTION---
         Keyword : description
+        Keyword : description
+
+    Args:
+        texte (str): Raw text from product['texte'] field
+
+    Returns:
+        tuple: (description: str, certificats: List[str], fonctions: List[tuple|str])
+               fonctions are tuples of (keyword, description) or strings if no colon
+
+    Note:
+        Added in commit 0b3600b for armoire-securite family (Option C template).
+        This parsing enables structured presentation of security cabinet specifications.
     """
     description = texte
     certificats = []
@@ -1138,12 +1162,40 @@ def _draw_dim_column(slide, dims, x, y, w, row_h):
 
 
 def _build_armoire_slide(prs, product, project_root, logo_path):
-    """Armoire-securite: 2 pages per product (Option C layout).
+    """Build armoire-securite slides using Option C template (2 pages per product).
 
-    Page 1: Photo + schema interieur (left) / Description + certificats + fonction (right)
-    Page 2: Full-width specs table + plan technique
+    armoire-securite uses a dedicated 2-page layout instead of standard single-page template:
 
-    Returns list of warning strings.
+    Page 1 - Product Presentation:
+      - Left column (8.5cm card):
+        * Upper half: Product photo
+        * Lower half: Interior schema (if available)
+      - Right column (10.5cm):
+        * Description section (with bullets)
+        * Certificats & Normes badges
+        * Fonction / Construction (rich bullets with keywords)
+
+    Page 2 - Technical Specifications:
+      - Full-width specifications table (from dimensions data)
+      - Technical plan/drawing (if available in images)
+
+    Design rationale:
+      - Security cabinets need space for certifications (EN 14470-1, FM, etc.)
+      - Two images per product (photo + schema) require dedicated layout
+      - Specifications table too wide for single-column layout
+
+    Args:
+        prs (Presentation): Target presentation object
+        product (dict): Product data from parse_family_md
+        project_root (Path): Base path for resolving image paths
+        logo_path (Path): Company logo path for header
+
+    Returns:
+        list: Warning messages (e.g., missing images)
+
+    Note:
+        Added in commit 0b3600b. This is the ONLY family using multi-page layout.
+        enceinte-ventilee uses standard single-page template despite similar content.
     """
     try:
         warnings = []
