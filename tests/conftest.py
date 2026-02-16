@@ -56,4 +56,5 @@ def sample_codes():
         'elec-sorb': 'BARRIEREIMMAT',
         'complements': 'x',
         'enceinte-ventilee': 'SFC-209',
+        'armoire-securite': 'Q90.195.120',
     }
