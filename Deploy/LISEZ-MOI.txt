@@ -1,0 +1,41 @@
+============================================================
+  GENDOC - Generateur de Fiches Techniques Delagrave
+  Guide d'installation rapide
+============================================================
+
+METHODE RAPIDE :
+
+  Double-cliquez sur "LANCER_INSTALLATION.bat"
+  Le script verifie et installe tout automatiquement.
+
+
+METHODE MANUELLE :
+
+  1. Installer Python 3.10+ depuis https://python.org
+     IMPORTANT : cocher "Add Python to PATH"
+
+  2. Installer Node.js 18+ depuis https://nodejs.org
+
+  3. Installer Claude CLI :
+     npm install -g @anthropic-ai/claude-code
+
+  4. Ouvrir un terminal dans le dossier du projet :
+     pip install -e .
+
+  5. Copier gendoc.json.example vers gendoc.json
+     Modifier network_share_path avec le chemin du partage reseau
+
+  6. Copier .mcp.json.example vers .mcp.json
+     Modifier les chemins cwd et PYTHONPATH
+
+  7. Ouvrir Claude CLI dans le dossier du projet
+     Tester : "Cherche la reference PM-D-H-75"
+
+
+CONTENU DE CE DOSSIER :
+
+  LANCER_INSTALLATION.bat  - Script d'installation (double-clic)
+  install.ps1              - Script PowerShell d'installation
+  LISEZ-MOI.txt            - Ce fichier
+
+============================================================
