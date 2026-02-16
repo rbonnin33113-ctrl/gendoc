@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-02-16)
 ## Current Position
 
 Phase: 23 (Output Restructuring)
-Plan: 03
-Status: Plan 23-02 complete (auto-compute output paths, standalone logger)
-Last activity: 2026-02-16 — Completed 23-02-PLAN.md (optional output_path, auto-path resolution, _PROJECT_ROOT rename)
+Plan: 04
+Status: Plan 23-03 complete (SP selector devis-aware paths)
+Last activity: 2026-02-16 — Completed 23-03-PLAN.md (open_sp_selector and load_sp_selection auto-path resolution)
 
 Progress: ▰▰▱▱▱ 2/5 phases (40%)
 
@@ -30,12 +30,13 @@ Progress: ▰▰▱▱▱ 2/5 phases (40%)
 | v1.5 | 20-21 | 8 | Shipped 2026-02-16 |
 | v1.6 | 22-26 | TBD | In Progress |
 
-**Totals:** 26 phases defined, 40 plans executed, 6 milestones shipped
+**Totals:** 26 phases defined, 41 plans executed, 6 milestones shipped
 
 **Recent execution:**
 
 | Phase-Plan | Duration | Tasks | Files | Completed |
 |------------|----------|-------|-------|-----------|
+| 23-03 | 2 min | 3 | 1 | 2026-02-16 |
 | 23-02 | 2 min | 3 | 1 | 2026-02-16 |
 | 23-01 | 2 min | 3 | 3 | 2026-02-16 |
 | 22-02 | 3 min | 2 | 3 | 2026-02-16 |
@@ -44,7 +45,14 @@ Progress: ▰▰▱▱▱ 2/5 phases (40%)
 
 ### Decisions
 
-**Recent (Phase 23-02):**
+**Recent (Phase 23-03):**
+1. open_sp_selector output_path parameter now optional (defaults to None for auto-computed paths)
+2. SP selector HTML and JSON written to ./output/{devis_numero}/ by default
+3. load_sp_selection json_path parameter now optional (infers from logger context)
+4. Explicit paths in load_sp_selection resolved from CWD (not _PROJECT_ROOT)
+5. preview_generation confirmed to reuse global _current_logger (no changes needed)
+
+**Phase 23-02:**
 1. output_path parameter now optional (defaults to None) for auto-computed paths
 2. Renamed PROJECT_ROOT to _PROJECT_ROOT to signal internal use only (image path resolution)
 3. Auto-computed path is devis_output_dir/fiches.pptx when output_path is None
@@ -81,6 +89,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-16
-Stopped at: Completed 23-02-PLAN.md (auto-compute output paths, standalone logger)
-Resume file: .planning/phases/23-output-restructuring/23-02-SUMMARY.md
-Next: Execute 23-03 (refactor remaining tools for per-devis output)
+Stopped at: Completed 23-03-PLAN.md (SP selector devis-aware paths)
+Resume file: .planning/phases/23-output-restructuring/23-03-SUMMARY.md
+Next: Continue Phase 23 or proceed to Phase 24
