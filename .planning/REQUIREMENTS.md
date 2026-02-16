@@ -1,0 +1,66 @@
+# Requirements: Generateur de Fiches Techniques Delagrave
+
+**Defined:** 2026-02-16
+**Core Value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
+
+## v1.5 Requirements
+
+Requirements pour la consolidation et remise au propre. Chaque requirement mappe a une phase du roadmap.
+
+### Documentation
+
+- [ ] **DOC-01**: PROJECT.md reflete l'etat reel du projet (11 familles, 369+ refs, enceinte-ventilee, armoire-securite, images reelles)
+- [ ] **DOC-02**: _index.md complet avec toutes les 11 familles et compteurs corrects
+- [ ] **DOC-03**: References MD coherentes (pas de doublons, formats uniformes entre familles)
+
+### Code
+
+- [ ] **CODE-01**: modern_template.py nettoye et consolide (ajouts armoire-securite Option C, enceinte-ventilee)
+- [ ] **CODE-02**: document_assembler.py consolide (modifications hors milestone propres et documentees)
+- [ ] **CODE-03**: md_parser.py modifications validees et coherentes avec md_writer
+
+### Tests
+
+- [ ] **TEST-01**: Tests de generation pour la famille armoire-securite (template Option C, 2 pages)
+- [ ] **TEST-02**: Tests de generation pour la famille enceinte-ventilee
+- [ ] **TEST-03**: Tous les tests existants passent apres nettoyage code (regression zero)
+- [ ] **TEST-04**: Couverture des modifications modern_template et document_assembler
+
+## Future Requirements
+
+- Modes de generation CHI/DOE/FTI (deferred since v1.0)
+- Integration des fiches-existantes (fichiers .pptx pre-existants)
+- Synchronisation automatique Excel -> MD
+
+## Out of Scope
+
+| Feature | Reason |
+|---------|--------|
+| Nouvelles fonctionnalites | Ce milestone est de la consolidation pure |
+| Nouvelles familles produit | Les 11 familles existantes suffisent pour l'instant |
+| Refactoring architectural | Nettoyage cible, pas de restructuration |
+| Changement de template PowerPoint | Le template Ind J reste en l'etat |
+
+## Traceability
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| DOC-01 | — | Pending |
+| DOC-02 | — | Pending |
+| DOC-03 | — | Pending |
+| CODE-01 | — | Pending |
+| CODE-02 | — | Pending |
+| CODE-03 | — | Pending |
+| TEST-01 | — | Pending |
+| TEST-02 | — | Pending |
+| TEST-03 | — | Pending |
+| TEST-04 | — | Pending |
+
+**Coverage:**
+- v1.5 requirements: 10 total
+- Mapped to phases: 0
+- Unmapped: 10 (awaiting roadmap)
+
+---
+*Requirements defined: 2026-02-16*
+*Last updated: 2026-02-16 after initial definition*
