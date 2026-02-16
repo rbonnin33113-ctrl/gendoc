@@ -4,6 +4,7 @@ Tests that server.py correctly loads config_loader at startup and uses
 config-resolved paths for all operations.
 """
 
+import asyncio
 import json
 import pytest
 from pathlib import Path
@@ -118,6 +119,82 @@ def config_file(tmp_path, valid_structure, monkeypatch):
             del sys.modules[module_key]
 
 
+@pytest.fixture
+def admin_config_file(tmp_path, valid_structure, monkeypatch):
+    """Create a valid gendoc.json with admin=true and monkeypatch cwd to use it.
+
+    This fixture:
+    1. Creates gendoc.json in tmp_path with admin=true
+    2. Monkeypatches os.getcwd() to return tmp_path
+    3. Cleans up sys.modules after test to reset module state
+    """
+    # First remove any cached server module
+    if 'gendoc.mcp.server' in sys.modules:
+        del sys.modules['gendoc.mcp.server']
+    if 'gendoc.utils.config_loader' in sys.modules:
+        del sys.modules['gendoc.utils.config_loader']
+
+    config_path = tmp_path / "gendoc.json"
+    config_data = {
+        "network_share_path": str(valid_structure['network_share']),
+        "admin": True
+    }
+    config_path.write_text(json.dumps(config_data, ensure_ascii=False), encoding='utf-8')
+
+    # Monkeypatch cwd to tmp_path so config_loader finds our config
+    import os
+    monkeypatch.setattr(os, 'getcwd', lambda: str(tmp_path))
+
+    # Store original sys.modules state for cleanup
+    original_modules = dict(sys.modules)
+
+    yield config_path
+
+    # Cleanup: remove gendoc modules from sys.modules to reset state
+    modules_to_remove = [key for key in sys.modules.keys() if key.startswith('gendoc')]
+    for module_key in modules_to_remove:
+        if module_key not in original_modules:
+            del sys.modules[module_key]
+
+
+@pytest.fixture
+def non_admin_config_file(tmp_path, valid_structure, monkeypatch):
+    """Create a valid gendoc.json with admin=false and monkeypatch cwd to use it.
+
+    This fixture:
+    1. Creates gendoc.json in tmp_path with admin=false
+    2. Monkeypatches os.getcwd() to return tmp_path
+    3. Cleans up sys.modules after test to reset module state
+    """
+    # First remove any cached server module
+    if 'gendoc.mcp.server' in sys.modules:
+        del sys.modules['gendoc.mcp.server']
+    if 'gendoc.utils.config_loader' in sys.modules:
+        del sys.modules['gendoc.utils.config_loader']
+
+    config_path = tmp_path / "gendoc.json"
+    config_data = {
+        "network_share_path": str(valid_structure['network_share']),
+        "admin": False
+    }
+    config_path.write_text(json.dumps(config_data, ensure_ascii=False), encoding='utf-8')
+
+    # Monkeypatch cwd to tmp_path so config_loader finds our config
+    import os
+    monkeypatch.setattr(os, 'getcwd', lambda: str(tmp_path))
+
+    # Store original sys.modules state for cleanup
+    original_modules = dict(sys.modules)
+
+    yield config_path
+
+    # Cleanup: remove gendoc modules from sys.modules to reset state
+    modules_to_remove = [key for key in sys.modules.keys() if key.startswith('gendoc')]
+    for module_key in modules_to_remove:
+        if module_key not in original_modules:
+            del sys.modules[module_key]
+
+
 def test_server_loads_config_successfully(config_file, valid_structure):
     """Test that server.py loads config and resolves paths correctly."""
     # Import server module (triggers config loading at module level)
@@ -183,3 +260,64 @@ def test_server_fails_without_config(tmp_path, monkeypatch):
 
     # Verify exit code is 1
     assert excinfo.value.code == 1
+
+
+def test_crud_blocked_when_admin_false(non_admin_config_file):
+    """Test that CRUD operations are blocked when admin=false."""
+    import asyncio
+    import gendoc.mcp.server as server
+
+    # Test add_reference blocked
+    result = asyncio.run(server.add_reference.fn("paillasse", "TEST", "Test"))
+    assert "Operation reservee a l'administrateur" in result
+    result_dict = json.loads(result)
+    assert "error" in result_dict
+    assert result_dict["error"] == "Operation reservee a l'administrateur"
+
+    # Test update_reference blocked
+    result = asyncio.run(server.update_reference.fn("TEST", titre="X"))
+    assert "Operation reservee a l'administrateur" in result
+    result_dict = json.loads(result)
+    assert "error" in result_dict
+    assert result_dict["error"] == "Operation reservee a l'administrateur"
+
+    # Test delete_reference blocked
+    result = asyncio.run(server.delete_reference.fn("TEST"))
+    assert "Operation reservee a l'administrateur" in result
+    result_dict = json.loads(result)
+    assert "error" in result_dict
+    assert result_dict["error"] == "Operation reservee a l'administrateur"
+
+
+def test_crud_allowed_when_admin_true(admin_config_file, valid_structure):
+    """Test that CRUD operations are allowed when admin=true."""
+    import asyncio
+    import gendoc.mcp.server as server
+
+    # Test add_reference allowed (may fail for business reasons, but NOT admin check)
+    result = asyncio.run(server.add_reference.fn("paillasse", "PM-ADMIN-TEST", "Admin Test"))
+    # Admin check should NOT block - result should not contain admin error
+    assert "Operation reservee" not in result
+
+    # Parse result to verify it's not an admin error
+    result_dict = json.loads(result)
+    # If there's an error, it should be a business error (e.g., duplicate), not admin
+    if "error" in result_dict:
+        assert result_dict["error"] != "Operation reservee a l'administrateur"
+
+
+def test_readonly_tools_work_without_admin(non_admin_config_file):
+    """Test that read-only tools work for non-admin users."""
+    import asyncio
+    import gendoc.mcp.server as server
+
+    # Test lookup_reference works
+    result = asyncio.run(server.lookup_reference.fn("PM-TEST"))
+    assert "Operation reservee" not in result
+
+    # Test list_families works
+    result = asyncio.run(server.list_families.fn())
+    assert "Operation reservee" not in result
+    # Verify it returns valid JSON
+    result_dict = json.loads(result)
+    assert "total" in result_dict
