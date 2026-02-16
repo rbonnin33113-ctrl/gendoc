@@ -143,3 +143,29 @@ See: `.planning/milestones/v1.5-ROADMAP.md` for full details.
 
 ---
 
+
+## v1.6 — Deploiement Multi-Postes (SHIPPED 2026-02-16)
+
+**Goal:** Rendre le systeme deployable sur des postes PC utilisant Claude CLI, avec donnees partagees en lecture seule sur un lecteur reseau et output utilisateur local par devis.
+
+**Started:** 2026-02-16
+**Shipped:** 2026-02-16
+**Phases:** 22-25 (4 phases, 8 plans)
+**Tests:** 138 automated (15 new: 8 config_loader + 4 server_config + 3 admin guard)
+**Lines of code:** 8,894 Python (source) + 2,878 (tests)
+**Commits:** 41
+
+**Key Accomplishments:**
+1. Config loader JSON avec recherche hierarchique (CWD -> home -> dev) et validation du dossier reseau au demarrage
+2. MCP server integre avec config_loader — tous les chemins resolus depuis le dossier reseau partage
+3. Output isole par devis dans ./output/{devis_numero}/ — PowerPoint, LOG.md, SP selector tous dans le meme dossier
+4. Controle d'acces admin — _require_admin() bloque les outils CRUD pour les utilisateurs non-admin
+5. Package deployable complet avec install.ps1, guide DEPLOY.md, PDF 19 pages, ZIP 32 Mo avec catalogue Delagrave
+6. 138 tests automatises avec zero regressions apres refactorisation des chemins
+
+**Deferred:** GEN-01 (modes CHI/DOE), GEN-02 (fiches-existantes), SYNC-01 (Excel sync), Phase 26 Testing (absorbed into phases 22-24)
+
+See: `.planning/milestones/v1.6-ROADMAP.md` for full details.
+
+---
+

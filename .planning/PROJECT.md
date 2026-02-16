@@ -2,13 +2,13 @@
 
 ## What This Is
 
-Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le pipeline est resilient aux erreurs individuelles, logge chaque execution dans un fichier diagnostique, et affiche un resume compact en francais. 8,557 lignes Python + 2,288 lignes de tests, 317 references produit dans 11 familles, 12 outils MCP, 123 tests automatises.
+Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le systeme est deployable sur plusieurs postes via un lecteur reseau partage (references, images, template) avec configuration locale par poste et controle d'acces admin/utilisateur. 8,894 lignes Python + 2,878 lignes de tests, 317 references produit dans 11 familles, 12 outils MCP, 138 tests automatises (<25s).
 
 ## Core Value
 
 Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-## Current State (v1.5 shipped 2026-02-16)
+## Current State (v1.6 shipped 2026-02-16)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, validators, utils, mcp, cli)
 - **Data**: 317 references dans 11 fichiers MD, images reelles pour toutes les familles
@@ -16,14 +16,18 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - **Skills**: /gendoc-lookup, /gendoc-analyze, /gendoc-generate, /gendoc-full, /gendoc-addarm
 - **Template**: Modele fiche technique vide - Ind J.potm (6 layouts, A4 portrait)
 - **Families**: 11 familles (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements, armoire-securite, enceinte-ventilee, fiches-existantes)
+- **Config**: gendoc.json avec network_share_path (reseau) + admin flag (true/false)
+- **Deployment**: Deploy/ folder avec install.ps1, GENDOC_Manuel.pdf (19 pages), ZIP complet (32 Mo)
+- **Output**: ./output/{devis_numero}/ avec fiches.pptx + LOG.md par devis
+- **Access Control**: admin=true pour CRUD, admin=false en lecture seule
 - **SP Workflow**: analyze_devis -> open_sp_selector (HTML) -> load_sp_selection (JSON) -> generate_slides
-- **CRUD**: add_reference, update_reference, delete_reference avec md_writer, image_handler, index_manager
-- **Logging**: PipelineLogger cree un fichier LOG.md par execution dans Delagrave/output/logs/
+- **CRUD**: add_reference, update_reference, delete_reference avec md_writer, image_handler, index_manager (admin only)
+- **Logging**: PipelineLogger cree LOG.md par execution dans ./output/{devis_numero}/
 - **Resilience**: try/except par produit, warnings propages, resume compact en francais
 - **Detection**: EXCLUSION_WORDS (33 entries) + pattern mesures, inconnus logges individuellement
 - **Hot-reload**: Modifications des generateurs prises en compte sans redemarrage MCP
-- **Tests**: 123 tests pytest (22 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling, 21 CRUD, 6 modern_template, 4 document_assembler) — <20s
-- **Code quality**: armoire-securite Option C template et enceinte-ventilee entierement documentes avec docstrings, round-trip md_parser/md_writer valide
+- **Tests**: 138 tests pytest (22 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling, 21 CRUD, 6 modern_template, 4 document_assembler, 14 config+admin) — <25s
+- **Code quality**: armoire-securite Option C template et enceinte-ventilee documentes, round-trip md_parser/md_writer valide
 
 ## Requirements
 
@@ -63,20 +67,18 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - Tests modern_template dispatch et document_assembler multi-page — v1.5
 - 123 tests passent avec zero regressions apres consolidation — v1.5
 
+- Configuration locale (gendoc.json) avec resolution chemins depuis lecteur reseau — v1.6
+- Validation du dossier partage au demarrage (references, images, template) — v1.6
+- Output isole par devis dans ./output/{devis_numero}/ — v1.6
+- Controle d'acces admin/utilisateur sur les outils CRUD — v1.6
+- Package deployable par copie locale avec pip install -e . — v1.6
+- Guide de deploiement complet (DEPLOY.md + PDF 19 pages) — v1.6
+- Script d'installation automatique (install.ps1) — v1.6
+- ZIP de deploiement complet avec catalogue Delagrave (32 Mo) — v1.6
+
 ### Active
 
-**Current Milestone: v1.6 Deploiement Multi-Postes**
-
-**Goal:** Rendre le systeme deployable sur des postes PC utilisant Claude CLI, avec donnees partagees en lecture seule sur un lecteur reseau et output utilisateur local par devis.
-
-**Target features:**
-- Configuration locale pointant vers le dossier partage reseau
-- Resolution de tous les chemins (references, images, template) depuis la config
-- Output isole par devis dans le dossier de travail de l'utilisateur
-- CRUD reserve a l'administrateur (lecture seule pour les utilisateurs)
-- Package deployable par copie locale sur chaque poste
-
-**Deferred:**
+**Deferred (no milestone planned yet):**
 - [ ] Modes de generation CHI/DOE/FTI (deferred from v1.0)
 - [ ] Integration des fiches-existantes (fichiers .pptx pre-existants)
 - [ ] Synchronisation automatique Excel -> MD
@@ -131,5 +133,11 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Assertions tests realistes | SP catalog 283 visible (pas 317 total) | Good — tests stables apres dedup |
 | Simple slide one-per-image | Multi-image products (BC1Vx 5 images) debordaient | Good — 1 slide/image comme VBA original |
 
+| Config locale gendoc.json | Decouple config du code, chaque poste a son chemin | Good — config search CWD/home/dev |
+| Output isole par devis | Pas de conflits entre generations paralleles | Good — ./output/{devis_numero}/ |
+| Admin guard sur CRUD | Empeche modifications accidentelles par utilisateurs | Good — _require_admin() dans server.py |
+| Deploy ZIP complet avec Delagrave | Un seul fichier pour deployer tout | Good — 32 Mo, 370 fichiers |
+| PDF mode d'emploi 19 pages | Documentation complete en francais | Good — 10 chapitres, installation incluse |
+
 ---
-*Last updated: 2026-02-16 after v1.6 milestone started*
+*Last updated: 2026-02-16 after v1.6 milestone shipped*
