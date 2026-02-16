@@ -9,18 +9,60 @@ These tests verify that the _reload_generators() function correctly:
 """
 
 import pytest
-from gendoc.mcp.server import _reload_generators, _reload_assembler_constants, _module_mtimes
+import json
+from pathlib import Path
+import sys
 
 
-def test_reload_generators_returns_callable():
+@pytest.fixture(scope="module")
+def setup_config(tmp_path_factory):
+    """Create a valid config file so server.py can be imported."""
+    # Create temporary Delagrave structure
+    tmp_path = tmp_path_factory.mktemp("test_hot_reload")
+    network_share = tmp_path / "Delagrave"
+    network_share.mkdir()
+
+    # Create required subdirectories
+    (network_share / "references").mkdir()
+    (network_share / "images").mkdir()
+    template_dir = network_share / "Modele fiches - Powerpoint"
+    template_dir.mkdir()
+
+    # Create template file
+    template_file = template_dir / "Modèle fiche technique vide - Ind J.potm"
+    template_file.write_text("mock template")
+
+    # Create config file
+    config_path = tmp_path / "gendoc.json"
+    config_data = {"network_share_path": str(network_share)}
+    config_path.write_text(json.dumps(config_data, ensure_ascii=False), encoding='utf-8')
+
+    # Monkeypatch cwd to tmp_path for config loading
+    import os
+    original_cwd = os.getcwd
+    os.getcwd = lambda: str(tmp_path)
+
+    # Clear any cached server module
+    if 'gendoc.mcp.server' in sys.modules:
+        del sys.modules['gendoc.mcp.server']
+
+    yield tmp_path
+
+    # Restore original cwd
+    os.getcwd = original_cwd
+
+
+def test_reload_generators_returns_callable(setup_config):
     """_reload_generators should return a callable function (generate_presentation)."""
+    from gendoc.mcp.server import _reload_generators
     result = _reload_generators()
     assert callable(result), "Expected _reload_generators to return a callable function"
     assert result.__name__ == "generate_presentation", "Expected function to be generate_presentation"
 
 
-def test_reload_tracks_mtimes():
+def test_reload_tracks_mtimes(setup_config):
     """After calling _reload_generators, _module_mtimes should contain 3 entries."""
+    from gendoc.mcp.server import _reload_generators, _module_mtimes
     # Clear any existing mtimes
     _module_mtimes.clear()
 
@@ -36,8 +78,9 @@ def test_reload_tracks_mtimes():
         assert mtime > 0, f"Expected positive mtime, got {mtime}"
 
 
-def test_reload_skips_unchanged_modules():
+def test_reload_skips_unchanged_modules(setup_config):
     """When called twice without file changes, second call should not re-track mtimes."""
+    from gendoc.mcp.server import _reload_generators, _module_mtimes
     # First call (may populate mtimes)
     _reload_generators()
 
@@ -52,8 +95,9 @@ def test_reload_skips_unchanged_modules():
         "Expected mtimes to remain unchanged when modules are unchanged"
 
 
-def test_reload_detects_mtime_change():
+def test_reload_detects_mtime_change(setup_config):
     """When a module's mtime changes, _reload_generators should reload it and update mtime."""
+    from gendoc.mcp.server import _reload_generators, _module_mtimes
     # First call to populate mtimes
     _reload_generators()
 
@@ -71,8 +115,9 @@ def test_reload_detects_mtime_change():
         f"Expected mtime to be restored to {old_mtime}, got {_module_mtimes[first_path]}"
 
 
-def test_reload_assembler_constants_returns_tuple():
+def test_reload_assembler_constants_returns_tuple(setup_config):
     """_reload_assembler_constants should return (FAMILY_ORDER, FAMILY_DISPLAY_NAMES)."""
+    from gendoc.mcp.server import _reload_assembler_constants
     result = _reload_assembler_constants()
 
     # Verify it's a tuple with 2 elements
