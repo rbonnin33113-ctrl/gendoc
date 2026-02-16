@@ -126,6 +126,50 @@ except ConfigurationError as e:
 # Keep PROJECT_ROOT for output path resolution (Phase 23 will refactor)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 
+
+def _sanitize_devis_numero(numero: str) -> str:
+    """Sanitize devis numero for use in directory names.
+
+    Args:
+        numero: Raw devis numero (e.g., "25 64 0637", "25/64/0637")
+
+    Returns:
+        Sanitized string safe for directory names (e.g., "25_64_0637")
+    """
+    import re
+    # Replace spaces with underscores
+    result = numero.replace(" ", "_")
+    # Replace forward slashes with dashes
+    result = result.replace("/", "-")
+    # Keep only alphanumeric, dots, dashes, underscores
+    result = re.sub(r'[^a-zA-Z0-9._-]', '', result)
+    return result
+
+
+def _get_devis_output_dir(devis_info: dict | None, fallback_name: str = "output") -> Path:
+    """Get or create output directory for a specific devis.
+
+    Args:
+        devis_info: Dictionary with 'numero_devis' key (from analyze_devis header)
+        fallback_name: Directory name to use if devis_info is missing (default "output")
+
+    Returns:
+        Absolute path to devis output directory (creates it if needed)
+    """
+    if devis_info and "numero_devis" in devis_info:
+        numero = devis_info["numero_devis"]
+        sanitized = _sanitize_devis_numero(numero)
+        devis_output_dir = Path("output") / sanitized
+    else:
+        devis_output_dir = Path("output") / fallback_name
+
+    # Ensure directory exists
+    devis_output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Return absolute path
+    return devis_output_dir.resolve()
+
+
 # Create FastMCP server instance
 mcp = FastMCP("gendoc", instructions="Delagrave product reference and documentation generation tools")
 
