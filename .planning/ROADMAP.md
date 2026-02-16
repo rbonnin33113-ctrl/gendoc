@@ -75,7 +75,11 @@ Plans:
   2. User has a documented MCP config snippet for Claude CLI (claude_desktop_config.json)
   3. User follows a deployment guide to configure a new workstation in <15 minutes
   4. Deployment guide covers: package install, config file creation, MCP registration, test generation
-**Plans**: TBD
+**Plans**: 2 plans (Wave 1: 25-01, 25-02)
+
+Plans:
+- [ ] 25-01-PLAN.md — Example config files (gendoc.json, .mcp.json) + package verification
+- [ ] 25-02-PLAN.md — Deployment guide (DEPLOY.md) with step-by-step setup instructions
 
 ### Phase 26: Testing and Validation
 **Goal**: All existing tests pass, new tests cover config resolution and admin mode
