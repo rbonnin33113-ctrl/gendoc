@@ -283,13 +283,22 @@ async def analyze_devis(pdf_path: str) -> str:
     if not path.exists():
         return json.dumps({"error": f"Fichier PDF non trouve: {pdf_path}"}, ensure_ascii=False)
 
-    # Create new pipeline logger (start of pipeline)
-    _current_logger = PipelineLogger(OUTPUT_DIR)
-    _current_logger.set_input_params(pdf_path=str(path))
-    step = _current_logger.start_step("Analyse PDF")
-
     try:
+        # Analyze devis first to extract header (needed for devis-specific output directory)
         result = run_analyze_devis(path, REFERENCES_DIR)
+
+        # Now we have the devis header, create proper output directory
+        devis_output_dir = _get_devis_output_dir(result.get("header"))
+        devis_output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Create logger with correct devis-specific output directory
+        _current_logger = PipelineLogger(devis_output_dir)
+        _current_logger.set_input_params(
+            pdf_path=str(path),
+            codes_extraits=[r["code"] for r in result.get("references", [])],
+            devis_header=result.get("header", {})
+        )
+        step = _current_logger.start_step("Analyse PDF")
 
         # Log each unknown code individually for review
         for code_inconnu in result.get("inconnus", []):
@@ -305,10 +314,6 @@ async def analyze_devis(pdf_path: str) -> str:
             "forfaits": len(result.get("forfaits", [])),
             "inconnus": len(result.get("inconnus", []))
         })
-        _current_logger.set_input_params(
-            codes_extraits=[r["code"] for r in result.get("references", [])],
-            devis_header=result.get("header", {})
-        )
 
         # Build compact resume
         refs_count = len(result.get("references", []))
