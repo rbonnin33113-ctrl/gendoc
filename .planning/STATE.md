@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-02-16)
 ## Current Position
 
 Phase: 23 (Output Restructuring)
-Plan: 02
-Status: Plan 23-01 complete (per-devis output infrastructure, 15 tests pass)
-Last activity: 2026-02-16 — Completed 23-01-PLAN.md (devis-specific output directories, PipelineLogger refactor)
+Plan: 03
+Status: Plan 23-02 complete (auto-compute output paths, standalone logger)
+Last activity: 2026-02-16 — Completed 23-02-PLAN.md (optional output_path, auto-path resolution, _PROJECT_ROOT rename)
 
 Progress: ▰▰▱▱▱ 2/5 phases (40%)
 
@@ -30,21 +30,27 @@ Progress: ▰▰▱▱▱ 2/5 phases (40%)
 | v1.5 | 20-21 | 8 | Shipped 2026-02-16 |
 | v1.6 | 22-26 | TBD | In Progress |
 
-**Totals:** 26 phases defined, 39 plans executed, 6 milestones shipped
+**Totals:** 26 phases defined, 40 plans executed, 6 milestones shipped
 
 **Recent execution:**
 
 | Phase-Plan | Duration | Tasks | Files | Completed |
 |------------|----------|-------|-------|-----------|
+| 23-02 | 2 min | 3 | 1 | 2026-02-16 |
 | 23-01 | 2 min | 3 | 3 | 2026-02-16 |
 | 22-02 | 3 min | 2 | 3 | 2026-02-16 |
-| 22-01 | 2 min | 2 | 2 | 2026-02-16 |
 
 ## Accumulated Context
 
 ### Decisions
 
-**Recent (Phase 23-01):**
+**Recent (Phase 23-02):**
+1. output_path parameter now optional (defaults to None) for auto-computed paths
+2. Renamed PROJECT_ROOT to _PROJECT_ROOT to signal internal use only (image path resolution)
+3. Auto-computed path is devis_output_dir/fiches.pptx when output_path is None
+4. Standalone generate_slides calls create PipelineLogger with devis-specific directory
+
+**Phase 23-01:**
 1. Fixed LOG.md filename: Use "LOG.md" instead of timestamped filenames (each devis has isolated directory)
 2. Sanitization rules: Spaces→underscores, slashes→dashes, strip non-alphanumeric except [._-]
 3. Eager directory creation: _get_devis_output_dir creates directory immediately (fail-fast on permission issues)
@@ -75,6 +81,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-16
-Stopped at: Completed 23-01-PLAN.md (per-devis output infrastructure, 15 tests pass)
-Resume file: .planning/phases/23-output-restructuring/23-01-SUMMARY.md
-Next: Execute 23-02 (refactor generate_slides for per-devis output)
+Stopped at: Completed 23-02-PLAN.md (auto-compute output paths, standalone logger)
+Resume file: .planning/phases/23-output-restructuring/23-02-SUMMARY.md
+Next: Execute 23-03 (refactor remaining tools for per-devis output)
