@@ -1,8 +1,8 @@
 # Index des References Delagrave
 
 > Source: Génération Fiche Technique DELAGRAVE.xlsm
-> Extraction: 2026-02-10 12:06:27
-> Total: 364 references dans 10 familles
+> Extraction: 2026-02-16
+> Total: 369 references dans 11 familles
 
 ## Familles
 
@@ -17,7 +17,8 @@
 | Elec sorb | [elec-sorb.md](elec-sorb.md) | 32 | PPT (images positionnees) |
 | Compléments | [complements.md](complements.md) | 3 | PPT (images positionnees) |
 | Fiches Existantes | [fiches-existantes.md](fiches-existantes.md) | 26 | EXT (fichiers .pptx) |
-| Armoire Securite | [armoire-securite.md](armoire-securite.md) | 5 | PPT (texte + image) |
+| Armoire Securite | [armoire-securite.md](armoire-securite.md) | 6 | PPT (texte + image) |
+| Enceinte Ventilée (PSM) | [enceinte-ventilee.md](enceinte-ventilee.md) | 4 | PPT (texte + image) |
 
 ## Structure d'un fichier famille
 
