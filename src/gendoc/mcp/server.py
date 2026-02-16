@@ -123,6 +123,9 @@ except ConfigurationError as e:
     print("[FATAL] MCP server will not start. Please create gendoc.json.", file=sys.stderr)
     sys.exit(1)
 
+# Keep PROJECT_ROOT for output path resolution (Phase 23 will refactor)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+
 # Create FastMCP server instance
 mcp = FastMCP("gendoc", instructions="Delagrave product reference and documentation generation tools")
 
