@@ -670,7 +670,7 @@ async def create_custom_product(
 
 
 @mcp.tool()
-async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_selector.html") -> str:
+async def open_sp_selector(analysis_result: dict, output_path: str = None) -> str:
     """
     Generate an interactive HTML selector for configuring SP articles from devis analysis.
 
@@ -680,7 +680,7 @@ async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_
 
     Args:
         analysis_result: Dictionary from analyze_devis (must contain 'speciaux' key)
-        output_path: Path for the HTML file (default: "output/sp_selector.html")
+        output_path: Path for the HTML file (optional - auto-computed from analysis_result if not provided)
 
     Returns:
         JSON string with output_path, sp_count, catalog_size, and instructions.
@@ -707,12 +707,22 @@ async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_
                 "sp_count": 0
             }, ensure_ascii=False)
 
-        # Resolve output path - if relative, make absolute from project root
-        output = Path(output_path)
-        if not output.is_absolute():
-            output = _PROJECT_ROOT / output
+        # Extract devis info from analysis_result
+        devis_info = analysis_result.get("header", {})
 
-        # Create output directory if it doesn't exist
+        # Compute output directory from devis info
+        devis_output_dir = _get_devis_output_dir(devis_info, fallback_name="default")
+
+        # If output_path provided, use it (relative to devis output dir)
+        if output_path:
+            output = Path(output_path)
+            if not output.is_absolute():
+                output = devis_output_dir / output_path
+        else:
+            # Auto-compute: devis_output_dir/sp_selector.html
+            output = devis_output_dir / "sp_selector.html"
+
+        # Ensure directory exists
         output.parent.mkdir(parents=True, exist_ok=True)
 
         # Generate HTML
@@ -726,7 +736,7 @@ async def open_sp_selector(analysis_result: dict, output_path: str = "output/sp_
         server_info = start_sp_server(output, output.parent)
 
         result['server_url'] = server_info['url']
-        result['json_output'] = str(output.parent / 'sp_selection.json')
+        result['json_output'] = str(devis_output_dir / 'sp_selection.json')
         result['message'] = (
             f"Selecteur SP ouvert dans le navigateur ({server_info['url']}). "
             f"Configurez les articles puis cliquez 'Exporter JSON'. "
