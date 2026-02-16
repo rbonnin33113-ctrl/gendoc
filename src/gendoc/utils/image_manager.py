@@ -305,17 +305,17 @@ class ImageOrganizer:
                         filename = Path(network_path).name
                         local_path = f"Delagrave/images/{family}/{filename}"
 
-                        if has_original_column or '| Position | Chemin | Chemin Original |' in content:
-                            # New format (8 columns after adding Chemin Original)
-                            if len(parts) == 8:
-                                # Old format being converted
-                                new_line = f"| {position} | {local_path} | {network_path} | {parts[3]} | {parts[4]} | {parts[5]} | {parts[6]} | {parts[7]} |"
-                            else:
-                                # Already new format, update both paths
-                                new_line = f"| {position} | {local_path} | {network_path} | {parts[4]} | {parts[5]} | {parts[6]} | {parts[7]} | {parts[8]} |"
+                        if has_original_column:
+                            # Already new format: | Pos | Chemin | Chemin Original | L | T | W | H | SI |
+                            # parts: ['', pos, chemin, chemin_orig, left, top, width, height, shape_idx, '']
+                            network_path = parts[3]
+                            filename = Path(network_path).name
+                            local_path = f"Delagrave/images/{family}/{filename}"
+                            new_line = f"| {parts[1]} | {local_path} | {network_path} | {parts[4]} | {parts[5]} | {parts[6]} | {parts[7]} | {parts[8]} |"
                         else:
-                            # Still old format (shouldn't happen after header replacement)
-                            new_line = line
+                            # Old format being converted: | Pos | Chemin | L | T | W | H | SI |
+                            # parts: ['', pos, chemin, left, top, width, height, shape_idx, '']
+                            new_line = f"| {position} | {local_path} | {network_path} | {parts[3]} | {parts[4]} | {parts[5]} | {parts[6]} | {parts[7]} |"
 
                         new_lines.append(new_line)
                     else:

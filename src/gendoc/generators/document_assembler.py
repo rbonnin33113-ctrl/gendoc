@@ -32,7 +32,8 @@ FAMILY_ORDER = [
     'equipement',
     'elec-sorb',
     'complements',
-    'armoire-securite'
+    'armoire-securite',
+    'enceinte-ventilee'
 ]
 
 # Family display names (French with proper accents)
@@ -45,7 +46,8 @@ FAMILY_DISPLAY_NAMES = {
     'equipement': 'Équipement',
     'elec-sorb': 'Électricité Sorbonne',
     'complements': 'Compléments',
-    'armoire-securite': 'Armoires de Sécurité'
+    'armoire-securite': 'Armoires de Sécurité',
+    'enceinte-ventilee': 'Enceintes Ventilées (PSM)'
 }
 
 
@@ -418,11 +420,11 @@ def assemble_document(
     # Use modern template for all slide building
     from gendoc.generators.modern_template import (
         build_cover, build_toc, build_separator,
-        build_product_slide, add_page_numbers as modern_page_numbers
+        build_product_slide, add_page_numbers as modern_page_numbers,
+        estimate_toc_pages
     )
 
-    # Step 1: First pass - calculate page numbers and build TOC entries
-    page_counter = 2  # Cover=1, TOC=2, content starts at 3
+    # Step 1: Build TOC structure (without page numbers yet)
     toc_entries = []
     families_included = []
 
@@ -432,24 +434,16 @@ def assemble_document(
 
         families_included.append(family)
 
-        # Chapter separator will be one page
-        page_counter += 1
-
-        # Track products for TOC
         family_products = []
         products = product_groups[family]
 
         for product in products:
-            page_counter += 1  # Each product gets a slide
-
-            # Record for TOC
             family_products.append({
                 'code': product.get('code', ''),
                 'titre': product.get('titre', ''),
-                'page_number': page_counter
+                'page_number': 0  # Filled in step 2
             })
 
-        # Add family to TOC entries
         if family_products:
             toc_entries.append({
                 'family': family,
@@ -457,10 +451,26 @@ def assemble_document(
                 'products': family_products
             })
 
+    # Step 2: Calculate TOC pages and assign correct page numbers
+    num_toc_pages = estimate_toc_pages(toc_entries)
+    page_counter = 1 + num_toc_pages  # Cover=1, TOC=num_toc_pages
+
+    # Families that generate 2 slides per product
+    multi_page_families = {'armoire-securite', 'enceinte-ventilee'}
+
+    for entry in toc_entries:
+        page_counter += 1  # Chapter separator
+
+        slides_per_product = 2 if entry['family'] in multi_page_families else 1
+        for product_entry in entry['products']:
+            page_counter += 1  # First product slide (page number shown in TOC)
+            product_entry['page_number'] = page_counter
+            page_counter += slides_per_product - 1  # Additional slides for multi-page
+
     total_pages = page_counter
     product_count = sum(len(products) for products in product_groups.values())
 
-    # Step 2: Build slides using modern template
+    # Step 3: Build slides using modern template
     build_cover(prs, devis_info, logo_path)
     build_toc(prs, toc_entries)
 

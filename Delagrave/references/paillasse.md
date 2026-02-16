@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Paillasse
-> Date: 2026-02-09 19:13:53
+> Date: 2026-02-10 12:06:27
 > Total references: 54
 
 ## PCD-A-60
@@ -40,7 +40,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -99,7 +99,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -158,7 +158,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -217,7 +217,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -276,7 +276,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -335,7 +335,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -396,7 +396,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -457,7 +457,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -518,7 +518,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -579,7 +579,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -640,7 +640,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -701,7 +701,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -761,7 +761,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -821,7 +821,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -881,7 +881,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-CE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -939,7 +939,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -997,7 +997,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1055,7 +1055,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1116,7 +1116,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1177,7 +1177,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1238,7 +1238,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1299,7 +1299,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1360,7 +1360,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1421,7 +1421,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1481,7 +1481,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1541,7 +1541,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1601,7 +1601,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PCD-PE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PCD-PE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1660,7 +1660,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1719,7 +1719,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1778,7 +1778,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1837,7 +1837,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1896,7 +1896,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -1955,7 +1955,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2016,7 +2016,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2077,7 +2077,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2138,7 +2138,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2199,7 +2199,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2260,7 +2260,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2321,7 +2321,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2381,7 +2381,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2441,7 +2441,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2501,7 +2501,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-CE-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-CE-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2562,7 +2562,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2623,7 +2623,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2684,7 +2684,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-A-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-A-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-A-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2745,7 +2745,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2806,7 +2806,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2867,7 +2867,7 @@ Panneau cache fluide en panneau de particules surfacé mélaminé hydrofuge dém
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-C-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-C-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-C-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2927,7 +2927,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -2987,7 +2987,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -3047,7 +3047,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-D-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-D-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-D-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -3105,7 +3105,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -3163,7 +3163,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 
@@ -3221,7 +3221,7 @@ Bandeau avant en panneau de particules surfacé mélaminé hydrofuge
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement 3D | Delagrave/images/paillasse/PM-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-H-75.png | 425 | 374 | 350 |  |  |
+| Emplacement 3D | Delagrave/images/paillasse/PM-H-75.png | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\paillasses\PM-H-75.png | 180 | 425 | 374 | 350 |  |
 
 ### Metadata PowerPoint
 

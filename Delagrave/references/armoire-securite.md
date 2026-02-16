@@ -3,7 +3,7 @@
 > Famille: armoire-securite
 > Source: Fiches techniques Asecos (PDF)
 > Date: 2026-02-15
-> Total references: 5
+> Total references: 6
 
 ## Q90.195.120
 
@@ -257,6 +257,61 @@ Aération et ventilation : système d'aération et de ventilation intégrés pou
 | Photo produit | Delagrave/images/armoire-securite/SL.060.059.UB.T.png |  |  |  |  |  |  |
 | Schema interieur | Delagrave/images/armoire-securite/SL.060.059.UB.T-schema.png |  |  |  |  |  |  |
 | Plan technique | Delagrave/images/armoire-securite/SL.060.059.UB.T-2.png |  |  |  |  |  |  |
+
+### Metadata PowerPoint
+
+| Champ | Type | Prefix | Shape Index |
+|-------|------|--------|-------------|
+
+---
+
+## S90.196.120.WDAS
+
+| Champ | Valeur |
+|-------|--------|
+| code | S90.196.120.WDAS |
+| ref | Réf : 30116-001-33726 |
+| titre | Armoire de sécurité S-CLASSIC-90, gris clair (RAL 7035), 6 tiroirs — Modèle S90.196.120.WDAS |
+| famille | armoire-securite |
+
+### Texte
+
+Armoire de sécurité S-CLASSIC-90 gris clair (RAL 7035), équipée avec 6 x tiroir (tôle d'acier revêtement époxy). Système de maintien de porte (WDAS) pour un retrait ou stockage pratique et sans risque des récipients. Portes verrouillables avec système de fermeture centralisée. Pieds réglables intégrés. Système d'aération et de ventilation intégrés pour le raccordement (diamètre 75 mm) à un dispositif technique d'évacuation d'air.
+---CERTIFICATS---
+Résistance au feu 90 minutes
+Test résistance au feu selon NF EN 14470-1
+NF EN 16121/16122
+Certifiée GS
+Conforme CE
+---FONCTION---
+Robuste et durable : structure extérieure solide en acier revêtu époxy, 3 charnières de fixation par porte, mécanisme de fermeture complet et éléments de sécurité protégés contre la corrosion montés hors de la zone de stockage
+Ergonomiques et sûres (modèle .WDAS) : système de maintien de porte, retrait ou stockage pratique et sans risque des récipients
+Utilisation contrôlée : portes verrouillables avec un système de fermeture centralisée (passe)
+Installation facile : pieds réglables intégrés
+Aération et ventilation : système d'aération et de ventilation intégrés pour le raccordement (diamètre 75 mm) à un dispositif technique d'évacuation d'air
+
+### Dimensions
+
+| Dimension | Valeur | Prefix | Shape Index |
+|-----------|--------|--------|-------------|
+| Dimensions ext. (L x P x H) | 1196 x 616 x 1968 mm |  |  |
+| Dimensions int. (L x P x H) | 1050 x 524 x 1742 mm |  |  |
+| Profondeur portes ouvertes | 1173 mm |  |  |
+| Poids net | 497 kg |  |  |
+| Résistance au feu | 90 minutes |  |  |
+| Niveaux de stockage | 6 |  |  |
+| Capacité charge tiroir | 60 kg |  |  |
+| Volume des tiroirs | 29 Litres |  |  |
+| Extraction d'air | 75 NW |  |  |
+| Renouvellement d'air 10 fois | 10 m³/h |  |  |
+
+### Images
+
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Photo produit | Delagrave/images/armoire-securite/S90.196.120.WDAS.png |  |  |  |  |  |  |
+| Schema interieur | Delagrave/images/armoire-securite/S90.196.120.WDAS-schema.png |  |  |  |  |  |  |
+| Plan technique | Delagrave/images/armoire-securite/S90.196.120.WDAS-2.png |  |  |  |  |  |  |
 
 ### Metadata PowerPoint
 

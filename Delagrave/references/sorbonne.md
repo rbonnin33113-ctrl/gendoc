@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Sorbonne
-> Date: 2026-02-09 19:13:53
+> Date: 2026-02-10 12:06:27
 > Total references: 10
 
 ## S-A
@@ -46,7 +46,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 690 / 880 / 1090 m³/h 
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-A.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-A.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -120,7 +120,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 690 / 880 / 1090 m³/h 
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-A-A.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A-A.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-A-A.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A-A.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -194,7 +194,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 690 /880 / 1090 m³/h (
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-A-A-B.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A-A-B.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-A-A-B.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A-A-B.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -268,7 +268,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 650 / 850 / 1050 m³/h 
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-A-B.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A-B.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-A-B.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A-B.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -343,7 +343,7 @@ Débit pour sorbonne 1200 / 1500 / 1800 : respectivement 380 / 450 / 500 m³/h (
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-A-BD.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A-BD.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-A-BD.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-A-BD.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -414,7 +414,7 @@ L'équilibrage est assuré par contre poids avec blocage de relevé et déverrou
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-H-D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-H-D.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-H-D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-H-D.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -488,7 +488,7 @@ Paillasse : vendue séparément (photo non contractuelle) voir fiche technique d
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-P.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-P.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-P.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-P.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -562,7 +562,7 @@ Paillasse : vendue séparément (photo non contractuelle) voir fiche technique d
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-P-A.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-P-A.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-P-A.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-P-A.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -636,7 +636,7 @@ Paillasse : vendue séparément (photo non contractuelle) voir fiche technique d
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-P-A-B.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-P-A-B.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-P-A-B.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-P-A-B.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 
@@ -710,7 +710,7 @@ Paillasse : vendue séparément (photo non contractuelle) voir fiche technique d
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Image (chemin complet) | Delagrave/images/sorbonne/S-P-B.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-P-B.jpg | 400 | 210 | 357 |  |  |
+| Image (chemin complet) | Delagrave/images/sorbonne/S-P-B.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\sorbonnes\S-P-B.jpg | 320 | 400 | 210 | 357 |  |
 
 ### Metadata PowerPoint
 

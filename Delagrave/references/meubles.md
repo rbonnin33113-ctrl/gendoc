@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Meubles
-> Date: 2026-02-09 19:13:53
+> Date: 2026-02-10 12:06:27
 > Total references: 45
 
 ## ACB120
@@ -33,7 +33,7 @@ Les armoires sont munies de vérins de mises à niveau.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/ACB120.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ACB120.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/ACB120.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ACB120.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -85,7 +85,7 @@ Les armoires sont munies de vérins de mises à niveau.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/AR1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\AR1200.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/AR1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\AR1200.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -137,7 +137,7 @@ Les armoires sont munies de vérins de mises à niveau.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/AR600D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\AR600D.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/AR600D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\AR600D.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -189,7 +189,7 @@ Les armoires sont munies de vérins de mises à niveau.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/AR600G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\AR600G.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/AR600G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\AR600G.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -240,7 +240,7 @@ Couleur chant épais : blanc.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/ARTV1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARTV1200.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/ARTV1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARTV1200.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -291,7 +291,7 @@ Couleur chant épais : blanc.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/ARTV600.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARTV600.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/ARTV600.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARTV600.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -342,7 +342,7 @@ Couleur chant épais : blanc.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/ARTV900.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARTV900.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/ARTV900.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARTV900.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -394,7 +394,7 @@ Couleur chant épais : blanc.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/ARV1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARV1200.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/ARV1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARV1200.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -446,7 +446,7 @@ Couleur chant épais : blanc.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/ARV1500.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARV1500.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/ARV1500.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\ARV1500.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -497,7 +497,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB129.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB129.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB129.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB129.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -550,7 +550,7 @@ Existe en version sous cuve
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB400D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB400D.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB400D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB400D.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -603,7 +603,7 @@ Existe en version sous cuve
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB400G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB400G.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB400G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB400G.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -657,7 +657,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB401D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB401D.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB401D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB401D.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -711,7 +711,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB401G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB401G.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB401G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB401G.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -762,7 +762,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB402.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB402.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB402.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB402.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -814,7 +814,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB402DS.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB402DS.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB402DS.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB402DS.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -865,7 +865,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB403.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB403.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB403.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB403.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -916,7 +916,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB404.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB404.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB404.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB404.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -968,7 +968,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB409D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB409D.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB409D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB409D.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1020,7 +1020,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB409G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB409G.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB409G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB409G.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1073,7 +1073,7 @@ Existe en version sous cuve
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB600D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB600D.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB600D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB600D.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1126,7 +1126,7 @@ Existe en version sous cuve
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB600G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB600G.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB600G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB600G.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1178,7 +1178,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB600P.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB600P.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB600P.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB600P.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1232,7 +1232,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB601D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB601D.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB601D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB601D.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1286,7 +1286,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB601G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB601G.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB601G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB601G.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1337,7 +1337,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB602.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB602.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB602.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB602.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1382,7 +1382,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB602TV.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB602TV.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB602TV.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB602TV.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1433,7 +1433,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB603.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB603.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB603.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB603.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1485,7 +1485,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB603DS.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB603DS.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB603DS.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB603DS.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1536,7 +1536,7 @@ Tiroirs équipés d’un système coulissant métallique à galets formant le c�
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB604.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB604.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB604.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB604.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1588,7 +1588,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB609D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB609D.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB609D.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB609D.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1640,7 +1640,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB609G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB609G.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB609G.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB609G.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1693,7 +1693,7 @@ Existe en version sous cuve.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB800.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB800.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB800.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB800.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1747,7 +1747,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB801.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB801.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB801.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB801.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1798,7 +1798,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB802.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB802.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB802.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB802.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1849,7 +1849,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB803.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB803.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB803.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB803.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1900,7 +1900,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB804.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB804.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB804.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB804.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -1951,7 +1951,7 @@ Muni  de  4 roulettes dont 2 à freins à l’avant.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB809.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB809.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB809.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB809.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -2005,7 +2005,7 @@ Tiroirs équipés d’un système coulissant métalliques à galets formant le c
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RB840.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB840.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RB840.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RB840.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -2058,7 +2058,7 @@ Fourni avec système de fixation.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RH1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RH1200.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RH1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RH1200.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -2111,7 +2111,7 @@ Fournis avec système de fixation
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RH1500.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RH1500.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RH1500.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RH1500.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -2163,7 +2163,7 @@ Fourni avec système de fixation
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RH750.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RH750.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RH750.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RH750.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -2213,7 +2213,7 @@ Fourni avec système de fixation
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RV1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RV1200.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RV1200.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RV1200.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -2263,7 +2263,7 @@ Fourni avec système de fixation
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RV1500.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RV1500.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RV1500.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RV1500.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 
@@ -2312,7 +2312,7 @@ Fourni avec système de fixation.
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| IMAGE | Delagrave/images/meubles/RV750.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RV750.jpg | 330 | 400 | 400 |  |  |
+| IMAGE | Delagrave/images/meubles/RV750.jpg | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\Vues\meubles\RV750.jpg | 100 | 330 | 400 | 400 |  |
 
 ### Metadata PowerPoint
 

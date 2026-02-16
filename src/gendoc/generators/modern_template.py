@@ -492,36 +492,102 @@ def build_cover(prs, devis_info, logo_path):
     r.font.bold = True
 
 
-def build_toc(prs, toc_entries):
-    """TOC: colored header band + clean product list."""
+# ── TOC layout constants ──
+_TOC_MAX_Y = Cm(27.5)              # Bottom limit before footer zone
+_TOC_FIRST_START_Y = Cm(4.2)       # After branded header on first page
+_TOC_CONT_START_Y = Cm(2.8)        # After smaller header on continuation pages
+_TOC_FAMILY_H = Cm(0.7)            # Height of family header row
+_TOC_ROW_H = Cm(0.5)               # Height of product row
+_TOC_FAMILY_GAP = Cm(0.35)         # Gap after last product in family
+
+
+def estimate_toc_pages(toc_entries):
+    """Pre-calculate how many TOC slides are needed for page numbering."""
+    y = _TOC_FIRST_START_Y
+    pages = 1
+
+    for entry in toc_entries:
+        if not entry.get('products'):
+            continue
+
+        # Need room for family header + at least 1 product row
+        if y + _TOC_FAMILY_H + _TOC_ROW_H > _TOC_MAX_Y:
+            pages += 1
+            y = _TOC_CONT_START_Y
+
+        y += _TOC_FAMILY_H
+
+        for _product in entry['products']:
+            if y + _TOC_ROW_H > _TOC_MAX_Y:
+                pages += 1
+                y = _TOC_CONT_START_Y
+            y += _TOC_ROW_H
+
+        y += _TOC_FAMILY_GAP
+
+    return pages
+
+
+def _toc_new_slide(prs, sw, is_first):
+    """Create a TOC slide with appropriate header. Returns (slide, start_y)."""
     slide = prs.slides.add_slide(prs.slide_layouts[0])
+
+    if is_first:
+        # Full branded header
+        _rect(slide, 0, 0, sw, Cm(3.2), BRAND)
+        _rect(slide, 0, Cm(3.2), sw, Cm(0.08), ACCENT)
+
+        box = slide.shapes.add_textbox(Cm(1.5), Cm(0.8), sw - Cm(3), Cm(1.8))
+        tf = box.text_frame
+        p = tf.paragraphs[0]
+        p.alignment = PP_ALIGN.LEFT
+        r = p.add_run()
+        r.text = "SOMMAIRE"
+        r.font.size = Pt(26)
+        r.font.bold = True
+        r.font.name = FONT
+        r.font.color.rgb = WHITE
+        rPr = r._r.get_or_add_rPr()
+        rPr.set('spc', '250')
+
+        return slide, _TOC_FIRST_START_Y
+    else:
+        # Smaller continuation header
+        _rect(slide, 0, 0, sw, Cm(2.0), BRAND)
+        _rect(slide, 0, Cm(2.0), sw, Cm(0.08), ACCENT)
+
+        box = slide.shapes.add_textbox(Cm(1.5), Cm(0.4), sw - Cm(3), Cm(1.2))
+        tf = box.text_frame
+        p = tf.paragraphs[0]
+        p.alignment = PP_ALIGN.LEFT
+        r = p.add_run()
+        r.text = "SOMMAIRE (suite)"
+        r.font.size = Pt(18)
+        r.font.bold = True
+        r.font.name = FONT
+        r.font.color.rgb = WHITE
+        rPr = r._r.get_or_add_rPr()
+        rPr.set('spc', '250')
+
+        return slide, _TOC_CONT_START_Y
+
+
+def build_toc(prs, toc_entries):
+    """TOC with automatic page breaks when content overflows."""
     sw = prs.slide_width
 
-    # Header band
-    _rect(slide, 0, 0, sw, Cm(3.2), BRAND)
-    _rect(slide, 0, Cm(3.2), sw, Cm(0.08), ACCENT)
-
-    box = slide.shapes.add_textbox(Cm(1.5), Cm(0.8), sw - Cm(3), Cm(1.8))
-    tf = box.text_frame
-    p = tf.paragraphs[0]
-    p.alignment = PP_ALIGN.LEFT
-    r = p.add_run()
-    r.text = "SOMMAIRE"
-    r.font.size = Pt(26)
-    r.font.bold = True
-    r.font.name = FONT
-    r.font.color.rgb = WHITE
-    rPr = r._r.get_or_add_rPr()
-    rPr.set('spc', '250')
-
-    # Content
-    y = Cm(4.2)
     mx = Cm(1.5)
     cw = sw - Cm(3)
+
+    slide, y = _toc_new_slide(prs, sw, is_first=True)
 
     for entry in toc_entries:
         if not entry['products']:
             continue
+
+        # Ensure room for family header + at least 1 product
+        if y + _TOC_FAMILY_H + _TOC_ROW_H > _TOC_MAX_Y:
+            slide, y = _toc_new_slide(prs, sw, is_first=False)
 
         # Family header with accent dot
         _rect(slide, mx, y + Cm(0.12), Cm(0.22), Cm(0.22), ACCENT)
@@ -532,19 +598,21 @@ def build_toc(prs, toc_entries):
         p.font.bold = True
         p.font.name = FONT
         p.font.color.rgb = BRAND
-        y += Cm(0.7)
+        y += _TOC_FAMILY_H
 
         # Product rows
         for i, product in enumerate(entry['products']):
-            row_h = Cm(0.5)
+            if y + _TOC_ROW_H > _TOC_MAX_Y:
+                slide, y = _toc_new_slide(prs, sw, is_first=False)
+
             bg = BG_ALT if i % 2 == 0 else WHITE
-            _rect(slide, mx + Cm(0.45), y, cw - Cm(0.45), row_h, bg)
+            _rect(slide, mx + Cm(0.45), y, cw - Cm(0.45), _TOC_ROW_H, bg)
 
             titre = product['titre']
             if len(titre) > 55:
                 titre = titre[:52] + '...'
 
-            box = slide.shapes.add_textbox(mx + Cm(0.8), y, cw - Cm(3), row_h)
+            box = slide.shapes.add_textbox(mx + Cm(0.8), y, cw - Cm(3), _TOC_ROW_H)
             tf = box.text_frame
             tf.vertical_anchor = MSO_ANCHOR.MIDDLE
             p = tf.paragraphs[0]
@@ -553,7 +621,7 @@ def build_toc(prs, toc_entries):
             p.font.name = FONT
             p.font.color.rgb = TEXT_MAIN
 
-            box = slide.shapes.add_textbox(mx + cw - Cm(1.8), y, Cm(1.5), row_h)
+            box = slide.shapes.add_textbox(mx + cw - Cm(1.8), y, Cm(1.5), _TOC_ROW_H)
             tf = box.text_frame
             tf.vertical_anchor = MSO_ANCHOR.MIDDLE
             p = tf.paragraphs[0]
@@ -564,9 +632,9 @@ def build_toc(prs, toc_entries):
             p.font.name = FONT
             p.font.color.rgb = BRAND
 
-            y += row_h
+            y += _TOC_ROW_H
 
-        y += Cm(0.35)
+        y += _TOC_FAMILY_GAP
 
 
 def build_separator(prs, family_name, family_display):
@@ -618,7 +686,7 @@ def build_separator(prs, family_name, family_display):
 def build_product_slide(prs, product, family, project_root, logo_path):
     """Dispatch to family-specific builder. Returns list of warning strings."""
     try:
-        if family == 'armoire-securite':
+        if family in ('armoire-securite', 'enceinte-ventilee'):
             return _build_armoire_slide(prs, product, project_root, logo_path)
         elif family in ('equipement', 'elec-sorb', 'complements'):
             return _build_simple_slide(prs, product, project_root, logo_path)
@@ -1136,8 +1204,9 @@ def _build_armoire_slide(prs, product, project_root, logo_path):
 
         if description:
             y = _section_label(slide1, 'Description', tx, y, tw)
-            lines = description.split('\n')
-            desc_h = min(Cm(5), max(Cm(2.5), Cm(0.5) * len(lines) + Cm(0.5)))
+            raw_lines = [l for l in description.split('\n') if l.strip()]
+            visual_lines = sum(max(1, len(l) // 45 + 1) for l in raw_lines)
+            desc_h = min(Cm(12), max(Cm(2.5), Cm(0.42) * visual_lines + Cm(0.5)))
             y = _text_with_bullets(slide1, description, tx, y, tw, desc_h)
             y += Cm(0.4)
 

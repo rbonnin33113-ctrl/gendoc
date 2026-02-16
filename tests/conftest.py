@@ -55,4 +55,5 @@ def sample_codes():
         'equipement': '2CU12G',
         'elec-sorb': 'BARRIEREIMMAT',
         'complements': 'x',
+        'enceinte-ventilee': 'SFC-209',
     }

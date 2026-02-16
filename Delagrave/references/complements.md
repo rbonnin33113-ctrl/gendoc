@@ -2,7 +2,7 @@
 
 > Extracted from: Génération Fiche Technique DELAGRAVE.xlsm
 > Sheet: Compléments
-> Date: 2026-02-09 19:13:53
+> Date: 2026-02-10 12:06:27
 > Total references: 3
 
 ## x
@@ -29,7 +29,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/complements/compact.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact.PNG | 100 | 560 | 658 |  |  |
+| Emplacement IMAGE_1 | Delagrave/images/complements/compact.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact.PNG | 17 | 100 | 560 | 658 |  |
 
 ### Metadata PowerPoint
 
@@ -74,7 +74,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/complements/compact-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact-2.PNG | 100 | 560 | 658 |  |  |
+| Emplacement IMAGE_1 | Delagrave/images/complements/compact-2.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact-2.PNG | 17 | 100 | 560 | 658 |  |
 
 ### Metadata PowerPoint
 
@@ -119,7 +119,7 @@ Aucune
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/complements/compact-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact-3.PNG | 100 | 560 | 658 |  |  |
+| Emplacement IMAGE_1 | Delagrave/images/complements/compact-3.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\revetement\compact-3.PNG | 17 | 100 | 560 | 658 |  |
 
 ### Metadata PowerPoint
 

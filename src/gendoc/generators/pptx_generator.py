@@ -35,6 +35,7 @@ FAMILY_LAYOUT_MAP = {
     'elec-sorb': 5,        # Same layout as equipement
     'complements': 5,      # Same layout as equipement
     'armoire-securite': 0, # Modern template only (2 pages per product)
+    'enceinte-ventilee': 0, # Modern template only (2 pages per product)
 }
 
 # VBA shape index to python-pptx placeholder index mapping

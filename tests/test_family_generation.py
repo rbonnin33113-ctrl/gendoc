@@ -14,7 +14,8 @@ from gendoc.parsers.md_parser import find_product
 
 FAMILIES = [
     'paillasse', 'sorbonne', 'revetement', 'meubles',
-    'tables-en', 'equipement', 'elec-sorb', 'complements'
+    'tables-en', 'equipement', 'elec-sorb', 'complements',
+    'enceinte-ventilee'
 ]
 
 

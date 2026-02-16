@@ -152,7 +152,9 @@ def _parse_product_section(code: str, content: str, family: str) -> Optional[Dic
                 # Old: | Position | Chemin | Left | Top | Width | Height | Shape Index |
                 # New: | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
                 if len(parts) >= 8 and parts[1]:  # Has position
-                    if len(parts) >= 9:  # New format with Chemin Original
+                    # Old: | Pos | Chemin | Left | Top | W | H | SI | -> 7 cols -> 9 parts
+                    # New: | Pos | Chemin | Chemin Orig | Left | Top | W | H | SI | -> 8 cols -> 10 parts
+                    if len(parts) >= 10:  # New format with Chemin Original
                         product['images'].append({
                             'position': parts[1],
                             'chemin': parts[2],
@@ -249,6 +251,29 @@ def find_product(code: str, references_dir: Path) -> Optional[Dict[str, Any]]:
                 return product
 
     return None
+
+
+def find_product_pages(code: str, references_dir: Path) -> List[Dict[str, Any]]:
+    """
+    Find all pages for a product code (multi-page products have duplicate entries).
+
+    Args:
+        code: Product code to search for (case-insensitive)
+        references_dir: Path to Delagrave/references/
+
+    Returns:
+        List of product dictionaries (one per page), empty if not found
+    """
+    code_upper = code.upper()
+    pages = []
+
+    for family_file in get_all_family_files(references_dir):
+        products = parse_family_md(family_file)
+        for product in products:
+            if product['code'].upper() == code_upper:
+                pages.append(product)
+
+    return pages
 
 
 def find_products_by_family(family_name: str, references_dir: Path) -> List[Dict[str, Any]]:

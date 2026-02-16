@@ -24,6 +24,8 @@ TYPE_MAP = {
     'equipement': 'PPT (images positionnees)',
     'elec-sorb': 'PPT (images positionnees)',
     'complements': 'PPT (images positionnees)',
+    'armoire-securite': 'PPT (2 pages: photo+schema / specs)',
+    'enceinte-ventilee': 'PPT (2 pages: photo+schema / specs)',
     'fiches-existantes': 'EXT (fichiers .pptx)',
 }
 
@@ -37,6 +39,8 @@ DISPLAY_MAP = {
     'equipement': 'Equipement',
     'elec-sorb': 'Elec sorb',
     'complements': 'Compléments',
+    'armoire-securite': 'Armoire Sécurité',
+    'enceinte-ventilee': 'Enceinte Ventilée',
     'fiches-existantes': 'Fiches Existantes',
 }
 
