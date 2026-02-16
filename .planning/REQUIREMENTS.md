@@ -60,28 +60,28 @@ Differes des milestones precedents, hors scope v1.6.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CFG-01 | — | Pending |
-| CFG-02 | — | Pending |
-| CFG-03 | — | Pending |
-| OUT-01 | — | Pending |
-| OUT-02 | — | Pending |
-| OUT-03 | — | Pending |
-| OUT-04 | — | Pending |
-| ACL-01 | — | Pending |
-| ACL-02 | — | Pending |
-| ACL-03 | — | Pending |
-| DEP-01 | — | Pending |
-| DEP-02 | — | Pending |
-| DEP-03 | — | Pending |
-| REG-01 | — | Pending |
-| REG-02 | — | Pending |
-| REG-03 | — | Pending |
+| CFG-01 | Phase 22 | Pending |
+| CFG-02 | Phase 22 | Pending |
+| CFG-03 | Phase 22 | Pending |
+| OUT-01 | Phase 23 | Pending |
+| OUT-02 | Phase 23 | Pending |
+| OUT-03 | Phase 23 | Pending |
+| OUT-04 | Phase 23 | Pending |
+| ACL-01 | Phase 24 | Pending |
+| ACL-02 | Phase 24 | Pending |
+| ACL-03 | Phase 24 | Pending |
+| DEP-01 | Phase 25 | Pending |
+| DEP-02 | Phase 25 | Pending |
+| DEP-03 | Phase 25 | Pending |
+| REG-01 | Phase 26 | Pending |
+| REG-02 | Phase 26 | Pending |
+| REG-03 | Phase 26 | Pending |
 
 **Coverage:**
 - v1.6 requirements: 16 total
-- Mapped to phases: 0
-- Unmapped: 16
+- Mapped to phases: 16
+- Unmapped: 0 (100% coverage)
 
 ---
 *Requirements defined: 2026-02-16*
-*Last updated: 2026-02-16 after initial definition*
+*Last updated: 2026-02-16 after roadmap creation*
