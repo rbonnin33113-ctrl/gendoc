@@ -65,7 +65,7 @@
 **Milestone Goal:** Remettre au propre la documentation projet, le code modifie hors milestone, et ajouter les tests manquants pour les nouvelles familles et modifications recentes.
 
 - [x] **Phase 20: Documentation et Code Consolidation** - Synchronisation de la documentation et nettoyage du code modifie hors milestone (completed 2026-02-16)
-- [ ] **Phase 21: Tests et Validation** - Tests pour armoire-securite, enceinte-ventilee, et validation regression zero
+- [x] **Phase 21: Tests et Validation** - Tests pour armoire-securite, enceinte-ventilee, et validation regression zero (completed 2026-02-16)
 
 ## Phase Details
 
@@ -128,4 +128,4 @@ Plans:
 | 18. Image Management | v1.4 | 1/1 | Complete | 2026-02-15 |
 | 19. Tests and Integration | v1.4 | 1/1 | Complete | 2026-02-15 |
 | 20. Documentation et Code Consolidation | v1.5 | Complete    | 2026-02-16 | - |
-| 21. Tests et Validation | v1.5 | 0/TBD | Not started | - |
+| 21. Tests et Validation | v1.5 | Complete    | 2026-02-16 | - |
