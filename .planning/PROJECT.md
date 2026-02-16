@@ -117,6 +117,7 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Dedup references avant comptage | Les compteurs MD etaient faux (369 vs 317 reel) | Good — donnees fiables apres consolidation |
 | armoire-securite Option C template documente | Seule famille multi-page, docstring complet | Good — maintenabilite assuree |
 | Assertions tests realistes | SP catalog 283 visible (pas 317 total) | Good — tests stables apres dedup |
+| Simple slide one-per-image | Multi-image products (BC1Vx 5 images) debordaient | Good — 1 slide/image comme VBA original |
 
 ---
 *Last updated: 2026-02-16 after v1.5 milestone*

@@ -119,12 +119,27 @@ See: `.planning/milestones/v1.4-ROADMAP.md` for full details.
 ---
 
 
-## v1.5 Consolidation et Qualite (Shipped: 2026-02-16)
+## v1.5 — Consolidation et Qualite (SHIPPED 2026-02-16)
 
-**Phases completed:** 21 phases, 36 plans, 36 tasks
+**Goal:** Remettre au propre la documentation projet, le code modifie hors milestone, et ajouter les tests manquants pour les nouvelles familles et modifications recentes.
 
-**Key accomplishments:**
-- (none recorded)
+**Started:** 2026-02-16
+**Shipped:** 2026-02-16
+**Phases:** 20-21 (8 plans)
+**Tests:** 123 automated (15 new: 1 multi-page validation, 1 SP fix, 6 modern_template dispatch, 4 document_assembler, 3 family additions)
+**Lines of code:** 8,557 Python (source) + 2,288 (tests)
+
+**Key Accomplishments:**
+1. PROJECT.md et _index.md synchronises avec l'etat reel (11 familles, 317 references, armoire-securite + enceinte-ventilee documentes)
+2. 52 doublons consolides dans les references (equipement 154->122, elec-sorb 32->14, complements 3->1)
+3. Docstrings complets pour armoire-securite Option C template et round-trip validation md_parser/md_writer
+4. Tests modern_template dispatch couvrant les 11 familles et 4 builder functions
+5. Tests document_assembler validant FAMILY_ORDER, FAMILY_DISPLAY_NAMES, et page numbering multi-page
+6. 123 tests passent avec zero regressions apres consolidation complete
+
+**Deferred:** GEN-01 (modes CHI/DOE), GEN-02 (fiches-existantes), SYNC-01 (Excel sync)
+
+See: `.planning/milestones/v1.5-ROADMAP.md` for full details.
 
 ---
 
