@@ -5,15 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-02-16)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
-**Current focus:** Planning next milestone
+**Current focus:** v1.6 Deploiement Multi-Postes
 
 ## Current Position
 
-Milestone: v1.5 SHIPPED (2026-02-16)
-Status: Between milestones
-Last activity: 2026-02-16 — Multi-image fix for elec-sorb/equipement (post-v1.5)
-
-Progress: All 21 phases complete across 6 milestones (v1.0-v1.5)
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-02-16 — Milestone v1.6 started
 
 ## Performance Metrics
 
@@ -47,6 +46,6 @@ None — all milestones shipped.
 ## Session Continuity
 
 Last session: 2026-02-16
-Stopped at: v1.5 milestone complete, multi-image fix applied post-milestone
+Stopped at: Defining v1.6 requirements
 Resume file: None
-Next: `/gsd:new-milestone` when ready for next version
+Next: Define requirements then create roadmap

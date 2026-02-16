@@ -65,6 +65,18 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 
 ### Active
 
+**Current Milestone: v1.6 Deploiement Multi-Postes**
+
+**Goal:** Rendre le systeme deployable sur des postes PC utilisant Claude CLI, avec donnees partagees en lecture seule sur un lecteur reseau et output utilisateur local par devis.
+
+**Target features:**
+- Configuration locale pointant vers le dossier partage reseau
+- Resolution de tous les chemins (references, images, template) depuis la config
+- Output isole par devis dans le dossier de travail de l'utilisateur
+- CRUD reserve a l'administrateur (lecture seule pour les utilisateurs)
+- Package deployable par copie locale sur chaque poste
+
+**Deferred:**
 - [ ] Modes de generation CHI/DOE/FTI (deferred from v1.0)
 - [ ] Integration des fiches-existantes (fichiers .pptx pre-existants)
 - [ ] Synchronisation automatique Excel -> MD
@@ -120,4 +132,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Simple slide one-per-image | Multi-image products (BC1Vx 5 images) debordaient | Good — 1 slide/image comme VBA original |
 
 ---
-*Last updated: 2026-02-16 after v1.5 milestone*
+*Last updated: 2026-02-16 after v1.6 milestone started*
