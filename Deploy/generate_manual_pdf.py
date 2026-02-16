@@ -304,7 +304,56 @@ def build_manual():
     pdf.body_text("4. Verifier l'installation :")
     pdf.code_block('python -c "from gendoc.mcp.server import main; print(\'OK\')"')
 
-    pdf.section_title("2.3 Configuration de gendoc.json")
+    pdf.section_title("2.3 Mise en place du catalogue Delagrave")
+    pdf.body_text(
+        "Le catalogue Delagrave contient les fiches produits, les images et le template PowerPoint. "
+        "Il est inclus dans le ZIP de deploiement (dossier Delagrave/). "
+        "Il doit etre accessible par tous les postes utilisateurs."
+    )
+
+    pdf.subsection_title("Option A : Dossier reseau partage (recommande)")
+    pdf.body_text(
+        "Copiez le dossier Delagrave/ du ZIP vers un emplacement partage sur le reseau, "
+        "accessible en lecture par tous les utilisateurs :"
+    )
+    pdf.code_block(
+        "1. Ouvrir le lecteur reseau partage (ex: S:\\)\n"
+        "2. Copier le dossier Delagrave/ du ZIP vers S:\\Delagrave\\\n"
+        "3. Verifier que les sous-dossiers sont presents :\n"
+        "   S:\\Delagrave\\references\\     (14 fichiers .md)\n"
+        "   S:\\Delagrave\\images\\          (321 images par famille)\n"
+        "   S:\\Delagrave\\Modele fiches - Powerpoint\\  (1 fichier .potm)"
+    )
+    pdf.body_text(
+        "Tous les postes pointeront vers ce meme dossier partage dans leur gendoc.json. "
+        "Seul le poste administrateur (admin=true) peut modifier le catalogue."
+    )
+
+    pdf.subsection_title("Option B : Dossier local (poste autonome)")
+    pdf.body_text(
+        "Si le poste n'a pas acces au reseau, copiez le dossier Delagrave/ directement "
+        "dans le dossier du projet :"
+    )
+    pdf.code_block(
+        "C:\\gendoc\\\n"
+        "  Delagrave/          <-- copier ici\n"
+        "    references/\n"
+        "    images/\n"
+        "    Modele fiches - Powerpoint/\n"
+        "  src/\n"
+        "  gendoc.json\n"
+        "  ..."
+    )
+    pdf.body_text(
+        "Dans ce cas, le champ network_share_path de gendoc.json pointera vers "
+        "C:\\\\gendoc\\\\Delagrave (chemin local)."
+    )
+
+    pdf.warning_box("Ne pas modifier les fichiers du catalogue manuellement.\n"
+        "Utilisez les outils GENDOC (add_reference, update_reference)\n"
+        "depuis le poste administrateur uniquement.")
+
+    pdf.section_title("2.4 Configuration de gendoc.json")
     pdf.body_text(
         "Le fichier gendoc.json indique au systeme ou trouver les donnees partagees. "
         "Creez ce fichier dans le dossier du projet (ou copiez gendoc.json.example) :"
@@ -340,7 +389,7 @@ def build_manual():
     pdf.warning_box("Si le chemin reseau est incorrect, le serveur MCP refuse de demarrer\n"
         "avec un message explicite indiquant le probleme.")
 
-    pdf.section_title("2.4 Emplacement du fichier de configuration")
+    pdf.section_title("2.5 Emplacement du fichier de configuration")
     pdf.body_text(
         "Le systeme recherche gendoc.json dans cet ordre :\n"
         "1. gendoc.json dans le dossier de travail courant\n"
@@ -348,7 +397,7 @@ def build_manual():
         "3. gendoc.json a cote de server.py (mode developpement)"
     )
 
-    pdf.section_title("2.5 Enregistrement MCP pour Claude CLI")
+    pdf.section_title("2.6 Enregistrement MCP pour Claude CLI")
     pdf.body_text(
         "Claude CLI detecte automatiquement les serveurs MCP via un fichier .mcp.json "
         "a la racine du projet. Copiez .mcp.json.example et adaptez les chemins :"
@@ -372,7 +421,7 @@ def build_manual():
         "Utilisez des / (slash) ou des \\\\\\\\ (double antislash) dans les chemins."
     )
 
-    pdf.section_title("2.6 Verification finale")
+    pdf.section_title("2.7 Verification finale")
     pdf.body_text("Ouvrez Claude CLI dans le dossier du projet :")
     pdf.code_block("cd C:\\gendoc\nclaude")
     pdf.body_text(
@@ -733,7 +782,7 @@ def build_manual():
     # =========================================================================
     # OUTPUT
     # =========================================================================
-    out = Path("Deploy/GENDOC_Mode_d_emploi.pdf")
+    out = Path("Deploy/GENDOC_Manuel.pdf")
     pdf.output(str(out))
     print(f"PDF genere : {out}")
     print(f"Pages : {pdf.pages_count}")
