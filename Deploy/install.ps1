@@ -1,5 +1,5 @@
-# ============================================================================
-#  GENDOC — Script d'installation automatique
+﻿# ============================================================================
+#  GENDOC - Script d'installation automatique
 #  Generateur de Fiches Techniques Delagrave
 # ============================================================================
 #
@@ -41,6 +41,12 @@ function Write-Info($text) {
     Write-Host "      $text" -ForegroundColor Gray
 }
 
+function Refresh-Path {
+    $machinePath = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::Machine)
+    $userPath = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::User)
+    $env:Path = $machinePath + ";" + $userPath
+}
+
 # --- Dossier d'installation ---------------------------------------------------
 
 Write-Banner "GENDOC - Installation automatique"
@@ -63,7 +69,7 @@ try {
             Write-OK "Python $major.$minor detecte"
             $pythonOK = $true
         } else {
-            Write-Warn "Python $major.$minor detecte — version 3.10+ requise"
+            Write-Warn "Python $major.$minor detecte - version 3.10+ requise"
         }
     }
 } catch {
@@ -88,8 +94,7 @@ if (-not $pythonOK) {
         if ($choix -eq "A" -or $choix -eq "a") {
             Write-Info "Installation de Python via winget..."
             winget install Python.Python.3.12 --accept-package-agreements --accept-source-agreements
-            # Rafraichir le PATH
-            $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+            Refresh-Path
             Write-OK "Python installe via winget"
             $pythonOK = $true
         }
@@ -101,8 +106,7 @@ if (-not $pythonOK) {
             Write-Info "Lancement de l'installeur Python..."
             Write-Host "  IMPORTANT : cocher 'Add Python to PATH' dans l'installeur !" -ForegroundColor Red
             Start-Process -FilePath $pyInstaller -Wait
-            # Rafraichir le PATH
-            $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+            Refresh-Path
             $pythonOK = $true
         }
     } else {
@@ -118,7 +122,7 @@ if (-not $pythonOK) {
             Write-Info "Lancement de l'installeur Python..."
             Write-Host "  IMPORTANT : cocher 'Add Python to PATH' dans l'installeur !" -ForegroundColor Red
             Start-Process -FilePath $pyInstaller -Wait
-            $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+            Refresh-Path
             $pythonOK = $true
         }
     }
@@ -144,7 +148,7 @@ try {
             Write-OK "Node.js $nodeVersion detecte"
             $nodeOK = $true
         } else {
-            Write-Warn "Node.js $nodeVersion detecte — version 18+ requise"
+            Write-Warn "Node.js $nodeVersion detecte - version 18+ requise"
         }
     }
 } catch {
@@ -167,7 +171,7 @@ if (-not $nodeOK) {
         if ($choix -eq "A" -or $choix -eq "a") {
             Write-Info "Installation de Node.js via winget..."
             winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements
-            $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+            Refresh-Path
             Write-OK "Node.js installe via winget"
             $nodeOK = $true
         }
@@ -178,7 +182,7 @@ if (-not $nodeOK) {
             Invoke-WebRequest -Uri $nodeUrl -OutFile $nodeInstaller -UseBasicParsing
             Write-Info "Lancement de l'installeur Node.js..."
             Start-Process -FilePath "msiexec.exe" -ArgumentList "/i `"$nodeInstaller`" /passive" -Wait
-            $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+            Refresh-Path
             $nodeOK = $true
         }
     } else {
@@ -192,7 +196,7 @@ if (-not $nodeOK) {
             Write-Info "Telechargement de Node.js 22 LTS..."
             Invoke-WebRequest -Uri $nodeUrl -OutFile $nodeInstaller -UseBasicParsing
             Start-Process -FilePath "msiexec.exe" -ArgumentList "/i `"$nodeInstaller`" /passive" -Wait
-            $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+            Refresh-Path
             $nodeOK = $true
         }
     }
@@ -219,7 +223,7 @@ if (-not $claudeOK -and $nodeOK) {
     if ($choix -eq "I" -or $choix -eq "i") {
         Write-Info "Installation de Claude CLI..."
         npm install -g @anthropic-ai/claude-code
-        $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+        Refresh-Path
         Write-OK "Claude CLI installe"
         $claudeOK = $true
     }
@@ -230,15 +234,27 @@ if (-not $claudeOK -and $nodeOK) {
 Write-Step 4 "Installation du package gendoc..."
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sourceDir = Split-Path -Parent $scriptDir
+$sourceDir = $null
 
-# Verifier que le dossier source contient le projet
-if (-not (Test-Path "$sourceDir\pyproject.toml")) {
-    Write-Warn "pyproject.toml non trouve dans $sourceDir"
-    Write-Warn "Ce script doit etre lance depuis le dossier Deploy/ du projet."
+# Chercher pyproject.toml : parent (Deploy/ layout), meme dossier, ou dossier courant
+if (Test-Path (Join-Path (Split-Path -Parent $scriptDir) "pyproject.toml")) {
+    $sourceDir = Split-Path -Parent $scriptDir
+} elseif (Test-Path (Join-Path $scriptDir "pyproject.toml")) {
+    $sourceDir = $scriptDir
+} elseif (Test-Path (Join-Path (Get-Location) "pyproject.toml")) {
+    $sourceDir = (Get-Location).Path
+}
+
+if ($null -eq $sourceDir) {
+    Write-Warn "pyproject.toml non trouve."
+    Write-Info "Le script cherche dans : dossier parent, dossier du script, dossier courant."
+    Write-Info "Assurez-vous que install.ps1 est dans le dossier Deploy/ du projet,"
+    Write-Info "ou que pyproject.toml est present a cote du script."
     Read-Host "  Appuyez sur Entree pour quitter"
     exit 1
 }
+
+Write-Info "Projet source detecte : $sourceDir"
 
 if ($InstallDir -ne $sourceDir) {
     Write-Info "Copie du projet vers $InstallDir..."
@@ -281,7 +297,7 @@ if ($InstallDir -ne $sourceDir) {
         Write-OK "Projet copie dans $InstallDir"
     }
 } else {
-    Write-Info "Le script tourne deja depuis le projet — pas de copie necessaire."
+    Write-Info "Le script tourne deja depuis le projet - pas de copie necessaire."
     $InstallDir = $sourceDir
 }
 
@@ -318,18 +334,13 @@ if (Test-Path $configPath) {
     if ($NetworkShare -ne "") {
         # Echapper les backslashes pour JSON
         $jsonPath = $NetworkShare.Replace("\", "\\")
-        $configContent = @"
-{
-    "network_share_path": "$jsonPath",
-    "admin": false
-}
-"@
-        Set-Content -Path $configPath -Value $configContent -Encoding UTF8
+        $jsonText = '{ "network_share_path": "' + $jsonPath + '", "admin": false }'
+        Set-Content -Path $configPath -Value $jsonText -Encoding UTF8
         Write-OK "gendoc.json cree dans $InstallDir"
         Write-Info "network_share_path = $NetworkShare"
         Write-Info "admin = false (mode utilisateur)"
     } else {
-        Write-Warn "Aucun chemin fourni — gendoc.json non cree"
+        Write-Warn "Aucun chemin fourni - gendoc.json non cree"
         Write-Info "Copiez gendoc.json.example vers gendoc.json et editez-le manuellement."
     }
 }
@@ -344,21 +355,19 @@ if (Test-Path $mcpPath) {
     Write-OK ".mcp.json existe deja"
 } else {
     $installDirForward = $InstallDir.Replace("\", "/")
-    $mcpContent = @"
-{
-    "mcpServers": {
-        "gendoc": {
-            "command": "python",
-            "args": ["-m", "gendoc.mcp.server"],
-            "cwd": "$installDirForward",
-            "env": {
-                "PYTHONPATH": "$installDirForward/src"
+    $mcpJson = @{
+        mcpServers = @{
+            gendoc = @{
+                command = "python"
+                args = @("-m", "gendoc.mcp.server")
+                cwd = $installDirForward
+                env = @{
+                    PYTHONPATH = "$installDirForward/src"
+                }
             }
         }
     }
-}
-"@
-    Set-Content -Path $mcpPath -Value $mcpContent -Encoding UTF8
+    $mcpJson | ConvertTo-Json -Depth 4 | Set-Content -Path $mcpPath -Encoding UTF8
     Write-OK ".mcp.json cree avec les chemins du poste"
 }
 
@@ -391,7 +400,7 @@ $configExists = Test-Path (Join-Path $InstallDir "gendoc.json")
 if ($configExists) {
     Write-OK "gendoc.json present"
 } else {
-    Write-Warn "gendoc.json manquant — a creer manuellement"
+    Write-Warn "gendoc.json manquant - a creer manuellement"
     $allOK = $false
 }
 
@@ -419,7 +428,7 @@ if ($allOK) {
     Write-Host "    3. Tester : 'Cherche la reference PM-D-H-75'" -ForegroundColor Gray
     Write-Host ""
 } else {
-    Write-Host "  INSTALLATION PARTIELLE — voir les avertissements ci-dessus" -ForegroundColor Yellow
+    Write-Host "  INSTALLATION PARTIELLE - voir les avertissements ci-dessus" -ForegroundColor Yellow
     Write-Host ("=" * 60) -ForegroundColor Cyan
     Write-Host ""
     Write-Host "  Consultez DEPLOY.md pour le guide de depannage." -ForegroundColor Gray

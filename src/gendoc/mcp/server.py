@@ -123,9 +123,9 @@ except ConfigurationError as e:
     print("[FATAL] MCP server will not start. Please create gendoc.json.", file=sys.stderr)
     sys.exit(1)
 
-# Used only for internal project structure references (not output paths)
-# Phase 23: Output paths now use devis-specific directories via _get_devis_output_dir
-_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+# Image paths in MD files start with "Delagrave/images/..." so the root for
+# resolving them is the parent of network_share_path (which points to Delagrave/)
+_PROJECT_ROOT = _config["network_share_path"].parent
 
 
 def _sanitize_devis_numero(numero: str) -> str:
