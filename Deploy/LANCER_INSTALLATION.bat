@@ -8,6 +8,4 @@ echo  ============================================================
 echo.
 
 :: Lancer le script PowerShell avec les bonnes permissions
-powershell -ExecutionPolicy Bypass -File "%~dp0install.ps1"
-
-pause
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0install.ps1"
