@@ -51,8 +51,15 @@ function Refresh-Path {
 
 Write-Banner "GENDOC - Installation automatique"
 
-Write-Host "  Dossier d'installation : $InstallDir"
-Write-Host "  (modifier avec : install.ps1 -InstallDir C:\autre\chemin)"
+Write-Host "  Ou souhaitez-vous installer gendoc ?" -ForegroundColor Yellow
+Write-Host "  (par defaut : $InstallDir)" -ForegroundColor Gray
+Write-Host ""
+$userDir = Read-Host "  Dossier d'installation (Entree = $InstallDir)"
+if ($userDir -ne "") {
+    $InstallDir = $userDir
+}
+Write-Host ""
+Write-OK "Dossier d'installation : $InstallDir"
 Write-Host ""
 
 # --- Etape 1 : Verification Python -------------------------------------------
