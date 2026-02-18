@@ -29,6 +29,8 @@ class ConfigDict(TypedDict):
     images_dir: Path
     template_path: Path
     admin: bool
+    github_repo: str
+    github_token: str
 
 
 class ConfigurationError(Exception):
@@ -172,6 +174,10 @@ def load_config() -> ConfigDict:
             f'"admin" must be a boolean (true/false) in {config_path}'
         )
 
+    # Get optional GitHub fields (used by version checker at startup)
+    github_repo = config_data.get("github_repo", "")
+    github_token = config_data.get("github_token", "")
+
     # Build resolved paths
     references_dir = network_share_path / "references"
     images_dir = network_share_path / "images"
@@ -184,4 +190,6 @@ def load_config() -> ConfigDict:
         "images_dir": images_dir,
         "template_path": template_path,
         "admin": admin,
+        "github_repo": github_repo,
+        "github_token": github_token,
     }

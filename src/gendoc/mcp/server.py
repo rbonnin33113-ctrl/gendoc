@@ -127,6 +127,18 @@ except ConfigurationError as e:
 # resolving them is the parent of network_share_path (which points to Delagrave/)
 _PROJECT_ROOT = _config["network_share_path"].parent
 
+# Version check at startup -- silent, never blocks server start
+try:
+    from gendoc.utils.version_checker import check_for_update, _format_update_message
+    _update_info = check_for_update(
+        github_repo=_config.get("github_repo", ""),
+        github_token=_config.get("github_token", "") or None,
+    )
+    if _update_info is not None and _update_info.get("needs_update"):
+        print(_format_update_message(_update_info), file=sys.stderr)
+except Exception:
+    pass  # Version check must never prevent MCP server startup
+
 
 def _sanitize_devis_numero(numero: str) -> str:
     """Sanitize devis numero for use in directory names.

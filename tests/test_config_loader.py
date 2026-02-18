@@ -51,7 +51,7 @@ def test_load_config_from_cwd(tmp_path, valid_structure, monkeypatch):
     # Verify config_path points to CWD/gendoc.json
     assert result["config_path"] == config_file
 
-    # Verify all 6 keys present
+    # Verify all 8 keys present (including optional github fields)
     assert set(result.keys()) == {
         "config_path",
         "network_share_path",
@@ -59,6 +59,8 @@ def test_load_config_from_cwd(tmp_path, valid_structure, monkeypatch):
         "images_dir",
         "template_path",
         "admin",
+        "github_repo",
+        "github_token",
     }
 
     # Verify paths resolve correctly
