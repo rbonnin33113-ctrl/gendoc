@@ -56,22 +56,22 @@ Deferred a un milestone ulterieur.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| VER-01 | TBD | Pending |
-| VER-02 | TBD | Pending |
-| NOTIF-01 | TBD | Pending |
-| NOTIF-02 | TBD | Pending |
-| MAJ-01 | TBD | Pending |
-| MAJ-02 | TBD | Pending |
-| MAJ-03 | TBD | Pending |
-| DEP-01 | TBD | Pending |
-| DEP-02 | TBD | Pending |
-| DEP-03 | TBD | Pending |
+| VER-01 | Phase 26 | Pending |
+| VER-02 | Phase 26 | Pending |
+| NOTIF-01 | Phase 26 | Pending |
+| NOTIF-02 | Phase 26 | Pending |
+| MAJ-01 | Phase 27 | Pending |
+| MAJ-02 | Phase 27 | Pending |
+| MAJ-03 | Phase 27 | Pending |
+| DEP-01 | Phase 27 | Pending |
+| DEP-02 | Phase 27 | Pending |
+| DEP-03 | Phase 27 | Pending |
 
 **Coverage:**
 - v1.7 requirements: 10 total
-- Mapped to phases: 0
-- Unmapped: 10
+- Mapped to phases: 10
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-18*
-*Last updated: 2026-02-18 after initial definition*
+*Last updated: 2026-02-18 after roadmap v1.7 creation*
