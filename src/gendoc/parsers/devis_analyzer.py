@@ -30,8 +30,13 @@ SP_PREFIX_MAP = {
 # Alias mapping: devis codes -> catalog codes
 # When a devis uses a different code than the catalog, map it here
 CODE_ALIASES = {
+    "P216": "ELEC-PC",
     "P216E": "ELEC-PC",
+    "P320": "ELEC-PC",
+    "P432": "ELEC-PC",
+    "P432E": "ELEC-PC",
     "PCMOSA": "ELEC-PC",
+    "PCONDU": "ELEC-PC",
 }
 
 # Exclusion list for common false positives in PDF extraction
