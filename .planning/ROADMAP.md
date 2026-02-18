@@ -24,7 +24,7 @@ See `.planning/milestones/` for detailed roadmaps and requirements per version.
 ## Phases
 
 - [x] **Phase 26: Versioning et Detection** - Version semver + comparaison locale/distante au demarrage MCP (completed 2026-02-18)
-- [ ] **Phase 27: Outil MCP de Mise a Jour** - Installation Git a la demande + git pull + pip install en un clic
+- [x] **Phase 27: Outil MCP de Mise a Jour** - Installation Git a la demande + git pull + pip install en un clic (completed 2026-02-18)
 
 ## Phase Details
 
@@ -47,7 +47,7 @@ Plans:
 **Goal**: L'utilisateur peut lancer la mise a jour en un clic via un outil MCP qui gere tout (installation Git si absent, auth GitHub, clone ou pull, pip install)
 **Depends on**: Phase 26
 **Requirements**: MAJ-01, MAJ-02, MAJ-03, DEP-01, DEP-02, DEP-03
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 **Success Criteria** (what must be TRUE):
   1. Un outil MCP `update_gendoc` est disponible dans Claude
@@ -67,7 +67,7 @@ Plans:
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 26. Versioning et Detection | v1.7 | Complete    | 2026-02-18 | - |
-| 27. Outil MCP de Mise a Jour | v1.7 | 0/2 | Not started | - |
+| 27. Outil MCP de Mise a Jour | v1.7 | Complete    | 2026-02-18 | - |
 
 ---
 *Last updated: 2026-02-18 — Phase 27 planned (2 plans)*
