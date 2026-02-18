@@ -1299,9 +1299,14 @@ async def update_gendoc() -> str:
         update_gendoc() -> {"status": "success", "old_version": "2.0.0", "new_version": "2.1.0", ...}
     """
     try:
-        result = run_update(
-            github_repo=_config.get("github_repo", ""),
-            github_token=_config.get("github_token", "") or None,
+        import asyncio
+        loop = asyncio.get_event_loop()
+        result = await loop.run_in_executor(
+            None,
+            lambda: run_update(
+                github_repo=_config.get("github_repo", ""),
+                github_token=_config.get("github_token", "") or None,
+            ),
         )
         return json.dumps(result, ensure_ascii=False, indent=2)
     except Exception as e:
