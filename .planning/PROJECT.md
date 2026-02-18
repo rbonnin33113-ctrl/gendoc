@@ -132,6 +132,8 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | armoire-securite Option C template documente | Seule famille multi-page, docstring complet | Good — maintenabilite assuree |
 | Assertions tests realistes | SP catalog 283 visible (pas 317 total) | Good — tests stables apres dedup |
 | Simple slide one-per-image | Multi-image products (BC1Vx 5 images) debordaient | Good — 1 slide/image comme VBA original |
+| CODE_ALIASES dans devis_analyzer | Codes devis != codes catalogue (P216E, CU12V, etc.) | Good — resolution analyse + generation |
+| Alias resolution dans pptx_generator | server.py pas hot-reloadable, lazy import dans generateur | Good — hot-reload compatible |
 
 | Config locale gendoc.json | Decouple config du code, chaque poste a son chemin | Good — config search CWD/home/dev |
 | Output isole par devis | Pas de conflits entre generations paralleles | Good — ./output/{devis_numero}/ |
@@ -140,4 +142,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | PDF mode d'emploi 19 pages | Documentation complete en francais | Good — 10 chapitres, installation incluse |
 
 ---
-*Last updated: 2026-02-16 after v1.6 milestone shipped*
+*Last updated: 2026-02-18 — CU aliases + alias resolution in pptx_generator*

@@ -11,10 +11,10 @@ See: .planning/PROJECT.md (updated 2026-02-16)
 
 Phase: —
 Plan: —
-Status: v1.6 shipped, between milestones
-Last activity: 2026-02-16 — Completed v1.6 Deploiement Multi-Postes milestone
+Status: v1.6 shipped, incremental fixes applied
+Last activity: 2026-02-18 — Added CU cuve aliases + alias resolution in pptx_generator (hot-reload)
 
-Progress: All milestones shipped (v1.0 through v1.6)
+Progress: All milestones shipped (v1.0 through v1.6), incremental fixes ongoing
 
 ## Performance Metrics
 
@@ -48,7 +48,7 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-02-16
-Stopped at: v1.6 milestone completed and archived
+Last session: 2026-02-18
+Stopped at: Incremental fixes — CU aliases, alias resolution in generator
 Resume file: .planning/MILESTONES.md
 Next: `/gsd:new-milestone` to start next milestone
