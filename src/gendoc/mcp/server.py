@@ -129,6 +129,7 @@ except ConfigurationError as e:
 _PROJECT_ROOT = _config["network_share_path"].parent
 
 # Version check at startup -- silent, never blocks server start
+_pending_update_notice: str | None = None
 try:
     from gendoc.utils.version_checker import check_for_update, _format_update_message
     _update_info = check_for_update(
@@ -136,9 +137,23 @@ try:
         github_token=_config.get("github_token", "") or None,
     )
     if _update_info is not None and _update_info.get("needs_update"):
-        print(_format_update_message(_update_info), file=sys.stderr)
+        _v_local = _update_info.get("local_version", "?")
+        _v_remote = _update_info.get("remote_version", "?")
+        _pending_update_notice = (
+            f"[MAJ DISPONIBLE] gendoc v{_v_local} -> v{_v_remote}"
+            f" — tapez update_gendoc pour mettre a jour"
+        )
 except Exception:
     pass  # Version check must never prevent MCP server startup
+
+
+def _inject_update_notice(result: dict) -> dict:
+    """Inject pending update notice into tool response (once per session)."""
+    global _pending_update_notice
+    if _pending_update_notice:
+        result["_update_notice"] = _pending_update_notice
+        _pending_update_notice = None
+    return result
 
 
 def _sanitize_devis_numero(numero: str) -> str:
@@ -258,6 +273,7 @@ async def list_families() -> str:
     # Add total count
     result = dict(families)
     result["total"] = sum(families.values())
+    _inject_update_notice(result)
 
     return json.dumps(result, ensure_ascii=False, indent=2)
 
@@ -359,6 +375,7 @@ async def analyze_devis(pdf_path: str) -> str:
         if inconnus_count:
             resume_parts.append(f"{inconnus_count} inconnus")
         result["resume"] = ", ".join(resume_parts)
+        _inject_update_notice(result)
 
         return json.dumps(result, ensure_ascii=False, indent=2)
     except ValueError as e:
@@ -480,6 +497,7 @@ async def preview_generation(analysis_result: dict) -> str:
 
         # Add compact resume
         result["resume"] = f"Preview OK -- {total_products} produits, {estimated_pages} pages estimees"
+        _inject_update_notice(result)
 
         return json.dumps(result, ensure_ascii=False, indent=2)
 
@@ -620,6 +638,7 @@ async def generate_slides(product_codes: list[str], output_path: str = None, mod
 
         # Add output path to result
         result['output_path'] = str(output)
+        _inject_update_notice(result)
         return json.dumps(result, ensure_ascii=False, indent=2)
 
     except Exception as e:
