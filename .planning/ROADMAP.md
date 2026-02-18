@@ -32,6 +32,7 @@ See `.planning/milestones/` for detailed roadmaps and requirements per version.
 **Goal**: Le serveur MCP connait sa version locale (pyproject.toml semver) et la compare a la version distante (GitHub) a chaque demarrage, avec notification dans Claude si MAJ disponible
 **Depends on**: Phase 25 (deploiement v1.6 en place)
 **Requirements**: VER-01, VER-02, NOTIF-01, NOTIF-02
+**Plans:** 1 plan
 **Success Criteria** (what must be TRUE):
   1. pyproject.toml contient la version semver et un module version_checker.py peut la lire
   2. Au demarrage MCP, le serveur compare la version locale avec le tag distant GitHub
@@ -40,7 +41,7 @@ See `.planning/milestones/` for detailed roadmaps and requirements per version.
   5. Si le reseau est indisponible, le check echoue silencieusement (pas de blocage)
 
 Plans:
-- [ ] 26-01: Implementer le module version_checker et l'integrer au demarrage MCP
+- [ ] 26-01-PLAN.md — Module version_checker + integration demarrage MCP + tests
 
 ### Phase 27: Outil MCP de Mise a Jour
 **Goal**: L'utilisateur peut lancer la mise a jour en un clic via un outil MCP qui gere tout (installation Git si absent, auth GitHub, clone ou pull, pip install)
@@ -62,8 +63,8 @@ Plans:
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 26. Versioning et Detection | v1.7 | 0/1 | Not started | - |
+| 26. Versioning et Detection | v1.7 | 0/1 | Planned | - |
 | 27. Outil MCP de Mise a Jour | v1.7 | 0/1 | Not started | - |
 
 ---
-*Last updated: 2026-02-18 — Roadmap v1.7 created (2 phases)*
+*Last updated: 2026-02-18 — Phase 26 planned (1 plan)*
