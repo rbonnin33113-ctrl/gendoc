@@ -27,6 +27,12 @@ SP_PREFIX_MAP = {
     'SPUSE': 'equipement',
 }
 
+# Alias mapping: devis codes -> catalog codes
+# When a devis uses a different code than the catalog, map it here
+CODE_ALIASES = {
+    "P216E": "ELEC-PC",
+}
+
 # Exclusion list for common false positives in PDF extraction
 # These strings are NOT product codes but frequently appear in devis PDFs:
 # - Measurement values (850MM, 1200MM, etc.)
@@ -286,8 +292,12 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
         # Try direct lookup first
         product = find_product(code, references_dir)
 
+        # If not found, try alias mapping (devis code -> catalog code)
+        if not product and code.upper() in CODE_ALIASES:
+            product = find_product(CODE_ALIASES[code.upper()], references_dir)
+
         if product:
-            # Found directly
+            # Found directly or via alias
             references.append({
                 'code': code,
                 'famille': product['famille'],
