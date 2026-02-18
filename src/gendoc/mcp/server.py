@@ -1283,37 +1283,64 @@ async def delete_reference(code: str) -> str:
 @mcp.tool()
 async def update_gendoc() -> str:
     """
-    Lance la mise a jour automatique de gendoc depuis GitHub.
+    Prepare la mise a jour de gendoc depuis GitHub.
 
-    Detecte si Git est installe (l'installe si besoin via winget),
-    puis execute git pull (ou clone initial) et pip install -e .
-    Le resultat inclut les versions avant/apres et les etapes realisees.
-
-    IMPORTANT: Apres une mise a jour reussie, il faut redemarrer Claude
-    pour que les changements soient pris en compte.
+    Configure l'authentification Git et retourne la commande a executer.
+    Claude doit ensuite executer la commande git pull via Bash dans le
+    dossier d'installation, puis demander a l'utilisateur de redemarrer.
 
     Returns:
-        JSON string avec status, old_version, new_version, steps_completed, resume.
+        JSON string avec install_dir, command, et instructions pour Claude.
 
     Example:
-        update_gendoc() -> {"status": "success", "old_version": "2.0.0", "new_version": "2.1.0", ...}
+        update_gendoc() -> {"install_dir": "C:/gendoc", "command": "git pull", ...}
     """
     try:
-        import asyncio
-        loop = asyncio.get_event_loop()
-        result = await loop.run_in_executor(
-            None,
-            lambda: run_update(
-                github_repo=_config.get("github_repo", ""),
-                github_token=_config.get("github_token", "") or None,
+        from gendoc.utils.auto_updater import _deduce_install_dir, _get_git_cmd
+        from gendoc.utils.version_checker import get_local_version
+
+        github_repo = _config.get("github_repo", "")
+        github_token = _config.get("github_token", "") or None
+        install_dir = _deduce_install_dir()
+        local_version = get_local_version()
+
+        if not github_repo:
+            return json.dumps({
+                "status": "error",
+                "resume": "github_repo non configure dans gendoc.json",
+            }, ensure_ascii=False)
+
+        # Set authenticated remote URL (for private repos)
+        if github_token:
+            try:
+                import subprocess
+                git_cmd = _get_git_cmd()
+                auth_url = f"https://{github_token}@github.com/{github_repo}.git"
+                subprocess.run(
+                    [git_cmd, "remote", "set-url", "origin", auth_url],
+                    capture_output=True, timeout=10, cwd=install_dir,
+                )
+            except Exception:
+                pass
+
+        return json.dumps({
+            "status": "ready",
+            "install_dir": install_dir,
+            "local_version": local_version,
+            "command": f"cd {install_dir} && git pull",
+            "cleanup_command": f"cd {install_dir} && git remote set-url origin https://github.com/{github_repo}.git",
+            "resume": (
+                f"Pret pour la mise a jour. "
+                f"Executez via Bash: cd {install_dir} && git pull "
+                f"puis executez la commande cleanup_command pour retirer le token du remote, "
+                f"puis demandez a l'utilisateur de redemarrer Claude."
             ),
-        )
-        return json.dumps(result, ensure_ascii=False, indent=2)
+        }, ensure_ascii=False, indent=2)
     except Exception as e:
         return json.dumps({
             "status": "error",
-            "error": f"Erreur inattendue lors de la mise a jour: {str(e)}",
-            "resume": f"ECHEC mise a jour: {str(e)}"
+            "error": str(e),
+            "resume": f"ECHEC preparation mise a jour: {str(e)}"
         }, ensure_ascii=False)
 
 
