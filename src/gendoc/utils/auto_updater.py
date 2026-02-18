@@ -145,24 +145,55 @@ def _clone_repo(
         return {"ok": False, "error": str(exc)}
 
 
-def _pull_repo(git_cmd: str, repo_dir: str) -> dict:
+def _pull_repo(
+    git_cmd: str,
+    repo_dir: str,
+    github_repo: str | None = None,
+    github_token: str | None = None,
+) -> dict:
     """Run git pull in an existing repository directory.
+
+    If github_token is provided, temporarily sets the remote URL with the
+    token embedded so that private repos can authenticate without prompting.
 
     Args:
         git_cmd: Git executable path (from _get_git_cmd).
         repo_dir: Path to the local repository root.
+        github_repo: Repository in "owner/repo" format (optional).
+        github_token: GitHub PAT for private repos (optional).
 
     Returns:
         {"ok": True, "output": "<stdout>"} on success,
         {"ok": False, "error": "<stderr>"} on failure.
     """
     try:
+        # Set authenticated remote URL before pulling (for private repos)
+        if github_repo and github_token:
+            auth_url = f"https://{github_token}@github.com/{github_repo}.git"
+            subprocess.run(
+                [git_cmd, "remote", "set-url", "origin", auth_url],
+                capture_output=True,
+                timeout=10,
+                cwd=repo_dir,
+            )
+
         result = subprocess.run(
             [git_cmd, "pull"],
             capture_output=True,
             timeout=60,
             cwd=repo_dir,
         )
+
+        # Remove token from remote URL after pull (security)
+        if github_repo and github_token:
+            clean_url = f"https://github.com/{github_repo}.git"
+            subprocess.run(
+                [git_cmd, "remote", "set-url", "origin", clean_url],
+                capture_output=True,
+                timeout=10,
+                cwd=repo_dir,
+            )
+
         if result.returncode == 0:
             output = result.stdout.decode("utf-8", errors="replace").strip()
             return {"ok": True, "output": output}
@@ -374,7 +405,7 @@ def run_update(
                 ),
             }
 
-        pull_result = _pull_repo(git_cmd, install_dir)
+        pull_result = _pull_repo(git_cmd, install_dir, github_repo, github_token)
         if not pull_result["ok"]:
             return {
                 "status": "error",
