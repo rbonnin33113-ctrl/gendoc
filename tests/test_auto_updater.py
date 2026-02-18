@@ -290,7 +290,7 @@ def test_run_update_git_install_then_clone(tmp_path):
 
 
 def test_run_update_pip_failure(tmp_path):
-    """git pull OK but pip install fails -> status error, steps only has git_pull."""
+    """git pull OK with changes but pip install fails -> status error."""
     (tmp_path / ".git").mkdir()
 
     with (
@@ -299,8 +299,8 @@ def test_run_update_pip_failure(tmp_path):
         patch(
             "gendoc.utils.auto_updater.subprocess.run",
             side_effect=[
-                _make_proc(0, stdout=b"Already up to date."),  # git pull
-                _make_proc(1, stderr=b"pip install failed"),    # pip install
+                _make_proc(0, stdout=b"Updating a3ca219..88d4ad5"),  # git pull with changes
+                _make_proc(1, stderr=b"pip install failed"),          # pip install
             ],
         ),
     ):
@@ -310,6 +310,30 @@ def test_run_update_pip_failure(tmp_path):
     assert "git_pull" in result["steps_completed"]
     assert "pip_install" not in result["steps_completed"]
     assert result["needs_restart"] is False
+
+
+def test_run_update_already_up_to_date_skips_pip(tmp_path):
+    """git pull says 'Already up to date' -> skip pip, return success immediately."""
+    (tmp_path / ".git").mkdir()
+    (tmp_path / "pyproject.toml").write_text('version = "2.0.0"')
+
+    with (
+        patch("gendoc.utils.auto_updater.get_local_version", return_value="2.0.0"),
+        patch("gendoc.utils.auto_updater._is_git_installed", return_value=True),
+        patch(
+            "gendoc.utils.auto_updater.subprocess.run",
+            side_effect=[
+                _make_proc(0, stdout=b"Already up to date."),  # git pull
+            ],
+        ),
+    ):
+        result = run_update("owner/repo", install_dir=str(tmp_path))
+
+    assert result["status"] == "success"
+    assert "git_pull" in result["steps_completed"]
+    assert "pip_install" not in result["steps_completed"]
+    assert result["needs_restart"] is False
+    assert "Deja a jour" in result["resume"]
 
 
 def test_run_update_returns_resume(tmp_path):

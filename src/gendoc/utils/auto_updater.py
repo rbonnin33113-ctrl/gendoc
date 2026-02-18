@@ -421,6 +421,20 @@ def run_update(
             }
         steps_completed.append("git_pull")
 
+        # Skip pip if git pull said "Already up to date"
+        pull_output = pull_result.get("output", "")
+        if "Already up to date" in pull_output or "Already up-to-date" in pull_output:
+            new_version = _read_version_from_pyproject(install_dir)
+            return {
+                "status": "success",
+                "old_version": old_version,
+                "new_version": new_version,
+                "steps_completed": steps_completed,
+                "error": None,
+                "needs_restart": False,
+                "resume": f"Deja a jour (v{new_version}). Aucun changement.",
+            }
+
     # pip install -e .
     pip_result = _pip_install(install_dir)
     if not pip_result["ok"]:
