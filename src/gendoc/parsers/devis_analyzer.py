@@ -337,6 +337,11 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
         # If coating detected, try lookup with base code
         if coating_detected:
             product = find_product(base_code, references_dir)
+            if not product:
+                # Try stripping width suffix from base: S-P-15 -> S-P
+                width_m = re.match(r'^(.+)-(\d{2,3})$', base_code)
+                if width_m:
+                    product = find_product(width_m.group(1), references_dir)
             if product:
                 references.append({
                     'code': code,
@@ -364,6 +369,36 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
         if is_forfait:
             forfaits.append(code)
             continue
+
+        # Try stripping numeric width suffix (e.g. S-P-12 -> S-P, S-P-A-15 -> S-P-A)
+        # Devis codes often append width: -12=1200mm, -15=1500mm, -18=1800mm, etc.
+        width_match = re.match(r'^(.+)-(\d{2,3})$', code)
+        if width_match:
+            base_no_width = width_match.group(1)
+            product = find_product(base_no_width, references_dir)
+            if product:
+                references.append({
+                    'code': code,
+                    'famille': product['famille'],
+                    'revetement': None
+                })
+                continue
+            # Also try with coating: S-P-15-GE -> base=S-P, coating=GE
+            for coating_code in REVETEMENT_CODES:
+                if base_no_width.endswith(f'-{coating_code}'):
+                    base_no_coating = base_no_width[:-len(coating_code)-1]
+                    product = find_product(base_no_coating, references_dir)
+                    if product:
+                        references.append({
+                            'code': code,
+                            'famille': product['famille'],
+                            'revetement': coating_code
+                        })
+                        revetements_detected.add(coating_code)
+                        break
+
+            if product:
+                continue
 
         # Unknown code
         inconnus.append(code)
