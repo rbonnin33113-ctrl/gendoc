@@ -1283,65 +1283,51 @@ async def delete_reference(code: str) -> str:
 @mcp.tool()
 async def update_gendoc() -> str:
     """
-    Prepare la mise a jour de gendoc depuis GitHub.
+    Retourne les commandes Bash pour mettre a jour gendoc.
 
-    Configure l'authentification Git et retourne la commande a executer.
-    Claude doit ensuite executer la commande git pull via Bash dans le
-    dossier d'installation, puis demander a l'utilisateur de redemarrer.
+    Ne fait AUCUN subprocess. Retourne les commandes que Claude doit
+    executer via l'outil Bash pour faire le git pull.
+
+    Apres execution, demander a l'utilisateur de redemarrer Claude.
 
     Returns:
-        JSON string avec install_dir, command, et instructions pour Claude.
-
-    Example:
-        update_gendoc() -> {"install_dir": "C:/gendoc", "command": "git pull", ...}
+        JSON string avec install_dir et les commandes Bash a executer.
     """
-    try:
-        from gendoc.utils.auto_updater import _deduce_install_dir, _get_git_cmd
-        from gendoc.utils.version_checker import get_local_version
+    from gendoc.utils.auto_updater import _deduce_install_dir
+    from gendoc.utils.version_checker import get_local_version
 
-        github_repo = _config.get("github_repo", "")
-        github_token = _config.get("github_token", "") or None
-        install_dir = _deduce_install_dir()
-        local_version = get_local_version()
+    github_repo = _config.get("github_repo", "")
+    github_token = _config.get("github_token", "") or None
+    install_dir = _deduce_install_dir()
+    local_version = get_local_version()
 
-        if not github_repo:
-            return json.dumps({
-                "status": "error",
-                "resume": "github_repo non configure dans gendoc.json",
-            }, ensure_ascii=False)
-
-        # Set authenticated remote URL (for private repos)
-        if github_token:
-            try:
-                import subprocess
-                git_cmd = _get_git_cmd()
-                auth_url = f"https://{github_token}@github.com/{github_repo}.git"
-                subprocess.run(
-                    [git_cmd, "remote", "set-url", "origin", auth_url],
-                    capture_output=True, timeout=10, cwd=install_dir,
-                )
-            except Exception:
-                pass
-
+    if not github_repo:
         return json.dumps({
-            "status": "ready",
-            "install_dir": install_dir,
-            "local_version": local_version,
-            "command": f"cd {install_dir} && git pull",
-            "cleanup_command": f"cd {install_dir} && git remote set-url origin https://github.com/{github_repo}.git",
-            "resume": (
-                f"Pret pour la mise a jour. "
-                f"Executez via Bash: cd {install_dir} && git pull "
-                f"puis executez la commande cleanup_command pour retirer le token du remote, "
-                f"puis demandez a l'utilisateur de redemarrer Claude."
-            ),
-        }, ensure_ascii=False, indent=2)
-    except Exception as e:
-        return json.dumps({
-            "status": "error",
-            "error": str(e),
-            "resume": f"ECHEC preparation mise a jour: {str(e)}"
+            "resume": "github_repo non configure dans gendoc.json",
         }, ensure_ascii=False)
+
+    if github_token:
+        auth_url = f"https://{github_token}@github.com/{github_repo}.git"
+        clean_url = f"https://github.com/{github_repo}.git"
+        commands = [
+            f'cd "{install_dir}" && git remote set-url origin {auth_url}',
+            f'cd "{install_dir}" && git pull',
+            f'cd "{install_dir}" && git remote set-url origin {clean_url}',
+        ]
+    else:
+        commands = [
+            f'cd "{install_dir}" && git pull',
+        ]
+
+    return json.dumps({
+        "install_dir": install_dir,
+        "local_version": local_version,
+        "commands": commands,
+        "resume": (
+            f"Executez ces commandes via Bash dans l'ordre, "
+            f"puis demandez a l'utilisateur de redemarrer Claude."
+        ),
+    }, ensure_ascii=False, indent=2)
 
 
 def main():
