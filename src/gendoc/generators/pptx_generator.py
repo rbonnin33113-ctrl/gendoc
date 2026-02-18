@@ -594,6 +594,13 @@ def generate_presentation(
         # Look up all pages for this product (multi-page support)
         pages = find_product_pages(code, references_dir)
 
+        # Try alias resolution if not found directly
+        if not pages:
+            from gendoc.parsers.devis_analyzer import CODE_ALIASES
+            alias = CODE_ALIASES.get(code.upper())
+            if alias:
+                pages = find_product_pages(alias, references_dir)
+
         # Try with base code if coating suffix present
         if not pages and '-' in code:
             base_code = '-'.join(code.split('-')[:-1])

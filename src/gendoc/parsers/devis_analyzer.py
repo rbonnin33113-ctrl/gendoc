@@ -37,6 +37,12 @@ CODE_ALIASES = {
     "P432E": "ELEC-PC",
     "PCMOSA": "ELEC-PC",
     "PCONDU": "ELEC-PC",
+    "CU12V": "CU12V / CU12PPH",
+    "CU12PPH": "CU12V / CU12PPH",
+    "CU2V": "CU2V / CU2PPH",
+    "CU2PPH": "CU2V / CU2PPH",
+    "CU9V": "CU9V / CU9PPH",
+    "CU9PPH": "CU9V / CU9PPH",
 }
 
 # Exclusion list for common false positives in PDF extraction

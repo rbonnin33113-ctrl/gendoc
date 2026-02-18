@@ -544,7 +544,7 @@ async def generate_slides(product_codes: list[str], output_path: str = None, mod
         # Hot-reload generators to pick up source changes
         _generate = _reload_generators()
 
-        # Call the generator
+        # Call the generator (alias resolution happens inside pptx_generator)
         result = _generate(
             product_codes=product_codes,
             output_path=output,
