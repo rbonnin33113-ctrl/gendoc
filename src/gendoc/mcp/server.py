@@ -218,7 +218,10 @@ def _require_admin(operation_name: str) -> str | None:
 
 
 # Create FastMCP server instance
-mcp = FastMCP("gendoc", instructions="Delagrave product reference and documentation generation tools")
+_mcp_instructions = "Delagrave product reference and documentation generation tools"
+if _pending_update_notice:
+    _mcp_instructions += f"\n\n{_pending_update_notice}"
+mcp = FastMCP("gendoc", instructions=_mcp_instructions)
 
 
 def _safe_write_log() -> str | None:
