@@ -140,8 +140,9 @@ try:
         _v_local = _update_info.get("local_version", "?")
         _v_remote = _update_info.get("remote_version", "?")
         _pending_update_notice = (
-            f"[MAJ DISPONIBLE] gendoc v{_v_local} -> v{_v_remote}"
-            f" — tapez update_gendoc pour mettre a jour"
+            f"IMPORTANT: Une mise a jour gendoc est disponible (v{_v_local} -> v{_v_remote}). "
+            f"Demandez a l'utilisateur s'il souhaite mettre a jour maintenant "
+            f"en appelant l'outil update_gendoc. Apres la mise a jour, Claude doit etre redemarre."
         )
 except Exception:
     pass  # Version check must never prevent MCP server startup
