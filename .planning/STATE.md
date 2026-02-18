@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 ## Current Position
 
 Phase: 26 of 27 (Versioning et Detection)
-Plan: 0 of 1 in current phase
-Status: Ready to plan
-Last activity: 2026-02-18 — Roadmap v1.7 created (2 phases, 10 requirements mapped)
+Plan: 1 of 1 in current phase
+Status: Phase complete — ready for phase 27
+Last activity: 2026-02-18 — Plan 26-01 executed (version_checker module, MCP startup integration, 21 tests)
 
-Progress: [░░░░░░░░░░] 0% (v1.7)
+Progress: [█████░░░░░] 50% (v1.7 — 1/2 phases complete)
 
 ## Performance Metrics
 
@@ -31,7 +31,7 @@ Progress: [░░░░░░░░░░] 0% (v1.7)
 | v1.6 | 22-25 | 8 | Shipped 2026-02-16 |
 | v1.7 | 26-27 | TBD | In progress |
 
-**Totals:** 25 phases executed, 45 plans completed, 7 milestones shipped
+**Totals:** 26 phases executed, 46 plans completed, 7 milestones shipped (1 in progress)
 
 ## Accumulated Context
 
@@ -43,6 +43,9 @@ Recent decisions for v1.7:
 - MCP startup is the trigger point for version check (non-bloquant si GitHub inaccessible)
 - Update = git pull + pip install -e . (script automatique, pas manuel)
 - Auth GitHub configuree une fois a l'installation (token ou SSH, persistant)
+- urllib.request used instead of requests (no extra dependency for non-critical feature)
+- GitHub tags API (/tags?per_page=1) used -- simpler than /releases/latest
+- github_repo and github_token are optional in gendoc.json -- no check if absent
 
 ### Pending Todos
 
@@ -56,6 +59,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Roadmap v1.7 created — 2 phases, 10/10 requirements mapped
+Stopped at: Completed 26-01-PLAN.md — version checker module + MCP integration (159 tests passing)
 Resume file: None
-Next: /gsd:plan-phase 26
+Next: /gsd:execute-phase 27 (auto-update execution)
