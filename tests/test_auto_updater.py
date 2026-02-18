@@ -228,7 +228,6 @@ def test_run_update_pull_success(tmp_path):
 
     assert result["status"] == "success"
     assert "git_pull" in result["steps_completed"]
-    assert "pip_install" in result["steps_completed"]
     assert result["old_version"] == "2.0.0"
     assert result["new_version"] == "2.1.0"
     assert result["needs_restart"] is True
@@ -289,27 +288,26 @@ def test_run_update_git_install_then_clone(tmp_path):
     assert "pip_install" in result["steps_completed"]
 
 
-def test_run_update_pip_failure(tmp_path):
-    """git pull OK with changes but pip install fails -> status error."""
+def test_run_update_pull_skips_pip(tmp_path):
+    """Pull path skips pip install (editable install, source files already linked)."""
     (tmp_path / ".git").mkdir()
+    (tmp_path / "pyproject.toml").write_text('version = "2.1.0"')
 
     with (
         patch("gendoc.utils.auto_updater.get_local_version", return_value="2.0.0"),
         patch("gendoc.utils.auto_updater._is_git_installed", return_value=True),
         patch(
             "gendoc.utils.auto_updater.subprocess.run",
-            side_effect=[
-                _make_proc(0, stdout=b"Updating a3ca219..88d4ad5"),  # git pull with changes
-                _make_proc(1, stderr=b"pip install failed"),          # pip install
-            ],
+            return_value=_make_proc(0, stdout=b"Updating a3ca219..88d4ad5"),
         ),
     ):
         result = run_update("owner/repo", install_dir=str(tmp_path))
 
-    assert result["status"] == "error"
+    assert result["status"] == "success"
     assert "git_pull" in result["steps_completed"]
     assert "pip_install" not in result["steps_completed"]
-    assert result["needs_restart"] is False
+    assert result["new_version"] == "2.1.0"
+    assert "Redemarrez" in result["resume"]
 
 
 def test_run_update_already_up_to_date_skips_pip(tmp_path):

@@ -435,22 +435,26 @@ def run_update(
                 "resume": f"Deja a jour (v{new_version}). Aucun changement.",
             }
 
-    # pip install -e .
-    pip_result = _pip_install(install_dir)
-    if not pip_result["ok"]:
-        return {
-            "status": "error",
-            "old_version": old_version,
-            "new_version": old_version,
-            "steps_completed": steps_completed,
-            "error": pip_result.get("error", "pip install echoue"),
-            "needs_restart": False,
-            "resume": (
-                f"git pull OK mais pip install echoue. "
-                f"Essayez manuellement: pip install -e {install_dir}"
-            ),
-        }
-    steps_completed.append("pip_install")
+    # Clone path needs pip install (first install).
+    # Pull path skips pip — editable install already links source files,
+    # and pip can hang on Windows due to file locking when MCP is running.
+    if not repo_has_git:
+        # Was a clone — need pip install
+        pip_result = _pip_install(install_dir)
+        if not pip_result["ok"]:
+            return {
+                "status": "error",
+                "old_version": old_version,
+                "new_version": old_version,
+                "steps_completed": steps_completed,
+                "error": pip_result.get("error", "pip install echoue"),
+                "needs_restart": False,
+                "resume": (
+                    f"git clone OK mais pip install echoue. "
+                    f"Essayez manuellement: pip install -e {install_dir}"
+                ),
+            }
+        steps_completed.append("pip_install")
 
     new_version = _read_version_from_pyproject(install_dir)
 
