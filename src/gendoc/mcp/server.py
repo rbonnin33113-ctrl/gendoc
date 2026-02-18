@@ -148,13 +148,14 @@ except Exception:
     pass  # Version check must never prevent MCP server startup
 
 
-def _inject_update_notice(result: dict) -> dict:
-    """Inject pending update notice into tool response (once per session)."""
+def _inject_update_notice(json_str: str) -> str:
+    """Prepend pending update notice as plain text before JSON (once per session)."""
     global _pending_update_notice
     if _pending_update_notice:
-        result["_update_notice"] = _pending_update_notice
+        notice = _pending_update_notice
         _pending_update_notice = None
-    return result
+        return f"{notice}\n\n{json_str}"
+    return json_str
 
 
 def _sanitize_devis_numero(numero: str) -> str:
@@ -277,9 +278,8 @@ async def list_families() -> str:
     # Add total count
     result = dict(families)
     result["total"] = sum(families.values())
-    _inject_update_notice(result)
 
-    return json.dumps(result, ensure_ascii=False, indent=2)
+    return _inject_update_notice(json.dumps(result, ensure_ascii=False, indent=2))
 
 
 @mcp.tool()
@@ -379,9 +379,8 @@ async def analyze_devis(pdf_path: str) -> str:
         if inconnus_count:
             resume_parts.append(f"{inconnus_count} inconnus")
         result["resume"] = ", ".join(resume_parts)
-        _inject_update_notice(result)
 
-        return json.dumps(result, ensure_ascii=False, indent=2)
+        return _inject_update_notice(json.dumps(result, ensure_ascii=False, indent=2))
     except ValueError as e:
         _current_logger.fail_step(step, str(e), traceback_str=traceback.format_exc())
         log_path = _safe_write_log()
@@ -501,9 +500,8 @@ async def preview_generation(analysis_result: dict) -> str:
 
         # Add compact resume
         result["resume"] = f"Preview OK -- {total_products} produits, {estimated_pages} pages estimees"
-        _inject_update_notice(result)
 
-        return json.dumps(result, ensure_ascii=False, indent=2)
+        return _inject_update_notice(json.dumps(result, ensure_ascii=False, indent=2))
 
     except Exception as e:
         if _current_logger and step:
@@ -642,8 +640,7 @@ async def generate_slides(product_codes: list[str], output_path: str = None, mod
 
         # Add output path to result
         result['output_path'] = str(output)
-        _inject_update_notice(result)
-        return json.dumps(result, ensure_ascii=False, indent=2)
+        return _inject_update_notice(json.dumps(result, ensure_ascii=False, indent=2))
 
     except Exception as e:
         if _current_logger and step:
