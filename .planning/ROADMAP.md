@@ -23,7 +23,7 @@ See `.planning/milestones/` for detailed roadmaps and requirements per version.
 
 ## Phases
 
-- [x] **Phase 26: Versioning et Detection** - Version semver + comparaison locale/distante au demarrage MCP (completed 2026-02-18)
+- [x] **Phase 26: Versioning et Detection** - Version semver + comparaison locale/distante au demarrage MCP (completed 2026-02-18)
 - [ ] **Phase 27: Outil MCP de Mise a Jour** - Installation Git a la demande + git pull + pip install en un clic
 
 ## Phase Details
@@ -41,12 +41,14 @@ See `.planning/milestones/` for detailed roadmaps and requirements per version.
   5. Si le reseau est indisponible, le check echoue silencieusement (pas de blocage)
 
 Plans:
-- [ ] 26-01-PLAN.md — Module version_checker + integration demarrage MCP + tests
+- [x] 26-01-PLAN.md — Module version_checker + integration demarrage MCP + tests
 
 ### Phase 27: Outil MCP de Mise a Jour
 **Goal**: L'utilisateur peut lancer la mise a jour en un clic via un outil MCP qui gere tout (installation Git si absent, auth GitHub, clone ou pull, pip install)
 **Depends on**: Phase 26
 **Requirements**: MAJ-01, MAJ-02, MAJ-03, DEP-01, DEP-02, DEP-03
+**Plans:** 2 plans
+
 **Success Criteria** (what must be TRUE):
   1. Un outil MCP `update_gendoc` est disponible dans Claude
   2. Si Git n'est pas installe : l'outil installe Git, configure l'auth GitHub (token), et clone le repo
@@ -55,7 +57,8 @@ Plans:
   5. En cas d'erreur (conflit git, pip failure, auth), un message d'erreur clair guide l'utilisateur
 
 Plans:
-- [ ] 27-01: Implementer l'outil MCP update_gendoc avec gestion Git auto
+- [ ] 27-01-PLAN.md — Module auto_updater.py (detection Git, install, clone/pull, pip) + tests
+- [ ] 27-02-PLAN.md — Outil MCP update_gendoc dans server.py
 
 ## Progress
 
@@ -64,7 +67,7 @@ Plans:
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 26. Versioning et Detection | v1.7 | Complete    | 2026-02-18 | - |
-| 27. Outil MCP de Mise a Jour | v1.7 | 0/1 | Not started | - |
+| 27. Outil MCP de Mise a Jour | v1.7 | 0/2 | Not started | - |
 
 ---
-*Last updated: 2026-02-18 — Phase 26 planned (1 plan)*
+*Last updated: 2026-02-18 — Phase 27 planned (2 plans)*
