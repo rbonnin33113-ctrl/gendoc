@@ -35,9 +35,14 @@ def _mock_github_response(tag_name: str):
 # ---------------------------------------------------------------------------
 
 def test_get_local_version():
-    """Version should match pyproject.toml which is pinned to 2.0.0."""
+    """Version should match pyproject.toml."""
+    import re
+    from pathlib import Path
+    pyproject = Path(__file__).resolve().parent.parent / "pyproject.toml"
+    content = pyproject.read_text(encoding="utf-8")
+    expected = re.search(r'^version\s*=\s*"([^"]+)"', content, re.MULTILINE).group(1)
     version = get_local_version()
-    assert version == "2.0.0", f"Expected '2.0.0', got '{version}'"
+    assert version == expected, f"Expected '{expected}', got '{version}'"
 
 
 def test_get_local_version_returns_string():

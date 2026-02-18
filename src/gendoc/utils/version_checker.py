@@ -21,23 +21,15 @@ from pathlib import Path
 def get_local_version() -> str:
     """Read local package version.
 
-    Tries importlib.metadata first (installed package), then falls back to
-    reading pyproject.toml directly (useful in dev environments without
-    editable install).
+    Reads pyproject.toml first (always up to date after git pull), then
+    falls back to importlib.metadata (for non-editable installs).
 
     Returns:
         Version string (e.g., "2.0.0"). Returns "0.0.0" if undetectable.
     """
-    # Primary: importlib.metadata (installed or editable install)
-    try:
-        return _importlib_version("gendoc-delagrave")
-    except PackageNotFoundError:
-        pass
-
-    # Fallback: read pyproject.toml directly
+    # Primary: pyproject.toml (always current after git pull)
     try:
         import re
-        # Walk up from this file to find pyproject.toml
         current = Path(__file__).resolve()
         for parent in current.parents:
             candidate = parent / "pyproject.toml"
@@ -48,6 +40,12 @@ def get_local_version() -> str:
                     return match.group(1)
                 break
     except Exception:
+        pass
+
+    # Fallback: importlib.metadata
+    try:
+        return _importlib_version("gendoc-delagrave")
+    except PackageNotFoundError:
         pass
 
     return "0.0.0"
