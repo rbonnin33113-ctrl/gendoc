@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-16)
 
 **Core value:** Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
-**Current focus:** Planning next milestone
+**Current focus:** v1.7 Systeme de Mise a Jour
 
 ## Current Position
 
-Phase: —
+Phase: Not started (defining requirements)
 Plan: —
-Status: v1.6 shipped, incremental fixes applied
-Last activity: 2026-02-18 — Added CU cuve aliases + alias resolution in pptx_generator (hot-reload)
+Status: Defining requirements
+Last activity: 2026-02-18 — Milestone v1.7 started
 
-Progress: All milestones shipped (v1.0 through v1.6), incremental fixes ongoing
+Progress: Defining requirements for v1.7
 
 ## Performance Metrics
 
@@ -49,6 +49,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Incremental fixes — CU aliases, alias resolution in generator
-Resume file: .planning/MILESTONES.md
-Next: `/gsd:new-milestone` to start next milestone
+Stopped at: Milestone v1.7 started — defining requirements
+Resume file: .planning/REQUIREMENTS.md
+Next: Define requirements then create roadmap

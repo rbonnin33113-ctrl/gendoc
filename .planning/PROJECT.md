@@ -8,6 +8,17 @@ Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la genera
 
 Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
+## Current Milestone: v1.7 Systeme de Mise a Jour
+
+**Goal:** Permettre aux utilisateurs d'etre notifies des mises a jour disponibles au demarrage du serveur MCP et de les installer en un clic, via un repo GitHub prive.
+
+**Target features:**
+- Detection de nouvelle version au demarrage MCP (comparaison locale vs distante)
+- Notification dans Claude quand une mise a jour est disponible
+- Mise a jour en un clic (git pull + pip install via script)
+- Ajout de Git au script d'installation des postes
+- Gestion de l'authentification repo GitHub prive
+
 ## Current State (v1.6 shipped 2026-02-16)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, validators, utils, mcp, cli)
@@ -78,6 +89,13 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 
 ### Active
 
+**v1.7 — Systeme de Mise a Jour:**
+- [ ] Detection de nouvelle version au demarrage MCP
+- [ ] Notification utilisateur dans Claude
+- [ ] Mise a jour en un clic (git pull + pip install)
+- [ ] Script d'installation incluant Git
+- [ ] Authentification repo GitHub prive
+
 **Deferred (no milestone planned yet):**
 - [ ] Modes de generation CHI/DOE/FTI (deferred from v1.0)
 - [ ] Integration des fiches-existantes (fichiers .pptx pre-existants)
@@ -142,4 +160,4 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | PDF mode d'emploi 19 pages | Documentation complete en francais | Good — 10 chapitres, installation incluse |
 
 ---
-*Last updated: 2026-02-18 — CU aliases + alias resolution in pptx_generator*
+*Last updated: 2026-02-18 — Started milestone v1.7 Systeme de Mise a Jour*
