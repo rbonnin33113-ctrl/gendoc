@@ -169,3 +169,28 @@ See: `.planning/milestones/v1.6-ROADMAP.md` for full details.
 
 ---
 
+
+## v1.7 — Systeme de Mise a Jour (SHIPPED 2026-02-18)
+
+**Goal:** Permettre aux utilisateurs d'etre notifies des mises a jour disponibles au demarrage du serveur MCP et de les installer en un clic, via un repo GitHub prive.
+
+**Started:** 2026-02-18
+**Shipped:** 2026-02-18
+**Phases:** 26-27 (3 plans)
+**Tests:** 184 automated (46 new: 21 version_checker + 25 auto_updater)
+**Lines added:** 1,307
+**Commits:** 11
+
+**Key Accomplishments:**
+1. Version checking au demarrage MCP — comparaison automatique version locale (pyproject.toml semver) vs GitHub tag, notification francaise si MAJ disponible
+2. Module auto_updater.py — detection Git, installation winget, clone/pull repo GitHub prive, pip install -e . en autonome
+3. Outil MCP update_gendoc — mise a jour en un clic depuis Claude, zero parametres, double error containment
+4. Config github_repo/github_token — integration dans gendoc.json, optionnel, check silencieux si absent
+5. 46 tests unitaires avec mocks subprocess/urllib couvrant toutes les branches d'erreur
+
+**Deferred:** GEN-01 (modes CHI/DOE), GEN-02 (fiches-existantes), SYNC-01 (Excel sync), DEP-01/02/03 (install.ps1 Git integration — deferred to next deployment update)
+
+See: `.planning/milestones/v1.7-ROADMAP.md` for full details.
+
+---
+

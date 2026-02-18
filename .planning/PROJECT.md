@@ -2,32 +2,21 @@
 
 ## What This Is
 
-Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le systeme est deployable sur plusieurs postes via un lecteur reseau partage (references, images, template) avec configuration locale par poste et controle d'acces admin/utilisateur. 8,894 lignes Python + 2,878 lignes de tests, 317 references produit dans 11 familles, 12 outils MCP, 138 tests automatises (<25s).
+Un systeme MCP + commandes `/gendoc-*` pour Claude Code qui automatise la generation de dossiers de fiches techniques PowerPoint pour les produits Delagrave. L'utilisateur soumet un devis PDF via `/gendoc-full`, le systeme extrait les references, genere les fiches techniques avec le bon layout par famille, et produit un document PowerPoint complet (couverture avec logo, sommaire, chapitres, fiches, revetements). Les articles speciaux (SP) sont geres via une page HTML interactive pour selectionner/editer les fiches avant generation. Le catalogue de references est entierement gerable via CRUD MCP (ajout, modification, suppression) avec copie automatique des images et mise a jour de l'index. Le systeme est deployable sur plusieurs postes via un lecteur reseau partage (references, images, template) avec configuration locale par poste et controle d'acces admin/utilisateur. Le systeme detecte les mises a jour disponibles au demarrage MCP et permet l'installation en un clic via un outil MCP dedie. ~10,200 lignes Python (source + tests), 317 references produit dans 11 familles, 13 outils MCP, 184 tests automatises (<25s).
 
 ## Core Value
 
 Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPoint complet de fiches techniques — sans intervention manuelle.
 
-## Current Milestone: v1.7 Systeme de Mise a Jour
-
-**Goal:** Permettre aux utilisateurs d'etre notifies des mises a jour disponibles au demarrage du serveur MCP et de les installer en un clic, via un repo GitHub prive.
-
-**Target features:**
-- Detection de nouvelle version au demarrage MCP (comparaison locale vs distante)
-- Notification dans Claude quand une mise a jour est disponible
-- Mise a jour en un clic (git pull + pip install via script)
-- Ajout de Git au script d'installation des postes
-- Gestion de l'authentification repo GitHub prive
-
-## Current State (v1.6 shipped 2026-02-16)
+## Current State (v1.7 shipped 2026-02-18)
 
 - **Package**: `src/gendoc/` (extractors, parsers, generators, validators, utils, mcp, cli)
 - **Data**: 317 references dans 11 fichiers MD, images reelles pour toutes les familles
-- **MCP Tools**: lookup_reference, search_references, list_families, analyze_devis, preview_generation, generate_slides, add_reference, update_reference, delete_reference, create_custom_product, open_sp_selector, load_sp_selection
+- **MCP Tools**: lookup_reference, search_references, list_families, analyze_devis, preview_generation, generate_slides, add_reference, update_reference, delete_reference, create_custom_product, open_sp_selector, load_sp_selection, update_gendoc
 - **Skills**: /gendoc-lookup, /gendoc-analyze, /gendoc-generate, /gendoc-full, /gendoc-addarm
 - **Template**: Modele fiche technique vide - Ind J.potm (6 layouts, A4 portrait)
 - **Families**: 11 familles (paillasse, sorbonne, revetement, meubles, tables-en, equipement, elec-sorb, complements, armoire-securite, enceinte-ventilee, fiches-existantes)
-- **Config**: gendoc.json avec network_share_path (reseau) + admin flag (true/false)
+- **Config**: gendoc.json avec network_share_path (reseau) + admin flag (true/false) + github_repo/github_token (optionnel)
 - **Deployment**: Deploy/ folder avec install.ps1, GENDOC_Manuel.pdf (19 pages), ZIP complet (32 Mo)
 - **Output**: ./output/{devis_numero}/ avec fiches.pptx + LOG.md par devis
 - **Access Control**: admin=true pour CRUD, admin=false en lecture seule
@@ -37,7 +26,8 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - **Resilience**: try/except par produit, warnings propages, resume compact en francais
 - **Detection**: EXCLUSION_WORDS (33 entries) + pattern mesures, inconnus logges individuellement
 - **Hot-reload**: Modifications des generateurs prises en compte sans redemarrage MCP
-- **Tests**: 138 tests pytest (22 family, 4 E2E, 14 md_parser, 14 SP detection, 8 SP workflow, 20 hot-reload, 6 detection, 5 error handling, 21 CRUD, 6 modern_template, 4 document_assembler, 14 config+admin) — <25s
+- **Update**: Version check au demarrage (GitHub tags), update_gendoc en un clic (git pull + pip install)
+- **Tests**: 184 tests pytest — <25s
 - **Code quality**: armoire-securite Option C template et enceinte-ventilee documentes, round-trip md_parser/md_writer valide
 
 ## Requirements
@@ -77,7 +67,6 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - Tests armoire-securite et enceinte-ventilee (generation 2 pages, multi-page validation) — v1.5
 - Tests modern_template dispatch et document_assembler multi-page — v1.5
 - 123 tests passent avec zero regressions apres consolidation — v1.5
-
 - Configuration locale (gendoc.json) avec resolution chemins depuis lecteur reseau — v1.6
 - Validation du dossier partage au demarrage (references, images, template) — v1.6
 - Output isole par devis dans ./output/{devis_numero}/ — v1.6
@@ -86,20 +75,18 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - Guide de deploiement complet (DEPLOY.md + PDF 19 pages) — v1.6
 - Script d'installation automatique (install.ps1) — v1.6
 - ZIP de deploiement complet avec catalogue Delagrave (32 Mo) — v1.6
+- Version checking au demarrage MCP (comparaison locale vs GitHub tag) — v1.7
+- Notification francaise dans Claude quand MAJ disponible — v1.7
+- Outil MCP update_gendoc pour mise a jour en un clic (git pull + pip install) — v1.7
+- Config github_repo/github_token optionnels dans gendoc.json — v1.7
 
 ### Active
-
-**v1.7 — Systeme de Mise a Jour:**
-- [ ] Detection de nouvelle version au demarrage MCP
-- [ ] Notification utilisateur dans Claude
-- [ ] Mise a jour en un clic (git pull + pip install)
-- [ ] Script d'installation incluant Git
-- [ ] Authentification repo GitHub prive
 
 **Deferred (no milestone planned yet):**
 - [ ] Modes de generation CHI/DOE/FTI (deferred from v1.0)
 - [ ] Integration des fiches-existantes (fichiers .pptx pre-existants)
 - [ ] Synchronisation automatique Excel -> MD
+- [ ] Script install.ps1 avec installation Git et clone initial (DEP-01/02/03 deferred from v1.7)
 
 ### Out of Scope
 
@@ -112,6 +99,10 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - Dashboard web de logs — les fichiers LOG.md suffisent
 - Retry automatique — les erreurs doivent etre analysees, pas masquees
 - Bulk import CSV/Excel — une reference a la fois via CRUD MCP
+- Auto-update sans confirmation — l'utilisateur doit valider la MAJ
+- Rollback de version — git revert suffit en admin
+- MAJ donnees via git — les donnees sont sur le reseau partage
+- MAJ du serveur MCP a chaud — necessite redemarrage de Claude
 
 ## Constraints
 
@@ -119,19 +110,20 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 - **Template**: Le template .potm existant est reutilise tel quel (conversion zip pour contourner limitation python-pptx)
 - **Format devis**: Les devis PDF Delagrave ont un format structure (sections hierarchiques)
 - **Images**: Stockees localement dans Delagrave/images/{famille}/
+- **Update**: Necessite redemarrage de Claude apres pip install
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
 | MD comme source de verite | Decouple des macros Excel, versionnable | Good — 317 refs extraites, lookup fonctionnel |
-| Serveur MCP unique FastMCP | Permet a Claude d'appeler les outils directement | Good — 12 outils, pipeline complet |
+| Serveur MCP unique FastMCP | Permet a Claude d'appeler les outils directement | Good — 13 outils, pipeline complet |
 | Document complet (pas fiches isolees) | L'utilisateur veut un dossier pret a l'emploi | Good — couverture, sommaire, chapitres |
 | Conversion .potm via zipfile | python-pptx ne lit pas les .potm natifs | Good — trick fiable |
 | Split texte revetement en 3 zones | Texte debordait du cadre unique | Good — TEXTE/MEO/FINITION |
 | VBA_TO_PLACEHOLDER pour toutes les familles | Mapping systematique VBA -> placeholder idx | Good — 9 familles couvertes |
 | Custom products via deep copy + field override | Articles speciaux SP sans reference catalogue | Good — flexible, MCP tool cree |
-| Pytest parametrize par famille | Un test par famille, execution rapide | Good — 108 tests en <20s |
+| Pytest parametrize par famille | Un test par famille, execution rapide | Good — 184 tests en <25s |
 | Designation extraction multi-lignes | Articles SP ont des descriptions longues dans le PDF | Good — texte complet avec dimensions |
 | HTML auto-contenu avec catalogue embarque | Pas de serveur HTTP, pas de dependances externes | Good — 320 produits, ~500KB HTML |
 | Partial export SP | L'utilisateur peut configurer seulement certains SP | Good — feedback utilisateur integre |
@@ -152,12 +144,20 @@ Un utilisateur soumet un devis PDF et obtient automatiquement un dossier PowerPo
 | Simple slide one-per-image | Multi-image products (BC1Vx 5 images) debordaient | Good — 1 slide/image comme VBA original |
 | CODE_ALIASES dans devis_analyzer | Codes devis != codes catalogue (P216E, CU12V, etc.) | Good — resolution analyse + generation |
 | Alias resolution dans pptx_generator | server.py pas hot-reloadable, lazy import dans generateur | Good — hot-reload compatible |
-
 | Config locale gendoc.json | Decouple config du code, chaque poste a son chemin | Good — config search CWD/home/dev |
 | Output isole par devis | Pas de conflits entre generations paralleles | Good — ./output/{devis_numero}/ |
 | Admin guard sur CRUD | Empeche modifications accidentelles par utilisateurs | Good — _require_admin() dans server.py |
 | Deploy ZIP complet avec Delagrave | Un seul fichier pour deployer tout | Good — 32 Mo, 370 fichiers |
 | PDF mode d'emploi 19 pages | Documentation complete en francais | Good — 10 chapitres, installation incluse |
+| urllib.request pour GitHub API | Pas de dependance supplémentaire pour feature non-critique | Good — stdlib suffisant |
+| GitHub tags API (/tags?per_page=1) | Plus simple que /releases/latest, compatible tag-based | Good — check rapide |
+| Silent failure version check | Check ne doit jamais bloquer le demarrage MCP | Good — return None on error |
+| github_repo/github_token optionnels | Zero friction pour utilisateurs sans config GitHub | Good — check silencieux si absent |
+| sys.executable pour pip | Cible le bon interpreteur Python quel que soit le PATH | Good — pas d'ambiguite |
+| Post-winget PATH gap handling | _get_git_cmd() fallback sur C:\Program Files\Git\cmd\git.exe | Good — installation Git sans relance shell |
+| install_dir deduit depuis __file__ | 4 niveaux parent; fallback C:\gendoc | Good — auto-detection fiable |
+| Double error containment update_gendoc | run_update gere tout + outer try/except safety net | Good — resume toujours present |
+| No admin check on update_gendoc | Tous les utilisateurs peuvent mettre a jour | Good — MAJ accessible a tous |
 
 ---
-*Last updated: 2026-02-18 — Started milestone v1.7 Systeme de Mise a Jour*
+*Last updated: 2026-02-18 after v1.7 milestone*
