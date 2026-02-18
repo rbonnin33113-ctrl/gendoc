@@ -31,6 +31,7 @@ from gendoc.parsers.devis_analyzer import analyze_devis as run_analyze_devis
 from gendoc.generators.html_sp_selector import generate_sp_selector_html
 from gendoc.utils.sp_server import start_sp_server
 from gendoc.utils.pipeline_logger import PipelineLogger
+from gendoc.utils.auto_updater import run_update
 
 # Module mtime tracking for hot-reload mechanism
 _module_mtimes: dict[str, float] = {}
@@ -1256,6 +1257,38 @@ async def delete_reference(code: str) -> str:
         return json.dumps({
             "error": f"Erreur inattendue: {str(e)}",
             "resume": f"ECHEC suppression de {code}"
+        }, ensure_ascii=False)
+
+
+@mcp.tool()
+async def update_gendoc() -> str:
+    """
+    Lance la mise a jour automatique de gendoc depuis GitHub.
+
+    Detecte si Git est installe (l'installe si besoin via winget),
+    puis execute git pull (ou clone initial) et pip install -e .
+    Le resultat inclut les versions avant/apres et les etapes realisees.
+
+    IMPORTANT: Apres une mise a jour reussie, il faut redemarrer Claude
+    pour que les changements soient pris en compte.
+
+    Returns:
+        JSON string avec status, old_version, new_version, steps_completed, resume.
+
+    Example:
+        update_gendoc() -> {"status": "success", "old_version": "2.0.0", "new_version": "2.1.0", ...}
+    """
+    try:
+        result = run_update(
+            github_repo=_config.get("github_repo", ""),
+            github_token=_config.get("github_token", "") or None,
+        )
+        return json.dumps(result, ensure_ascii=False, indent=2)
+    except Exception as e:
+        return json.dumps({
+            "status": "error",
+            "error": f"Erreur inattendue lors de la mise a jour: {str(e)}",
+            "resume": f"ECHEC mise a jour: {str(e)}"
         }, ensure_ascii=False)
 
 
