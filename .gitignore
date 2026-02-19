@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Output
+output/
+Delagrave/output/
+tests/output/
+
+# Config (contient des tokens)
+gendoc.json
+.claude/settings.local.json
+
+# IDE / local
+.vscode/
+.idea/
+
+# Images screenshots
+image*.png
+
+# Prototypes / scripts locaux
+prototype_*.py
+add_spec_pages.py
+generate_manual.py
+claude-auto.ps1
+test_results.txt
+vba_output.txt
+nul
+
+# Data locale (pas dans le repo)
+Delagrave/Devis - Modeles/
+Delagrave/Modele fiches - Powerpoint/
+Delagrave/Modile Fiche produits/
+Delagrave/Tables_de_references_produits/
+Delagrave/images/delagrave2022_high.png
+Delagrave/images/delagrave2022_high_Back.png
+potm_extracted_images/
+
+# GSD planning artifacts
+.planning/phases/
+.planning/STATE.md.bak
+=0.11.0
+
+# Other
+sidecar/
+tauri/
+TICKETFLOW_Backlog.md
