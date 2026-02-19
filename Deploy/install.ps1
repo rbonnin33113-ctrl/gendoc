@@ -284,11 +284,10 @@ if ($InstallDir -ne $sourceDir) {
         New-Item -ItemType Directory -Path $InstallDir -Force | Out-Null
         $toCopy = @(
             "src",
+            "Delagrave",
+            "Deploy",
             "pyproject.toml",
-            "gendoc.json.example",
-            ".mcp.json.example",
-            "DEPLOY.md",
-            "Deploy"
+            "CLAUDE.md"
         )
         foreach ($item in $toCopy) {
             $src = Join-Path $sourceDir $item
@@ -419,6 +418,19 @@ if ($mcpExists) {
     Write-Warn ".mcp.json manquant"
     $allOK = $false
 }
+
+# --- Etape 8 : Masquer les fichiers techniques --------------------------------
+
+Write-Step 8 "Masquage des fichiers techniques..."
+
+$filesToHide = @("pyproject.toml", "CLAUDE.md", ".mcp.json", "gendoc.json")
+foreach ($f in $filesToHide) {
+    $fp = Join-Path $InstallDir $f
+    if (Test-Path $fp) {
+        attrib +h $fp
+    }
+}
+Write-OK "Fichiers techniques masques dans l'explorateur"
 
 # --- Resume -------------------------------------------------------------------
 
