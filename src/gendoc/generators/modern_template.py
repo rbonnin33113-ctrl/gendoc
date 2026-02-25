@@ -200,6 +200,31 @@ def _section_label(slide, text, x, y, w):
 # Content Builders
 # ──────────────────────────────────────────────────────────────
 
+def _text_paragraph(slide, text, x, y, w, h):
+    """Flowing paragraph text, justified, no bullets. For manufacturer descriptions."""
+    lines = [l.strip() for l in text.split('\n') if l.strip()]
+    if not lines:
+        return y
+
+    box = slide.shapes.add_textbox(x, y, w, h)
+    tf = box.text_frame
+    tf.word_wrap = True
+    tf.auto_size = MSO_AUTO_SIZE.NONE
+    tf.text = ""
+
+    for i, line in enumerate(lines):
+        p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+        r = p.add_run()
+        r.text = line
+        r.font.size = Pt(7)
+        r.font.name = FONT
+        r.font.color.rgb = TEXT_MAIN
+        p.alignment = PP_ALIGN.JUSTIFY
+        p.space_after = Pt(1)
+
+    return y + h
+
+
 def _text_with_bullets(slide, text, x, y, w, h):
     """Text with ▸ blue triangle bullets, justified, hanging indent."""
     lines = [l.strip() for l in text.split('\n') if l.strip()]
@@ -358,7 +383,10 @@ def _insert_all_images(slide, images, project_root, x, y, max_w, max_h_each):
         chemin = img_data.get('chemin', '').strip()
         if not chemin or chemin.endswith('.missing'):
             continue
-        path = project_root / chemin
+        if img_data.get('_absolute'):
+            path = Path(chemin)
+        else:
+            path = project_root / chemin
         if not path.exists():
             continue
         try:
@@ -683,18 +711,18 @@ def build_separator(prs, family_name, family_display):
 # Product Slide Builders
 # ──────────────────────────────────────────────────────────────
 
-def build_product_slide(prs, product, family, project_root, logo_path):
+def build_product_slide(prs, product, family, project_root, logo_path, extra_options=None):
     """Dispatch to family-specific builder. Returns list of warning strings."""
     try:
         if family in ('armoire-securite', 'enceinte-ventilee'):
-            # Both armoire-securite and enceinte-ventilee use Option C 2-page template
-            # armoire-securite: commit 0b3600b (2026-02-15)
-            # enceinte-ventilee: commit 0cee8d5 (2026-02-16)
             return _build_armoire_slide(prs, product, project_root, logo_path)
         elif family in ('equipement', 'elec-sorb', 'complements'):
+            texte = product.get('texte', '').strip()
+            if texte and texte.lower() != 'aucune':
+                return _build_manufacturer_slide(prs, product, project_root, logo_path)
             return _build_simple_slide(prs, product, project_root, logo_path)
         elif family == 'revetement':
-            return _build_revetement_slide(prs, product, project_root, logo_path)
+            return _build_revetement_slide(prs, product, project_root, logo_path, extra_options=extra_options)
         else:
             return _build_standard_slide(prs, product, family, project_root, logo_path)
     except Exception as e:
@@ -799,8 +827,11 @@ def _build_standard_slide(prs, product, family, project_root, logo_path):
         return [f"Erreur inattendue sur slide: {str(e)}"]
 
 
-def _build_revetement_slide(prs, product, project_root, logo_path):
+def _build_revetement_slide(prs, product, project_root, logo_path, extra_options=None):
     """Revetement slide: full-width sections + bottom split for images.
+
+    Args:
+        extra_options: Optional list of option dicts [{'label': str, 'image': str|None}]
 
     Returns list of warning strings.
     """
@@ -865,14 +896,173 @@ def _build_revetement_slide(prs, product, project_root, logo_path):
             y = _section_label(slide, 'Finition', lx, y, text_w)
             lines_count = len([l for l in finition.split('\n') if l.strip()])
             h = min(Cm(4), max(Cm(1), Cm(0.45) * lines_count + Cm(0.5)))
-            _text_with_bullets(slide, finition, lx, y, text_w, h)
+            y = _text_with_bullets(slide, finition, lx, y, text_w, h)
+            y += Cm(0.3)
 
-        # Images (right column)
+        # Options section (left column, below text — e.g. dosseret retour, bordure retention)
+        if extra_options:
+            y = _section_label(slide, 'Option(s)', lx, y, text_w)
+            labels = '\n'.join(opt['label'] for opt in extra_options)
+            line_count = len(extra_options)
+            h = max(Cm(0.8), Cm(0.45) * line_count + Cm(0.3))
+            y = _text_with_bullets(slide, labels, lx, y, text_w, h)
+            y += Cm(0.3)
+            option_images = [{'chemin': opt['image'], '_absolute': True}
+                             for opt in extra_options if opt.get('image')]
+            if option_images:
+                _insert_all_images(
+                    slide, option_images, project_root,
+                    lx, y, text_w, Cm(7)
+                )
+
+        # Images (right column — cross-sections and photos)
         _insert_all_images(
             slide, product.get('images', []), project_root,
             img_x, Cm(12), img_w, Cm(7)
         )
         return []
+    except Exception as e:
+        return [f"Erreur inattendue sur slide: {str(e)}"]
+
+
+def _build_manufacturer_slide(prs, product, project_root, logo_path):
+    """Manufacturer data sheet: 1-page layout inspired by supplier PDFs (e.g. DELABIE).
+
+    Layout:
+      TOP HALF (2 columns):
+        Left column  — product photo (top) + ref (below photo)
+        Right column — description paragraph + avantages bullets
+      SECTION BAND — full-width "CARACTÉRISTIQUES TECHNIQUES" header
+      BOTTOM HALF (2 columns):
+        Left column  — specifications table
+        Right column — technical drawing (2nd image)
+
+    Texte field supports ---AVANTAGES--- marker to split description from advantages.
+    Used for equipement/elec-sorb/complements when real texte is available.
+    Returns list of warning strings.
+    """
+    try:
+        warnings = []
+        slide = prs.slides.add_slide(prs.slide_layouts[0])
+        sw = prs.slide_width
+
+        _header(slide, prs, logo_path)
+        _title_band(slide, prs, product.get('titre', ''))
+        _footer(slide, prs)
+
+        images = [img for img in product.get('images', [])
+                  if img.get('chemin', '').strip()
+                  and not img.get('chemin', '').strip().endswith('.missing')]
+
+        # Parse texte: split description / avantages at marker
+        raw_texte = product.get('texte', '').strip()
+        if '---AVANTAGES---' in raw_texte:
+            parts = raw_texte.split('---AVANTAGES---', 1)
+            description = parts[0].strip()
+            avantages = parts[1].strip()
+        else:
+            description = raw_texte
+            avantages = ''
+
+        # ════════════════════════════════════════════════════════
+        # TOP HALF — y=3.5 to 16cm
+        # ════════════════════════════════════════════════════════
+        top_y = Cm(3.5)
+        left_x = Cm(0.6)
+        left_w = Cm(8)
+        right_x = Cm(9.2)
+        right_w = Cm(10.8)
+        photo_h = Cm(8)
+
+        # ── Left: Product photo ──
+        if images:
+            inserted = _insert_image(
+                slide, [images[0]], project_root,
+                left_x, top_y, left_w, photo_h
+            )
+            if not inserted:
+                warnings.append(
+                    f"Image produit non inseree pour {product.get('code', '?')}"
+                )
+
+        # ── Left: Reference below photo ──
+        ref = product.get('ref', '').strip()
+        if ref:
+            ref_y = top_y + photo_h + Cm(0.3)
+            ref_box = slide.shapes.add_textbox(left_x, ref_y, left_w, Cm(0.4))
+            tf = ref_box.text_frame
+            p = tf.paragraphs[0]
+            p.text = ref
+            p.font.size = Pt(8)
+            p.font.bold = True
+            p.font.name = FONT
+            p.font.color.rgb = BRAND
+
+        # ── Right: Description + Avantages ──
+        y_r = top_y
+        if description:
+            y_r = _section_label(slide, "Description", right_x, y_r, right_w)
+            if avantages:
+                # Both sections: description as paragraph, avantages as bullets
+                # Avantages at fixed position near bottom of top half
+                av_y = Cm(11.5)
+                desc_h = av_y - y_r - Cm(0.2)
+                _text_paragraph(slide, description, right_x, y_r, right_w, desc_h)
+                av_y = _section_label(slide, "Avantages", right_x, av_y, right_w)
+                av_h = Cm(16) - av_y
+                _text_with_bullets(
+                    slide, avantages, right_x, av_y, right_w, av_h
+                )
+            else:
+                # No avantages: description as bullets filling the space
+                desc_h = Cm(16) - y_r
+                _text_with_bullets(
+                    slide, description, right_x, y_r, right_w, desc_h
+                )
+
+        # ════════════════════════════════════════════════════════
+        # SECTION BAND — full-width "CARACTÉRISTIQUES TECHNIQUES"
+        # ════════════════════════════════════════════════════════
+        band_y = Cm(16.2)
+        _rect(slide, 0, band_y, sw, Cm(0.8), BRAND)
+        band_box = slide.shapes.add_textbox(
+            Cm(0.8), band_y, sw - Cm(1.6), Cm(0.8)
+        )
+        tf = band_box.text_frame
+        tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+        p = tf.paragraphs[0]
+        p.text = "CARACTÉRISTIQUES TECHNIQUES"
+        p.font.size = Pt(11)
+        p.font.bold = True
+        p.font.name = FONT
+        p.font.color.rgb = WHITE
+
+        # ════════════════════════════════════════════════════════
+        # BOTTOM HALF — y=17.2 to 27.5cm
+        # ════════════════════════════════════════════════════════
+        bot_y = band_y + Cm(1.2)
+        bot_left_x = Cm(0.6)
+        bot_right_x = Cm(10.5)
+        bot_col_w = Cm(9.5)
+        bot_h = Cm(27.5) - bot_y
+
+        # ── Left: Specifications table ──
+        dims = product.get('dimensions', [])
+        if dims:
+            _dimensions_table(slide, dims, bot_left_x, bot_y, bot_col_w)
+
+        # ── Right: Technical drawing (2nd image) ──
+        if len(images) > 1:
+            inserted = _insert_image(
+                slide, [images[1]], project_root,
+                bot_right_x, bot_y, bot_col_w, bot_h
+            )
+            if not inserted:
+                warnings.append(
+                    f"Plan technique non insere pour {product.get('code', '?')}"
+                )
+
+        return warnings
     except Exception as e:
         return [f"Erreur inattendue sur slide: {str(e)}"]
 

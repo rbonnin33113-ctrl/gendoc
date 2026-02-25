@@ -23,6 +23,7 @@ REVETEMENT_CODES = {"DA", "GE", "GED", "GR", "IN", "PP", "RP", "RP6", "RPR", "RS
 SP_PREFIX_MAP = {
     'SPMOB': 'meubles',
     'SPPAIL': 'paillasse',
+    'SPROB': 'equipement',
     'SPTABLEEN': 'tables-en',
     'SPUSE': 'equipement',
 }
@@ -44,6 +45,9 @@ CODE_ALIASES = {
     "CU9V": "CU9V / CU9PPH",
     "CU9PPH": "CU9V / CU9PPH",
 }
+
+# Known revetement option prefixes (codes like +DOSSRET_RS, +BRELEV_GE)
+REVETEMENT_OPTION_PREFIXES = {'DOSSRET', 'BRELEV'}
 
 # Exclusion list for common false positives in PDF extraction
 # These strings are NOT product codes but frequently appear in devis PDFs:
@@ -133,6 +137,13 @@ def extract_article_codes(pages_text: List[str]) -> List[str]:
                 continue
 
             first_word = words[0]
+
+            # Option codes: +OPTION_XX (e.g. +DOSSRET_RS, +BRELEV_GE)
+            if first_word.startswith('+'):
+                option_match = re.match(r'^\+([A-Z]+)_([A-Z]{2,3})$', first_word, re.IGNORECASE)
+                if option_match and option_match.group(1).upper() in REVETEMENT_OPTION_PREFIXES:
+                    codes.add(first_word.upper())
+                continue
 
             # Article codes are alphanumeric with possible hyphens
             # Examples: PM-D-H-75-GE, SPMSE-1967, CU12V, EU40, FL12, FPORT, FORPOSE1J
@@ -289,6 +300,7 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
     forfaits = []
     speciaux = []
     inconnus = []
+    revetement_options = {}  # e.g. {'RS': ['DOSSRET']}
 
     for code in codes:
         # Filter exclusion words FIRST (before any classification)
@@ -300,6 +312,15 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
         # Filter measurement patterns (NNN+MM, NNN+M)
         if re.match(r'^\d+MM?$', code_upper):
             continue  # Silent filter for measurement values
+
+        # Detect revetement option codes: +OPTION_XX (e.g. +DOSSRET_RS, +BRELEV_GE)
+        option_match = re.match(r'^\+([A-Z]+)_([A-Z]{2,3})$', code_upper)
+        if option_match:
+            option_name = option_match.group(1)
+            rev_code = option_match.group(2)
+            if option_name in REVETEMENT_OPTION_PREFIXES and rev_code in REVETEMENT_CODES:
+                revetement_options.setdefault(rev_code, []).append(option_name)
+            continue
 
         # Try direct lookup first
         product = find_product(code, references_dir)
@@ -454,7 +475,8 @@ def classify_codes(codes: List[str], references_dir: Path) -> Dict[str, Any]:
         'revetements': revetements,
         'forfaits': forfaits,
         'speciaux': speciaux,
-        'inconnus': inconnus
+        'inconnus': inconnus,
+        'revetement_options': revetement_options
     }
 
 
@@ -517,5 +539,6 @@ def analyze_devis(pdf_path: Path, references_dir: Path) -> Dict[str, Any]:
         'revetements': classification['revetements'],
         'forfaits': classification['forfaits'],
         'speciaux': classification['speciaux'],
-        'inconnus': classification['inconnus']
+        'inconnus': classification['inconnus'],
+        'revetement_options': classification.get('revetement_options', {})
     }

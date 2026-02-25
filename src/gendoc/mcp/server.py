@@ -371,9 +371,13 @@ async def analyze_devis(pdf_path: str) -> str:
         rev_count = len(result.get("revetements", []))
         sp_count = len(result.get("speciaux", []))
         inconnus_count = len(result.get("inconnus", []))
+        rev_options = result.get("revetement_options", {})
         resume_parts = [f"Analyse OK -- {refs_count} references"]
         if rev_count:
             resume_parts.append(f"{rev_count} revetements")
+        if rev_options:
+            opt_count = sum(len(v) for v in rev_options.values())
+            resume_parts.append(f"{opt_count} option(s) revetement")
         if sp_count:
             resume_parts.append(f"{sp_count} speciaux")
         if inconnus_count:
@@ -514,7 +518,7 @@ async def preview_generation(analysis_result: dict) -> str:
 
 
 @mcp.tool()
-async def generate_slides(product_codes: list[str], output_path: str = None, mode: str = "FTI", devis_info: dict = None, custom_products: str = "[]") -> str:
+async def generate_slides(product_codes: list[str], output_path: str = None, mode: str = "FTI", devis_info: dict = None, custom_products: str = "[]", revetement_options: str = "{}") -> str:
     """
     Generate a PowerPoint presentation with product slides.
 
@@ -565,6 +569,12 @@ async def generate_slides(product_codes: list[str], output_path: str = None, mod
         except json.JSONDecodeError:
             custom_products_list = []
 
+        # Parse revetement_options JSON
+        try:
+            rev_options = json.loads(revetement_options)
+        except json.JSONDecodeError:
+            rev_options = {}
+
         # Log step if logger exists
         if _current_logger:
             _current_logger.set_input_params(
@@ -586,7 +596,8 @@ async def generate_slides(product_codes: list[str], output_path: str = None, mod
             project_root=_PROJECT_ROOT,
             mode=mode,
             devis_info=devis_info,
-            custom_products=custom_products_list
+            custom_products=custom_products_list,
+            revetement_options=rev_options if rev_options else None
         )
 
         # Log per-product errors from result (products skipped during generation)

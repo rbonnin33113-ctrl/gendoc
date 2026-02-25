@@ -162,26 +162,51 @@ Aucune
 | Champ | Valeur |
 |-------|--------|
 | code | 5625 |
-| ref |  |
-| titre | 5625 - Mitigeur de prélavage |
+| ref | Réf : DELABIE 5625 |
+| titre | 5625 - Combiné de prélavage monotrou avec mitigeur |
 | famille | equipement |
 
 ### Texte
 
-Aucune
+Combiné de prélavage complet avec robinet de puisage
+Mitigeur monotrou sur plage avec commande fil
+Adapté à un usage intensif en cuisines professionnelles
+Mitigeur fourni avec raccords flexibles F3/8" et clapets antiretour
+Robinet de puisage avec bec tube orientable L.200
+Plein débit 16 l/min en 1/4 de tour
+Tête à clapet à mécanisme renforcé avec manette ergonomique
+Douchette à jet réglable noire avec débit 9 l/min en sortie (réf. 433010)
+Douchette antitartre et embout antichoc
+Flexible armé L.0,95 m noir qualité alimentaire
+Colonne 3/4" en Inox
+Collier mural réglable
+Ressort-guide Inox
+Combiné de prélavage garanti 30 ans
+---AVANTAGES---
+Raccords tournants antitorsion et blindage PVC
+Confort : manette ergonomique, bec tube orientable
+Remplissage rapide : plein débit en 1/4 de tour
+Hygiène : flexible en PVC, douchette antitartre
 
 ### Dimensions
 
 | Dimension | Valeur | Prefix | Shape Index |
 |-----------|--------|--------|-------------|
-| Référence | Réf : FTE 5625 2026-2 |  | 2 |
-| N° de page | 1/1 |  | 3 |
+| Fabricant | DELABIE |  |  |
+| Référence fabricant | 5625 |  |  |
+| Raccordement | F3/8" |  |  |
+| Hauteur | 1105-1225 mm |  |  |
+| Hauteur de goutte | Robinet : 290 mm, douchette : 460-580 mm |  |  |
+| Débit | 16 l/min (robinet) ; 9 l/min (douchette) |  |  |
+| Ecartement au mur | 35-162 mm |  |  |
+| Finition | Inox |  |  |
 
 ### Images
 
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
-| Emplacement IMAGE_1 | Delagrave/images/equipement/5625.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\robinets\chromes\5625.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/5625.png |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/5625-2.png |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 
@@ -4692,6 +4717,245 @@ Aucune
 | Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
 |----------|--------|-----------------|------|-----|-------|--------|-------------|
 | Emplacement IMAGE_1 | Delagrave/images/equipement/WAGO.S.PNG | \\tse\commun\BE\Chiffrage\Fiches Techniques\Génération FT\FTequip\equipement\elec\prises\WAGO.S.PNG | 17.0 | 100.0 | 560.0 | 658.0 |  |
+
+### Metadata PowerPoint
+
+| Champ | Type | Prefix | Shape Index |
+|-------|------|--------|-------------|
+| Code | Type Objet dans Powerpoint |  |  |
+| Référence | TEXTE |  | 2 |
+| Titre | TEXTE |  | 1 |
+| N° de page | TEXTE |  | 3 |
+| Emplacement IMAGE_1 | IMAGE |  |  |
+
+## 2522L
+
+| Champ | Valeur |
+|-------|--------|
+| code | 2522L |
+| ref | Réf : DELABIE 2522L |
+| titre | 2522L - Mitigeur de lavabo mécanique monotrou bec orientable H.100 L.170 |
+| famille | equipement |
+
+### Texte
+
+Mitigeur de lavabo mécanique sur gorge
+Mitigeur mécanique monotrou avec bec orientable H.100 L.170 équipé d'un brise-jet hygiénique
+Bec haut adapté à la pose d'un filtre terminal BIOFIL
+Cartouche céramique classique Ø 40 avec butée de température maximale préréglée
+Corps et bec à intérieur lisse
+Aucun risque d'intercommunication entre l'eau chaude et l'eau froide
+Absence de clapet antiretour sur les arrivées
+Débit limité à 5 l/min à 3 bar
+Commande par levier Hygiène L.200
+Flexibles PEX F3/8"
+Fixation renforcée par 2 tiges Inox
+Mitigeur mécanique adapté pour les établissements de santé, EHPAD, hôpitaux et cliniques
+Mitigeur monotrou adapté aux personnes à mobilité réduite (PMR)
+Mitigeur monocommande conforme aux exigences de la NF Médical
+Mitigeur garanti 30 ans
+---AVANTAGES---
+Hygiène : intérieur lisse limitant les bactéries
+Butée de température maximale préréglée
+Levier Hygiène : commande sans contact manuel
+Confort d'utilisation : bec orientable
+
+### Dimensions
+
+| Dimension | Valeur | Prefix | Shape Index |
+|-----------|--------|--------|-------------|
+| Fabricant | DELABIE |  |  |
+| Référence fabricant | 2522L |  |  |
+| Raccordement | F3/8" |  |  |
+| Hauteur | 267 mm |  |  |
+| Hauteur de goutte | 100 mm |  |  |
+| Longueur de bec | 170 mm |  |  |
+| Débit | 5 l/min à 3 bar |  |  |
+| Butée de température | OUI |  |  |
+| Finition | Laiton chromé |  |  |
+
+### Images
+
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2522L.png |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2522L-2.png |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
+
+### Metadata PowerPoint
+
+| Champ | Type | Prefix | Shape Index |
+|-------|------|--------|-------------|
+| Code | Type Objet dans Powerpoint |  |  |
+| Référence | TEXTE |  | 2 |
+| Titre | TEXTE |  | 1 |
+| N° de page | TEXTE |  | 3 |
+| Emplacement IMAGE_1 | IMAGE |  |  |
+
+---
+
+## 2564T1
+
+| Champ | Valeur |
+|-------|--------|
+| code | 2564T1 |
+| ref | Réf : DELABIE 2564T1 |
+| titre | 2564T1 - Mitigeur de lavabo mécanique haut monotrou |
+| famille | equipement |
+
+### Texte
+
+Mitigeur de lavabo mécanique sur gorge
+Mitigeur mono trou monocommande avec bec orientable H.165 L.140
+Mitigeur haut avec brise BIOSAFE hygiénique adapté à la pose d'un filtre terminal BIOFIL
+Cartouche céramique Ø 25 avec butée de température maximale paramétrable
+Corps et bec à intérieur lisse limitant les niches bactériennes
+Aucun risque d'intercommunication entre l'eau chaude et l'eau froide
+Absence de clapet anti-retour sur les arrivées
+Possibilité de réaliser un choc thermique sans démontage de la manette et du capot ni l'alimentation en eau froide
+Débit réglé à 5 l/min
+Corps en laiton chromé
+Poignée en IXEF pour commande sans contact manuel
+Flexible PEX F1/8
+Raccordement par 2 filets lisse
+Mitigeur adapté pour les établissements de santé, EHPAD, hôpitaux et cliniques
+Mitigeur monotrou adapté aux personnes à mobilité réduite (PMR)
+Mitigeur certifié NF Médical
+Mitigeur garanti 30 ans
+---AVANTAGES---
+Hygiène : Intérieur lisse limitant les bactéries
+Fonction choc thermique sans démontage du levier
+Butée de reprise et de commande paramétrée
+Levier Hygiène pour commande sans contact manuel
+
+### Dimensions
+
+| Dimension | Valeur | Prefix | Shape Index |
+|-----------|--------|--------|-------------|
+| Fabricant | DELABIE |  |  |
+| Référence fabricant | 2564T1 |  |  |
+| Raccordement | F3/8" |  |  |
+| Hauteur | 322 mm |  |  |
+| Hauteur de goutte | 165 mm |  |  |
+| Longueur de bec | 140 mm |  |  |
+| Débit | 5 l/min |  |  |
+| Butée de température | OUI |  |  |
+| Finition | Laiton chromé |  |  |
+
+### Images
+
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2564T1.png |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2564T1-2.png |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
+
+### Metadata PowerPoint
+
+| Champ | Type | Prefix | Shape Index |
+|-------|------|--------|-------------|
+| Code | Type Objet dans Powerpoint |  |  |
+| Référence | TEXTE |  | 2 |
+| Titre | TEXTE |  | 1 |
+| N° de page | TEXTE |  | 3 |
+| Emplacement IMAGE_1 | IMAGE |  |  |
+
+---
+
+## 2870T3EP
+
+| Champ | Valeur |
+|-------|--------|
+| code | 2870T3EP |
+| ref | Réf : DELABIE 2870T3EP |
+| titre | 2870T3EP - Mitigeur d'évier SECURITHERM EP commande au coude |
+| famille | equipement |
+
+### Texte
+
+Mitigeur d'évier haut à équilibrage de pression SECURITHERM sur gorge
+Mitigeur monotrou monocommande avec bec haut orientable H.320
+Mitigeur livré avec 2 becs Inox déclipsables
+Sécurité antibrûlure totale : débit d'EC restreint en cas de coupure d'EF (et inversement)
+Température constante quelles que soient les variations de pression et de débit
+Cartouche céramique Ø 35 à équilibrage de pression avec butée de température maximale préréglée
+Corps et bec à intérieur lisse (limitent les niches bactériennes)
+Possibilité de réaliser aisément un choc thermique sans démontage du levier ni coupure de l'alimentation en eau froide
+Débit limité à 9 l/min à 3 bar
+Corps et embase en laiton chromé
+Commande sans contact manuel par levier Hygiène L.185
+Flexibles PEX F3/8" avec filtres et clapets antiretour
+Fixation renforcée par 2 tiges Inox
+Mitigeur adapté pour les établissements de santé, EHPAD, hôpitaux et cliniques
+Adapté aux personnes à mobilité réduite (PMR)
+Garantie 30 ans
+---AVANTAGES---
+Hygiène : intérieur lisse limitant les bactéries
+Fonction choc thermique sans démonter le levier
+Butée de température maximale préréglée
+Levier Hygiène : commande sans contact manuel
+
+### Dimensions
+
+| Dimension | Valeur | Prefix | Shape Index |
+|-----------|--------|--------|-------------|
+| Fabricant | DELABIE |  |  |
+| Référence fabricant | 2870T3EP |  |  |
+| Raccordement | F3/8" |  |  |
+| Technologie | BIOCLIP |  |  |
+| Hauteur de goutte | 320 mm |  |  |
+| Longueur de bec | 185 mm |  |  |
+| Débit | 9 l/min |  |  |
+| Finition | Laiton chromé |  |  |
+
+### Images
+
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2870T3EP.png |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
+| Emplacement IMAGE_1 | Delagrave/images/equipement/2870T3EP-2.png |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
+
+### Metadata PowerPoint
+
+| Champ | Type | Prefix | Shape Index |
+|-------|------|--------|-------------|
+| Code | Type Objet dans Powerpoint |  |  |
+| Référence | TEXTE |  | 2 |
+| Titre | TEXTE |  | 1 |
+| N° de page | TEXTE |  | 3 |
+| Emplacement IMAGE_1 | IMAGE |  |  |
+
+---
+
+## EU40
+
+| Champ | Valeur |
+|-------|--------|
+| code | EU40 |
+| ref | Réf : EU40 |
+| titre | EU40 - Raccordement - Réservation plomberie |
+| famille | equipement |
+
+### Texte
+
+Réservation plomberie
+Attentes au sol à prévoir pour le raccordement des équipements fluides des paillasses
+Attente EF, EC sur vanne d'arrêt 15/21 mâle (fluides spéciaux sur demande) à 25cm du sol fini
+Évacuation en tube PE ou PVC Ø40mm femelle à 30cm du sol fini
+
+### Dimensions
+
+| Dimension | Valeur | Prefix | Shape Index |
+|-----------|--------|--------|-------------|
+| Attente EF/EC | Vanne d'arrêt 15/21 mâle |  |  |
+| Hauteur attente EF/EC | 250 mm du sol fini |  |  |
+| Évacuation | Tube PE ou PVC Ø40mm femelle |  |  |
+| Hauteur évacuation | 150 mm du sol fini |  |  |
+| Encombrement maxi | 100 x 200 mm |  |  |
+
+### Images
+
+| Position | Chemin | Chemin Original | Left | Top | Width | Height | Shape Index |
+|----------|--------|-----------------|------|-----|-------|--------|-------------|
+| Emplacement IMAGE_1 | Delagrave/images/equipement/EU40.jpg |  | 17.0 | 100.0 | 560.0 | 658.0 |  |
 
 ### Metadata PowerPoint
 

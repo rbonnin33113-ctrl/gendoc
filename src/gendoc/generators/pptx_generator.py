@@ -464,12 +464,26 @@ def _insert_images(slide: Any, product: Dict[str, Any], project_root: Path, fami
     return images_inserted
 
 
+# Revetement options: label (displayed as bullet) + optional image path template
+REVETEMENT_OPTIONS_CONFIG = {
+    'DOSSRET': {
+        'label': 'Dosseret(s) retour(s)',
+        'image': 'Delagrave/images/revetement/Dosseret {code}.jpg'
+    },
+    'BRELEV': {
+        'label': 'Bordure de rétention sur plan de travail',
+        'image': None
+    },
+}
+
+
 def _add_revetement_slides(
     prs: Presentation,
     revetement_codes: List[str],
     references_dir: Path,
     project_root: Path,
-    logo_path: Optional[Path] = None
+    logo_path: Optional[Path] = None,
+    revetement_options: Optional[Dict[str, List[str]]] = None
 ) -> List[str]:
     """
     Add revetement (coating) slides for specified coating codes.
@@ -480,6 +494,7 @@ def _add_revetement_slides(
         references_dir: Path to Delagrave/references/
         project_root: Root directory for resolving image paths
         logo_path: Optional path to logo image
+        revetement_options: Optional dict mapping coating code to list of options (e.g. {'RS': ['DOSSRET']})
 
     Returns:
         List of coating codes that were successfully added
@@ -494,7 +509,21 @@ def _add_revetement_slides(
         if not product:
             continue
 
-        build_product_slide(prs, product, 'revetement', project_root, logo_path)
+        # Build structured options list from revetement_options
+        extra_options = []
+        if revetement_options and code.upper() in revetement_options:
+            for option_key in revetement_options[code.upper()]:
+                config = REVETEMENT_OPTIONS_CONFIG.get(option_key, {})
+                label = config.get('label', option_key)
+                image_path = None
+                image_template = config.get('image')
+                if image_template:
+                    img = project_root / image_template.format(code=code.upper())
+                    if img.exists():
+                        image_path = str(img)
+                extra_options.append({'label': label, 'image': image_path})
+
+        build_product_slide(prs, product, 'revetement', project_root, logo_path, extra_options=extra_options or None)
         added.append(code)
 
     return added
@@ -509,7 +538,8 @@ def generate_presentation(
     mode: str = "FTI",
     revetement_codes: Optional[List[str]] = None,
     devis_info: Optional[Dict[str, str]] = None,
-    custom_products: Optional[List[Dict]] = None
+    custom_products: Optional[List[Dict]] = None,
+    revetement_options: Optional[Dict[str, List[str]]] = None
 ) -> Dict[str, Any]:
     """
     Generate a PowerPoint presentation with product tech sheets.
@@ -665,7 +695,8 @@ def generate_presentation(
                 list(coating_codes_set),
                 references_dir,
                 project_root,
-                logo_path
+                logo_path,
+                revetement_options=revetement_options
             )
         except Exception as e:
             all_warnings.append({"code": "REVETEMENTS", "message": f"Erreur revetements: {str(e)}"})
